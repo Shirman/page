@@ -92,11 +92,11 @@ redis数据结构的多样性，让我们在存储数据上有了更多的选择
 
 要求强一致性数据的，要求严谨的缓存数据读写：
 
-![php-redis使用01](https://raw.githubusercontent.com/tsingchan/page/master/imgae/2019/php-redis使用01.png)
+![php-redis使用01](https://raw.githubusercontent.com/tsingchan/page/blob/master/image/2019/php-redis-use01.png)
 
 对于普通的业务（不是指高并发的业务），不涉及ms级别上的资源或大额金钱交易精确性问题的，可以考虑
 
-![php-redis使用02](https://raw.githubusercontent.com/tsingchan/page/master/imgae/2019/php-redis使用02.png)
+![php-redis使用02](https://raw.githubusercontent.com/tsingchan/page/blob/master/image/2019/php-redis-use02.png)
 
 
 
