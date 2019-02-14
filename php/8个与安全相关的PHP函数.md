@@ -1,5 +1,20 @@
 ## 8个与安全相关的PHP函数
 
+### 目录
+
+
+- [8个与安全相关的PHP函数](#8个与安全相关的php函数)
+    
+    - [1. mysql\_real\_escape_string()](#1-mysql\_real\_escape_string)
+    - [2. addslashes()](#2-addslashes)
+    - [3. htmlentities()](#3-htmlentities)
+    - [4. htmlspecialchars()](#4-htmlspecialchars)
+    - [5. strip_tags()](#5-strip_tags)
+    - [6. md5()](#6-md5)
+    - [7. sha1()](#7-sha1)
+    - [8. intval()](#8-intval)
+
+
 
 > 在PHP中，有些非常有用并且方便的函数，它们可以帮助你的网站防止出现像SQL注入攻击，XSS攻击等问题。我们看看这些在PHP中可以保证项目安全的函数，下面列出的这些函数只是我发现的对你项目有帮助的，可能会不全。
 
