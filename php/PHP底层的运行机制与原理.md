@@ -36,7 +36,7 @@ PHP说简单，但是要精通也不是一件简单的事。我们除了会使�
 
 PHP的核心架构如下图：
 
-![PHP的核心架构.jpg](http://ww2.sinaimg.cn/large/7cc829d3gw1exyap8boh7j20ee0ep0tj.jpg)
+![PHP的核心架构.jpg](https://raw.githubusercontent.com/tsingchan/page/master/image/2019/php-hexin-jiagou.jpg)
 
 从图上可以看出，PHP从下到上是一个4层体系：
 
@@ -64,7 +64,7 @@ PHP的核心架构如下图：
 
 我们先来看看PHP代码的执行所经过的流程。
 
-![PHP代码的执行所经过的流程.jpg](http://ww1.sinaimg.cn/large/7cc829d3gw1exyap8mofrj206f0fcmxi.jpg)
+![PHP代码的执行所经过的流程.jpg](https://raw.githubusercontent.com/tsingchan/page/master/image/2019/php-code-process.jpg)
 
 从图上可以看到，PHP实现了一个典型的动态语言执行过程：拿到一段代码后，经过词法解析、语法解析等阶段后，源程序会被翻译成一个个指令(opcodes)，然后ZEND虚拟机顺次执行这些指令完成操作。PHP本身是用C实现的，因此最终调用的也都是C的函数，实际上，我们可以把PHP看做是一个C开发的软件。
 
@@ -100,7 +100,7 @@ Value支持混合类型：array (“string”,2332)
 
 Zend hash table实现了典型的hash表散列结构，同时通过附加一个双向链表，提供了正向、反向遍历数组的功能。其结构如下图：
 
-![Zend hash table.jpg](http://ww1.sinaimg.cn/large/7cc829d3gw1exyap93d27j20fi0efaat.jpg)
+![Zend hash table.jpg](https://raw.githubusercontent.com/tsingchan/page/master/image/2019/php-hash-table.jpg)
 
 可以看到，在hash table中既有key->value形式的散列结构，也有双向链表模式，使得它能够非常方便的支持快速查找和线性遍历。
 
@@ -127,7 +127,7 @@ PHP是一门弱类型语言，本身不严格区分变量的类型。PHP在变�
 
 Zval是zend中另一个非常重要的数据结构，用来标识并实现PHP变量，其数据结构如下：
 
-![Zval.jpg](http://ww3.sinaimg.cn/large/7cc829d3gw1exyap9p8u1j20fg0e1t9o.jpg)
+![Zval.jpg](https://raw.githubusercontent.com/tsingchan/page/master/image/2019/php-zval.jpg)
 
 Zval主要由三部分组成：
 
