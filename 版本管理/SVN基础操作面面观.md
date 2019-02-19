@@ -60,22 +60,22 @@ svn分为服务器端和客户端，通常情况大多人都在客户端操作�
 
 ### 三、svn文件状态说明
 
-!(normal)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-normal.png]绿色的勾，	表示subversion状态正常。不论是刚检出或是正常更新；
+![normal](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-normal.png)绿色的勾，	表示subversion状态正常。不论是刚检出或是正常更新；
 
-!(svn-status-modified)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-modified.png]红色感叹号，表示有文件被修改，且没有提交到版本库中；
+![svn-status-modified](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-modified.png)红色感叹号，表示有文件被修改，且没有提交到版本库中；
 
-!(svn-status-conflicted)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-conflicted.png]在提交过程中出现了冲突，图标显示黄色感叹号；
+![svn-status-conflicted](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-conflicted.png)在提交过程中出现了冲突，图标显示黄色感叹号；
 
-!(svn-status-locked)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-locked.png]加锁图标，	表示有一个文件加了锁，同时也在提醒：如果不使用改文件的话，要记得释放锁，否则其他人将无法对该文件进行修改；
+![svn-status-locked](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-locked.png)加锁图标，	表示有一个文件加了锁，同时也在提醒：如果不使用改文件的话，要记得释放锁，否则其他人将无法对该文件进行修改；
 
-!(svn-status-deleted)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-deleted.png]红色的叉，	表示当前文件夹下的某些文件或文件夹被计划从版本控制中删除，或是该文件夹下某个受控的文件丢失了；
+![svn-status-deleted](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-deleted.png)红色的叉，	表示当前文件夹下的某些文件或文件夹被计划从版本控制中删除，或是该文件夹下某个受控的文件丢失了；
 
-!(added)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-added.png]蓝色加号，	表示我们有一个文件或是目录已经被加入版本控制中。
+![added](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-status-added.png)蓝色加号，	表示我们有一个文件或是目录已经被加入版本控制中。
 
 
 ### 四、windows svn安装
 
-下载Windows 端程序：(下载windows端程序)[http://tortoisesvn.net/downloads]
+下载Windows 端程序：http://tortoisesvn.net/downloads
 
 
 执行下载回来的Tortoisesvn 安装程序，正确安装后，不知道现在的版本和windows是否要求重启电脑。这里忽略安装过程，有问题的话，可以找你身边的开发帅哥们。
@@ -83,15 +83,15 @@ svn分为服务器端和客户端，通常情况大多人都在客户端操作�
 
 **Windows安装及汉化**
 
-(安装及汉化参考1)[http://jingyan.baidu.com/article/0aa223758081b788cc0d64e7.html]
+安装及汉化参考1：http://jingyan.baidu.com/article/0aa223758081b788cc0d64e7.html
 
-(安装及汉化参考2)[http://jingyan.baidu.com/article/48b558e32b9ab27f39c09a50.html]
+安装及汉化参考2：http://jingyan.baidu.com/article/48b558e32b9ab27f39c09a50.html
 
 ### 五、Windows svn操作使用
 
 #### 1、svn简单操作示意图
 
-!(svn简单操作示意图)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-use-sample.png]
+![svn简单操作示意图](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-use-sample.png)
 
 **常用功能：**
 
@@ -101,7 +101,7 @@ checkout检出、add添加、commit提交、update更新、删除、重命名、
 
 revert还原、get lock上锁、release lock释放锁、clean up清除、branch分支、tag标签、switch切换分支、merge合并、resolve解决冲突、relocate重新定位、create patch、apply patch
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-000.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-000.png)
 
 
 #### 2、svn仓库资源路径
@@ -113,47 +113,47 @@ revert还原、get lock上锁、release lock释放锁、clean up清除、branch�
 
 本地创建一个chineseapple的目录
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-002.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-002.png)
 
 右键找到svn checkout（检出）	 
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-003.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-003.png)
 
 检出时，如果是私有不公开的svn仓库，需要输入svn帐户和密码。
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-006.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-006.png)
 
 完成检出checkout
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-004.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-004.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-005.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-005.png)
 
 svn会在您的chinesapple工作目录下，以及其子目录下建立这个.svn的子目录。您不应该进去这个目录，尤其不应该更动这个目录下面的任何内容。否则会很可能会造成svn无法正常运作。
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-007.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-007.png)
 	
 #### 4、添加标记
 
 尝试在工作目录下创建一个starry的文件，然后加了些文字
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-009.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-009.png)
 
 点击添加add操作，弹出：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-010.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-010.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-011.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-011.png)
 
 提交commit文档，提交时备注简要信息，可以供自己或他人查找版本时，了解该版本更新了什么内容
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-012.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-012.png)
 
 一般在需要和svn服务器交互时，比如提交，会要求再次输入帐号密码，如果觉得电脑环境安全靠谱，可以记住授权	  
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-013.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-013.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-014.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-014.png)
 
 
 这个时候就可以在svn服务器上看到starry这个文件了（我们不关心，只要知道）
@@ -169,26 +169,26 @@ svn会在您的chinesapple工作目录下，以及其子目录下建立这个.sv
 
 小明为了让所其他人看得到英文版的介绍，他准备提交文件starry到svn，当然小明还有个未完成的文件xiaoming，他暂时不想提交，小明做了以下操作：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-017.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-017.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-018.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-018.png)
 
 这个时候要看小明的英文介绍，需要去更新我们自己的工作副本目录：
 更新工作目录svn update：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-019.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-019.png)
 
 更新后可以看到更新了starry文件 版本3：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-020.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-020.png)
 
 为了大概知道更新了什么，可以用右下角的show log查看日志：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-021.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-021.png)
 
 然后你可能决定夸下小明，就在starry尾部追加了夸奖，并提交commit：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-023.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-023.png)
 
 当然小明明天早上起来更新工作目录的时候，会发现你夸奖了他。
 
@@ -198,15 +198,15 @@ svn会在您的chinesapple工作目录下，以及其子目录下建立这个.sv
 
 你可以用svn上的删除操作
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-024.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-024.png)
 
 也可以直接手动删除；
 
 两种删除方式，最后都要提交commit告诉svn服务器这个版本删除某个文件；
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-025.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-025.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-026.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-026.png)
 
 
 #### 7、重命名&移动
@@ -221,11 +221,11 @@ svn会在您的chinesapple工作目录下，以及其子目录下建立这个.sv
 
 show log 可以查看svn仓库的所有提交等操作日志，可以查看谁在什么时间对什么文档做了什么操作。
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-027.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-027.png)
 
 在查看日志界面上有很多功能，比较文档、创建分支标签、还原版本、合并版本等
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-028.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-028.png)
 
 这里先介绍文档比较，后面陆续介绍其他功能；
 双击上图中红框中的路径文本链接，svn会对当前版本和上一个版本进行比较。
@@ -235,36 +235,36 @@ show log 可以查看svn仓库的所有提交等操作日志，可以查看谁�
 
 默认还原到最新版本，将最新版本中被修改、被删除的文档都还原到最新版本状态。
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-030.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-030.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-031.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-031.png)
 
 当然还可以还原回滚到指定版本:
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-032.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-032.png)
 
 #### 10、锁lock
 
 上锁get lock：
 比如你可能在改一个很重要的文件，为了防止出现别人也在改的情况，你就提前锁住这个文件：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-033.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-033.png)
 
 可能小明刚好也要改这个文件，这时小明修改了文件但是提交不了；
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-035.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-035.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-034.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-034.png)
 
 直到你亲自释放锁release lock：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-036.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-036.png)
 
 释放锁后，小明就可以update更新工作目录，没有出现冲突的情况下，就可以再次提交了
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-037.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-037.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-038.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-038.png)
 
 
 
@@ -285,22 +285,22 @@ svn中分支和标记操作一样，只是你心里要给当前这个copy叫分�
 而在trunk的平行目录里创建branchs和tags目录，tags目录用于存放每一次可以发布的版本（from trunk），
 branchs目录用于存放每一次版本release后做bug修复分支版本（from tags）；
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-043.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-043.png)
 
 
 创建branch/tag：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-039.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-039.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-040.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-040.png)
 
 
 切换到branch/tag：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-041.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-041.png)
 
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-042.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-042.png)
 
 
 #### 13、合并merge
@@ -309,34 +309,34 @@ branchs目录用于存放每一次版本release后做bug修复分支版本（fro
 
 选择适合合并到trunk的类型，有些版本有三个类型，有的两个类型
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-044.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-044.png)
 
 选择合并来源
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-045.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-045.png)
 
 选择来源分支，bug_fix修复分支
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-046.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-046.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-047.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-047.png)
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-048.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-048.png)
 
 合并一般不出现冲突的情况下会自动合并
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-049.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-049.png)
 
 合并结果，不出现冲突（合并的时候会提示是否冲突）情况下，及时提交commit目的目录
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-050.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-050.png)
 
 
 #### 14、relocate
 
 假设哪天，某个项目的svn路径更改了，那么不需要重新checkout，只需要relocate 路径即可。
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-064.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-064.png)
 
 
 #### 15、patch 补丁
@@ -382,42 +382,42 @@ branchs目录用于存放每一次版本release后做bug修复分支版本（fro
 
 背景：其他成员已经更新了starry文件，但小明还不知道，又在starry改了点东西
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-051.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-051.png)
 
 
 在未更新的情况下，小明主动提交了starry文件
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-052.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-052.png)
 
 
 提交的时候，冲突了
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-053.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-053.png)
 
 
 那小明就先更新下，再提交，真不巧，就碰上了本地更新冲突
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-054.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-054.png)
 
 
 双击红色冲突文件,开始解决本地冲突,：
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-059.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-059.png)
 
 
 解决同一行冲突
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-060.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-060.png)
 
 
 冲突解决结果
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-061.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-061.png)
 
 
 标记冲突解决
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-062.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-use-062.png)
 
 
 解决完冲突，再提交
@@ -429,13 +429,13 @@ branchs目录用于存放每一次版本release后做bug修复分支版本（fro
 
 检测及提示团队其他成员svn提交操作。对于管理层、测试或经常与小伙伴协作同一个文件的童鞋很有用处。
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-monitor-001.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/w-svn-monitor-001.png)
 
 
 
 ### 九、svn版本目录管理（branch/tag）
 
-!(更多功能)[https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-branch-dir-use.png]
+![更多功能](https://raw.githubusercontent.com/tsingchan/page/master/image/svn/svn-branch-dir-use.png)
 
 详见(SVN目录结构规划)[/版本管理/SVN目录结构规划.md]
 
