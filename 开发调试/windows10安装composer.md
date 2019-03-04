@@ -47,3 +47,7 @@
     command [options] [arguments]
     ...
 
+### 国内镜像
+
+详见镜像用法：https://pkg.phpcomposer.com
+

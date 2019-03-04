@@ -28,11 +28,11 @@
 	export	使得新创建的环境变量可供同一环境中使用 export PS1=”$”
 	history	历史命令
 	mail		
-	ps -aux | mail -s "subject ps" real@9ong.com
+	ps -aux | mail -s "subject ps" real@xxx.com
 	mail content....
 	Cc:
 	^D
-	可直接发送邮件到real@9ong.com
+	可直接发送邮件到real@xxx.com
 	set		显示当前环境中已经定义的所有环境变量
 	tee		将程序的输出发送到某文件的同时也在屏幕上显示
 	wc		显示文本文件中的字符数、字数、行数等信息
