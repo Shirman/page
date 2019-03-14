@@ -1,6 +1,7 @@
 ## windows10安装bower
 
 
+
 - [windows10安装bower](#windows10安装bower)
     - [前提](#前提)
     - [安装bower](#安装bower)
@@ -9,6 +10,7 @@
         - [安装](#安装)
         - [更新](#更新)
         - [卸载](#卸载)
+    - [与webpack/gulp的关系](#与webpackgulp的关系)
 
 
 
@@ -73,3 +75,10 @@ $ bower uninstall jquery
 
 **注意，默认情况下，会连所依赖的模块一起卸载。比如，如果卸载jquery-ui，会连jquery一起卸载，除非还有别的模块依赖jquery。**
 
+### 与webpack/gulp的关系
+
+gulp是工具链，可以配合各种插件做js压缩，css压缩，less编译等工作
+
+webpack是文件打包工具，可以把项目的各种js文、css文件等打包合并成一个或多个文件
+
+bower是包管理器，用来管理你项目里的那些外部依赖的。
