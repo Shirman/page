@@ -89,6 +89,7 @@ https://pkg.phpcomposer.com
 
     composer update
 
+> 因为 composer update 的逻辑是按照 composer.json 指定的扩展包版本规则，把所有扩展包更新到最新版本，注意，是 所有扩展包，举个例子，你在项目一开始的时候使用了 monolog，安装的是 monolog 1.1 版本，而一个多月以后的现在，monolog 已经是 1.2 了，运行命令后直接更新到 1.2，这时项目并没有针对 1.2 进行过测试，项目一下子变得很不稳定，情况有时候会比这个更糟糕，尤其是在一个庞大的项目中，你没有对项目写完整覆盖测试的情况，什么东西坏掉了你都不知道。
 
 ### 4、删除包
 
@@ -116,9 +117,91 @@ https://pkg.phpcomposer.com
  
 
 ### 6、生成类库映射文件
+比如我们经常会修改composer.json中autoload的配置，新增自己编写的类库，或者是覆盖第三方类库：
+
+> autoload的主要两个选项: files 和 psr-4。
+
+    "autoload": {
+        "psr-4": {
+            "app\\": "application",
+            "Test\\" :"test/"
+        },
+        "files":["extend/html-to-markdown-overwrite/autoload.php"]                
+    },
+
+上面的配置意思：新增命名空间Test，及新增自定义extend/html-to-markdown-overwrite/autoload.php
+
+Test命名空间下的类库文件，在composer.json同一目录下建立文件夹test，并编写ClassTest类：
+
+    <?php
+    namespace Test;
+    class ClassTest{
+        public function getName(){
+            return "test";
+        }
+    }
+    ?>
+
+
+自定义autoload.php的文件，覆盖第三方类库（在composer安装的vnedor已经有该命名空间文件）League\HTMLToMarkdown\Converter\ImageConverter：
+
+    <?php
+    /**
+    * 重写html-to-markdown类文件
+    */
+    spl_autoload_register(function ($class) {
+        $map = [
+            'League\HTMLToMarkdown\Converter\ImageConverter' => __DIR__ . '/ImageConverter.php',
+        ];
+
+        if (isset($map[$class])) {
+            debug_log($class . ' loaded' . PHP_EOL);
+            include $map[$class];
+            return true;
+        }
+    // 注意需要设置prepend参数为true
+    }, true, true);
+
+文件extend/html-to-markdown-overwrite/ImageConverter.php：
+
+    <?php
+
+    namespace League\HTMLToMarkdown\Converter;
+
+    use League\HTMLToMarkdown\ElementInterface;
+
+    class ImageConverter implements ConverterInterface
+    {
+        /**
+        * @param ElementInterface $element
+        *
+        * @return string
+        */
+        public function convert(ElementInterface $element)
+        {
+            //@todo
+        }
+
+        /**
+        * @return string[]
+        */
+        public function getSupportedTags()
+        {
+            return array('img');
+        }
+    }
+
+
+修改了composer.json的autoload配置，只要简单的重新生成autoload自动加载器即可，不需要重新require或update：
 
     composer dump-autoload
  
+
+
+----
+
+
+
 
 以上就是总结的一些命令了，关于安装的方法详见：
 
