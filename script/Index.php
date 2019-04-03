@@ -75,7 +75,7 @@ class Index{
                 //     echo $filepath."\n";
                 //     echo $filename."\n";
                 // }                
-                $mdString.="\n[".$filename."](".$filepath.")\n";
+                $mdString.="\n- [".$filename."](".$filepath.")\n";
             }
 
             $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>";
