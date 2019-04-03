@@ -6,4 +6,4 @@
 [政治哲学原理与方法论](/哲学/政治哲学原理与方法论.md)
 
 
-<font size=2 color='grey'> 2019-04-03 15:52 </font>
+<font size=2 color='grey'> 2019-04-03 15:54 </font>

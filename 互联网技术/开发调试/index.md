@@ -15,7 +15,7 @@
 
 [windows10搭建nodejs+npm环境](/互联网技术/开发调试/windows10搭建nodejs+npm环境.md)
 
-[七牛qrsync_命令行同步工具](/互联网技术/开发调试/七牛qrsync_命令行同步工具.md)
+[七牛qrsync_命令行同步工具](/互联网技术/开发调试/七牛qrsync 命令行同步工具.md)
 
 [七牛Qshell工具](/互联网技术/开发调试/七牛Qshell工具.md)
 
@@ -24,4 +24,4 @@
 [微信小程序本地真机调试](/互联网技术/开发调试/微信小程序本地真机调试.md)
 
 
-<font size=2 color='grey'> 2019-04-03 15:52 </font>
+<font size=2 color='grey'> 2019-04-03 15:54 </font>

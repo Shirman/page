@@ -58,7 +58,7 @@ class Index{
                 
                 // $filename = basename($filepath);                
                 $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath);                                 
-                $filepath = str_replace([self::$_rootDir,"\\"," "],["","/","_"],$filepath)."/index.md";
+                $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath)."/index.md";
                 $filename = str_replace([" "],["_"],$filename);
                 $mdString.="\n**[".$filename."](".$filepath.")**\n";
             }
@@ -68,7 +68,7 @@ class Index{
                 
                 $originPath = $filepath;
                 
-                $filepath = str_replace([self::$_rootDir,"\\"," "],["","/","_"],$filepath);
+                $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath);
                 $filename = str_replace([" "],["_"],$filename);                
                 $filename = rtrim($filename,'.md');
                 // if(mb_strpos($originPath,"运维") !== false){

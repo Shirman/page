@@ -12,4 +12,4 @@
 [Nginx配置http基本认证及资源文件下载目录别名配置](/互联网技术/服务器运维/Nginx/Nginx配置http基本认证及资源文件下载目录别名配置.md)
 
 
-<font size=2 color='grey'> 2019-04-03 15:52 </font>
+<font size=2 color='grey'> 2019-04-03 15:54 </font>
