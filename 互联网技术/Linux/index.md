@@ -1,7 +1,7 @@
-文章索引：
+/互联网技术/Linux 索引：
 
 
-**[上一级目录](/互联网技术/index.md)**
+**[上一级目录/互联网技术](/互联网技术/index.md)**
 
 [Chkconfig一次就牢记于心](/互联网技术/Linux/Chkconfig一次就牢记于心.md)
 
@@ -9,13 +9,13 @@
 
 [grep工具介绍](/互联网技术/Linux/grep工具介绍.md)
 
-[Linux_buffer与cache内存](/互联网技术/Linux/Linux_buffer与cache内存.md)
+[Linux-buffer与cache内存](/互联网技术/Linux/Linux-buffer与cache内存.md)
 
-[Linux_cron计划任务服务详细介绍](/互联网技术/Linux/Linux_cron计划任务服务详细介绍.md)
+[Linux-cron计划任务服务详细介绍](/互联网技术/Linux/Linux-cron计划任务服务详细介绍.md)
 
-[Linux_FTP命令快速上手](/互联网技术/Linux/Linux_FTP命令快速上手.md)
+[Linux-FTP命令快速上手](/互联网技术/Linux/Linux-FTP命令快速上手.md)
 
-[Linux_NFS系统搭建](/互联网技术/Linux/Linux_NFS系统搭建.md)
+[Linux-NFS系统搭建](/互联网技术/Linux/Linux-NFS系统搭建.md)
 
 [Linux前后台任务控制之jobs&nohup](/互联网技术/Linux/Linux前后台任务控制之jobs&nohup.md)
 
@@ -46,4 +46,4 @@
 [利用scp自动输入密码进行文件远程拷贝](/互联网技术/Linux/利用scp自动输入密码进行文件远程拷贝.md)
 
 
-<font size=2 color='grey'> 2019-04-03 15:36 </font>
+<font size=2 color='grey'> 2019-04-03 15:52 </font>

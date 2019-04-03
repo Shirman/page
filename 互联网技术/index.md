@@ -1,7 +1,7 @@
-文章索引：
+/互联网技术 索引：
 
 
-**[上一级目录](//index.md)**
+**[上一级目录](/index.md)**
 
 **[Demo](/互联网技术/Demo/index.md)**
 
@@ -30,4 +30,4 @@
 **[编码规范](/互联网技术/编码规范/index.md)**
 
 
-<font size=2 color='grey'> 2019-04-03 15:36 </font>
+<font size=2 color='grey'> 2019-04-03 15:52 </font>

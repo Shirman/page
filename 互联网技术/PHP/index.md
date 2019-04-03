@@ -1,7 +1,7 @@
-文章索引：
+/互联网技术/PHP 索引：
 
 
-**[上一级目录](/互联网技术/index.md)**
+**[上一级目录/互联网技术](/互联网技术/index.md)**
 
 [10个值得深思的_PHP_面试问题](/互联网技术/PHP/10个值得深思的_PHP_面试问题.md)
 
@@ -12,8 +12,6 @@
 [CentOS下安装ImageMagick和PHP_Imagick扩展](/互联网技术/PHP/CentOS下安装ImageMagick和PHP_Imagick扩展.md)
 
 [PHP_7_vs_HHVM_比较](/互联网技术/PHP/PHP_7_vs_HHVM_比较.md)
-
-[PHP_exec_system_passthru系统函数](/互联网技术/PHP/PHP_exec_system_passthru系统函数.md)
 
 [PHP_Vs_Node.js](/互联网技术/PHP/PHP_Vs_Node.js.md)
 
@@ -40,6 +38,8 @@
 [PHP开发必备的七种武器及评注](/互联网技术/PHP/PHP开发必备的七种武器及评注.md)
 
 [PHP执行linux命令的6个函数](/互联网技术/PHP/PHP执行linux命令的6个函数.md)
+
+[PHP执行操作系统函数](/互联网技术/PHP/PHP执行操作系统函数.md)
 
 [PHP文件或目录的读写及操作](/互联网技术/PHP/PHP文件或目录的读写及操作.md)
 
@@ -80,4 +80,4 @@
 [解惑PHP的异常](/互联网技术/PHP/解惑PHP的异常.md)
 
 
-<font size=2 color='grey'> 2019-04-03 15:36 </font>
+<font size=2 color='grey'> 2019-04-03 15:52 </font>

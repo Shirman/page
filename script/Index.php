@@ -25,16 +25,17 @@ class Index{
             $dirPath = dirname(__DIR__);            
             self::$_rootDir = $dirPath;
         }
-        $mdString = "文章索引：\n\n";
+        
         if(is_dir($dirPath)){
+            $mdString = str_replace([self::$_rootDir,"\\"],["","/"],$dirPath)." 索引：\n\n";            
             if($dirPath != self::$_rootDir){            
                 $preDir = dirname($dirPath);//上级目录  
                 // echo $preDir."\n";          
                 if($preDir == self::$_rootDir){
-                    $preDir = "/";
+                    $preDir = "";
                 }
-                $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir)."/index.md";
-                $mdString .= "\n**[上一级目录](".$preDir.")**\n";
+                $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir);
+                $mdString .= "\n**[上一级目录".$preDir."](".$preDir."/index.md".")**\n";
             }
             $handle = opendir($dirPath);
             $dirArray = [];

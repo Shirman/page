@@ -1,7 +1,7 @@
-文章索引：
+/重构自己 索引：
 
 
-**[上一级目录](//index.md)**
+**[上一级目录](/index.md)**
 
 [readme](/重构自己/readme.md)
 
@@ -40,4 +40,4 @@
 [简单有效的交际方法](/重构自己/简单有效的交际方法.md)
 
 
-<font size=2 color='grey'> 2019-04-03 15:36 </font>
+<font size=2 color='grey'> 2019-04-03 15:52 </font>
