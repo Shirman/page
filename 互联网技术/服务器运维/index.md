@@ -1,11 +1,11 @@
 文章索引：
 
 
-**[上一级目录](/互联网技术)**
+**[上一级目录](/互联网技术/index.md)**
 
-**[Apache](/互联网技术/服务器运维/Apache)**
+**[Apache](/互联网技术/服务器运维/Apache/index.md)**
 
-**[Nginx](/互联网技术/服务器运维/Nginx)**
+**[Nginx](/互联网技术/服务器运维/Nginx/index.md)**
 
 [Linux_rsync同步服务](/互联网技术/服务器运维/Linux_rsync同步服务.md)
 
@@ -30,4 +30,4 @@
 [自颁发SSL证书及nginx_apache配置](/互联网技术/服务器运维/自颁发SSL证书及nginx_apache配置.md)
 
 
-<font size=2 color='grey'> 2019-04-03 15:28 </font>
+<font size=2 color='grey'> 2019-04-03 15:36 </font>

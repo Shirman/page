@@ -33,7 +33,7 @@ class Index{
                 if($preDir == self::$_rootDir){
                     $preDir = "/";
                 }
-                $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir);
+                $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir)."/index.md";
                 $mdString .= "\n**[上一级目录](".$preDir.")**\n";
             }
             $handle = opendir($dirPath);
@@ -57,7 +57,7 @@ class Index{
                 
                 // $filename = basename($filepath);                
                 $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath);                                 
-                $filepath = str_replace([self::$_rootDir,"\\"," "],["","/","_"],$filepath);
+                $filepath = str_replace([self::$_rootDir,"\\"," "],["","/","_"],$filepath)."/index.md";
                 $filename = str_replace([" "],["_"],$filename);
                 $mdString.="\n**[".$filename."](".$filepath.")**\n";
             }

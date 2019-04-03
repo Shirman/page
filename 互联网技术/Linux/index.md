@@ -1,7 +1,7 @@
 文章索引：
 
 
-**[上一级目录](/互联网技术)**
+**[上一级目录](/互联网技术/index.md)**
 
 [Chkconfig一次就牢记于心](/互联网技术/Linux/Chkconfig一次就牢记于心.md)
 
@@ -46,4 +46,4 @@
 [利用scp自动输入密码进行文件远程拷贝](/互联网技术/Linux/利用scp自动输入密码进行文件远程拷贝.md)
 
 
-<font size=2 color='grey'> 2019-04-03 15:28 </font>
+<font size=2 color='grey'> 2019-04-03 15:36 </font>
