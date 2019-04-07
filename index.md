@@ -1,7 +1,7 @@
  索引：
 
 
-**[互联网技术](/互联网技术/index.md)**
+**[互联网](/互联网/index.md)**
 
 **[产品设计](/产品设计/index.md)**
 
@@ -29,7 +29,9 @@
 
 - [emoji](/emoji.md)
 
-- [github-markdown](/github-markdown.md)
+- [favorite](/favorite.md)
+
+- [markdown](/markdown.md)
 
 - [README](/README.md)
 
@@ -37,7 +39,5 @@
 
 - [Test](/Test.md)
 
-- [浏览器收藏夹](/浏览器收藏夹.md)
 
-
-<font size=2 color='grey'> 2019-04-03 16:05 </font>
+<font size=2 color='grey'> 2019-04-07 13:56 </font>
