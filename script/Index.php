@@ -2,6 +2,11 @@
 
 Index::updateIndex();
 
+$fileCount = Index::getFileCount();
+
+echo "索引更新总文件数：".$fileCount."\n";
+echo "update at ".date("Y-m-d H:i:s")."\n";
+exit;
 
 /**
  * 为每个目录生成index.md索引文件
@@ -16,6 +21,11 @@ class Index{
      * 根目录
      */
     private static $_rootDir = '';
+
+    /**
+     * 文件总数
+     */
+    private static $_fileCount = 0;
 
     /**
      * 更新每个目录的索引文件index.md
@@ -78,6 +88,7 @@ class Index{
                 $mdString.="\n- [".$filename."](".$filepath.")\n";
             }
 
+            self::$_fileCount += count($fileArray);
             $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>";
 
             file_put_contents($dirPath.DIRECTORY_SEPARATOR."index.md",$mdString); 
@@ -95,6 +106,13 @@ class Index{
             return true;
         }
         return false;
+    }
+
+    /**
+     * get file count
+     */
+    public static function getFileCount(){
+        return self::$_fileCount;
     }
 
 }
