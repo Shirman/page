@@ -38,15 +38,7 @@ class Index{
         
         if(is_dir($dirPath)){
             $mdString = str_replace([self::$_rootDir,"\\"],["","/"],$dirPath)." 索引：\n\n";            
-            if($dirPath != self::$_rootDir){            
-                $preDir = dirname($dirPath);//上级目录  
-                // echo $preDir."\n";          
-                if($preDir == self::$_rootDir){
-                    $preDir = "";
-                }
-                $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir);
-                $mdString .= "\n**[上一级目录".$preDir."](".$preDir."/index.md".")**\n";
-            }
+            $mdString .= self::_getPreDirMdString($dirPath);
             $handle = opendir($dirPath);
             $dirArray = [];
             $fileArray = [];
@@ -64,28 +56,11 @@ class Index{
             }
 
             foreach($dirArray as $filepath){
-                self::updateIndex($filepath);//递归遍历
-                
-                // $filename = basename($filepath);                
-                $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath);                                 
-                $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath)."/index.md";
-                $filename = str_replace([" "],["_"],$filename);
-                $mdString.="\n**[".$filename."](".$filepath.")**\n";
+                self::updateIndex($filepath);//递归遍历                                
+                $mdString.= self::_getDirMdString($filepath);
             }
-            foreach($fileArray as $filepath){                                                
-                // $filename = basename($filepath,".md");                                
-                $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath); //处理中文路径                
-                
-                $originPath = $filepath;
-                
-                $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath);
-                $filename = str_replace([" "],["_"],$filename);                
-                $filename = rtrim($filename,'.md');
-                // if(mb_strpos($originPath,"运维") !== false){
-                //     echo $filepath."\n";
-                //     echo $filename."\n";
-                // }                
-                $mdString.="\n- [".$filename."](".$filepath.")\n";
+            foreach($fileArray as $filepath){                                                                               
+                $mdString.= self::_getFileMdString($filepath);
             }
 
             self::$_fileCount += count($fileArray);
@@ -94,6 +69,53 @@ class Index{
             file_put_contents($dirPath.DIRECTORY_SEPARATOR."index.md",$mdString); 
             closedir($handle);   
         }    
+    }
+
+    /**
+     * 获取上一级目录md string
+     */
+    private static function _getPreDirMdString($dirPath){
+        $mdString = '';
+        if($dirPath != self::$_rootDir){            
+            $preDir = dirname($dirPath);//上级目录  
+            // echo $preDir."\n";          
+            if($preDir == self::$_rootDir){
+                $preDir = "";
+            }
+            $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir);
+            $mdString .= "\n**[上一级目录".$preDir."](".$preDir."/index.md".")**\n";
+        }        
+        return $mdString;
+    }
+
+    /**
+     * 获取目录的 md string
+     */
+    private static function _getDirMdString($filepath){                        
+        // $filename = basename($filepath);                
+        $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath);                                 
+        $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath)."/index.md";
+        $filename = str_replace([" "],["_"],$filename);
+        return "\n**[".$filename."](".$filepath.")**\n";        
+    }
+
+    /**
+     * 获取文件的 md string
+     */
+    private static function _getFileMdString($filepath){
+        // $filename = basename($filepath,".md");                                
+        $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath); //处理中文路径                
+        
+        $originPath = $filepath;
+        
+        $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath);
+        $filename = str_replace([" "],["_"],$filename);                
+        $filename = rtrim($filename,'.md');
+        // if(mb_strpos($originPath,"运维") !== false){
+        //     echo $filepath."\n";
+        //     echo $filename."\n";
+        // }                
+        return "\n- [".$filename."](".$filepath.")\n";
     }
 
 
