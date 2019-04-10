@@ -5,6 +5,8 @@
 
 - [Composer常用命令](/互联网/开发调试/Composer常用命令.md)
 
+- [Composer是_PHP_开发者务必了解的](/互联网/开发调试/Composer是 PHP 开发者务必了解的.md)
+
 - [Ubuntu安装composer](/互联网/开发调试/Ubuntu安装composer.md)
 
 - [Ubuntu安装nodejs+npm环境](/互联网/开发调试/Ubuntu安装nodejs+npm环境.md)
@@ -24,4 +26,4 @@
 - [微信小程序本地真机调试](/互联网/开发调试/微信小程序本地真机调试.md)
 
 
-<font size=2 color='grey'> 2019-04-08 09:08 </font>
+<font size=2 color='grey'> 2019-04-10 14:41 </font>
