@@ -5,6 +5,8 @@
 
 **[产品设计](/产品设计/index.md)**
 
+**[人工智能](/人工智能/index.md)**
+
 **[体育](/体育/index.md)**
 
 **[其他](/其他/index.md)**
@@ -40,4 +42,4 @@
 - [Test](/Test.md)
 
 
-<font size=2 color='grey'> 2019-04-11 16:57 </font>
+<font size=2 color='grey'> 2019-04-14 07:08 </font>
