@@ -9,7 +9,5 @@
 
 - [wp查看当前页面执行的所有sql](/互联网/wordpress/wp杂项技巧/wp查看当前页面执行的所有sql.md)
 
-- [收藏列表](/互联网/wordpress/wp杂项技巧/收藏列表.md)
 
-
-<font size=2 color='grey'> 2019-04-14 07:08 </font>
+<font size=2 color='grey'> 2019-04-16 03:18 </font>

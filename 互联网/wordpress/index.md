@@ -29,9 +29,11 @@
 
 - [wp引入js与css方法](/互联网/wordpress/wp引入js与css方法.md)
 
-- [wp推荐开发手册](/互联网/wordpress/wp推荐开发手册.md)
+- [wp推荐开发手册汇总](/互联网/wordpress/wp推荐开发手册汇总.md)
 
 - [wp文件目录结构与调用关系](/互联网/wordpress/wp文件目录结构与调用关系.md)
+
+- [wp杂项技巧文章链接汇总](/互联网/wordpress/wp杂项技巧文章链接汇总.md)
 
 - [wp相关资源](/互联网/wordpress/wp相关资源.md)
 
@@ -44,4 +46,4 @@
 - [wp钩子源码解析](/互联网/wordpress/wp钩子源码解析.md)
 
 
-<font size=2 color='grey'> 2019-04-14 07:08 </font>
+<font size=2 color='grey'> 2019-04-16 03:18 </font>
