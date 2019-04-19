@@ -17,6 +17,8 @@
 
 **[wordpress](/互联网/wordpress/index.md)**
 
+**[人工智能](/互联网/人工智能/index.md)**
+
 **[前端](/互联网/前端/index.md)**
 
 **[后端](/互联网/后端/index.md)**
@@ -38,4 +40,4 @@
 **[编码规范](/互联网/编码规范/index.md)**
 
 
-<font size=2 color='grey'> 2019-04-16 03:18 </font>
+<font size=2 color='grey'> 2019-04-19 08:13 </font>

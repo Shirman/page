@@ -7,8 +7,6 @@
 
 **[产品设计](/产品设计/index.md)**
 
-**[人工智能](/人工智能/index.md)**
-
 **[体育](/体育/index.md)**
 
 **[其他](/其他/index.md)**
@@ -29,7 +27,7 @@
 
 **[重构自己](/重构自己/index.md)**
 
-**[鸡汤集](/鸡汤集/index.md)**
+**[鸡汤不毒](/鸡汤不毒/index.md)**
 
 - [emoji](/emoji.md)
 
@@ -44,4 +42,4 @@
 - [Test](/Test.md)
 
 
-<font size=2 color='grey'> 2019-04-16 03:18 </font>
+<font size=2 color='grey'> 2019-04-19 08:13 </font>
