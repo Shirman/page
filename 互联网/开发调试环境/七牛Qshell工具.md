@@ -1,44 +1,50 @@
 
 
+
+- [官方文档](#官方文档)
 - [安装](#安装)
 - [使用](#使用)
+    - [account配置](#account配置)
+    - [json配置文件](#json配置文件)
     - [上传](#上传)
     - [刷新目录 refresh.list 每一行一个目录](#刷新目录-refreshlist-每一行一个目录)
     - [刷新链接 refresh.list  每一行一个链接](#刷新链接-refreshlist--每一行一个链接)
-    - [json配置文件](#json配置文件)
     - [上传成功示例](#上传成功示例)
+    - [下载 get](#下载-get)
+    - [其他](#其他)
 
 
-### 安装
-
-下载：http://devtools.qiniu.com/qshell-v2.3.6.zip
 
 
-参考官方文档：
+### 官方文档
 
 https://github.com/qiniu/qshell
 
 https://developer.qiniu.com/kodo/tools/1302/qshell
 
+### 安装
+
 比如ubuntu 64位，把qshell_linux_x64文件复制到/usr/bin/qshell，并赋予执行权限：
 
+    mkdir qiniu 
+    cd qiniu    
+    wget http://devtools.qiniu.com/qshell-v2.3.6.zip
+    unzip qshell-v2.3.6.zip
+    sudo cp qshell_linux_x64 /usr/bin/qshell
     sudo chmod +x /usr/bin/qshell
 
 ### 使用
 
 > 以下以类unix系统为范例
 
-#### 上传
+#### account配置
 
-    qshell qupload qiniu.conf.json
+GetBucketManager: Open account file error, open /home/tsing/.qshell/account.json: no such file or directory, please use `account` to set AccessKey and SecretKey first
 
-#### 刷新目录 refresh.list 每一行一个目录
+详见：https://github.com/qiniu/qshell/blob/master/docs/account.md
 
-    qshell cdnrefresh -dirs refresh.list
+    qshell account ELUs327kxVPJrGCXqWae9yioc0xYZyrIpbM6Wh6x LVzZY2SqOQ_I_kM1n00ygACVBArDvOWtiLkDtKiw name_test
 
-#### 刷新链接 refresh.list  每一行一个链接
-
-    qshell cdnrefresh refresh.list
 
 #### json配置文件
 
@@ -63,11 +69,23 @@ qiniu.conf.json范例：
     "overwrite"          :   true
     }
 
+#### 上传
+
+    qshell qupload qiniu.conf.json
+
+#### 刷新目录 refresh.list 每一行一个目录
+
+    qshell cdnrefresh -dirs refresh.list
+
+#### 刷新链接 refresh.list  每一行一个链接
+
+    qshell cdnrefresh refresh.list
+
 #### 上传成功示例
 
 
-    chenqingji@ubuntu:~/qiniu$ qshell qupload weixin.conf.json 
-    Writing upload log to file /home/chenqingji/.qshell/qupload/faa6945ae7344d966f1bd51cb0e47a6a/faa6945ae7344d966f1bd51cb0e47a6a.log
+    tsing@ubuntu:~/qiniu$ qshell qupload weixin.conf.json 
+    Writing upload log to file /home/tsing/.qshell/qupload/faa6945ae7344d966f1bd51cb0e47a6a/faa6945ae7344d966f1bd51cb0e47a6a.log
 
     Uploading /root/qiniu/images/mini/image/gw1cj.png => test/gw1cj.png [1/5, 20.0%] ...
     Uploading /root/qiniu/images/mini/image/gw2gncj.png => test/gw2gncj.png [2/5, 40.0%] ...
@@ -75,7 +93,7 @@ qiniu.conf.json范例：
     Uploading /root/qiniu/images/mini/image/gw4sy.png => test/gw4sy.png [4/5, 80.0%] ...
     Uploading /root/qiniu/images/mini/image/gw5gywm.png => test/gw5gywm.png [5/5, 100.0%] ...
 
-    See upload log at path /home/chenqingji/.qshell/qupload/faa6945ae7344d966f1bd51cb0e47a6a/faa6945ae7344d966f1bd51cb0e47a6a.log
+    See upload log at path /home/tsing/.qshell/qupload/faa6945ae7344d966f1bd51cb0e47a6a/faa6945ae7344d966f1bd51cb0e47a6a.log
 
 
 
@@ -87,12 +105,25 @@ qiniu.conf.json范例：
 
     http://imgcdn.xxxx.com/mini/image/1.png
 
+#### 下载 get
+
+详见官方文档：https://github.com/qiniu/qshell/blob/master/docs/get.md
+
+格式：
+
+    qshell get <Bucket> <Key> [-o <OutFile>]
+
+示例
+    
+    qshell get qiniutest test.txt
+
+
 
 #### 其他
 
 如果第一次使用qshell会碰到需要先设置account的提示：
 
-    GetBucketManager: Open account file error, open /home/chenqingji/.qshell/account.json: no such file or directory, please use `account` to set AccessKey and SecretKey first
+    GetBucketManager: Open account file error, open /home/tsing/.qshell/account.json: no such file or directory, please use `account` to set AccessKey and SecretKey first
 
 解决：
 

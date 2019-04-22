@@ -1,11 +1,8 @@
 
 
-
-
-
 - [python让挑选家具更方便](https://mp.weixin.qq.com/s/tQ6uGBrxSLfJR4kk_GKB1Q)
 
-- [python爬虫学习：爬虫QQ说说并生成词云图，回忆满满](https://mp.weixin.qq.com/s/ukpZ2TPiP4cDRF_f7PGMXw)
+- *[python爬虫学习：爬虫QQ说说并生成词云图，回忆满满](https://mp.weixin.qq.com/s/ukpZ2TPiP4cDRF_f7PGMXw)
 
 - [python itchat 爬取微信好友信息](https://mp.weixin.qq.com/s/4EXgR4GkriTnAzVxluJxmg)
 

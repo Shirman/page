@@ -13,6 +13,8 @@
 
 - [python爬虫分析示例汇总](/互联网/python/python爬虫分析示例汇总.md)
 
+- [python简要教程](/互联网/python/python简要教程.md)
+
 - [python编码风格指南](/互联网/python/python编码风格指南.md)
 
 - [Python资源大全版](/互联网/python/Python资源大全版.md)
@@ -28,4 +30,4 @@
 - [推荐11个实用Python库](/互联网/python/推荐11个实用Python库.md)
 
 
-<font size=2 color='grey'> 2019-04-20 16:46 </font>
+<font size=2 color='grey'> 2019-04-22 10:35 </font>
