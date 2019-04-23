@@ -1,6 +1,8 @@
  索引：
 
 
+**[.vscode](/.vscode/index.md)**
+
 **[三观志](/三观志/index.md)**
 
 **[互联网](/互联网/index.md)**
@@ -29,6 +31,8 @@
 
 **[鸡汤不毒](/鸡汤不毒/index.md)**
 
+- [.gitignore](/.gitignore)
+
 - [emoji](/emoji.md)
 
 - [favorite](/favorite.md)
@@ -42,4 +46,4 @@
 - [Test](/Test.md)
 
 
-<font size=2 color='grey'> 2019-04-22 10:35 </font>
+<font size=2 color='grey'> 2019-04-23 11:35 </font>

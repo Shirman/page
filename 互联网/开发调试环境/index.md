@@ -11,6 +11,8 @@
 
 - [Ubuntu安装nodejs+npm环境](/互联网/开发调试环境/Ubuntu安装nodejs+npm环境.md)
 
+- [vscode配置连接远程服务器实现同步](/互联网/开发调试环境/vscode配置连接远程服务器实现同步.md)
+
 - [windows10安装bower](/互联网/开发调试环境/windows10安装bower.md)
 
 - [windows10安装composer](/互联网/开发调试环境/windows10安装composer.md)
@@ -26,4 +28,4 @@
 - [微信小程序本地真机调试](/互联网/开发调试环境/微信小程序本地真机调试.md)
 
 
-<font size=2 color='grey'> 2019-04-22 10:35 </font>
+<font size=2 color='grey'> 2019-04-23 11:35 </font>

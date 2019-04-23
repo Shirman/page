@@ -25,9 +25,11 @@
 
 - [python面向对象知识](/互联网/python/python面向对象知识.md)
 
+- [ubuntu-pyhon3-scrapy环境](/互联网/python/ubuntu-pyhon3-scrapy环境.md)
+
 - [一次搞懂Python装饰器](/互联网/python/一次搞懂Python装饰器.md)
 
 - [推荐11个实用Python库](/互联网/python/推荐11个实用Python库.md)
 
 
-<font size=2 color='grey'> 2019-04-22 10:35 </font>
+<font size=2 color='grey'> 2019-04-23 11:35 </font>

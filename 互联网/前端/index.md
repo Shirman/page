@@ -5,6 +5,8 @@
 
 - [iView文档笔记](/互联网/前端/iView文档笔记.md)
 
+- [javascript面试概要](/互联网/前端/javascript面试概要.md)
+
 - [jqGrid前端列表组件使用说明](/互联网/前端/jqGrid前端列表组件使用说明.md)
 
 - [NPM与Bower包管理的区别](/互联网/前端/NPM与Bower包管理的区别.md)
@@ -22,4 +24,4 @@
 - [前端页面布局篇](/互联网/前端/前端页面布局篇.md)
 
 
-<font size=2 color='grey'> 2019-04-22 10:35 </font>
+<font size=2 color='grey'> 2019-04-23 11:35 </font>
