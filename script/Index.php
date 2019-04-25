@@ -123,7 +123,7 @@ class Index{
      * 过滤指定文件
      */
     private static function _filterFile($file){
-        $filters = [".","..",".git","_config.yml","index.md","image",'script'];
+        $filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode'];
         if(in_array($file,$filters)){
             return true;
         }
