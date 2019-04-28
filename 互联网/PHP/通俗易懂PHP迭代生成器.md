@@ -212,7 +212,24 @@ foreach (readTxt() as $key => $value) {
 ## 参考
 
 
-更多高深技巧比如携程多任务等，可以参考鸟哥博客：http://www.laruence.com/2015/05/28/3038.html
+更多高深技巧比如携程多任务等，可以参考鸟哥博客：
+<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+    <div>
+        <p>
+            <font size=3 style="color:black;">
+                <a href="http://www.laruence.com/2015/05/28/3038.html" _target="blank" style="color:black;">在PHP中使用协程实现多任务调度 | 风雪之隅</a>
+            </font>
+        </p>
+    </div>
+    <div style="display:flex;display:-webkit-flex;">
+        <div style="width:50px;">
+            <img style="width:50px;" src="http://www.laruence.com/favicon.ico" />
+        </div>
+        <div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;">
+            <font size=2 color=grey>PHP5.5一个比较好的新功能是加入了对迭代生成器和协程的支持.对于生成器,PHP的文档和各种其他的博客文章已经有了非常详细的讲解.协程相对受到的关注就少了,因为协程虽然有很强大的功能但相对比...</font>
+        </div>
+    </div>
+</div>
 
 
 <font size=2 color=grey>[阅读原文](https://segmentfault.com/a/1190000012334856)</font>

@@ -1,10 +1,6 @@
  索引：
 
 
-**[.vscode](/.vscode/index.md)**
-
-**[三观志](/三观志/index.md)**
-
 **[互联网](/互联网/index.md)**
 
 **[产品设计](/产品设计/index.md)**
@@ -24,6 +20,8 @@
 **[生活健康](/生活健康/index.md)**
 
 **[营销运营](/营销运营/index.md)**
+
+**[记录](/记录/index.md)**
 
 **[读书笔记](/读书笔记/index.md)**
 
@@ -46,4 +44,4 @@
 - [Test](/Test.md)
 
 
-<font size=2 color='grey'> 2019-04-23 11:35 </font>
+<font size=2 color='grey'> 2019-04-28 12:43 </font>
