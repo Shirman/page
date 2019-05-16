@@ -17,6 +17,8 @@
 
 - [webpack与bower的区别](/互联网/前端/webpack与bower的区别.md)
 
+- [一文读懂_JavaScript_和_ECMAScript_的区别](/互联网/前端/一文读懂 JavaScript 和 ECMAScript 的区别.md)
+
 - [前端开发技术指南和趋势-2019版](/互联网/前端/前端开发技术指南和趋势-2019版.md)
 
 - [前端性能优化策略-移动端](/互联网/前端/前端性能优化策略-移动端.md)
@@ -24,4 +26,4 @@
 - [前端页面布局篇](/互联网/前端/前端页面布局篇.md)
 
 
-<font size=2 color='grey'> 2019-05-07 16:07 </font>
+<font size=2 color='grey'> 2019-05-16 16:24 </font>
