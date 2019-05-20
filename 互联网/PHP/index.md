@@ -69,6 +69,8 @@
 
 - [zend-guard工具使用](/互联网/PHP/zend-guard工具使用.md)
 
+- [前端快速入手php](/互联网/PHP/前端快速入手php.md)
+
 - [如何严格设置php的session过期时间](/互联网/PHP/如何严格设置php的session过期时间.md)
 
 - [如何挑选PHP框架](/互联网/PHP/如何挑选PHP框架.md)
@@ -86,4 +88,4 @@
 - [通俗易懂PHP迭代生成器](/互联网/PHP/通俗易懂PHP迭代生成器.md)
 
 
-<font size=2 color='grey'> 2019-05-16 16:24 </font>
+<font size=2 color='grey'> 2019-05-20 10:13 </font>
