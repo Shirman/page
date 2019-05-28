@@ -77,9 +77,19 @@ qiniu.conf.json范例：
 
     qshell cdnrefresh -dirs refresh.list
 
+refresh.list
+
+    https://image.xxx.com/image/list/
+    https://image.xxx.com/image/list2/
+
 #### 刷新链接 refresh.list  每一行一个链接
 
     qshell cdnrefresh refresh.list
+
+refresh.list
+
+    https://image.xxx.com/image/list/1.png
+    https://image.xxx.com/image/list/2.png
 
 #### 上传成功示例
 

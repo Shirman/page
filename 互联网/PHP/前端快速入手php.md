@@ -35,6 +35,10 @@
 - NetBeans
 - ZendStudio
 
+## php基础知识
+
+建议先看php官方语言参考：
+https://www.php.net/manual/zh/langref.php
 
 ## 框架
 

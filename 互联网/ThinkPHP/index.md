@@ -11,5 +11,7 @@
 
 - [ThinkPHP如何使用cli模式](/互联网/ThinkPHP/ThinkPHP如何使用cli模式.md)
 
+- [ThinkPHP模板编译缓存](/互联网/ThinkPHP/ThinkPHP模板编译缓存.md)
 
-<font size=2 color='grey'> 2019-05-20 10:13 </font>
+
+<font size=2 color='grey'> 2019-05-28 16:30 </font>
