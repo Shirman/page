@@ -13,6 +13,8 @@
 
 - [CentOS下安装ImageMagick和PHP-Imagick扩展](/互联网/PHP/CentOS下安装ImageMagick和PHP-Imagick扩展.md)
 
+- [php-fpm与cgi及fastcgi](/互联网/PHP/php-fpm与cgi及fastcgi.md)
+
 - [PHP7_vs_HHVM比较](/互联网/PHP/PHP7_vs_HHVM比较.md)
 
 - [PHP_Vs_Node.js](/互联网/PHP/PHP_Vs_Node.js.md)
@@ -88,4 +90,4 @@
 - [通俗易懂PHP迭代生成器](/互联网/PHP/通俗易懂PHP迭代生成器.md)
 
 
-<font size=2 color='grey'> 2019-05-28 16:30 </font>
+<font size=2 color='grey'> 2019-06-11 15:48 </font>
