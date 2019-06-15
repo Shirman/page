@@ -18,4 +18,4 @@
 - [7-提交插件到wp官方市场](/互联网/wordpress/wp插件/7-提交插件到wp官方市场.md)
 
 
-<font size=2 color='grey'> 2019-06-11 15:48 </font>
+<font size=2 color='grey'> 2019-06-15 10:32 </font>
