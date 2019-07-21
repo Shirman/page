@@ -190,8 +190,6 @@
 
 - [当我们在谈大前端的时候，我们谈的是什么 - V2EX](https://www.v2ex.com/amp/t/350123)
 
-- [chenqingji/FE-Guide: 汇集了前端技术书籍、前端热门技术、前端发展等资料。](https://github.com/chenqingji/FE-Guide)
-
 - [转载 web前端进阶四阶段 - 洪合码农的博客 - CSDN博客](https://blog.csdn.net/qq_16429571/article/details/78744406)
 
 - [进程与线程的一个简单解释 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html)
@@ -490,15 +488,7 @@
 
 - [零云开源通用后台lyadmin｜零云－领先的积木式开发平台](https://www.lingyun.net/lyadmin.html)
 
-- [chenqingji/ThinkWechat: 为thinkphp提供的微信SDK，集成opensns管理后台，wechat-php-sdk, WEUI 实现快速开发微信企业号，微信服务号，钉钉办公套件，内置二维码生成，邮件短信微信消息发送，也许是thinkphp最好最快的微信开发工具。](https://github.com/chenqingji/ThinkWechat)
-
-- [chenqingji/thinkphp-bjyadmin: thinkphp整合Auth权限管理、支付宝、微信支付、阿里oss、友盟推送、融云即时通讯、云通讯短信、Email、Excel、PDF等等；基于thinkphp扩展了大量的功能；而不改动thinkphp核心；非常方便的升级、移植和使用；](https://github.com/chenqingji/thinkphp-bjyadmin)
-
-- [chenqingji/leacmf-thinkphp: leacmf是一款基于ThinkPHP5.1+layui的极速后台和api开发框架。](https://github.com/chenqingji/leacmf-thinkphp)
-
 - [weiphp学习视频   - 专辑详情](http://v.qq.com/vplus/6ea5afa98685158967d5bd9617482a49/foldervideos/s0x000101o33b1c)
-
-- [chenqingji/qwadmin: 基于thinkphp与aceadmin模板的后台管理系统](https://github.com/chenqingji/qwadmin)
 
 - [baijunyao/thinkphp-bjyadmin: thinkphp整合Auth权限管理、支付宝、微信支付、阿里oss、友盟推送、融云即时通讯、云通讯短信、Email、Excel、PDF等等；基于thinkphp扩展了大量的功能；而不改动thinkphp核心；非常方便的升级、移植和使用；](https://github.com/baijunyao/thinkphp-bjyadmin)
 
@@ -1296,8 +1286,6 @@
 
 - [微信小程序UI组件、开发框架、实用库... - icyhoo - 博客园](https://www.cnblogs.com/icyhoo/p/6282574.html)
 
-- [chenqingji/awesome-wechat-weapp: 微信小程序开发资源汇总 :100:](https://github.com/chenqingji/awesome-wechat-weapp)
-
 - [220款小程序源码不单卖【因为小程序源码太多只展示了部分效果】 - Jiaoben.it](http://www.jiaoben.it/product/view27.html)
 
 - [微信小程序实战：CMS系统开发 - ThinkPHP框架](http://www.thinkphp.cn/code/2961.html)
@@ -1418,7 +1406,6 @@
 
 - [开源的家庭智能控制系统 Home Assistant - 简书](https://www.jianshu.com/p/2adcaaa071d8)
 
-- [chenqingji/home-assistant: Open source home automation that puts local control and privacy first](https://github.com/chenqingji/home-assistant)
 
 - [HA文档 - HAChina 中文网](https://www.hachina.io/docs/115.html)
 
@@ -2409,8 +2396,6 @@
 - [WordPress版微信小程序1.5版本发布 – 守望轩](https://www.watch-life.net/wordpress/wordpress-weixin-1-5.html)
 
 - [微信小程序，个人开发者创业新平台 – 守望轩](https://www.watch-life.net/wechat/weixin-app.html)
-
-- [chenqingji/winxin-app-watch-life.net: WordPress版微信小程序](https://github.com/chenqingji/winxin-app-watch-life.net)
 
 #### wordpress开发
 

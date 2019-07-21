@@ -199,7 +199,7 @@ Poedit 会读取我们的主题文件，并生成要翻译的字符串列表：
 
 
 ----
-<font size=2 color='grey'>本文收藏来自互联网，著作权归原作者所有，如有侵权请联系删除</font>
+<font size=2 color='grey'>本文收藏来自互联网，用于学习研究，著作权归原作者所有，如有侵权请联系删除</font>
 
 markdown @tsingchan 
 

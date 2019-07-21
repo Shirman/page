@@ -1259,7 +1259,7 @@ Python 实现的算法和设计模式。
 <font color=grey size=2>参考来源：<https://github.com/jobbole/awesome-python-cn/> 根据需要调整，版权归原作者所有。</font>
 
 ----
-<font size=2 color='grey'>本文收藏来自互联网，著作权归原作者所有，如有侵权请联系删除</font>
+<font size=2 color='grey'>本文收藏来自互联网，用于学习研究，著作权归原作者所有，如有侵权请联系删除</font>
 
 markdown @tsingchan 
 

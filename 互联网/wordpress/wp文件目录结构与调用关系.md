@@ -210,7 +210,7 @@ http://www.cnblogs.com/vicenteforever/articles/1866848.html
 
 
 ----
-<font size=2 color='grey'>本文收藏来自互联网，著作权归原作者所有，如有侵权请联系删除</font>
+<font size=2 color='grey'>本文收藏来自互联网，用于学习研究，著作权归原作者所有，如有侵权请联系删除</font>
 
 markdown @tsingchan 
 

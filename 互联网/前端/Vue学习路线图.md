@@ -192,6 +192,6 @@ NativeScript 是一个用于在 iOS 和 Android 上使用原生用户界面组�
 https://vuejsdevelopers.com/2018/12/04/vue-js-2019-knowledge-map/
 
 ----
-本文收藏来自互联网，著作权归原作者所有
+本文收藏来自互联网，用于学习研究，著作权归原作者所有
 
 @tsingchan markdown format
