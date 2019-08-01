@@ -62,7 +62,7 @@ select 的类型，可能会有以下几种：
 
 #### primary
 
-最外层的 select
+最外层的 select （存在子查询的查询）
 
 #### union
 

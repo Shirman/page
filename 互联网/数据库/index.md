@@ -3,9 +3,13 @@
 
 **[上一级目录/互联网](/互联网/index.md)**
 
+- [mysql优化实例汇总](/互联网/数据库/mysql优化实例汇总.md)
+
 - [mysql利用索引优化order-by](/互联网/数据库/mysql利用索引优化order-by.md)
 
 - [mysql教科书般优化干货](/互联网/数据库/mysql教科书般优化干货.md)
+
+- [mysql的join明明白白](/互联网/数据库/mysql的join明明白白.md)
 
 - [mysql的索引是什么怎么优化](/互联网/数据库/mysql的索引是什么怎么优化.md)
 
@@ -16,4 +20,4 @@
 - [高性能mysql笔记](/互联网/数据库/高性能mysql笔记.md)
 
 
-<font size=2 color='grey'> 2019-07-21 15:15 </font>
+<font size=2 color='grey'> 2019-08-01 12:14 </font>

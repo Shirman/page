@@ -17,9 +17,11 @@
 
 - [服务端开发都做了什么](/互联网/后端/服务端开发都做了什么.md)
 
+- [说清WebService的SOAP和Restful及HTTP请求](/互联网/后端/说清WebService的SOAP和Restful及HTTP请求.md)
+
 - [通俗理解session与cookie运行机制](/互联网/后端/通俗理解session与cookie运行机制.md)
 
 - [随意写一些关于开发模式和原则注解](/互联网/后端/随意写一些关于开发模式和原则注解.md)
 
 
-<font size=2 color='grey'> 2019-07-21 15:15 </font>
+<font size=2 color='grey'> 2019-08-01 12:14 </font>
