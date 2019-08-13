@@ -39,9 +39,11 @@
 
 **[版本管理](/互联网/版本管理/index.md)**
 
+**[算法](/互联网/算法/index.md)**
+
 **[编码规范](/互联网/编码规范/index.md)**
 
 **[软件工程](/互联网/软件工程/index.md)**
 
 
-<font size=2 color='grey'> 2019-08-01 12:14 </font>
+<font size=2 color='grey'> 2019-08-13 12:18 </font>

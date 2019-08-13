@@ -3,6 +3,8 @@
 
 **[上一级目录/互联网](/互联网/index.md)**
 
+**[mysql理论实战系列笔记](/互联网/数据库/mysql理论实战系列笔记/index.md)**
+
 - [mysql优化实例汇总](/互联网/数据库/mysql优化实例汇总.md)
 
 - [mysql利用索引优化order-by](/互联网/数据库/mysql利用索引优化order-by.md)
@@ -17,7 +19,9 @@
 
 - [详解mysql-explain](/互联网/数据库/详解mysql-explain.md)
 
+- [面试索引前先看阿里面试官怎么问](/互联网/数据库/面试索引前先看阿里面试官怎么问.md)
+
 - [高性能mysql笔记](/互联网/数据库/高性能mysql笔记.md)
 
 
-<font size=2 color='grey'> 2019-08-01 12:14 </font>
+<font size=2 color='grey'> 2019-08-13 12:18 </font>
