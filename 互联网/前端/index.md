@@ -13,6 +13,8 @@
 
 - [NPM与Bower包管理的区别](/互联网/前端/NPM与Bower包管理的区别.md)
 
+- [Promise全解析](/互联网/前端/Promise全解析.md)
+
 - [Vue基础笔记](/互联网/前端/Vue基础笔记.md)
 
 - [Vue学习路线图](/互联网/前端/Vue学习路线图.md)
@@ -34,4 +36,4 @@
 - [彻底理解URL编码](/互联网/前端/彻底理解URL编码.md)
 
 
-<font size=2 color='grey'> 2019-09-11 03:34 </font>
+<font size=2 color='grey'> 2019-09-12 08:33 </font>
