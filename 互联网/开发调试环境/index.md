@@ -9,7 +9,7 @@
 
 - [Ubuntu安装composer](/互联网/开发调试环境/Ubuntu安装composer.md)
 
-- [Ubuntu安装nodejs+npm环境](/互联网/开发调试环境/Ubuntu安装nodejs+npm环境.md)
+- [Ubuntu安装nodejs-npm-bower环境](/互联网/开发调试环境/Ubuntu安装nodejs-npm-bower环境.md)
 
 - [vscode配置连接远程服务器实现同步](/互联网/开发调试环境/vscode配置连接远程服务器实现同步.md)
 
@@ -28,4 +28,4 @@
 - [微信小程序本地真机调试](/互联网/开发调试环境/微信小程序本地真机调试.md)
 
 
-<font size=2 color='grey'> 2019-09-27 12:16 </font>
+<font size=2 color='grey'> 2019-10-22 17:43 </font>

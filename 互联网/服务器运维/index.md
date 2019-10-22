@@ -17,6 +17,8 @@
 
 - [Ubuntu-apt阿里云源配置](/互联网/服务器运维/Ubuntu-apt阿里云源配置.md)
 
+- [Ubuntu-php7环境](/互联网/服务器运维/Ubuntu-php7环境.md)
+
 - [Ubuntu下安装使用RubyOnRails](/互联网/服务器运维/Ubuntu下安装使用RubyOnRails.md)
 
 - [Ubuntu安装imageMagick](/互联网/服务器运维/Ubuntu安装imageMagick.md)
@@ -32,4 +34,4 @@
 - [自颁发SSL证书及nginx_apache配置](/互联网/服务器运维/自颁发SSL证书及nginx_apache配置.md)
 
 
-<font size=2 color='grey'> 2019-09-27 12:16 </font>
+<font size=2 color='grey'> 2019-10-22 17:43 </font>

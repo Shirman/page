@@ -21,6 +21,8 @@
 
 - [悲观锁实践](/互联网/数据库与缓存/悲观锁实践.md)
 
+- [明明白白事务ACID](/互联网/数据库与缓存/明明白白事务ACID.md)
+
 - [漫画B+树](/互联网/数据库与缓存/漫画B+树.md)
 
 - [详解mysql-explain](/互联网/数据库与缓存/详解mysql-explain.md)
@@ -30,4 +32,4 @@
 - [高性能mysql笔记](/互联网/数据库与缓存/高性能mysql笔记.md)
 
 
-<font size=2 color='grey'> 2019-09-27 12:16 </font>
+<font size=2 color='grey'> 2019-10-22 17:43 </font>
