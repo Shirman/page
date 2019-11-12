@@ -43,7 +43,7 @@ B端产品应该如何设计？
 
 其实后台产品更严格的意义讲也是B端产品类型中的一种，当然细分的领域类型有很多，也分针对性。针对个人（小型团队）的后台产品比较容易在大众的视线里被看到，这一类中最常见的后台产品就是**微信公众平台**了。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5LABnq4wBX0R2D71V6kZhiabUgCdSicmqKsdj1sa9cdNmia8palTWkibFGYg/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/e16750617e1cc9b9e3861f8bbf8cdf62.png)
 
 （微信公众平台通过管理、分析、运营，让企业＆个人能够更好的提高服务意识）
 
@@ -53,13 +53,13 @@ B端产品应该如何设计？
 
 办公自动化(OA: OFFICE AUTOMATION)是采用Internet/Intranet技术，**基于工作流**概念，使企业内部人员方便快捷地共享信息，**高效协同**工作；改变过去复杂、低效的手工办公方式，实现迅速、全方位的信息采集、处理，为企业管理和决策提供科学依据。企业实现办公自动化程度也是衡量其实现现代化管理的标准。办公自动化不仅兼顾个人办公效率提高，更重要的是可实现群体协同工作。凭借网络，这种交流与协调几乎可以在瞬间完成。这里所说的群体工作，可以包括在地理上分布很广，甚至在全球上各个地方，以至于工作时间都不一样的一群工作人员。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5LGiadHbCgIJ2I7qS62zmNznxwsW567Sw4lR7hSTo642chEviadXLbJQfA/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/f31fcad84cdb7497944de26578de57ca.png)
 
 ### ERP系统
 
 ERP是Enterprise Resource Planning（企业资源计划）的简称，是上个世纪90年代美国一家IT公司根据当时计算机信息、IT技术发展及企业对**供应链管理**的需求，预测在今后信息时代企业管理信息系统的发展趋势和即将发生变革，而提出了这个概念。 ERP是针对**物资资源管理**（物流）、**人力资源管理**（人流）、**财务资源管理**（财流）、**信息资源管理**（信息流）集成一体化的企业管理软件。它将包含客户/服务架构，使用图形用户接口，应用开放系统制作。除了已有的标准功能，它还包括其它特性，如品质、过程运作管理、以及调整报告等。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5Lguu6ibYEMpWQbIFq2BYvzufqJjvQqvXc32FnfMicw5RSEQib6ZUX0lia2g/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/60768d18b1af637705f80b4cc2bc8585.png)
 
 
 
@@ -86,7 +86,7 @@ SAAS系统是一种通过Internet提供软件的模式，厂商将应用软件�
 
 相对于C端产品用户群体的庞大和多种类，B端产品显得要相对专注。从16年到现在，至少我经历的B端产品有近十种之多，每一类后台产品都会有相对聚焦的用户群体以及产品目标。在做B端产品之前，我对B端产品的初步理解是大而广泛的功能集成类产品，有点类似于一个超级后台的概念。但是实际进入到行业中接触之后，才发现实际上对于B端产品而言，每个产品都是针对行业链内的某一个节点而做。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5LPbZBtOYZYf7LvicdpBqIV4MTYLnj8Q4IRrdcU40ZoqTO8QNoAnk07eg/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/11570444f5c59fb90bab10a752bbefa5.png)
 
 做一个比较简单的类比：如同产品设计开发的过程中，产品经理、交互设计师、UI设计师、前后端开发、测试等，大家所需要功能都非常的多，但是使用的工具都截然不同。但是每一个工具对于产品设计开发过程中的推动意义都是关键的。
 
@@ -104,7 +104,7 @@ SAAS系统是一种通过Internet提供软件的模式，厂商将应用软件�
 
 但是同样的情况出自于B端产品，可能就截然不同了，对于**B端产品而言，功能是多而必要的**。例如OA办公系统中的“申请提报功能”，这个功能针对的根本不是针对于单一类型的用户、单一类型的场景。而是针对很多不同岗位的用户以及不同的提报需求场景。所以很多初入B端产品的UI设计师而言，他们认为“申请提报功能”只是一个信息输入页面，但是实际工作的时候却要按照七十多种不同的提报方式去设计内容，并且根据提报需求的不同，后续还会有更多的差异化设计（附件上传、日报提交、订单流审批等等）
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5LFAvTT7tgGSph1J1cicJWo80Dfb5cDssIUDED2joZ39NcwE7V3ypgJkA/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/dbb66b5a7c11e6c8f69b6d6c7d1f6a4f.png)
 
 
 
@@ -118,7 +118,7 @@ SAAS系统是一种通过Internet提供软件的模式，厂商将应用软件�
 
 两者之间的差异性在于B端产品在满足客户的需求后，**B端产品间接服务于用户**；而**C端产品直面用户**。这其实就造成了B端产品在设计的过程中需要平衡“客户”与“用户”之间的关系，个人认为一个健康的B端产品应该是既满足“客户”的需求，又提升“用户”的体验，不然很可能会出现“客户好评 and 用户差评”的情况。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5LldEa0XWSWXiceBMDiajrN6ktg7TLpaiahviaPf2ep4AWKgTUrJ3zIwBO7g/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/156f38ca65028a124011adc588939a63.png)
 
 但是对于很多老板而言，在同样的产品服务之间，他们往往会倾向于付款使用服务，这其实也是B端产品设计中一个比较有趣的点。
 
@@ -128,7 +128,7 @@ SAAS系统是一种通过Internet提供软件的模式，厂商将应用软件�
 
 > 还是不少产品经常是在办公室设想用户如何使用产品，设想给用户提供这样那样的功能，可能对于用户帮助很大或对我们产品帮助很大。这不能说错误，应该说是不科学的，个人信奉辩证唯物主义，一切从实际出发，多去和用户沟通，了解用户如何使用产品，用户会遇到什么问题，用户会有什么疑问需求，如果没有调查可以找有调查的人获取问题认识，再通过产品设计解决用户问题。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5LybmcYlFFqIfZXASXc0DkWUm7ndKuAW5W8Emwk42Sr0ekPJGtcAlw3Q/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/2c95982823206bff829c93fe67dd54a0.png)
 
 （很多人把B端产品设计看作在迷雾中搭建桥梁）
 
@@ -148,7 +148,7 @@ SAAS系统是一种通过Internet提供软件的模式，厂商将应用软件�
 
 这个应该不需要再多解释了，**完美的流程**归类会让产品的需求方、设计和开发的对接方以及用户都非常满意。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5Lu63VzKicQbg22WKJlIMXU8rMgYrROUkQomSzyUMJYKl6enlIq522ibPw/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/9ae340d65a39ed50c8b12bda26cdc855.png)
 
 ### 价值体系搭建
 
@@ -160,7 +160,7 @@ SAAS系统是一种通过Internet提供软件的模式，厂商将应用软件�
 
 例如我们在下访调研的过程中跟经销商聊了一下（快消行业），不同的经销商对于自己生意管理的方法不同，人员组成（业代、库管、内勤）也完全不同。所以有的老板会跟我聊一聊，有没有什么更新鲜或者更有挑战性的玩法儿，能让下面的业代收集到更多有价值的数据；有的老板会跟我聊产品的功能太多了，手下的业代使用起来不方便，意见很大。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5Lw1lWMFCctKEybvIFBCM9atMoeZibSrzumdhcQaBzfwhKde3lvMGvbPQ/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/ce9a2c5785c59581a98d16fb12ffdb7a.png)
 
 （门店拜访是经销商业代的日常工作，有的业代热衷抄单，有的业代喜欢用APP录入，各有不同）
 
@@ -180,7 +180,7 @@ B端产品的功能设计也许并不在于亮眼，而是在于**均衡和稳�
 
 对B端产品来讲，设计师在设计的时候是不需要耗费太多的思考的，只是去按照交互设计师的规划堆砌图表和列表。但是对于使用者来讲，其中纵横交错的商业逻辑和业务逻辑却是给用户搭建了一个十分高的门槛。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5L1qGuzGVm8f7EClMC3uNxnu3HQBJicvxLoqcSQbZSvSXPUicJfwmLh4Yw/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/79e9a2621c7c9ac69cb326f80a11e612.png)
 
 
 
@@ -198,7 +198,7 @@ B端产品的功能设计也许并不在于亮眼，而是在于**均衡和稳�
 
 B端产品因为集成了很多的功能和信息，所以在设计的过程中尽可能合理的安排信息的布局是非常的重要的。常见的方法是优化字段以及页面元素，让用户看起来更直接，并且加入一些功能引导部分，让用户对于一些功能有很快的认知（这个功能是什么＆我能用这个功能做什么）
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5LSJKhs0GiauTeFxfPAwXxywiafr17xeT5KeEmajaaeOXWxgib1FHRbKTGw/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/0ad7c50e451446f357ee76d13e8e38c1.png)
 
 
 
@@ -208,7 +208,7 @@ B端产品因为集成了很多的功能和信息，所以在设计的过程中�
 
 **B端**产品的用户一般比C端产品的用户要更有**专业性**，同时也更有**耐心**。但是如果我们的页面设计的功能过于复杂或者为了丰富页面加入很多的冗杂字段，会对用户造成不必要的影响。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5LQwLqItxJuicMP3SZ3ECDJqAGqd4d6LxBs6hEeTytkEdprVHibz7CegQA/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/1e6a1cfb6ae0356d92abfbb10ec13e61.png)
 
 
 
@@ -225,7 +225,7 @@ B端产品因为集成了很多的功能和信息，所以在设计的过程中�
 
 > 只有聪明人和聪明人在一起，谣言才不会飞起，同样的，整条战线上都是聪明人时，发布后的产品将会是高保真的产品。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/gqlTeAEoEBrlmScTLxJW4KD0kFzmmM5LPEQVSsX6fpLljPxnoscicOx42HRicsXnvpp2eHPXTov1iceoRIj0TTtMQ/640?wx_fmt=png)
+![](https://www.9ong.com//images/remote/d7a1fd3b04ef8236435865a369b396c5.png)
 
 
 
