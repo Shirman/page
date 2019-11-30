@@ -54,6 +54,9 @@ ThinkPHP6试用简易报告
 - [think助手工具库](#think助手工具库)
 - [助手函数](#助手函数)
 - [更新升级](#更新升级)
+- [自动补全](#自动补全)
+- [单元测试](#单元测试)
+- [更多](#更多)
 - [设计模式](#设计模式)
 
 <!-- /TOC -->
@@ -77,32 +80,10 @@ ThinkPHP6试用简易报告
     Updating dependencies (including require-dev)
     Package operations: 14 installs, 0 updates, 0 removals
     - Installing psr/container (1.0.0): Downloading (100%)
-    - Installing topthink/think-helper (v3.1.3): Downloading (100%)
-    - Installing psr/log (1.1.2): Downloading (100%)
-    - Installing psr/simple-cache (1.0.1): Downloading (100%)
-    - Installing topthink/think-orm (v2.0.28): Downloading (100%)
-    - Installing symfony/polyfill-php72 (v1.12.0): Downloading (100%)
-    - Installing symfony/polyfill-mbstring (v1.12.0): Loading from cache
-    - Installing symfony/var-dumper (v4.4.0): Downloading (100%)
-    - Installing opis/closure (3.4.1): Downloading (100%)
-    - Installing psr/cache (1.0.1): Downloading (100%)
-    - Installing league/flysystem (1.0.57): Downloading (100%)
-    - Installing league/flysystem-cached-adapter (1.0.9): Downloading (100%)
-    - Installing topthink/framework (v6.0.0): Downloading (100%)
-    - Installing topthink/think-trace (v1.2): Downloading (100%)
-    symfony/var-dumper suggests installing ext-intl (To show region name in time zone dump)
-    symfony/var-dumper suggests installing symfony/console (To use the ServerDumpCommand and/or the bin/var-dump-server script)
-    league/flysystem suggests installing league/flysystem-eventable-filesystem (Allows you to use EventableFilesystem)
-    league/flysystem suggests installing league/flysystem-rackspace (Allows you to use Rackspace Cloud Files)
-    league/flysystem suggests installing league/flysystem-azure (Allows you to use Windows Azure Blob storage)
-    league/flysystem suggests installing league/flysystem-webdav (Allows you to use WebDAV storage)
-    league/flysystem suggests installing league/flysystem-aws-s3-v2 (Allows you to use S3 storage with AWS SDK v2)
-    league/flysystem suggests installing league/flysystem-aws-s3-v3 (Allows you to use S3 storage with AWS SDK v3)
-    league/flysystem suggests installing spatie/flysystem-dropbox (Allows you to use Dropbox storage)
-    league/flysystem suggests installing srmklive/flysystem-dropbox-v2 (Allows you to use Dropbox storage for PHP 5 applications)
-    league/flysystem suggests installing league/flysystem-sftp (Allows you to use SFTP server storage via phpseclib)
-    league/flysystem suggests installing league/flysystem-ziparchive (Allows you to use ZipArchive adapter)
-    league/flysystem-cached-adapter suggests installing ext-phpredis (Pure C implemented extension for PHP)
+    - Installing topthink/think-helper (v3.1.3): 
+    
+    ...
+
     Writing lock file
     Generating autoload files
     > @php think service:discover
@@ -1145,9 +1126,23 @@ Workerman是一款纯PHP开发的开源高性能的PHP socket 服务器框架。
 
 > 官方不建议老的项目升级到新版，除非你有重构计划，否则就算升级了也只是表面上升级了。也就是这点，让人很头疼，从3到5，5.0到5.x的各个版本，5到6都不能无缝升级或不保证所有功能正常升级。
 
+## 自动补全
 
+目前即使是一直对TP自动补全做的比较好的phpstorm也暂时无法自动补全，需要继续等待官方或第三方的补充，更不用说那些部分试用的NetBeans、vscode等
 
+20191130
 
+## 单元测试
+
+[thinkphp单元测试手册](https://www.kancloud.cn/code7/tpunit/220874)
+
+[ThinkPHP5与单元测试PHPUnit使用](https://blog.csdn.net/weixin_34384915/article/details/93571756)
+
+[PHPUnit简介及使用（thinkphp5的单元测试安装及使用](https://blog.csdn.net/Srodong/article/details/88640325)
+
+## 更多
+
+[ThinkPHP6 核心分析](https://www.kancloud.cn/hubqin/thinkphp/1361643)
 
 ## 设计模式
 
