@@ -7,6 +7,8 @@
 
 - [ThinkPHP5项目优化](/互联网/ThinkPHP/ThinkPHP5项目优化.md)
 
+- [ThinkPHP6试用简易报告](/互联网/ThinkPHP/ThinkPHP6试用简易报告.md)
+
 - [ThinkPHP中采用子域名部署解决API版本管理](/互联网/ThinkPHP/ThinkPHP中采用子域名部署解决API版本管理.md)
 
 - [ThinkPHP如何使用cli模式](/互联网/ThinkPHP/ThinkPHP如何使用cli模式.md)
@@ -14,4 +16,4 @@
 - [ThinkPHP模板编译缓存](/互联网/ThinkPHP/ThinkPHP模板编译缓存.md)
 
 
-<font size=2 color='grey'> 2019-11-12 10:34 </font>
+<font size=2 color='grey'> 2020-01-09 03:54 </font>
