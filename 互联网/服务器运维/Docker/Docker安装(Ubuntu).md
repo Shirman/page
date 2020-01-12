@@ -15,10 +15,25 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 ## 镜像加速
 
-https://www.runoob.com/docker/docker-mirror-acceleration.html
+
+
+- Ubuntu16.04+、Debian8+、CentOS7
+
+对于使用 systemd 的系统，请在 /etc/docker/daemon.json 中写入如下内容（如果文件不存在请新建该文件）：
+
+```
+{"registry-mirrors":["https://registry.docker-cn.com"]}
+```
+
+之后重新启动服务：
+```
+$ sudo systemctl daemon-reload
+$ sudo systemctl restart docker
+```
 
 建议使用阿里云镜像源：
 https://tnxkcso1.mirror.aliyuncs.com
 
 
 
+镜像加速参考：https://www.runoob.com/docker/docker-mirror-acceleration.html

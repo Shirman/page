@@ -1,4 +1,5 @@
-
+Docker安装jira与confluence
+----
 <!-- TOC -->
 
 - [准备](#准备)
@@ -52,7 +53,7 @@ https://pan.baidu.com/s/1AucTmTNPSG85hhWF7mkIcQ
 文件解压后得到jar包放入Atlassian目录
 
 ```
-chenqingji@ubuntu:/var/www/docker/Atlassian$ ls
+cqj@ubuntu:/var/www/docker/Atlassian$ ls
 atlassian-agent.jar  atlassian-agent-v1.2.3  atlassian-agent-v1.2.3.zip  Dockerfile
 ```
 
@@ -80,7 +81,7 @@ RUN echo 'export CATALINA_OPTS="-javaagent:/opt/atlassian/jira/atlassian-agent.j
 ### 构建镜像
 
 ```
-chenqingji@ubuntu:/var/www/docker/Atlassian$ sudo docker build -t jira/jira:v7.12.0 .
+cqj@ubuntu:/var/www/docker/Atlassian$ sudo docker build -t jira/jira:v7.12.0 .
 Sending build context to Docker daemon  3.116MB
 Step 1/4 : FROM cptactionhank/atlassian-jira-software:7.12.0
 7.12.0: Pulling from cptactionhank/atlassian-jira-software
@@ -110,7 +111,7 @@ Successfully tagged jira/jira:v7.12.0
 ### 启动容器
 
 ```
-chenqingji@ubuntu:/var/www/docker/Atlassian$ sudo docker run -d -p 8080:8080 jira/jira:v7.12.0
+cqj@ubuntu:/var/www/docker/Atlassian$ sudo docker run -d -p 8080:8080 jira/jira:v7.12.0
 35f2c9f917e46e99fc3ac598bb7cbb043a20f5d3e6aa3c7095239e6241c10b1d
 
 ```
@@ -143,7 +144,7 @@ java -jar atlassian-agent.jar -d -m 421808956@qq.com -n jmcqj -p jira -o http://
 
 ```
 
-chenqingji@ubuntu:/var/www/docker/Atlassian$ java -jar atlassian-agent.jar -d -m 421808956@qq.com -n jmcqj -p jira -o http://192.168.8.130:8080 -s BW2Q-QAZT-PYNI-LTZ5
+cqj@ubuntu:/var/www/docker/Atlassian$ java -jar atlassian-agent.jar -d -m 421808956@qq.com -n jmcqj -p jira -o http://192.168.8.130:8080 -s BW2Q-QAZT-PYNI-LTZ5
 
 
 Your license code(Don't copy this line!!!): 
@@ -158,7 +159,7 @@ QYShyyJwyxKnYSOJ/5oMqLU/Es/zPfcSmWAB0Aj//Hg3Tl3t4+5s/yTxk6SP47PbfLXHVm2WGy5g
 s97/F58SrFBoYb2DCg7AztEd2LcVcV+9wrwtyhNMCwCFCEXvg3UQ8199PjfBkyUlSqJtgL4AhR2E
 BQ/sAK8H4H84AZg2gD4Q1RlFw==X02kg
 
-chenqingji@ubuntu:/var/www/docker/Atlassian$ 
+cqj@ubuntu:/var/www/docker/Atlassian$ 
 
 ```
 
@@ -201,8 +202,8 @@ docker build -f Dockerfile -t confluence/confluence:6.13.0 .
 执行结果
 
 ```
-chenqingji@ubuntu:/var/www/docker/Atlassian/confluence$ sudo docker build -f Dockerfile -t confluence/confluence:6.13.0 .
-[sudo] password for chenqingji: 
+cqj@ubuntu:/var/www/docker/Atlassian/confluence$ sudo docker build -f Dockerfile -t confluence/confluence:6.13.0 .
+[sudo] password for cqj: 
 Sending build context to Docker daemon  976.9kB
 Step 1/4 : FROM cptactionhank/atlassian-confluence:6.13.0
 6.13.0: Pulling from cptactionhank/atlassian-confluence
@@ -226,7 +227,7 @@ Removing intermediate container b31d9e199872
  ---> b019d8fadc08
 Successfully built b019d8fadc08
 Successfully tagged confluence/confluence:6.13.0
-chenqingji@ubuntu:/var/www/docker/Atlassian/confluence$ 
+cqj@ubuntu:/var/www/docker/Atlassian/confluence$ 
 ```
 
 ### 启动容器
@@ -258,7 +259,7 @@ java -jar atlassian-agent.jar -d -m 421808956@qq.com -n jmcqj -p conf -o http://
 ```
 
 ```
-chenqingji@ubuntu:/var/www/docker/Atlassian/confluence$ java -jar atlassian-agent.jar -d -m 421808956@qq.com -n jmcqj -p conf -o http://192.168.8.130:8090 -s BNED-V9E1-934R-0OMK
+cqj@ubuntu:/var/www/docker/Atlassian/confluence$ java -jar atlassian-agent.jar -d -m 421808956@qq.com -n jmcqj -p conf -o http://192.168.8.130:8090 -s BNED-V9E1-934R-0OMK
 
 
 Your license code(Don't copy this line!!!): 
@@ -538,12 +539,12 @@ source /etc/profile
 
 
 ```
-chenqingji@ubuntu:~$ java -version
+cqj@ubuntu:~$ java -version
 java version "13.0.1" 2019-10-15
 Java(TM) SE Runtime Environment (build 13.0.1+9)
 Java HotSpot(TM) 64-Bit Server VM (build 13.0.1+9, mixed mode, sharing)
 
-chenqingji@ubuntu:~$ javac -version
+cqj@ubuntu:~$ javac -version
 javac 13.0.1
 
 ```
