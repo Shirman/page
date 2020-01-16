@@ -3,9 +3,11 @@
 
 - join可以用，但要考虑语句的扫描行数，决定执行效率
 - 优化器会自动判断选择适合的join驱动表
-- 索引嵌套循环join
+- 索引嵌套循环join    
     
     index nested-loop join,简称NLJ
+
+    被驱动表使用到索引的时候，一般叫做索引嵌套循环join，如果没有用到索引，mysql会采用分块嵌套循环索引（从简单嵌套索引join优化而来）
 
     - 从驱动表读入满足条件的一行R
     - 从数据行R中，取出字段a到被驱动表中选择字段a查找（**使用到被驱动表的索引**）
@@ -24,7 +26,7 @@
 
   block nested-loop join 简称：BNL
 
-  在么有索引情况下，简单嵌套循环join的效率很低，所以mysql又引入了分块嵌套循环join的模式
+  在没有索引情况下，简单嵌套循环join的效率很低，所以mysql又引入了分块嵌套循环join的模式
 
   把驱动表的数据载入内存join_buffer中，扫描被驱动表，每一行取出与join_buffer中的数据做比对，满足join条件的数据作为结果集一部分返回。
 
@@ -33,7 +35,7 @@
   当然在join_buffer固定的情况下，驱动表越小，被驱动表数据匹配判断的次数就越少，效率越高，所以驱动表尽量小（比如条件尽量多）
 
 
-
+- join建议驱动表采用相对小表，相对小表：含过滤条件后的数据（表）作为驱动表。注意：过滤条件
 
 
 
@@ -51,21 +53,31 @@
 为了便于量化分析，我还是创建两个表t1和t2来和你说明。
 
 ```
+
 CREATE TABLE `t2` (
-`id` int(11) NOT NULL,
-`a` int(11) DEFAULT NULL,
-`b` int(11) DEFAULT NULL,
-PRIMARY KEY (`id`),
-KEY `a` (`a`)
+  `id` int(11) NOT NULL,
+  `a` int(11) DEFAULT NULL,
+  `b` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `a` (`a`)
 ) ENGINE=InnoDB;
 
 drop procedure idata;
 delimiter ;;
 create procedure idata()
 begin
-declare i int;
-set i=1;
-while(i
+  declare i int;
+  set i=1;
+  while(i<=1000)do
+    insert into t2 values(i, i, i);
+    set i=i+1;
+  end while;
+end;;
+delimiter ;
+call idata();
+
+create table t1 like t2;
+insert into t1 (select * from t2 where id<=100)
 ```
 
 可以看到，这两个表都有一个主键索引id和一个索引a，字段b上无索引。存储过程idata()往表t2里插入了1000行数据，在表t1里插入的是100行数据。
