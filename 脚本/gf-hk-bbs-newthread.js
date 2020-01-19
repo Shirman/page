@@ -4,11 +4,16 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://www.discuss.com.hk/post.php?action=newthread*
+// @match        https://*.discuss.com.hk/post.php?action=newthread*
 // @grant        none
 // ==/UserScript==
 
-var gHost = 'https://www.discuss.com.hk/';
+
+var gHost = 'https://'+window.location.host+'/';
+if(window.location.host != 'www.discuss.com.hk'){
+    window.location.href = window.location.href.replace(window.location.host,"www.discuss.com.hk");
+}
+var gUsername = '';
 
 var jmtool = {
 
@@ -16,7 +21,9 @@ var jmtool = {
     getCurrentTimestamp:function(){
         return parseInt(new Date().getTime()/1000);
     },
-    
+    getCurrentDate:function(){
+        return this.convertTimesatmpToDate(this.getCurrentTimestamp());
+    },
     convertTimesatmpToDate:function(time){
         if(typeof(time)=="undefined"){
             return "";
@@ -62,6 +69,19 @@ var jmtool = {
         } 
     },  
 
+    /**
+     * 指定区域复制
+     * @param {*} _domId 
+     */
+    copyText:function(_domId){
+        const range = document.createRange();
+        range.selectNode(document.getElementById(_domId));//需要复制的内容的ID
+        const selection = window.getSelection();
+        if(selection.rangeCount > 0) selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+    },
+
 };
 
 var storage = {
@@ -98,10 +118,13 @@ var storage = {
             }            
         }
     },
+    deleteAllFromStorage:function(){
+        window.localStorage.setItem(this.formLocalStorageKey,null);
+    },
     getAllFromStorage:function(){                
         let _str = window.localStorage.getItem(this.formLocalStorageKey);
         let _json = JSON.parse(_str) || [];
-        if(typeof _json !== Object || !_json){
+        if((typeof _json !== "object") || !_json){
             _json = {};
         }            
         return _json || null;
@@ -116,10 +139,14 @@ var storage = {
     initPage();
 
     function initPage(){
+        getUsername();
         addBtnsTr();
         addTimeoutInput();
-        adddoSubmitBtn();
-        //@todo init threds list show
+        adddoSubmitBtn();        
+        reloadThreadsList();
+    }
+    function getUsername(){
+        gUsername = $$(".username").children("a").text();
     }
     function addBtnsTr(){
         let newBtnsTr = 
@@ -128,7 +155,9 @@ var storage = {
             <td id="newBtnsTrTd">\
             </td>\
         </tr>';
-        $$("#newpost").children("tbody").last().append(newBtnsTr);
+        let _lastTbody = $$("#newpost").children("tbody").last();
+        _lastTbody.append(newBtnsTr);
+        _lastTbody.children("tr").first().hide();
     }
     function adddoSubmitBtn(){
         let _newBtn = '<button class="btn btn-primary" type="button" name="topicsubmit-jm" id="postsubmit-jm" value="true" tabindex="301"> 延時發新話題</button>';
@@ -150,8 +179,11 @@ var storage = {
         $$("#timeout_jm").val(_timeout);
     }
 
-    function doSubmit(){
+    function doSubmit(){        
         console.log("run doSubmit");        
+
+        // getMyThreadsCheckSubject("0119湖人大戰火箭");
+        // return true;
         
         let theform = $("postform");
         console.log(theform);    
@@ -164,9 +196,13 @@ var storage = {
             theFormData.timeout = parseInt($$("#timeout_jm").val()||60);
             theFormData.postAction = $$("#postform").attr("action");
             theFormData.referer = window.location.href;            
-            theFormData.time = jmtool.getCurrentTimestamp()+parseInt(theFormData.timeout||60);//publish time
-            theFormData.date = jmtool.convertTimesatmpToDate(theFormData.time);
+            theFormData.time = jmtool.getCurrentTimestamp();//submit time
+            theFormData.date = jmtool.convertTimesatmpToDate(theFormData.time);            
+            theFormData.publishTime = jmtool.getCurrentTimestamp() + parseInt(theFormData.timeout||60);//publish time
+            theFormData.publishDate = jmtool.convertTimesatmpToDate(theFormData.publishTime);            
+            theFormData.author = gUsername;
             storage.addToStorage(theFormData.subject,theFormData);
+            reloadThreadsList();
             // return true;
 
             //settimeout do submit
@@ -174,7 +210,8 @@ var storage = {
                 console.log("run settimeout");
                 // validate(theform,false);//validate again and submit
                 submitFormdata(theFormData);
-            }, theFormData.timeout);        
+            }, theFormData.timeout);     
+            alert("已进入延时发布队列，详细查看底部[已发布话题列表]");   
         } else{
             return false;      
         } 
@@ -225,40 +262,45 @@ var storage = {
         $$.ajax({
             url: theFormData.postAction,
             type: 'POST',
-            dataType: 'json',
+            // dataType: 'json',
             data:_formData,
             timeout:10000,            
             processData: false,
             contentType: false,//"application/x-www-form-urlencoded", //false时默认为：multipart/form-data            
             beforeSend: function (XHR) {
-                XHR.setRequestHeader("Referer", theFormData.referer);
-                XHR.setRequestHeader("Origin", gHost);
+                // XHR.setRequestHeader("referer", theFormData.referer);
+                // XHR.setRequestHeader("origin", gHost);
                 // XHR.setRequestHeader("Host", _this.config._wwwDomain);
                 // XHR.setRequestHeader("X-Requested-With", "XMLHttpRequest");                
             },
             success: function (res) {
-                console.log(_formData.subject+"发布成功");                
+                console.log(theFormData.subject+"发布成功");                
                 //access my.php get the latest subject
                 //check suject
-                getMyThreadsCheckSubject(_formData.subject);
+                getMyThreadsCheckSubject(theFormData.subject);
 
             },        
             error:function(e){
-                console.log(_formData.subject+"发布失败");                                
                 console.log(e);
+                if(e.status == 200 && e.statusText=='parsererror'){
+                    console.log(theFormData.subject+"发布成功，但解析返回数据失败");                                                    
+                    getMyThreadsCheckSubject(theFormData.subject);
+                }else{
+                    console.log(theFormData.subject+"发布失败");                                
+                }
             }
         });        
     }
     
     function getMyThreadsCheckSubject(_subject){
-        _$.ajax({
+        $$.ajax({
             url: "https://www.discuss.com.hk/my.php?item=threads",
             type: 'GET',
             timeout:10000,
             data: {},
             beforeSend: function (XHR) {
-                XHR.setRequestHeader("Referer", "");
-                XHR.setRequestHeader("Origin", gHost);                
+                // XHR.setRequestHeader("referer", "");
+                // XHR.setRequestHeader("origin", gHost);                
             },
             error:function(){
                 
@@ -275,12 +317,15 @@ var storage = {
                 console.log(_latestSubject);
                 console.log(_url);
                 if(_latestSubject == _subject){
-                    let _formData = storage.getFromStorage(_subject);
-                    _formData.status = 1;
-                    _formData.time = jmtool.getCurrentTimestamp();
-                    _formData.date = jmtool.convertTimesatmpToDate(_formData.time);
-                    _formData.url = _url;
-                    storage.addToStorage(_subject);
+                    let theFormData = storage.getFromStorage(_subject);
+                    theFormData.status = 1;
+                    // theFormData.time = jmtool.getCurrentTimestamp();
+                    // theFormData.date = jmtool.convertTimesatmpToDate(theFormData.time);
+                    theFormData.publishTime = jmtool.getCurrentTimestamp();//publish time
+                    theFormData.publishDate = jmtool.convertTimesatmpToDate(theFormData.publishTime);                                
+                    theFormData.url = _url;                  
+                    console.log(theFormData);  
+                    storage.addToStorage(_subject,theFormData);
                 }
 
                 
@@ -427,8 +472,106 @@ var storage = {
 
     
 
+    //List
 
-    //Tool Tool Tool Tool
+    function reloadThreadsList(){
+        $$("#mythreadslistwrap").remove();
+        addThreadsList();
+    }
+    function addThreadsList(){
+
+        let currentDate = jmtool.getCurrentDate();
+
+        let threadsTableHtmlHead = '<div class="mythreadslistdiv"><h1>所有账号已发话题列表&nbsp;&nbsp;&nbsp;<button id="copythreadslist">一键复制</button>&nbsp;&nbsp;&nbsp;<button id="clearthreadslist">一键清空</button>&nbsp;&nbsp;&nbsp;<button id="flushthreadslist">刷新</button>&nbsp;&nbsp;&nbsp;最后更新时间：'+currentDate+'</h1></div>\
+        <table style="" cellspacing="0" cellpadding="0" width="100%" class="mythreadslist" id="mythreadslist" summary="我的主題">\
+        <thead>\
+            <tr>\
+                <td style="width: 30%">标题</td>\
+                <td>用户</td>\
+                <td>链接地址</td>\
+                <td>发表时间</td>\
+                <td>状态</td>\
+                <td>延时（秒）</td>\
+                <td>重发</td>\
+                </tr>\
+        </thead>\
+        <tbody>';
+
+        let threadsTableHtmlTail = '</tbody></table>';
+
+
+        let _json = storage.getAllFromStorage();
+        let trsHtml = '';
+        for(let _subject in _json){
+            let _one = _json[_subject];
+            let _status = _one.status ? "正常":"未发布";
+            trsHtml += '<tr>\
+                <td><a href="'+_one.url+'" target="_blank">'+_one.subject+'</a></td>\
+                <td>'+(_one.author||"-")+'</td>\
+                <td><a href="'+_one.url+'" target="_blank">'+_one.url+'</a></td>\
+                <td>'+_one.date+'</td>\
+                <td>'+_status+'</td>\
+                <td>'+_one.timeout+'</td>\
+                <td><button class="list-submit-again" data-subject="'+_one.subject+'">重发</button></td>\
+                </tr>';
+        }
+        //<td><button onclick="submitAgain(\''+_one.subject+'\');">重发</button></td>\
+        let cssStyle = '<style>\
+        .mythreadslist{background:#f0f0f0;border:1px solid #000;padding:1px;}\
+        .mythreadslist td{border-bottom:1px solid #dbdbdb;padding:5px;}\
+        .mythreadslistdiv h1{background:#dbdbdb;padding-left:1em;line-height:31px;}\
+        </style>';
+
+        let threadsListHtml = '<div id="mythreadslistwrap">'+cssStyle + threadsTableHtmlHead + trsHtml + threadsTableHtmlTail+'</div>';
+        $$("#mainbody").after(threadsListHtml);
+
+        $$("#copythreadslist").on("click",function(){
+            jmtool.copyText("mythreadslist");
+        });
+
+        $$("#clearthreadslist").on("click",function(){
+            if(confirm("清空后，本地数据将不再恢复，[建议全部发布成功且复制后再删除，以便释放浏览器缓存]，确定清空吗？")){
+                storage.deleteAllFromStorage();
+            }
+        });
+
+        $$("#flushthreadslist").on('click',function(){
+            reloadThreadsList();
+        });
+
+        $$("#mythreadslistwrap button.list-submit-again").on("click",function(){
+            let _subject = $$(this).data("subject");
+            submitAgain(_subject);
+        });
+        
+        
+    }
+
+    function submitAgain(_subject){
+        if(confirm("确定重发吗")){
+            
+            let theFormData = storage.getFromStorage(_subject);            
+            if(theFormData){ 
+                if(theFormData.status){
+                    alert("该文章已经发布过");
+                    return true;
+                }               
+                if(gUsername = theFormData.author){
+                    theFormData.time = jmtool.getCurrentTimestamp();//submit again time
+                    theFormData.date = jmtool.convertTimesatmpToDate(theFormData.time);    
+                    storage.addToStorage(_subject,theFormData);                
+                    setTimeout(() => {                        
+                        submitFormdata(theFormData);
+                    }, theFormData.timeout);
+                    alert(theFormData.timeout+"秒后重发："+_subject);
+                }else{
+                    alert("当前账户与原发帖账户不符，请使用账户【"+(theFormData.author||"-")+"】重发");
+                }
+            }else{
+                alert("重发失败："+_subject);
+            }
+        }
+    }
 
 
    
