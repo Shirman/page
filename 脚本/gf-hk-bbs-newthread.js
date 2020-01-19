@@ -144,9 +144,46 @@ var storage = {
         addTimeoutInput();
         adddoSubmitBtn();        
         reloadThreadsList();
+        bindKeyCode();
     }
     function getUsername(){
         gUsername = $$(".username").children("a").text();
+    }
+
+    function bindKeyCode(){
+        $$("body").bind("keydown",function(e){    
+            e=window.event||e; 
+               
+             //禁止空格键翻页  
+             if(event.keyCode==32){ 
+              return false;  
+             } 
+               
+             //屏蔽F5刷新键  
+             if(event.keyCode==116){ 
+            //   e.keyCode = 0; //IE下需要设置为keyCode为false  
+              return false;  
+             }  
+              
+             //屏蔽 Alt+ 方向键 ←  
+             //屏蔽 Alt+ 方向键 → 
+             if ((event.altKey)&&((event.keyCode==37)||(event.keyCode==39)))  
+             {  
+              event.returnValue=false;  
+              return false; 
+             } 
+             
+             //屏蔽退格删除键  
+             if(event.keyCode==8){ 
+              return false;  
+             } 
+             
+            //屏蔽ctrl+R  
+            if((event.ctrlKey) && (event.keyCode==82)){ 
+              e.keyCode = 0;  
+              return false;  
+            } 
+           });        
     }
     function addBtnsTr(){
         let newBtnsTr = 
