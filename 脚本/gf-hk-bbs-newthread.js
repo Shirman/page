@@ -17,9 +17,35 @@ var jmtool = {
         return parseInt(new Date().getTime()/1000);
     },
     
-    convertTimesatmpToDate:function(_time){
-        return '-';
+    convertTimesatmpToDate:function(time){
+        if(typeof(time)=="undefined"){
+            return "";
+        }
+        time = time * 1000;
+        var oDate = new Date(time),  
+        oYear = oDate.getFullYear(),  
+        oMonth = oDate.getMonth()+1,  
+        oDay = oDate.getDate(),  
+        oHour = oDate.getHours(),  
+        oMin = oDate.getMinutes(),  
+        oSen = oDate.getSeconds(), 
+
+        //补0操作,当时间数据小于10的时候，给该数据前面加一个0  
+            
+        oTime = oYear +'-'+ this.getzf(oMonth) +'-'+ this.getzf(oDay) +' '+ this.getzf(oHour) +':'+ this.getzf(oMin) +':'+this.getzf(oSen);//最后拼接时间  
+                
+        return oTime;          
     },
+
+    getzf:function(num){  
+        if(parseInt(num) < 10){  
+            num = '0'+num;  
+        }  
+        return num;  
+    },     
+
+
+    
 
     //生成从minNum到maxNum的随机数
     randomNum:function(minNum,maxNum){ 
@@ -46,11 +72,11 @@ var storage = {
         if(_subject && _data){        
             
             let _json = this.getAllFromStorage();                        
-            let _time = jmtool.getCurrentTimestamp()+parseInt(_data.timeout||60);//publish time
-            let _defaultData = {status:0,time:_time,url:"",timeout:60};
+
+            let _defaultData = {status:0,time:0,date:"-",url:"",timeout:60};
             _json[_subject] = Object.assign(_defaultData,_data);             
             
-            window.localStorage.setItem(_key,JSON.stringify(_json));
+            window.localStorage.setItem(this.formLocalStorageKey,JSON.stringify(_json));
         }
     },
     getFromStorage:function(_subject){
@@ -68,13 +94,12 @@ var storage = {
             let _json = this.getAllFromStorage();
             if(_json){
                 delete _json[_subject];
-                window.localStorage.setItem(_key,JSON.parse(_json));        
+                window.localStorage.setItem(this.formLocalStorageKey,JSON.parse(_json));        
             }            
         }
     },
-    getAllFromStorage:function(){        
-        let _key = this.formLocalStorageKey;
-        let _str = window.localStorage.getItem(_key);
+    getAllFromStorage:function(){                
+        let _str = window.localStorage.getItem(this.formLocalStorageKey);
         let _json = JSON.parse(_str) || [];
         if(typeof _json !== Object || !_json){
             _json = {};
@@ -134,14 +159,15 @@ var storage = {
         //todo check message
         if(validateOnly(theform,false)){
             let theFormData = getFormData(theform);
-            console.log(theFormData);            
+            console.log(theFormData,"theFormData");            
 
             theFormData.timeout = parseInt($$("#timeout_jm").val()||60);
             theFormData.postAction = $$("#postform").attr("action");
             theFormData.referer = window.location.href;            
-                        
+            theFormData.time = jmtool.getCurrentTimestamp()+parseInt(theFormData.timeout||60);//publish time
+            theFormData.date = jmtool.convertTimesatmpToDate(theFormData.time);
             storage.addToStorage(theFormData.subject,theFormData);
-            return true;
+            // return true;
 
             //settimeout do submit
             setTimeout(() => {
@@ -184,22 +210,26 @@ var storage = {
 
     function submitFormdata(theFormData){
         let _formData = new FormData();
-        let postFields = ["formhash","isblog","frombbs","subject","parseurloff","message","iconid","wysiwyg"];
+        let postFields = ["formhash","isblog","frombbs","subject","parseurloff","message","iconid","wysiwyg","typeid"];
 
         for(let _key in theFormData){
             if(postFields.indexOf(_key)!==-1){
                 _formData.append(_key,theFormData[_key]);
             }            
-        }                
+        }           
+        
+        console.log(postFields,"postFields");
+        // return true;
 
         
         $$.ajax({
             url: theFormData.postAction,
             type: 'POST',
-            // dataType: 'json',
+            dataType: 'json',
             data:_formData,
-            // processData: false,
-            contentType: "application/x-www-form-urlencoded", //false时默认为：multipart/form-data            
+            timeout:10000,            
+            processData: false,
+            contentType: false,//"application/x-www-form-urlencoded", //false时默认为：multipart/form-data            
             beforeSend: function (XHR) {
                 XHR.setRequestHeader("Referer", theFormData.referer);
                 XHR.setRequestHeader("Origin", gHost);
@@ -208,17 +238,19 @@ var storage = {
             },
             success: function (res) {
                 console.log(_formData.subject+"发布成功");                
-                //todo access my.php get the latest subject
+                //access my.php get the latest subject
                 //check suject
+                getMyThreadsCheckSubject(_formData.subject);
 
             },        
             error:function(e){
+                console.log(_formData.subject+"发布失败");                                
                 console.log(e);
             }
         });        
     }
     
-    function getMyThreads(_subject){
+    function getMyThreadsCheckSubject(_subject){
         _$.ajax({
             url: "https://www.discuss.com.hk/my.php?item=threads",
             type: 'GET',
@@ -246,6 +278,9 @@ var storage = {
                     let _formData = storage.getFromStorage(_subject);
                     _formData.status = 1;
                     _formData.time = jmtool.getCurrentTimestamp();
+                    _formData.date = jmtool.convertTimesatmpToDate(_formData.time);
+                    _formData.url = _url;
+                    storage.addToStorage(_subject);
                 }
 
                 
@@ -253,6 +288,8 @@ var storage = {
             
         });        
     }
+
+    
 
 
     
