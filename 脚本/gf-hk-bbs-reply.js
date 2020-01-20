@@ -185,7 +185,7 @@ var jmtool = {
             setTimeout(() => {
                 console.log("run settimeout");                
                 submitFormdata(theFormData);                
-            }, theFormData.timeout);     
+            }, theFormData.timeout*1000);     
             alert("已进入延时发布队列，请保留当前页面");   
             
         }
