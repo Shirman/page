@@ -15,6 +15,8 @@
 
 **[wp杂项技巧](/互联网/wordpress/wp杂项技巧/index.md)**
 
+- [wordpress变现](/互联网/wordpress/wordpress变现.md)
+
 - [wp仿站教程](/互联网/wordpress/wp仿站教程.md)
 
 - [wp多语言Polylang插件](/互联网/wordpress/wp多语言Polylang插件.md)
@@ -46,4 +48,4 @@
 - [wp钩子源码解析](/互联网/wordpress/wp钩子源码解析.md)
 
 
-<font size=2 color='grey'> 2020-02-10 05:06 </font>
+<font size=2 color='grey'> 2020-02-19 13:34 </font>
