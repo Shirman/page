@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         虎扑指定第一回复点亮demo
-// @namespace    http://tampermonkey.net/
+// @namespace    tsingchan
 // @version      0.1
 // @description  try to take over the world!
 // @author       You

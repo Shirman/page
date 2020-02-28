@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         起点任我行
-// @namespace    https://greasyfork.org/zh-CN/users/185716-roxulo
+// @namespace    tsingchan
 // @version      2.7
 // @description  隆重推出四大功能：一.自动领取在线经验值。二.自动完成活跃度任务：包括1.拜访5个书友;2.书评区发帖;3.投3+张推荐票。三.自动领取活跃度奖励，人性化，智能化。四.快速编辑评论和删除评论。一切为了省心。
 // @author       RoXuLo

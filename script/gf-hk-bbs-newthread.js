@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         hk論壇發新帖
-// @namespace    http://tampermonkey.net/
+// @namespace    tsingchan
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
