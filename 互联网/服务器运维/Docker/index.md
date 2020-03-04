@@ -17,6 +17,8 @@
 
 - [Docker安装nginx](/互联网/服务器运维/Docker/Docker安装nginx.md)
 
+- [Docker安装RabbitMQ服务](/互联网/服务器运维/Docker/Docker安装RabbitMQ服务.md)
+
 - [Docker常用命令](/互联网/服务器运维/Docker/Docker常用命令.md)
 
 - [Docker推荐文章](/互联网/服务器运维/Docker/Docker推荐文章.md)
@@ -26,4 +28,4 @@
 - [代码放在Docker里面还是外面](/互联网/服务器运维/Docker/代码放在Docker里面还是外面.md)
 
 
-<font size=2 color='grey'> 2020-02-19 13:34 </font>
+<font size=2 color='grey'> 2020-03-04 11:02 </font>

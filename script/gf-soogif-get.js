@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://www.soogif.com/search/*
+// @match        https://www.soogif.com/(search|theme)/*
 // @grant        none
 // ==/UserScript==
 
