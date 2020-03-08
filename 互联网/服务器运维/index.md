@@ -11,6 +11,8 @@
 
 **[Nginx](/互联网/服务器运维/Nginx/index.md)**
 
+- [CentOS下安装ImageMagick和PHP-Imagick扩展](/互联网/服务器运维/CentOS下安装ImageMagick和PHP-Imagick扩展.md)
+
 - [Linux同步服务rsync](/互联网/服务器运维/Linux同步服务rsync.md)
 
 - [php.ini配置说明中文版](/互联网/服务器运维/php.ini配置说明中文版.md)
@@ -38,4 +40,4 @@
 - [自颁发SSL证书及nginx_apache配置](/互联网/服务器运维/自颁发SSL证书及nginx_apache配置.md)
 
 
-<font size=2 color='grey'> 2020-03-04 11:02 </font>
+<font size=2 color='grey'> 2020-03-08 10:46 </font>
