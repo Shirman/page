@@ -118,7 +118,7 @@ Promise.race(iterable) 方法返回一个 promise，一旦迭代器中的某个p
 当然XHR有一个 timeout 属性，使用该属性也可以简单实现超时功能，但是为了能支持多个XHR同时超时或者其他功能，我们采用了容易理解的异步方式在XHR中通过超时来实现取消正在进行中的操作。
 
 **1. 让Promise等待指定时间** 
-----------------------
+
 
 首先我们来看一下如何在Promise中实现超时。
 
@@ -131,7 +131,7 @@ Promise.race(iterable) 方法返回一个 promise，一旦迭代器中的某个p
 ![](https://pic2.zhimg.com/v2-3e79d24244ae424fd46a9e6f8a1fd42d_b.jpg)在这里 promise对象 这个概念非常重要，请切记。
 
 **2. Promise.race中的超时** 
-------------------------
+
 
 我们可以将刚才的 delayPromise 和其它promise对象一起放到 Promise.race 中来是实现简单的超时机制。
 
