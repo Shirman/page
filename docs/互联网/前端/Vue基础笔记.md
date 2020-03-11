@@ -156,9 +156,9 @@ Mustache 语法不能作用在 HTML 特性上，比如需要双向绑定id的值
 
 <!-- 流控制也不会生效，请使用三元表达式 -->
 {{ 
-    if (ok) { 
+    if (ok) 
         return message 
-    } 
+    
 
 }}
 
