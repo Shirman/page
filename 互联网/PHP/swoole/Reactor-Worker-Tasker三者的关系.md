@@ -50,3 +50,7 @@ Swoole的Reactor、Worker、TaskWorker之间可以紧密的结合起来，提供
 
 > 底层会为Worker进程、TaskWorker进程分配一个唯一的ID
 不同的Worker和TaskWorker进程之间可以通过sendMessage接口进行通信
+
+markdown [@tsingchan](https://github.com/tsingchan) 
+
+> 引用格式为收藏注解，比如本句就是注解，非作者原文。

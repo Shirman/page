@@ -379,3 +379,8 @@ https://wiki.swoole.com/#/memory/table
 - 启动文件常驻内存，所以业务代码应该分离，且采用autoload的方式加载，避免更新代码要重启服务问题
 
 - Swoole文章：https://wiki.swoole.com/#/blog_list
+
+
+markdown [@tsingchan](https://github.com/tsingchan) 
+
+> 引用格式为收藏注解，比如本句就是注解，非作者原文。

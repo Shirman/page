@@ -358,7 +358,8 @@ html
 ```
 # 默认版
 url('all/(\d+).html$',home.index,name='index')
-{%url "index" 1%} # 在html中
+{%url "index" 1%} 
+# 在html中
 reverse('index',kwargs=(1,)) # 在view中
 
 # 命名正则版
