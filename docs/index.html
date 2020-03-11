@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Tsingchan',
+      repo: '',
+      maxLevel:2,
+      // logo: 'icon.jpg',      
+      loadSidebar: true,
+      autoHeader: true,      
+      subMaxLevel: 2,
+      // loadNavbar: true,
+      homepage: 'README.md',
+      auto2top: true,
+      notFoundPage: true,//在找不到指定页面时加载_404.md      
+      search: {
+        noData: {          
+          '/': 'No results!'
+        },
+        paths: 'auto',
+        placeholder: {          
+          '/': 'Search'
+        },
+        depth: 3
+      },
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>      
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>  
+  <!-- <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script> -->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <!-- <script>
+    window.$docsify = {
+      disqus: 'shortname'
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script>     -->
+</body>
+</html>

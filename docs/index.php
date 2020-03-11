@@ -1,16 +1,20 @@
 <?php
+
+//注意：建议在docs目录下执行，docsify使用README.md作为索引文件
+
+
 //#更新github-page所有目录索引index.md
-$dirPath = '';
-Index::setRootDir($dirPath);
-// Index::updateIndex($dirPath);
+// $dirPath = '';
+// Index::setRootDir($dirPath);
+// Index::updateDocsifyIndex($dirPath);
 
 //#删除已生成目录索引index.md文件
-Index::clearIndex($dirPath);
+// Index::clearIndex($dirPath);
 
 // //#更新docsify 侧边栏md配置
-// $dirPath = dirname(__DIR__).DIRECTORY_SEPARATOR."docs";
-// Index::setRootDir($dirPath);
-// Index::docsifySidebar($dirPath);
+$dirPath = __DIR__;
+Index::setRootDir($dirPath);
+Index::docsifySidebar($dirPath);
 
 $fileCount = Index::getFileCount();
 
@@ -41,109 +45,19 @@ class Index{
 
     public static function setRootDir($rootDir){
         if(empty($rootDir) || !file_exists($rootDir)){        
-            $rootDir = dirname(__DIR__);                                            
-        }           
+            $rootDir = __DIR__;
+        }        
         self::$_rootDir = $rootDir;
+        // echo $rootDir;exit;
     }
     
-
-    /**
-     * 更新每个目录的索引文件index.md
-     */
-    public static function updateIndex($dirPath=''){
-        if(empty($dirPath) || !file_exists($dirPath)){        
-            $dirPath = dirname(__DIR__);                                            
-        }
-                        
-        if(is_dir($dirPath)){
-            $mdString = str_replace([self::$_rootDir,"\\"],["","/"],$dirPath)." 索引：\n\n";            
-            $mdString .= self::_getPreDirMdString($dirPath);
-            $handle = opendir($dirPath);
-            $dirArray = [];
-            $fileArray = [];
-            while(false !== ($file = readdir($handle))){   
-                if(self::_filterFile($file)){
-                    continue;
-                }
-                $filepath = $dirPath.DIRECTORY_SEPARATOR.$file;                
-                
-                if(is_dir($filepath)){
-                    $dirArray[] = $filepath;                
-                }else{
-                    $fileArray[] = $filepath;
-                }                
-            }
-
-            foreach($dirArray as $filepath){
-                self::updateIndex($filepath);//递归遍历                                
-                $mdString.= self::_getDirMdString($filepath);
-            }
-            foreach($fileArray as $filepath){                                                                               
-                $mdString.= self::_getFileMdString($filepath);
-            }
-
-            self::$_fileCount += count($fileArray);
-            $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>";
-
-            file_put_contents($dirPath.DIRECTORY_SEPARATOR."index.md",$mdString); 
-            closedir($handle);   
-        }    
-    }
-
-    /**
-     * 获取上一级目录md string
-     */
-    private static function _getPreDirMdString($dirPath){
-        $mdString = '';
-        if($dirPath != self::$_rootDir){            
-            $preDir = dirname($dirPath);//上级目录  
-            // echo $preDir."\n";          
-            if($preDir == self::$_rootDir){
-                $preDir = "";
-            }
-            $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir);
-            $mdString .= "\n**[上一级目录".$preDir."](".$preDir."/index.md".")**\n";
-        }        
-        return $mdString;
-    }
-
-    /**
-     * 获取目录的 md string
-     */
-    private static function _getDirMdString($filepath){                        
-        // $filename = basename($filepath);                
-        $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath);                                 
-        $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath)."/index.md";
-        $filename = str_replace([" "],["_"],$filename);
-        return "\n**[".$filename."](".$filepath.")**\n";        
-    }
-
-    /**
-     * 获取文件的 md string
-     */
-    private static function _getFileMdString($filepath){
-        // $filename = basename($filepath,".md");                                
-        $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath); //处理中文路径                
-        
-        $originPath = $filepath;
-        
-        $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath);
-        $filename = str_replace([" ",],["_"],$filename);                
-        $filename = rtrim($filename,'.md');
-        // if(mb_strpos($originPath,"运维") !== false){
-        //     echo $filepath."\n";
-        //     echo $filename."\n";
-        // }                
-        return "\n- [".$filename."](".$filepath.")\n";
-    }
-
 
     /**
      * 过滤指定文件
      */
     private static function _filterFile($file){
         $filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
-                    ".nojekyll","icon.jpg","index.html","README.md","_navbar.md","_sidebar.md","_test.md"];
+                    ".nojekyll","icon.jpg","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"];
         if(in_array($file,$filters)){
             return true;
         }
@@ -157,49 +71,11 @@ class Index{
         return self::$_fileCount;
     }
 
-    /////////////////////清除所有索引文件////////////////////////////
 
-    public static function clearIndex($dirPath){
-        if(empty($dirPath) || !file_exists($dirPath)){        
-            $dirPath = dirname(__DIR__);                                
-            self::$_rootDir = $dirPath;
-        }
-
-        if(is_dir($dirPath)){
-            self::clear($dirPath);
-            
-            $handle = opendir($dirPath);
-            $dirArray = [];
-            
-            while(false !== ($file = readdir($handle))){   
-                if(self::_filterFile($file)){
-                    continue;
-                }
-                
-                $filepath = $dirPath.DIRECTORY_SEPARATOR.$file;                
-                if(is_dir($filepath)){
-                    $dirArray[] = $filepath;                
-                }
-            }
-
-            self::$_fileCount += count($dirArray);            
-
-            foreach($dirArray as $filepath){
-                self::clearIndex($filepath);
-            }
-
-            closedir($handle);   
-        }
-    }
-    private static function clear($dirPath){
-        $indexmd = $dirPath.DIRECTORY_SEPARATOR."index.md";
-        if(file_exists($indexmd)){
-            unlink($indexmd);
-        }
-    }
-
+    
+    
     /////////////////////docsify 侧边栏生成////////////////////////////
-
+    
     public static function docsifySidebar($filepath){
         self::updateDocsifySidebar($filepath);
         // echo self::$_docsifySidebar;exit;
@@ -264,7 +140,7 @@ class Index{
             $pre = str_repeat("\t",($separatorCount-1));
         }                
                 
-        self::$_docsifySidebar .=$pre.'- '.$filename."\n";
+        self::$_docsifySidebar .=$pre.'- **'.$filename."**\n";
         
     }
     private static function _getDocsifyFileSidebar($filepath){
@@ -293,7 +169,7 @@ class Index{
      */
     public static function updateDocsifyIndex($dirPath=''){
         if(empty($dirPath) || !file_exists($dirPath)){        
-            $dirPath = dirname(__DIR__);                                            
+            $dirPath = __DIR__;
         }
                         
         if(is_dir($dirPath)){
@@ -326,7 +202,13 @@ class Index{
             self::$_fileCount += count($fileArray);
             $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>";
 
-            file_put_contents($dirPath.DIRECTORY_SEPARATOR."index.md",$mdString); 
+            $moreContent = '';
+            $moreFile = $dirPath.DIRECTORY_SEPARATOR."more.md";
+            if(file_exists($moreFile)){
+                $moreContent = file_get_contents($moreFile);
+            }
+            $mdString = $moreContent."\n----\n\n".$mdString;
+            file_put_contents($dirPath.DIRECTORY_SEPARATOR."README.md",$mdString); 
             closedir($handle);   
         }    
     }
@@ -341,9 +223,10 @@ class Index{
             // echo $preDir."\n";          
             if($preDir == self::$_rootDir){
                 $preDir = "";
+            }else{
+                $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir)."/";
             }
-            $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir);
-            $mdString .= "\n**[上一级目录".$preDir."](".$preDir."/index.md".")**\n";
+            $mdString .= "\n**[上一级目录".$preDir."](".$preDir.")**\n";
         }        
         return $mdString;
     }
@@ -354,7 +237,7 @@ class Index{
     private static function _getDocsifyDirMdString($filepath){                        
         // $filename = basename($filepath);                
         $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath);                                 
-        $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath)."/index.md";
+        $filepath = str_replace([self::$_rootDir,"\\",'%'],["","/","%25"],$filepath)."/";
         $filename = str_replace([" "],["_"],$filename);
         return "\n**[".$filename."](".$filepath.")**\n";        
     }
@@ -368,15 +251,61 @@ class Index{
         
         $originPath = $filepath;
         
-        $filepath = str_replace([self::$_rootDir,"\\"],["","/"],$filepath);
+        $filepath = str_replace([self::$_rootDir,"\\","%"],["","/","%25"],$filepath);
         $filename = str_replace([" ",],["_"],$filename);                
         $filename = rtrim($filename,'.md');
+        $filepath = rtrim($filepath,".md");
         // if(mb_strpos($originPath,"运维") !== false){
         //     echo $filepath."\n";
         //     echo $filename."\n";
         // }                
         return "\n- [".$filename."](".$filepath.")\n";
     }    
+
+    
+/////////////////////清除所有索引文件////////////////////////////
+
+    public static function clearIndex($dirPath){
+        echo "请到确认代码文件，确认要删除的索引文件是README.md，而不是index.md";exit;
+        return true;
+        if(empty($dirPath) || !file_exists($dirPath)){        
+            $dirPath = __DIR__;                                
+            self::$_rootDir = $dirPath;
+        }
+
+        if(is_dir($dirPath)){
+            self::clear($dirPath);
+            
+            $handle = opendir($dirPath);
+            $dirArray = [];
+            
+            while(false !== ($file = readdir($handle))){   
+                if(self::_filterFile($file)){
+                    continue;
+                }
+                
+                $filepath = $dirPath.DIRECTORY_SEPARATOR.$file;                
+                if(is_dir($filepath)){
+                    $dirArray[] = $filepath;                
+                }
+            }
+
+            self::$_fileCount += count($dirArray);            
+
+            foreach($dirArray as $filepath){
+                self::clearIndex($filepath);
+            }
+
+            closedir($handle);   
+        }
+    }
+    private static function clear($dirPath){
+        $indexmd = $dirPath.DIRECTORY_SEPARATOR."README.md";
+        if(file_exists($indexmd)){
+            unlink($indexmd);
+        }
+    }
+
 }
 
 
