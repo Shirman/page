@@ -1,10 +1,7 @@
-
-----
-
-/互联网/wordpress/wp使用教程 索引：
+### /互联网/wordpress/wp使用教程/索引
 
 
-**[上一级目录/互联网/wordpress/](/互联网/wordpress/)**
+**[上一级索引/互联网/wordpress/](/互联网/wordpress/)**
 
 - [1-wp基本使用](/互联网/wordpress/wp使用教程/1-wp基本使用)
 
@@ -15,4 +12,5 @@
 - [4-wp常用插件说明](/互联网/wordpress/wp使用教程/4-wp常用插件说明)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> 2020-03-12 16:14 </font>
+

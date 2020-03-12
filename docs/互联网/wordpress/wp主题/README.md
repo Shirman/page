@@ -1,10 +1,7 @@
-
-----
-
-/互联网/wordpress/wp主题 索引：
+### /互联网/wordpress/wp主题/索引
 
 
-**[上一级目录/互联网/wordpress/](/互联网/wordpress/)**
+**[上一级索引/互联网/wordpress/](/互联网/wordpress/)**
 
 - [1-wp主题使用](/互联网/wordpress/wp主题/1-wp主题使用)
 
@@ -23,4 +20,5 @@
 - [8-提交主题到wp官方市场](/互联网/wordpress/wp主题/8-提交主题到wp官方市场)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> 2020-03-12 16:14 </font>
+

@@ -1,10 +1,7 @@
-
-----
-
-/互联网/前端 索引：
+### /互联网/前端/索引
 
 
-**[上一级目录/互联网/](/互联网/)**
+**[上一级索引/互联网/](/互联网/)**
 
 - [CSS简要快速上手](/互联网/前端/CSS简要快速上手)
 
@@ -24,7 +21,7 @@
 
 - [webpack与bower的区别](/互联网/前端/webpack与bower的区别)
 
-- [一文读懂_JavaScript_和_ECMAScript_的区别](/互联网/前端/一文读懂 JavaScript 和 ECMAScript 的区别)
+- [一文读懂JavaScript和ECMAScript的区别](/互联网/前端/一文读懂JavaScript和ECMAScript的区别)
 
 - [前端开发技术指南和趋势-2019版](/互联网/前端/前端开发技术指南和趋势-2019版)
 
@@ -39,4 +36,5 @@
 - [彻底理解URL编码](/互联网/前端/彻底理解URL编码)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> 2020-03-12 16:14 </font>
+

@@ -1,30 +1,31 @@
 <?php
 
 //注意：docsify使用README.md作为索引文件
-Index::setFilters([".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
-".nojekyll","_media","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"]);
 
-//#更新github-page所有目录索引index.md
+$filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
+".nojekyll","_media","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md","CNAME",
+"sw.js",'latest.md','archive.md'];
+
 $dirPath = __DIR__;//docs
-Index::setRootDir($dirPath);
-Index::updateDocsifyIndex($dirPath);
+Index::init($dirPath,$filters);
 
-//#删除已生成目录索引index.md文件
-// Index::clearIndex($dirPath);
-
-// //#更新docsify 侧边栏md配置
-$dirPath = __DIR__;//docs
-Index::setRootDir($dirPath);
+//更新docsify侧边栏md配置
 Index::docsifySidebar($dirPath);
 
+//更新docsify最近文章导航
+Index::updateDocsifyLatest();
+//更新docsify归档列表
+Index::updateDocsifyArchive();
+
+//更新docsify所有目录索引README.md，用于访问目录页
+Index::docsifyReadme($dirPath);
+
+//删除已生成目录索引README.md文件
+// Index::clearReadme($dirPath);
 exit;
 
 /**
- * 为每个目录生成index.md索引文件
- * 1、读取根目录
- * 2、获取所有md文件和目录，生成绝对路径url列表（目录的索引使用自动补上index.md）
- * 3、检查当前目录index.md，重写index.md，不存在则创建（内容：url列表）
- * 4、遍历下级目录，继续1、2、3
+ * docsify索引及目录列表更新 
  */
 class Index{
     
@@ -38,10 +39,30 @@ class Index{
      */
     private static $_fileCount = 0;
 
+    /**
+     * docsify左侧边栏
+     */
     private static $_docsifySidebar = '';
+
+    /**
+     * 归档历史列表
+     */
+    private static $_archiveFiles = [];
+    /**
+     * 最近更新列表
+     */
+    private static $_latestFiles = [];
+
+    private static $_currentTime = 0;
 
     private static $_filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
     ".nojekyll","_media","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"];
+    
+    public static function init($rootDir,$filters,$more=[]){
+        self::setRootDir($rootDir);
+        self::setFilters($filters);
+        self::$_currentTime = time();
+    }
 
     public static function setRootDir($rootDir){
         if(empty($rootDir) || !file_exists($rootDir)){        
@@ -161,12 +182,12 @@ class Index{
     }
     private static function _getDocsifyFileSidebar($filepath){
     
+        $fileStat = stat($filepath);              
+
         $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath); //处理中文路径                
         $filename = str_replace([" "],["_"],$filename);                
         $filename = rtrim($filename,'.md');
-        
-        // $originPath = $filepath;
-        
+                                
         $filepath = str_replace([self::$_rootDir,"\\","%"],["","/","%25"],$filepath);
            
         $pre = '';
@@ -174,22 +195,105 @@ class Index{
         if($separatorCount > 1){
             $pre = str_repeat("\t",($separatorCount-1));
         }
+        //拼接左侧边栏md字符串
         self::$_docsifySidebar .= $pre."- [".$filename."](".$filepath.")\n";        
+
+        //加入最新更新列表 60天=>5184000,30天=>5184000
+        if((self::$_currentTime - $fileStat['mtime']) < 2592000){
+            if(array_key_exists($fileStat['mtime'],self::$_latestFiles)){
+                $fileStat['mtime'] += 1;
+            }
+            self::$_latestFiles[$fileStat['mtime']] = ['name'=>$filename,'path'=>$filepath];            
+        }
+
+        //php的filectime是指inode修改时间，并不是文件创建时间，这里可以默认泛为文件创建时间，不准确
+        $archiveYm = date("Ym",$fileStat['ctime']);
+        // if(array_key_exists($archiveYm,self::$_archiveFiles)){
+        self::$_archiveFiles[$archiveYm][$fileStat['ctime']] = ['name'=>$filename,'path'=>$filepath];
+        // }
         
     }    
 
-    ///////////////////////docsify 每个目录的README.md 索引文件生成////////////////////////////////    
+    /**
+     * 更新最近更新列表
+     * 注：在docsifySidebar侧边栏执行后有效
+     */
+    public static function updateDocsifyLatest(){
+        Index::initFileCount();
+        $fileList = self::$_latestFiles;
+        $mdString = "### 最新\n> 时间为文章在本地最后更新时间，不是发布时间。\n----\n";
+        if(!empty($fileList)){
+            krsort($fileList);
+            foreach($fileList as $time=>$one){
+                self::$_fileCount++;                
+                $timeString = '<font color="grey" size=1> - '.date("Y/m/d",$time).'</font>';
+                $dirname = preg_replace('/^.+[\\\\\\/]/', '', dirname($one['path'])); 
+                $name = $dirname."/".$one['name'];
+                $mdString .= "- [".$name."](".$one['path'].")\t".$timeString."\n";                                
+            }
+        }
+        
+        file_put_contents(self::$_rootDir.DIRECTORY_SEPARATOR."latest.md",$mdString);   
+
+        $fileCount = Index::getFileCount();        
+        echo "\n最近更新总文件数：".$fileCount."\n";
+        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";                     
+    }
 
     /**
-     * 更新每个目录的索引文件index.md
+     * 更新归档列表
+     * 注：在docsifySidebar侧边栏执行后有效
      */
-    public static function updateDocsifyIndex($dirPath=''){
+    public static function updateDocsifyArchive(){
+        Index::initFileCount();
+        $fileList = self::$_archiveFiles;
+        $mdString = "### 归档列表\n> 时间为文章在本地新建时间，不是发布时间。\n----\n";
+        if(!empty($fileList)){
+            krsort($fileList);
+            foreach($fileList as $archiveYm=>$ymOne){
+                $mdString .= "#### ".$archiveYm."\n";
+                krsort($ymOne);
+                foreach($ymOne as $time=>$one){
+                    self::$_fileCount++;
+                    $timeString = '<font color="grey" size=1> - '.date("Y/m/d",$time).'</font>';                    
+                    $dirname = preg_replace('/^.+[\\\\\\/]/', '', dirname($one['path'])); 
+                    $name = $dirname."/".$one['name'];                                  
+                    $mdString .= "- [".$name."](".$one['path'].")\t".$timeString."\n";
+                }
+            }
+        }
+        file_put_contents(self::$_rootDir.DIRECTORY_SEPARATOR."archive.md",$mdString);   
+
+        $fileCount = Index::getFileCount();        
+        echo "\n归档列表总文件数：".$fileCount."\n";
+        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";                             
+        
+    }
+
+    
+
+    ///////////////////////docsify 每个目录的README.md 索引文件生成////////////////////////////////    
+    
+    /**
+     * 更新每个目录的索引文件README.md
+     */
+    public static function docsifyReadme($dirPath=''){
+        Index::initFileCount($dirPath);
+        self::updateDocsifyReadme();
+        $fileCount = Index::getFileCount();
+        echo "\n更新索引README.md文件数：".$fileCount."\n";
+        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";            
+    }
+    /**
+     * 更新每个目录的索引文件README.md
+     */
+    public static function updateDocsifyReadme($dirPath=''){
         if(empty($dirPath) || !file_exists($dirPath)){        
             $dirPath = __DIR__;
         }
                         
         if(is_dir($dirPath)){
-            $mdString = str_replace([self::$_rootDir,"\\"],["","/"],$dirPath)." 索引：\n\n";            
+            $mdString = "### ".str_replace([self::$_rootDir,"\\"],["","/"],$dirPath)."/索引\n\n";            
             $mdString .= self::_getDocsifyPreDirMdString($dirPath);
             $handle = opendir($dirPath);
             $dirArray = [];
@@ -208,7 +312,7 @@ class Index{
             }
 
             foreach($dirArray as $filepath){
-                self::updateDocsifyIndex($filepath);//递归遍历                                
+                self::updateDocsifyReadme($filepath);//递归遍历                                
                 $mdString.= self::_getDocsifyDirMdString($filepath);
             }
             foreach($fileArray as $filepath){                                                                               
@@ -216,21 +320,27 @@ class Index{
             }
 
             self::$_fileCount += count($fileArray);
-            $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>";
+            $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>\n\n";
 
+            //加载更多-头部
             $moreContent = '';
             $moreFile = $dirPath.DIRECTORY_SEPARATOR."more.md";
             if(file_exists($moreFile)){
-                $moreContent = file_get_contents($moreFile);
+                // $moreContent = file_get_contents($moreFile);
+                $mdString = file_get_contents($moreFile)."\n----\n\n".$mdString;
             }
-            $mdString = $moreContent."\n----\n\n".$mdString;
+            //加载 根目录README.md 追加latest.md 最新内容
+            if($dirPath == self::$_rootDir){
+                $latestFile = $dirPath.DIRECTORY_SEPARATOR."latest.md";
+                if(file_exists($latestFile)){
+                    $mdString .= file_get_contents($latestFile);
+                }
+            }
+            
             file_put_contents($dirPath.DIRECTORY_SEPARATOR."README.md",$mdString); 
             closedir($handle);   
         }
-        $fileCount = Index::getFileCount();
-        Index::initFileCount();
-        echo "\n更新索引README.md文件数：".$fileCount."\n";
-        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";            
+
     }
 
     /**
@@ -246,7 +356,7 @@ class Index{
             }else{
                 $preDir = str_replace([self::$_rootDir,"\\"],["","/"],$preDir)."/";
             }
-            $mdString .= "\n**[上一级目录".$preDir."](".$preDir.")**\n";
+            $mdString .= "\n**[上一级索引".$preDir."](".$preDir.")**\n";
         }        
         return $mdString;
     }
@@ -269,23 +379,19 @@ class Index{
         // $filename = basename($filepath,".md");                                
         $filename = preg_replace('/^.+[\\\\\\/]/', '', $filepath); //处理中文路径                
         
-        $originPath = $filepath;
         
         $filepath = str_replace([self::$_rootDir,"\\","%"],["","/","%25"],$filepath);
         $filename = str_replace([" ",],["_"],$filename);                
         $filename = rtrim($filename,'.md');
         $filepath = rtrim($filepath,".md");
-        // if(mb_strpos($originPath,"运维") !== false){
-        //     echo $filepath."\n";
-        //     echo $filename."\n";
-        // }                
+
         return "\n- [".$filename."](".$filepath.")\n";
     }    
 
     
 /////////////////////清除所有索引文件////////////////////////////
 
-    public static function clearIndex($dirPath){
+    public static function clearReadme($dirPath){
         echo "请到确认代码文件，确认要删除的索引文件是README.md，而不是index.md";exit;
         return true;
         if(empty($dirPath) || !file_exists($dirPath)){        
@@ -313,7 +419,7 @@ class Index{
             self::$_fileCount += count($dirArray);            
 
             foreach($dirArray as $filepath){
-                self::clearIndex($filepath);
+                self::clearReadme($filepath);
             }
 
             closedir($handle);   

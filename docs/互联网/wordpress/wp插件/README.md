@@ -1,10 +1,7 @@
-
-----
-
-/互联网/wordpress/wp插件 索引：
+### /互联网/wordpress/wp插件/索引
 
 
-**[上一级目录/互联网/wordpress/](/互联网/wordpress/)**
+**[上一级索引/互联网/wordpress/](/互联网/wordpress/)**
 
 - [1-wp插件使用](/互联网/wordpress/wp插件/1-wp插件使用)
 
@@ -21,4 +18,5 @@
 - [7-提交插件到wp官方市场](/互联网/wordpress/wp插件/7-提交插件到wp官方市场)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> 2020-03-12 16:14 </font>
+
