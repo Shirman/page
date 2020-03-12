@@ -1,7 +1,8 @@
 <?php
 
 //注意：docsify使用README.md作为索引文件
-
+Index::setFilters([".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
+".nojekyll","icon.jpg","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"]);
 
 //#更新github-page所有目录索引index.md
 $dirPath = __DIR__;//docs
@@ -39,6 +40,9 @@ class Index{
 
     private static $_docsifySidebar = '';
 
+    private static $_filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
+    ".nojekyll","icon.jpg","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"];
+
     public static function setRootDir($rootDir){
         if(empty($rootDir) || !file_exists($rootDir)){        
             $rootDir = __DIR__;
@@ -46,15 +50,19 @@ class Index{
         self::$_rootDir = $rootDir;
         // echo $rootDir;exit;
     }
+
+    public static function setFilters($filters=[]){
+        if(!empty($filters)){
+            self::$_filters = $filters;
+        }
+    }
     
 
     /**
      * 过滤指定文件
      */
-    private static function _filterFile($file){
-        $filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
-                    ".nojekyll","icon.jpg","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"];
-        if(in_array($file,$filters)){
+    private static function _filterFile($file){        
+        if(in_array($file,self::$_filters)){
             return true;
         }
         return false;
@@ -221,7 +229,7 @@ class Index{
         }
         $fileCount = Index::getFileCount();
         Index::initFileCount();
-        echo "\n索引更新总文件数：".$fileCount."\n";
+        echo "\n更新索引README.md文件数：".$fileCount."\n";
         echo "\nupdate at ".date("Y-m-d H:i:s")."\n";            
     }
 

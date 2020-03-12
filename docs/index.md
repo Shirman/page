@@ -29,9 +29,5 @@
 
 **[鸡汤不毒](/docs/鸡汤不毒/index.md)**
 
-- [index.php](/docs/index.php)
 
-- [more](/docs/more.md)
-
-
-<font size=2 color='grey'> 2020-03-12 01:45 </font>
+<font size=2 color='grey'> 2020-03-12 02:17 </font>

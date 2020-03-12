@@ -1,5 +1,8 @@
 <?php
 //#更新github-page所有目录索引index.md
+Index::setFilters([".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
+".nojekyll","icon.jpg","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"]);
+
 $dirPath = '';
 Index::setRootDir($dirPath);
 Index::updateIndex($dirPath);
@@ -29,6 +32,8 @@ class Index{
     private static $_fileCount = 0;
 
     private static $_docsifySidebar = '';
+    private static $_filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
+    ".nojekyll","icon.jpg","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"];    
 
     public static function setRootDir($rootDir){
         if(empty($rootDir) || !file_exists($rootDir)){        
@@ -36,7 +41,11 @@ class Index{
         }           
         self::$_rootDir = $rootDir;
     }
-    
+    public static function setFilters($filters=[]){
+        if(!empty($filters)){
+            self::$_filters = $filters;
+        }
+    }
 
     /**
      * 更新每个目录的索引文件index.md
@@ -81,7 +90,7 @@ class Index{
         }   
         $fileCount = Index::getFileCount();
         Index::initFileCount();
-        echo "\n索引更新总文件数：".$fileCount."\n";
+        echo "\n更新索引index.md文件数：".$fileCount."\n";
         echo "\nupdate at ".date("Y-m-d H:i:s")."\n";         
     }
 
@@ -136,10 +145,8 @@ class Index{
     /**
      * 过滤指定文件
      */
-    private static function _filterFile($file){
-        $filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
-                    ".nojekyll","icon.jpg","index.html","README.md","_navbar.md","_sidebar.md","_test.md"];
-        if(in_array($file,$filters)){
+    private static function _filterFile($file){        
+        if(in_array($file,self::$_filters)){
             return true;
         }
         return false;
