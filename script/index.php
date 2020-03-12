@@ -1,7 +1,7 @@
 <?php
 //#更新github-page所有目录索引index.md
 Index::setFilters([".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
-".nojekyll","icon.jpg","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"]);
+".nojekyll","_media","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"]);
 
 $dirPath = '';
 Index::setRootDir($dirPath);
@@ -33,7 +33,7 @@ class Index{
 
     private static $_docsifySidebar = '';
     private static $_filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
-    ".nojekyll","icon.jpg","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"];    
+    ".nojekyll","_media","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md"];    
 
     public static function setRootDir($rootDir){
         if(empty($rootDir) || !file_exists($rootDir)){        
