@@ -10,6 +10,7 @@
   <meta name="referrer" content="no-referrer" />  
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
+
 </head>
 <body>
   <div id="app">Loading...</div>
@@ -63,8 +64,11 @@
     (function() {
       var hm = document.createElement("script");
       hm.src = "http://hm.baidu.com/hm.js?c546b9832464e7c92a1e4cfce3a04749";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
+      var s = document.getElementsByTagName("body")[0]; 
+      s.appendChild(hm);
+
+      // var s = document.getElementsByTagName("script")[0]; 
+      // s.parentNode.insertBefore(hm, s);
     })();
   </script>
   
