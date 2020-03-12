@@ -10,7 +10,16 @@
   <meta name="referrer" content="no-referrer" />  
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
-
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?40aec637b9255fa5a747de8bcd14ef0e";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    
 </head>
 <body>
   <div id="app">Loading...</div>
@@ -58,18 +67,6 @@
     if (typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('sw.js')
     }
-  </script>
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");      
-      hm.src = "https://hm.baidu.com/hm.js?40aec637b9255fa5a747de8bcd14ef0e";      
-      var s = document.getElementsByTagName("body")[0]; 
-      s.appendChild(hm);
-
-      // var s = document.getElementsByTagName("script")[0]; 
-      // s.parentNode.insertBefore(hm, s);
-    })();
   </script>
   
   
