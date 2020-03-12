@@ -1,25 +1,21 @@
 <?php
 
-//注意：建议在docs目录下执行，docsify使用README.md作为索引文件
+//注意：docsify使用README.md作为索引文件
 
 
 //#更新github-page所有目录索引index.md
-// $dirPath = '';
-// Index::setRootDir($dirPath);
-// Index::updateDocsifyIndex($dirPath);
+$dirPath = __DIR__;//docs
+Index::setRootDir($dirPath);
+Index::updateDocsifyIndex($dirPath);
 
 //#删除已生成目录索引index.md文件
 // Index::clearIndex($dirPath);
 
 // //#更新docsify 侧边栏md配置
-$dirPath = __DIR__;
+$dirPath = __DIR__;//docs
 Index::setRootDir($dirPath);
 Index::docsifySidebar($dirPath);
 
-$fileCount = Index::getFileCount();
-
-echo "\n索引更新总文件数：".$fileCount."\n";
-echo "\nupdate at ".date("Y-m-d H:i:s")."\n";
 exit;
 
 /**
@@ -64,6 +60,10 @@ class Index{
         return false;
     }
 
+    public static function initFileCount(){
+        self::$_fileCount = 0;
+    }
+
     /**
      * get file count
      */
@@ -72,14 +72,22 @@ class Index{
     }
 
 
+
     
     
     /////////////////////docsify 侧边栏生成////////////////////////////
     
     public static function docsifySidebar($filepath){
+        Index::initFileCount();
         self::updateDocsifySidebar($filepath);
         // echo self::$_docsifySidebar;exit;
-        file_put_contents(self::$_rootDir.DIRECTORY_SEPARATOR."_test.md",self::$_docsifySidebar);        
+
+        file_put_contents(self::$_rootDir.DIRECTORY_SEPARATOR."_test.md",self::$_docsifySidebar);   
+
+        $fileCount = Index::getFileCount();        
+        Index::initFileCount();
+        echo "\n侧边栏更新总文件数：".$fileCount."\n";
+        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";             
     }
     public static function updateDocsifySidebar($filePath){
         // echo "\n".$filePath;
@@ -210,7 +218,11 @@ class Index{
             $mdString = $moreContent."\n----\n\n".$mdString;
             file_put_contents($dirPath.DIRECTORY_SEPARATOR."README.md",$mdString); 
             closedir($handle);   
-        }    
+        }
+        $fileCount = Index::getFileCount();
+        Index::initFileCount();
+        echo "\n索引更新总文件数：".$fileCount."\n";
+        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";            
     }
 
     /**
@@ -298,6 +310,10 @@ class Index{
 
             closedir($handle);   
         }
+        $fileCount = Index::getFileCount();
+        Index::initFileCount();
+        echo "\n删除索引总文件数：".$fileCount."\n";
+        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";           
     }
     private static function clear($dirPath){
         $indexmd = $dirPath.DIRECTORY_SEPARATOR."README.md";
