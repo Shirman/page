@@ -14,5 +14,5 @@
 - [5期-软件开发22个常见问题解决策略-综合案例](/互联网/软件工程/软件开发常见问题/5期-软件开发22个常见问题解决策略-综合案例)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

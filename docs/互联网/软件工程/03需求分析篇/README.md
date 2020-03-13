@@ -12,5 +12,5 @@
 - [20如何应对让人头疼的需求变更问题](/互联网/软件工程/03需求分析篇/20如何应对让人头疼的需求变更问题)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

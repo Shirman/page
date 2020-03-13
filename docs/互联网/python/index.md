@@ -31,9 +31,11 @@
 
 - [windows-python3-scrapy环境](/docs/互联网/python/windows-python3-scrapy环境.md)
 
+- [一次性清楚__main__](/docs/互联网/python/一次性清楚__main__.md)
+
 - [一次搞懂Python装饰器](/docs/互联网/python/一次搞懂Python装饰器.md)
 
 - [推荐11个实用Python库](/docs/互联网/python/推荐11个实用Python库.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

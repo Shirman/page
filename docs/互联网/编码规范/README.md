@@ -10,5 +10,5 @@
 - [前端编码规范](/互联网/编码规范/前端编码规范)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

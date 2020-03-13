@@ -20,5 +20,5 @@
 - [08怎样平衡软件质量与时间成本范围的关系](/互联网/软件工程/01基础理论篇/08怎样平衡软件质量与时间成本范围的关系)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

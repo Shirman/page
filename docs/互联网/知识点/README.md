@@ -8,5 +8,5 @@
 - [读懂RabbitMQ概念及原理](/互联网/知识点/读懂RabbitMQ概念及原理)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

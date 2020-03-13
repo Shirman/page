@@ -8,5 +8,5 @@
 - [window10搭建hugo博客](/互联网/GO/window10搭建hugo博客)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

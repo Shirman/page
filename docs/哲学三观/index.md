@@ -14,4 +14,4 @@
 - [辩证与历史唯物主义原理与方法论](/docs/哲学三观/辩证与历史唯物主义原理与方法论.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

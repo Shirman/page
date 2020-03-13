@@ -1,11 +1,7 @@
-/todo 索引：
+/archive 索引：
 
 
 **[上一级目录](/index.md)**
-
-- [django知识整理](/todo/django知识整理.md)
-
-- [docsify](/todo/docsify.md)
 
 
 <font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

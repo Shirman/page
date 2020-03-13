@@ -16,4 +16,4 @@
 - [如何组织精准的表达](/docs/职场团队/沟通/如何组织精准的表达.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

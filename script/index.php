@@ -1,7 +1,10 @@
 <?php
 //#更新github-page所有目录索引index.md
-Index::setFilters([".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
-".nojekyll","_media","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md","CNAME"]);
+$filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
+".nojekyll","_media","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md","CNAME",
+"sw.js",'latest.md','archive.md','.gitignore',".qiniu_pythonsdk_hostscache.json","package-lock.json"];
+
+Index::setFilters($filters);
 
 $dirPath = '';
 Index::setRootDir($dirPath);
@@ -82,10 +85,16 @@ class Index{
                 $mdString.= self::_getFileMdString($filepath);
             }
 
-            self::$_fileCount += count($fileArray);
-            $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>";
-
-            file_put_contents($dirPath.DIRECTORY_SEPARATOR."index.md",$mdString); 
+            // $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>";
+            $mdString .= "\n\n<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>";
+            
+            $indexFile = $dirPath.DIRECTORY_SEPARATOR."index.md";
+            if(self::compareFileContent($indexFile,$mdString)){
+                // self::initFileCount();                
+            }else{  
+                self::$_fileCount += count($fileArray);
+                file_put_contents($indexFile,$mdString); 
+            }
             closedir($handle);   
         }   
         $fileCount = Index::getFileCount();
@@ -206,6 +215,22 @@ class Index{
         if(file_exists($indexmd)){
             unlink($indexmd);
         }
+    }
+
+        /**
+     * 比较文件内容与即将写入的内容，相同则返回true
+     */
+    private static function compareFileContent($filepath,$content){
+        if(file_exists($filepath)){
+            $fileContentMd5 = md5(file_get_contents($filepath));
+            $contentMd5 = md5($content);
+            if($fileContentMd5 == $contentMd5){
+                return true;
+            }
+
+        }
+        return false;
+        
     }
 
      

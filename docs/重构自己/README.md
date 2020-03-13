@@ -1,7 +1,6 @@
 
 重构自己:如`怎样设定目标`、`培养习惯`、`提高自律`和`克服拖延`等。
 
-
 ----
 
 ### /重构自己/索引
@@ -62,5 +61,5 @@
 - [让你的世界变得简单轻松-01](/重构自己/让你的世界变得简单轻松-01)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

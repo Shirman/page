@@ -14,4 +14,4 @@
 - [期货是什么](/docs/概念普及/期货是什么.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

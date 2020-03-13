@@ -1,6 +1,38 @@
 ### 最新
 > 时间为文章在本地最后更新时间，不是发布时间。
 ----
+- [python/一次性清楚__main__](/互联网/python/一次性清楚__main__.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [Docker/Docker安装nginx](/互联网/服务器运维/Docker/Docker安装nginx.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [GO/ubuntu搭建hugo博客](/互联网/GO/ubuntu搭建hugo博客.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [/鸡汤不毒/情绪不好养生徒劳](/鸡汤不毒/情绪不好养生徒劳.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [/鸡汤不毒/年轻的时候做什么才不浪费](/鸡汤不毒/年轻的时候做什么才不浪费.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [/鸡汤不毒/比贫穷更可怕的是缺乏见识](/鸡汤不毒/比贫穷更可怕的是缺乏见识.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [/重构自己/看看睡眠有多重要](/重构自己/看看睡眠有多重要.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [/重构自己/比管理时间更重要的精力](/重构自己/比管理时间更重要的精力.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [团队/我是怎么把一个项目带崩的](/职场团队/团队/我是怎么把一个项目带崩的.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [团队/团队尽量远离这些负能量](/职场团队/团队/团队尽量远离这些负能量.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [团队/开发者的绩效如何衡量](/职场团队/团队/开发者的绩效如何衡量.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [团队/技术管理者无法绕过的那些坑](/职场团队/团队/技术管理者无法绕过的那些坑.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [团队/关于团队敏捷开发实践的6个常见问题](/职场团队/团队/关于团队敏捷开发实践的6个常见问题.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [强身健体/四个动作有效缓解腰酸背痛](/生活健康/强身健体/四个动作有效缓解腰酸背痛.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [强身健体/如何正确简单有效补钙](/生活健康/强身健体/如何正确简单有效补钙.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [解决方案/php开源电商方案](/互联网/解决方案/php开源电商方案.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [系统架构/一个可供参考的订单系统分库分表实践](/互联网/系统架构/一个可供参考的订单系统分库分表实践.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [系统架构/为web应用选择技术栈](/互联网/系统架构/为web应用选择技术栈.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [系统架构/腾讯的技术委员会](/互联网/系统架构/腾讯的技术委员会.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [系统架构/架构拆分原理todo](/互联网/系统架构/架构拆分原理todo.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [系统架构/单体架构与微服务](/互联网/系统架构/单体架构与微服务.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [系统架构/创业公司技术负责人谈创业公司技术选型](/互联网/系统架构/创业公司技术负责人谈创业公司技术选型.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [版本管理/Git团队协作](/互联网/版本管理/Git团队协作.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [数据层/mysql的索引是什么怎么优化](/互联网/数据层/mysql的索引是什么怎么优化.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [后端/全栈开发者应该学什么-2019篇](/互联网/后端/全栈开发者应该学什么-2019篇.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [前端/Vue学习路线图](/互联网/前端/Vue学习路线图.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [前端/一文读懂JavaScript和ECMAScript的区别](/互联网/前端/一文读懂JavaScript和ECMAScript的区别.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [前端/前端开发技术指南和趋势-2019版](/互联网/前端/前端开发技术指南和趋势-2019版.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [/产品设计/企业应用架构的演变史-杨堃](/产品设计/企业应用架构的演变史-杨堃.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [/产品设计/一套系统从无到有的设计-杨堃](/产品设计/一套系统从无到有的设计-杨堃.md)	<font color="grey" size=1> - 2020/03/12</font>
+- [/产品设计/一张图理清电商后台产品模块](/产品设计/一张图理清电商后台产品模块.md)	<font color="grey" size=1> - 2020/03/12</font>
+- [/产品设计/B端产品设计](/产品设计/B端产品设计.md)	<font color="grey" size=1> - 2020/03/12</font>
 - [CI-CD/Docker之Jenkins自动化部署](/互联网/服务器运维/CI-CD/Docker之Jenkins自动化部署.md)	<font color="grey" size=1> - 2020/03/12</font>
 - [/营销运营/研究朋友圈两个月的微商后](/营销运营/研究朋友圈两个月的微商后.md)	<font color="grey" size=1> - 2020/03/12</font>
 - [前端/Vue基础笔记](/互联网/前端/Vue基础笔记.md)	<font color="grey" size=1> - 2020/03/11</font>
@@ -18,7 +50,6 @@
 - [wokerman/GatewayWoker结合其他mvc框架](/互联网/PHP/wokerman/GatewayWoker结合其他mvc框架.md)	<font color="grey" size=1> - 2020/03/08</font>
 - [wokerman/Workerman结合其他mvc框架](/互联网/PHP/wokerman/Workerman结合其他mvc框架.md)	<font color="grey" size=1> - 2020/03/08</font>
 - [服务器运维/CentOS下安装ImageMagick和PHP-Imagick扩展](/互联网/服务器运维/CentOS下安装ImageMagick和PHP-Imagick扩展.md)	<font color="grey" size=1> - 2020/03/08</font>
-- [/鸡汤不毒/情绪不好养生徒劳](/鸡汤不毒/情绪不好养生徒劳.md)	<font color="grey" size=1> - 2020/03/08</font>
 - [保险/一学就会的存钱方法](/生活健康/保险/一学就会的存钱方法.md)	<font color="grey" size=1> - 2020/03/06</font>
 - [/其他/程序员如何优雅](/其他/程序员如何优雅.md)	<font color="grey" size=1> - 2020/03/05</font>
 - [PHP设计模式全解析/01-开闭原则](/互联网/设计模式/PHP设计模式全解析/01-开闭原则.md)	<font color="grey" size=1> - 2020/03/04</font>
@@ -75,12 +106,8 @@
 - [面试/面试中如何考察公司](/职场团队/面试/面试中如何考察公司.md)	<font color="grey" size=1> - 2020/02/20</font>
 - [/教育培养/带娃积分机制](/教育培养/带娃积分机制.md)	<font color="grey" size=1> - 2020/02/19</font>
 - [/概念普及/双盲实验](/概念普及/双盲实验.md)	<font color="grey" size=1> - 2020/02/19</font>
-- [版本管理/Git团队协作](/互联网/版本管理/Git团队协作.md)	<font color="grey" size=1> - 2020/02/19</font>
-- [解决方案/php开源电商方案](/互联网/解决方案/php开源电商方案.md)	<font color="grey" size=1> - 2020/02/19</font>
 - [wordpress/wordpress变现](/互联网/wordpress/wordpress变现.md)	<font color="grey" size=1> - 2020/02/19</font>
 - [/其他/科学的中医才是我们要的中医](/其他/科学的中医才是我们要的中医.md)	<font color="grey" size=1> - 2020/02/19</font>
 - [/其他/开发私活](/其他/开发私活.md)	<font color="grey" size=1> - 2020/02/19</font>
 - [/其他/互联网信息终极概念](/其他/互联网信息终极概念.md)	<font color="grey" size=1> - 2020/02/19</font>
 - [名人效应/张译十年磨一剑](/鸡汤不毒/名人效应/张译十年磨一剑.md)	<font color="grey" size=1> - 2020/02/19</font>
-- [沟通/互联网团队7大沟通方式](/职场团队/沟通/互联网团队7大沟通方式.md)	<font color="grey" size=1> - 2020/02/11</font>
-- [知识点/同步-异步-阻塞-非阻塞-IO模型](/互联网/知识点/同步-异步-阻塞-非阻塞-IO模型.md)	<font color="grey" size=1> - 2020/02/11</font>

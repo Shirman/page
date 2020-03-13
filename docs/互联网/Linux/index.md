@@ -46,4 +46,4 @@
 - [利用scp自动输入密码进行文件远程拷贝](/docs/互联网/Linux/利用scp自动输入密码进行文件远程拷贝.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

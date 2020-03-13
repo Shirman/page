@@ -10,5 +10,5 @@
 - [推荐项目与文章](/互联网/人工智能/知识图谱/推荐项目与文章)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

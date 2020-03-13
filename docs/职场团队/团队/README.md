@@ -36,5 +36,5 @@
 - [赞扬是很好的管理艺术](/职场团队/团队/赞扬是很好的管理艺术)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

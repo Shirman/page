@@ -26,4 +26,4 @@
 - [谈To-B业务的难点-曹政](/docs/产品设计/谈To-B业务的难点-曹政.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

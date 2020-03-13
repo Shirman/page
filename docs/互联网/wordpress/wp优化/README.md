@@ -14,5 +14,5 @@
 - [5-wp安全](/互联网/wordpress/wp优化/5-wp安全)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

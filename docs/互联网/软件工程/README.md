@@ -30,5 +30,5 @@
 - [学习攻略-怎样学好软件工程](/互联网/软件工程/学习攻略-怎样学好软件工程)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

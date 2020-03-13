@@ -18,4 +18,4 @@
 - [7-提交插件到wp官方市场](/docs/互联网/wordpress/wp插件/7-提交插件到wp官方市场.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

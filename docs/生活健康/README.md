@@ -1,6 +1,5 @@
 生活健康：如`生活常识`、`幸福价值`、`教育培养`、`修身养性`等等。
 
-
 ----
 
 ### /生活健康/索引
@@ -17,5 +16,5 @@
 **[饮食养生](/生活健康/饮食养生/)**
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

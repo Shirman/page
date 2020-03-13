@@ -46,4 +46,4 @@
 - [通俗易懂PHP迭代生成器](/docs/互联网/PHP/通俗易懂PHP迭代生成器.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

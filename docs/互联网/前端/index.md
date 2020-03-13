@@ -21,7 +21,7 @@
 
 - [webpack与bower的区别](/docs/互联网/前端/webpack与bower的区别.md)
 
-- [一文读懂_JavaScript_和_ECMAScript_的区别](/docs/互联网/前端/一文读懂 JavaScript 和 ECMAScript 的区别.md)
+- [一文读懂JavaScript和ECMAScript的区别](/docs/互联网/前端/一文读懂JavaScript和ECMAScript的区别.md)
 
 - [前端开发技术指南和趋势-2019版](/docs/互联网/前端/前端开发技术指南和趋势-2019版.md)
 
@@ -36,4 +36,4 @@
 - [彻底理解URL编码](/docs/互联网/前端/彻底理解URL编码.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

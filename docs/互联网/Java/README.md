@@ -6,5 +6,5 @@
 - [ubuntu快速安装配置jdk](/互联网/Java/ubuntu快速安装配置jdk)
 
 
-<font size=2 color='grey'> 2020-03-12 16:14 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

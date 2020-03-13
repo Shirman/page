@@ -4,7 +4,7 @@
 
 $filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
 ".nojekyll","_media","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md","CNAME",
-"sw.js",'latest.md','archive.md'];
+"sw.js",'latest.md','archive.md','.gitignore',".qiniu_pythonsdk_hostscache.json","package-lock.json"];
 
 $dirPath = __DIR__;//docs
 Index::init($dirPath,$filters);
@@ -111,12 +111,18 @@ class Index{
         self::updateDocsifySidebar($filepath);
         // echo self::$_docsifySidebar;exit;
 
-        file_put_contents(self::$_rootDir.DIRECTORY_SEPARATOR."_test.md",self::$_docsifySidebar);   
+        $sidebarFile = self::$_rootDir.DIRECTORY_SEPARATOR."_sidebar.md";
+        if(self::compareFileContent($sidebarFile,self::$_docsifySidebar)){
+            echo "\n侧边栏更新总文件数：0\t， 不需要更新\n";            
+        }else{
 
-        $fileCount = Index::getFileCount();        
-        Index::initFileCount();
-        echo "\n侧边栏更新总文件数：".$fileCount."\n";
-        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";             
+            file_put_contents($sidebarFile,self::$_docsifySidebar);   
+    
+            $fileCount = Index::getFileCount();        
+            Index::initFileCount();
+            echo "\n侧边栏更新总文件数：".$fileCount."\n";
+            echo "\nupdate at ".date("Y-m-d H:i:s")."\n";             
+        }
     }
     public static function updateDocsifySidebar($filePath){
         // echo "\n".$filePath;
@@ -233,11 +239,16 @@ class Index{
             }
         }
         
-        file_put_contents(self::$_rootDir.DIRECTORY_SEPARATOR."latest.md",$mdString);   
+        $latestFile = self::$_rootDir.DIRECTORY_SEPARATOR."latest.md";
+        if(self::compareFileContent($latestFile,$mdString)){
+            echo "\n最近更新总文件数：0\t， 不需要更新\n";            
+        }else{        
+            file_put_contents($latestFile,$mdString);   
 
-        $fileCount = Index::getFileCount();        
-        echo "\n最近更新总文件数：".$fileCount."\n";
-        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";                     
+            $fileCount = Index::getFileCount();        
+            echo "\n最近更新总文件数：".$fileCount."\n";
+            echo "\nupdate at ".date("Y-m-d H:i:s")."\n";                     
+        }
     }
 
     /**
@@ -262,12 +273,17 @@ class Index{
                 }
             }
         }
-        file_put_contents(self::$_rootDir.DIRECTORY_SEPARATOR."archive.md",$mdString);   
 
-        $fileCount = Index::getFileCount();        
-        echo "\n归档列表总文件数：".$fileCount."\n";
-        echo "\nupdate at ".date("Y-m-d H:i:s")."\n";                             
-        
+        $archiveFile = self::$_rootDir.DIRECTORY_SEPARATOR."archive.md";
+        if(self::compareFileContent($archiveFile,$mdString)){
+            echo "\n归档列表总文件数：0\t， 不需要更新\n";            
+        }else{                
+            file_put_contents($archiveFile,$mdString);   
+
+            $fileCount = Index::getFileCount();        
+            echo "\n归档列表总文件数：".$fileCount."\n";
+            echo "\nupdate at ".date("Y-m-d H:i:s")."\n";                             
+        }
     }
 
     
@@ -320,14 +336,15 @@ class Index{
             }
 
             self::$_fileCount += count($fileArray);
-            $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>\n\n";
+            // $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>\n\n";
+            $mdString .= "\n\n<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>\n\n";            
 
             //加载更多-头部
             $moreContent = '';
             $moreFile = $dirPath.DIRECTORY_SEPARATOR."more.md";
             if(file_exists($moreFile)){
                 // $moreContent = file_get_contents($moreFile);
-                $mdString = file_get_contents($moreFile)."\n----\n\n".$mdString;
+                $mdString = file_get_contents($moreFile).$mdString;
             }
             //加载 根目录README.md 追加latest.md 最新内容
             if($dirPath == self::$_rootDir){
@@ -336,8 +353,13 @@ class Index{
                     $mdString .= file_get_contents($latestFile);
                 }
             }
-            
-            file_put_contents($dirPath.DIRECTORY_SEPARATOR."README.md",$mdString); 
+
+            $readmeFile = $dirPath.DIRECTORY_SEPARATOR."README.md";
+            if(self::compareFileContent($readmeFile,$mdString)){
+                self::initFileCount();                
+            }else{                
+                file_put_contents($readmeFile,$mdString); 
+            }            
             closedir($handle);   
         }
 
@@ -434,6 +456,22 @@ class Index{
         if(file_exists($indexmd)){
             unlink($indexmd);
         }
+    }
+
+    /**
+     * 比较文件内容与即将写入的内容，相同则返回true
+     */
+    private static function compareFileContent($filepath,$content){
+        if(file_exists($filepath)){
+            $fileContentMd5 = md5(file_get_contents($filepath));
+            $contentMd5 = md5($content);
+            if($fileContentMd5 == $contentMd5){
+                return true;
+            }
+
+        }
+        return false;
+        
     }
 
 }

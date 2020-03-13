@@ -14,4 +14,4 @@
 - [成员离职的征兆与内心](/docs/职场团队/成员离职的征兆与内心.md)
 
 
-<font size=2 color='grey'> 2020-03-12 02:17 </font>
+<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
