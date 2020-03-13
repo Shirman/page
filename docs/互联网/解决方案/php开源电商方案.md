@@ -13,7 +13,7 @@ php开源电商方案
 - [Odoo eCommerce](#odoo-ecommerce)
 
 <!-- /TOC -->
-![](https://mmbiz.qpic.cn/mmbiz_png/W9DqKgFsc69YOSn6ZdS6sWHzFmO4PnAMx89leW4H0vjONaVy6dicV69G3C7S2tfLFibHYCAH1diaEmZuaicicCwm5Pw/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073201.8833547-55.jpg)
 
 如果想要建立自己的线上购物站点呢？我们正好还有一些优秀的开源电商解决方案，可以自行部署在自己的 Linux 服务器上。
 
@@ -28,7 +28,7 @@ php开源电商方案
 
 ## OpenCart
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc69YOSn6ZdS6sWHzFmO4PnAMnrsoVZEZicxmPIuhicZ7dagiaiaVkOoWXWJq8oMZ6MHJ32LSvQNGXUAJ5Q/640?wx_fmt=jpeg)
+![](http://img.9ong.com/images/page/md-1584073202.193527-169.jpg)
 
 OpenCart 是一个基于 PHP 的非常流行的电商解决方案，就我个人而言，我曾为一个项目用过它，并且体验非常好，如果不是最好的话。
 
@@ -38,7 +38,7 @@ OpenCart 不一定是适合所有人的“现代”电商解决方案，但如�
 
 ## PrestaShop
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc69YOSn6ZdS6sWHzFmO4PnAMviaiasxFAR4pTeYghcI5TOF6DViaxxTeqJAe9uSvp4eyGqA9D3WBNOXVA/640?wx_fmt=jpeg)
+![](http://img.9ong.com/images/page/md-1584073202.4608274-521.jpg)
 
 PrestaShop 也是一个可以尝试的开源电商解决方案。
 
@@ -48,7 +48,7 @@ PrestaShop 的特点就是配置丰富和易于使用，我发现很多其它用
 
 ## WooCommerce
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc69YOSn6ZdS6sWHzFmO4PnAMKa2jxqaoQibQHb0bnfC5kJAtEz5U72JibWtYQpC4Tyh63CgSWXvXlEiaA/640?wx_fmt=jpeg)
+![](http://img.9ong.com/images/page/md-1584073202.7528753-606.jpg)
 
 如果你想用WordPress来搭建电商站点，不妨使用 WooCommerce。
 
@@ -60,7 +60,7 @@ WooCommerce 的灵活性也是一大亮点，在它的线上商店提供了许�
 
 ## Zen Cart
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc69YOSn6ZdS6sWHzFmO4PnAM8vibq87phcUWoTmyD3rUjnQImgjEwQk8RdCHpHrGce9e18ibbLUVMlMw/640?wx_fmt=jpeg)
+![](http://img.9ong.com/images/page/md-1584073203.1216798-936.jpg)
 
 这或许是一个稍显古老的电商解决方案，但同时也是最好的开源解决方案之一。如果你喜欢老式风格的模板（主要基于 HTML），而且只需要一些基础性的扩展，那你也可以尝试使用 Zen Cart。
 
@@ -68,7 +68,7 @@ WooCommerce 的灵活性也是一大亮点，在它的线上商店提供了许�
 
 ## Magento
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc69YOSn6ZdS6sWHzFmO4PnAMFou7f60ykfNXnoI3eQu2ticz6vLpTb4hlIDlrFsXAvVHakxrrpkM1Og/640?wx_fmt=jpeg)
+![](http://img.9ong.com/images/page/md-1584073203.397292-481.jpg)
 
 *Image Credits: Magestore*
 
@@ -78,7 +78,7 @@ Magento 完全是作为电商应用程序而生的，因此你会发现它的很
 
 ## Drupal
 
-![](https://mmbiz.qpic.cn/mmbiz_png/W9DqKgFsc69YOSn6ZdS6sWHzFmO4PnAMx5GYkbaCtMkKCydZibtjGNHCJuWfib4qauVjVIUA5ZrY2gUiaTPazYyXA/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073203.6666248-176.jpg)
 
 *Drupal*
 
@@ -90,7 +90,7 @@ Drupal 是一个适用于创建电商站点的开源 CMS 解决方案。
 
 ## Odoo eCommerce
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc69YOSn6ZdS6sWHzFmO4PnAMvOfegicFXFO5cJfibNK9uAXoibVsGGqFnY1kyMTFFPnIMKTzmNtprNZXg/640?wx_fmt=jpeg)
+![](http://img.9ong.com/images/page/md-1584073203.828703-101.jpg)
 
 *Odoo Ecommerce Platform*
 

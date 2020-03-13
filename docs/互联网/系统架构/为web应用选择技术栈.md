@@ -14,7 +14,7 @@
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/X1wOHbVRDnxj0goRicWqqbL3H6aOfY9bccx5Qia4fGy4WRK7wribQVBHYhJqD6KgTmGs6wlcBcmB5TxIibP90wSA7g/640?wx_fmt=jpeg)
+![](http://img.9ong.com/images/page/md-1584073178.285447-547.jpg)
 
 创始人、CEO（首席执行官）、CTO（首席技术官）以及其他的利益相关者都需要知道如何构建一个软件产品，你是他们中的一位吗？
 

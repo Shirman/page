@@ -13,7 +13,7 @@ sudo apt-get install hugo
 
 > hugo new site [project-name]
 ```
-chenqingji@ubuntu:/var/www/html$ sudo hugo new site blog
+jm@ubuntu:/var/www/html$ sudo hugo new site blog
 
 Congratulations! Your new Hugo site is created in "/var/www/html/blog".
 ```
@@ -32,15 +32,15 @@ git clone https://github.com/pacollins/hugo-future-imperfect-slim.git themes/fut
 
 ### 新增page
 ```
-chenqingji@iZu1cxibx8jZ:/var/www/html/blog$ sudo hugo  new about.md
+jm@iZu1cxibx8jZ:/var/www/html/blog$ sudo hugo  new about.md
 /var/www/html/blog/content/about.md created
 
-chenqingji@iZu1cxibx8jZ:/var/www/html/blog$ sudo vim content/about.md 
+jm@iZu1cxibx8jZ:/var/www/html/blog$ sudo vim content/about.md 
 
-chenqingji@iZu1cxibx8jZ:/var/www/html/blog$ sudo hugo new post/first.md
+jm@iZu1cxibx8jZ:/var/www/html/blog$ sudo hugo new post/first.md
 /var/www/html/blog/content/post/first.md created
 
-chenqingji@iZu1cxibx8jZ:/var/www/html/blog$ sudo vim content/post/first.md 
+jm@iZu1cxibx8jZ:/var/www/html/blog$ sudo vim content/post/first.md 
 ```
 
 ```
@@ -58,7 +58,7 @@ post first page content
 
 
 ```
-chenqingji@iZu1cxibx8jZ:/var/www/html/blog$ hugo server -D -t future
+jm@iZu1cxibx8jZ:/var/www/html/blog$ hugo server -D -t future
 =============================================================
 Your rendered home page is blank: /index.html is zero-length
  * Did you specify a theme on the command-line or in your

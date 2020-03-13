@@ -23,7 +23,7 @@ Git团队协作
 
 <!-- /TOC -->
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/uDRkMWLia28iam8tYeDJZ6ElK3K8SfMwYkghVJwWV0mj93Zs9V1RRwYh58w9Z5F20Cib3eFOOkNObFyLzfLPzQ3Uw/640?wx_fmt=jpeg)
+![](http://img.9ong.com/images/page/md-1584073039.9721248-441.jpg)
 
 
 
@@ -45,7 +45,7 @@ Git团队协作
 - 用一句简练的话写在第一行，然后空一行稍微详细阐述该提交所增加或修改的地方；
 - 不要每提交一次就推送一次，多积攒几个提交后一次性推送，这样可以避免在进行一次提交后发现代码中还有小错误。
 
-假如已经把代码提交了，对这次提交的内容进行检查时发现里面有个变量单词拼错了或者其他失误，只要还没有推送到远程，就有一个不被他人发觉你的疏忽的补救方法——首先，把失误修正之后提交，可以用与上次提交同样的信息。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQI4miaAKa9cgYEHABp87m7W2ljkhxf6yTYCBcMylUN1QykeORVibPXdJA/640?wx_fmt=jpeg)然后，终端中执行命令 git rebase -i \[SHA\]，其中 SHA 是上一次提交之前的那次提交的，在这里是 3b22372。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQAy10iaEVBRoYxnNADLoMvuRvjvI4AWRPjY6jSSwLJIkWdUyIg5oeFog/640?wx_fmt=jpeg)最后，这样就将两次提交的节点合并成一个，甚至能够修改提交信息！![](https://mmbiz.qpic.cn/mmbiz_jpg/iaIdQfEric9TxHGWgloqiaQPzNrNSE6e13Zib9tWQ87icQtbKibQ8jcYicflyXZibk5RbTCawu74ozxzQBjOkjLoRSQ3SA/640?wx_fmt=jpeg)
+假如已经把代码提交了，对这次提交的内容进行检查时发现里面有个变量单词拼错了或者其他失误，只要还没有推送到远程，就有一个不被他人发觉你的疏忽的补救方法——首先，把失误修正之后提交，可以用与上次提交同样的信息。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQI4miaAKa9cgYEHABp87m7W2ljkhxf6yTYCBcMylUN1QykeORVibPXdJA/640?wx_fmt=jpeg)然后，终端中执行命令 git rebase -i \[SHA\]，其中 SHA 是上一次提交之前的那次提交的，在这里是 3b22372。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQAy10iaEVBRoYxnNADLoMvuRvjvI4AWRPjY6jSSwLJIkWdUyIg5oeFog/640?wx_fmt=jpeg)最后，这样就将两次提交的节点合并成一个，甚至能够修改提交信息！![](http://img.9ong.com/images/page/md-1584073040.1484869-284.jpg)
 
 谁说历史不可篡改了？**前提是，想要合并的那几次提交还没有推送到远程！**  
 
@@ -63,7 +63,7 @@ Git团队协作
 
 ### 2.分支管理
 
-[Git](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247484228&idx=1&sn=ae3b332187e52a55e8aa862678425c4c&scene=21#wechat_redirect) 的一大特点就是可以创建很多分支并行开发。正因为它的灵活性，团队中如果没有一个成熟的分支模型的话，那将会是一团糟。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQPBDU3FV8icQbtcroPwJ5kEAjMvRNBXsI4qUAx7j5kBY46qgXj0veumg/640?wx_fmt=jpeg)要是谁真把这么乱的提交图表摆在我面前，就给他一个上勾拳！
+[Git](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247484228&idx=1&sn=ae3b332187e52a55e8aa862678425c4c&scene=21#wechat_redirect) 的一大特点就是可以创建很多分支并行开发。正因为它的灵活性，团队中如果没有一个成熟的分支模型的话，那将会是一团糟。![](http://img.9ong.com/images/page/md-1584073040.313169-177.jpg)要是谁真把这么乱的提交图表摆在我面前，就给他一个上勾拳！
 
 #### 2.1 分支模型
 
@@ -75,7 +75,7 @@ Git团队协作
 - feature——某个功能点正在开发阶段；
 - release——发布定期要上线的功能。
 
-看到上面的「master」和「develop」加粗了吧？代表它们是「主要分支」，其他的分支是基于它们派生出来的。主要分支每种类型只能有一个，派生分支每个类型可以同时存在多个。各类型分支之间的关系用一张图来体现就是：![](https://mmbiz.qpic.cn/mmbiz_png/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQ8CJMWRVu3aL2Wvdn7lcbIulA5CneNXLlfCcxHibXAuvMTFbQ76L5QSw/640?wx_fmt=png)更多信息可参考 xirong 所整理的《Git工作流指南》:https://github.com/xirong/my-git/blob/master/git-workflow-tutorial.md
+看到上面的「master」和「develop」加粗了吧？代表它们是「主要分支」，其他的分支是基于它们派生出来的。主要分支每种类型只能有一个，派生分支每个类型可以同时存在多个。各类型分支之间的关系用一张图来体现就是：![](http://img.9ong.com/images/page/md-1584073040.5829499-105.jpg)更多信息可参考 xirong 所整理的《Git工作流指南》:https://github.com/xirong/my-git/blob/master/git-workflow-tutorial.md
 
 #### 2.2 工具选择
 
@@ -92,15 +92,15 @@ SourceTree 和 GitLab 应该是相辅相成的存在，而不是互相取代。
 
 #### 3.1 SourceTree
 
-按下 command + , 调出「Preferences」界面并切换到「Git」标签，勾选「Use rebase instead of merge by default for tracked branches」和「Do not fast-forward when merging, always create commit」。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQL8EnzrCLTPxG5jJzQSedp0ibu6iabxE8V2zln78mVXMkoaZRZDpxoIHA/640?wx_fmt=jpeg)这样设置之后，在点「Pull」按钮拉取代码时会自动执行 git pull —rebase；并且，每次合并时会自动创建新的包含分支信息的提交节点。接下来，点击工具栏中的「Git Flow」按钮将相关的流程自动化。如果没有特殊需求，直接按下对话框中的「OK」就好了。初始化完成后会自动切换到 develop 分支。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQKT1ZPqsOwc0zJJoY0rGMn5zXibH7UL2MAMIROY53ORhibRQBnDEc5sMA/640?wx_fmt=jpeg)这下再点「Git Flow」按钮所弹出的对话框就是选择创建分支类型的了。
+按下 command + , 调出「Preferences」界面并切换到「Git」标签，勾选「Use rebase instead of merge by default for tracked branches」和「Do not fast-forward when merging, always create commit」。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQL8EnzrCLTPxG5jJzQSedp0ibu6iabxE8V2zln78mVXMkoaZRZDpxoIHA/640?wx_fmt=jpeg)这样设置之后，在点「Pull」按钮拉取代码时会自动执行 git pull —rebase；并且，每次合并时会自动创建新的包含分支信息的提交节点。接下来，点击工具栏中的「Git Flow」按钮将相关的流程自动化。如果没有特殊需求，直接按下对话框中的「OK」就好了。初始化完成后会自动切换到 develop 分支。![](http://img.9ong.com/images/page/md-1584073040.8105135-973.jpg)这下再点「Git Flow」按钮所弹出的对话框就是选择创建分支类型的了。
 
 #### 3.2 GitLab
 
-在创建项目仓库后一定要把主要分支，也就是 master 和 develop 给保护起来。为它们设置权限，只有项目负责人可以进行推送和删除等操作。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQlw7DYG2G9b4t9iaITVOwicicKNKBNR16lWGicyAa823QdI8ES0UtP0H0Tg/640?wx_fmt=jpeg)被保护的分支在列表中会有特殊的标记进行区分。
+在创建项目仓库后一定要把主要分支，也就是 master 和 develop 给保护起来。为它们设置权限，只有项目负责人可以进行推送和删除等操作。![](http://img.9ong.com/images/page/md-1584073041.0915377-496.jpg)被保护的分支在列表中会有特殊的标记进行区分。
 
 ### 4.开发流程
 
-在引入 [Git](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247484228&idx=1&sn=ae3b332187e52a55e8aa862678425c4c&scene=21#wechat_redirect) Flow 之后，所有工作都要围绕着它来展开，将原本的流程与之结合形成「基于 [Git](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247484228&idx=1&sn=ae3b332187e52a55e8aa862678425c4c&scene=21#wechat_redirect) Flow 的开发流程」。![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQaT3icRlFcz3sfldSToBfYZ5ylbfebt2RmoLCfRaVgRpKjgg7zw5sKpQ/640?wx_fmt=jpeg)
+在引入 [Git](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247484228&idx=1&sn=ae3b332187e52a55e8aa862678425c4c&scene=21#wechat_redirect) Flow 之后，所有工作都要围绕着它来展开，将原本的流程与之结合形成「基于 [Git](https://mp.weixin.qq.com/s?__biz=MzI1NDY0MTkzNQ==&mid=2247484228&idx=1&sn=ae3b332187e52a55e8aa862678425c4c&scene=21#wechat_redirect) Flow 的开发流程」。![](http://img.9ong.com/images/page/md-1584073041.3831031-90.jpg)
 
 #### 4.1 开发功能
 
@@ -110,11 +110,11 @@ SourceTree 和 GitLab 应该是相辅相成的存在，而不是互相取代。
 
 然后，到 GitLab 上的项目首页创建合并请求（merge request）。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQtKMfzhVCHTCCqDBSWsEpr1WByhScwoLyEkAgRbtqBibrUZcKoQBtTcA/640?wx_fmt=jpeg)「来源分支」选择要被合并的 feature 分支且「目标分支」选择 develop 分支后点击「比较分支」按钮，在出现的表单中将处理人指派为项目负责人。
+![](http://img.9ong.com/images/page/md-1584073041.6147923-775.jpg)「来源分支」选择要被合并的 feature 分支且「目标分支」选择 develop 分支后点击「比较分支」按钮，在出现的表单中将处理人指派为项目负责人。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQI1cqiaeOJYDaNO3q3ibqdzrszQruVmySh6xyNiaqvoa1jkzdMtHrvuzCA/640?wx_fmt=jpeg)项目负责人在收到合并请求时，应该先做下代码审核看看有没有明显的严重的错误；有问题就找负责开发的人去修改，没有就接受请求并删除对应的 feature 分支。
+![](http://img.9ong.com/images/page/md-1584073041.8431485-596.jpg)项目负责人在收到合并请求时，应该先做下代码审核看看有没有明显的严重的错误；有问题就找负责开发的人去修改，没有就接受请求并删除对应的 feature 分支。
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/CvQa8Yf8vq32LhK77vJWFPPNDVqF9dPQ3LLrg1XNZL0PdCsqLI1xDOWlKqCslGnCs7AMOiaA2Dcpp6tFHlyr97w/640?wx_fmt=jpeg)在将某次发布的所需功能全部开发完成时，就可以交付测试了。
+![](http://img.9ong.com/images/page/md-1584073042.0928292-627.jpg)在将某次发布的所需功能全部开发完成时，就可以交付测试了。
 
 
 #### 4.2 测试功能

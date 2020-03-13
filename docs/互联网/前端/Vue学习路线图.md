@@ -27,7 +27,7 @@
     - [渐进式 Web 应用程序](#渐进式-web-应用程序)
 
   
-![](https://mmbiz.qpic.cn/mmbiz_jpg/XIibZ0YbvibkXJOj2EYLuaeicghUO57u2eib7JWDe7IhTfhuJ3Xw33Q8k1FH64tqxZepJWK8yn6KHPLaze2Xfbjk6w/640?wx_fmt=jpeg)
+![](http://img.9ong.com/images/page/md-1584072993.5693214-669.jpg)
 
 作者｜Anthony Gore译者｜无明如果你是 Vue 开发新手，可能已经听过很多行话术语，比如单页面应用程序、异步组件、服务器端渲染，等等。你可能还听说过与 Vue 有关的一些工具和库，比如 Vuex、Webpack、Vue CLI 和 Nuxt。
 
@@ -35,7 +35,7 @@
 
 一口气吃不成胖子，试图一下子学习所有东西可能是徒劳的，所以我将在这篇文章中展示一个高级“知识地图”，它包含了与 Vue 开发相关的关键领域，你可以使用这张地图作为 2019 年学习 Vue 的图鉴。
 
-![](https://mmbiz.qpic.cn/mmbiz_png/XIibZ0YbvibkXJOj2EYLuaeicghUO57u2eib7w5QvRp7liaL9FSuKIzyXw1qvJPY5HdhO7o1t9OaTgXFUYtcic92uRCg/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072993.7915184-440.jpg)
 
 ### 0. JavaScript 和基本的 Web 开发
 

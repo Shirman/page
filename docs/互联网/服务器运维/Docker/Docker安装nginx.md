@@ -13,7 +13,7 @@ docker安装nginx
 ### 查看docker hub上有哪些nginx镜像
 
 ```
-chenqingji@ubuntu:/var/www/docker/demo$ sudo docker search nginx
+jm@ubuntu:/var/www/docker/demo$ sudo docker search nginx
 NAME                              DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
 nginx                             Official build of Nginx.                        12314               [OK]                
 jwilder/nginx-proxy               Automated Nginx reverse proxy for docker con…   1698                                    [OK]
@@ -28,7 +28,7 @@ bitnami/nginx                     Bitnami nginx Docker Image                    
 ### pull及安装nginx镜像
 
 ```
-chenqingji@ubuntu:/var/www/docker/demo$ sudo docker pull nginx:latest
+jm@ubuntu:/var/www/docker/demo$ sudo docker pull nginx:latest
 latest: Pulling from library/nginx
 000eee12ec04: Pull complete 
 eb22865337de: Pull complete 
@@ -41,7 +41,7 @@ docker.io/library/nginx:latest
 ### 确认nginx镜像
 
 ```
-chenqingji@ubuntu:/var/www/docker/demo$ sudo docker images
+jm@ubuntu:/var/www/docker/demo$ sudo docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 nginx               latest              231d40e811cd        2 weeks ago         126MB
 hello-world         latest              fce289e99eb9        11 months ago       1.84kB
@@ -50,7 +50,7 @@ hello-world         latest              fce289e99eb9        11 months ago       
 ### 运行nginx容器
 
 ```
-chenqingji@ubuntu:/var/www/docker/demo$ sudo docker run --name nginx-test -p 8080:80 -d nginx
+jm@ubuntu:/var/www/docker/demo$ sudo docker run --name nginx-test -p 8080:80 -d nginx
 bae3e0acf7418079cd682a86cc810f75d36e8a19e1d8651e0fd111fcfea0fd1d
 ```
 

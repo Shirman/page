@@ -54,7 +54,7 @@
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_gif/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXFjdzFGo33Me1HSc6asccrDicNrjY1A1QopGmJLU4TRqRaG1QRDA7KDQ/0?wx_fmt=gif)
+![](http://img.9ong.com/images/page/md-1584072976.2451913-797.jpg)
 
 
 
@@ -88,7 +88,7 @@
 
 一个为科学技术制定标准的组织。
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXDUnOQJyNkwW1htsHkyiadNyLjBLicpibc69lPnVFpHGX3elHLq8uOT35Q/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072977.1203942-623.jpg)
 
 
 
@@ -102,7 +102,7 @@
 
 这是由 Ecma 国际发布的标准。它包含通用目的的脚本语言的规范。
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrX8f7SgnMJcI1XMmGC7VfaoFkdYo1J8ibiculZeMhEHarqRArUF3ZCicTOw/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072977.3772993-102.jpg)
 
 
 
@@ -114,7 +114,7 @@ ECMA-262 是一个类似 QWERTY 的标准，但不同于呈现一个键盘层的
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXTiaF8ZChpS8iafTzRTn07OGzoWvewYXhdibWPib6pULJaawjLe0Bu6XS4w/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072977.5470781-280.jpg)
 
 
 
@@ -142,7 +142,7 @@ The specification defined in ECMA-262 中定义的标准，是用于创建通用
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXqa6RvCgvjVEK6XHVibaUwBJicYQJcOdibu8VbAKWNScibVsWybZfLHAVsg/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072977.8116307-914.jpg)
 
 
 
@@ -153,7 +153,7 @@ ECMAScript提供脚本语言必须遵守的规则、细节和准则，这些才�
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXrYVJgvT4N3TfjQLWIrD4aUhvwsmzdianqfiaK4L6IyDptSFIKjUaiaTfA/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072978.0773244-499.jpg)
 
 
 
@@ -169,7 +169,7 @@ ECMAScript提供脚本语言必须遵守的规则、细节和准则，这些才�
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXKjN3d711ppYajlXFM2qqwqz5tgqoicVPNnDVp6GvAScdLZmc7fb6iapQ/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072978.421445-646.jpg)
 
 
 
@@ -185,7 +185,7 @@ JavaScript 实现了多数 ECMA-262 中描述的 ECMAScript 规范，但存在�
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXSwFYwJiaUP0mrZMwBHQ1PGGejAB4PxzUz8nQVHHpUqauiamxp3hEAB9Q/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072978.6784558-879.jpg)
 
 
 
@@ -201,7 +201,7 @@ JavaScript 实现了多数 ECMA-262 中描述的 ECMAScript 规范，但存在�
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXd772Z8Egw7k9ibJQtCfGms8Uia53s2zFKrrIdNdZLvS0Tx7edofzhdwA/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072978.9366896-709.jpg)
 
 
 
@@ -217,7 +217,7 @@ JavaScript 引擎对于浏览器来说就像是人类对语言的理解一样。
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrX8VFbVzpLY6I1MmxfsKTh3lagEhQZOIIDnW6QCwYB01WrGwE6skOagA/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072979.1856382-487.jpg)
 
 
 
@@ -229,7 +229,7 @@ JavaScript 引擎对于浏览器来说就像是人类对语言的理解一样。
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXj8nXfTH7Cib7qHvyL8qVpae9YWwmPI7x9ziaD8gaA1L2hreXtfh8oQXw/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072979.4440048-299.jpg)
 
 
 
@@ -245,7 +245,7 @@ JavaScript 引擎对于浏览器来说就像是人类对语言的理解一样。
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXutbkhxcPDMkYicabWibnx22yGqFFFc3zLaRYzhvTaZwZdJ1ZBLmiamkYw/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072979.74292-205.jpg)
 
 
 
@@ -265,7 +265,7 @@ ECMASCript 兼容性列表是回答这类问题的绝佳答案参考。
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrX7N6AQSk1TCwkmvXObkpjOHH8fznPq0oIuR5FB0ia3GSMVz8icouphUKQ/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072979.9914167-821.jpg)
 
 
 
@@ -281,7 +281,7 @@ JavaScript 代码运行所在的环境，并为 JavaScript 引擎所解释。运
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXicQiaBf4fNzlvDDnEdibTpBWJC9ERZEcj8NVtu6z7COsibU9HCiaQNnjmJQ/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072980.2599635-986.jpg)
 
 
 
@@ -313,7 +313,7 @@ JavaScript 运行时是在脚本化语言定义中所提到的“已存在的实
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXG0doVIowadSHqe9ZnA8UqQVH6aZJicicl8YTQ6joR2Ry3wRyIfnticFlQ/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072980.5287862-88.jpg)
 
 
 
@@ -329,7 +329,7 @@ JavaScript 运行时是在脚本化语言定义中所提到的“已存在的实
 
 
 
-![](http://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8cD6aOslE50nV8ZfMzSkrXoIfasDsM0BiaiaKDlCmxibKfUicK1yNa3belXl4UsZuezHP9KosHml35iaA/0?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584072980.6782012-410.jpg)
 
 
 

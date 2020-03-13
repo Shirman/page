@@ -13,7 +13,7 @@
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_jpg/YriaiaJPb26VMVVV4MXhu45X2J8XTxeAKKjI3PRxPsTckgXTJEAcTnwIfDOCCjHJYoqlTRe6VPkHBBGZlw1YLCDg/640?wx_fmt=jpeg) 作者 | 王概凯  编辑 | 小智 
+![](http://img.9ong.com/images/page/md-1584073067.8154795-877.jpg) 作者 | 王概凯  编辑 | 小智 
 
 ⼀个⽣命周期过程为什么可以做架构拆分︖架构拆分时需要有什么前提条件吗︖对于这些问题很多⼈比较迷茫。本⽂尝试描述作者对架构拆分原理的理解，不⼀定正确，请各位读者指正。
 

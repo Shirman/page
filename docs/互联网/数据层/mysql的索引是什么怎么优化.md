@@ -80,7 +80,7 @@ MySQL官方对索引的定义为：索引(Index)是帮助MySQL高效获取数据
 
 
 
- ![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrUchsEFHnwCzrPQE6BDp9tgFgkbd6ONC5MzZI56IrOPbA61oloTOyew/640?wx_fmt=png)
+ ![](http://img.9ong.com/images/page/md-1584073022.2737763-353.jpg)
 
 
 
@@ -106,7 +106,7 @@ MySQL官方对索引的定义为：索引(Index)是帮助MySQL高效获取数据
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrE8prZngaOvoNFnlxx0ZicOvQEneSKQ0bnxV1BxWLM0oCEU1l3nU0DkQ/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073022.5788064-385.jpg)
 
 
 
@@ -114,7 +114,7 @@ MySQL官方对索引的定义为：索引(Index)是帮助MySQL高效获取数据
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrDTQxMnyoOwSwbCKFIMVvCr4CiaibGv9rVHJcddPRTTxgtw4bLQPRjqpQ/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073022.8556993-946.jpg)
 
 
 
@@ -126,13 +126,13 @@ MySQL官方对索引的定义为：索引(Index)是帮助MySQL高效获取数据
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0Zr9gsZWwNib3YEHsyxgGicq9oDsqTnXSzDEuD346ac3a2Y989sq0eDQ2QQ/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073023.0898225-263.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0Zrh3lVdmX5IEYx8FvKnuDjUwQbN9fkaEn3dsa7RloqGK8YT2bTZoq5ibg/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073023.264052-680.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrlHpTQ0AXSoE0wtkBd4XztBYsH8RzoNO3riaKPXRSsJIvjxxkRWfnWcA/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073023.508701-124.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrIibLUPdQc2nlzCIDbIZ4y3vnISpmvpZbMzWWZh0353mRqDhrqEky9tA/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073023.6531427-383.jpg)
 
 
 
@@ -163,9 +163,9 @@ table表示查询涉及的表或衍生的表：
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0Zr1xM5ib8uepXa450MicPVJH2AuP58icEVhBYKiaKXdLJETp7epXAu5c3ksw/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073023.9047222-312.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrVzL0ibxL0WQ1J8GmaOHRPPY4CqhdeaZiazrGyDpDF02KmgeFzxRjYVQA/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073024.0475342-145.jpg)
 
 
 
@@ -181,7 +181,7 @@ type 字段比较重要，它提供了判断查询是否高效的重要依据依
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrRHnISIIQicJQUFnQibJRfLXbIEM2ntznTtKh4BF3chTjK3cDQpTIV6CQ/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073024.3869152-6.jpg)
 
 type 常用的取值有:
 
@@ -223,9 +223,9 @@ ALL 类型因为是全表扫描， 因此在相同的查询条件下，它是速
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrK73YxQvXLKibT54qElibtibpslbibDVvktgOc8oEknudJMf5mjoc5B7XRQ/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073024.6578734-452.jpg)
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrvwaxxGzrxn7MTtYleWl1n66ibRhEdfDK3W4fiaSFDTugGoGwU1DlBQ1A/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073024.802845-910.jpg)
 
 
 
@@ -233,7 +233,7 @@ ALL 类型因为是全表扫描， 因此在相同的查询条件下，它是速
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrPhVF7FiaMoaNn0XicdYU2lR8nec7HFALCyuFektu5pWbnCmwtYgBwxeQ/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073025.0449116-613.jpg)
 
 
 
@@ -253,7 +253,7 @@ ALL 类型因为是全表扫描， 因此在相同的查询条件下，它是速
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrTicUYqqfOcvezjiabFnFhFHegN4hibKHcQm3K6DjnQH0FRe3FJukx3M1g/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073025.3063223-344.jpg)
 
 
 
@@ -269,7 +269,7 @@ rows 也是一个重要的字段，mysql 查询优化器根据统计信息，估
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrEseScsVwpqzHnBUBdSIhmEj13lENg9UL8VxpGGzmW2fibhTLyicqYHiaQ/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073025.6066566-219.jpg)
 
 
 
@@ -290,7 +290,7 @@ explain 中的很多额外的信息会在 extra 字段显示, 常见的有以下
 
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrvZqYVXJ3Aicfu6UMFs2YYD9dQQmW2o25QuXL1FllGNk6AUEzJR5HibWw/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073025.761154-973.jpg)
 
 
 
@@ -300,7 +300,7 @@ explain 中的很多额外的信息会在 extra 字段显示, 常见的有以下
 
 ---
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrZHSYJ0W8MYDCoSckLG0EmiaNPjyMcmrQSt3Khsm0ACChowQXiaLlxLew/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073025.9109888-639.jpg)
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -309,7 +309,7 @@ explain 中的很多额外的信息会在 extra 字段显示, 常见的有以下
 
 
 
-![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0ZrY95JNaCNHRWiaz5GGLWgYmerqulfasmDEKqyARHF6icCTejD5Z4QVsiaw/640?wx_fmt=png)
+![](http://img.9ong.com/images/page/md-1584073026.0572944-727.jpg)
 
 
 
@@ -325,7 +325,7 @@ explain 中的很多额外的信息会在 extra 字段显示, 常见的有以下
 
 
 
- ![](https://mmbiz.qpic.cn/mmbiz_png/dkwuWwLoRK8Evjz0cicKw7dlYibqIXp0Zrf2guScma1b0XUPiaoD9Xn3MSknCwTN3KK1owszzDcynqHY7yRPL9s2g/640?wx_fmt=png)
+ ![](http://img.9ong.com/images/page/md-1584073026.317606-711.jpg)
 
 
 
