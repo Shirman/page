@@ -93,8 +93,7 @@ https://github.com/docsifyjs/docsify-cli
 
 和部署所有静态网站一样，只需将服务器的访问根目录设定为 index.html 文件。
 
-----
-**参考nginx配置**
+### nginx配置
 
 官方推荐配置：
 
@@ -126,6 +125,12 @@ server {
 }
 
 ```
+
+### git推送更新
+
+搜索本站左上角关键字：GIT
+
+参考本站[版本管理/服务端代码自动部署GIT方式]
 
 更多部署方式参考[官方文档](https://docsify.js.org/#/zh-cn/deploy)
 
