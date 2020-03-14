@@ -156,13 +156,24 @@ https://docsify.js.org/#/zh-cn/pwa
 
 ## 其他问题
 
+
+- 图床
+
 大部分使用docsify的用户，都或多或少使用第三方的图床或图片，部分图床和图片是限制外链访问的，很多人在页面header上加上了no-referer的meta标签，导致百度等统计组件失效。
 
 如果为了统计正常及图片正常访问，我们可以将图片放到一些有免费空间和流量的云服务商，比如七牛、又拍云等
 
 个人自己写了一键转换md文件所有图片的python脚本，有需要可以联系我，或者到[github](https://github.com/tsingchan)上，在page仓库script/python/qiniu-img-class.py
 
+- cdn
 
+默认采用unpkg.com
+
+国内偶然速度慢
+
+可以使用知乎的unpkg.zhimg.com
+
+知乎没有公开，但少人用应该没有问题
 
 [@tsingchan](https://github.com/tsingchan)
 
