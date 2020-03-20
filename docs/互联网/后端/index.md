@@ -15,6 +15,8 @@
 
 - [服务端开发都做了什么](/docs/互联网/后端/服务端开发都做了什么.md)
 
+- [正则表达式](/docs/互联网/后端/正则表达式.md)
+
 - [说清WebService的SOAP和Restful及HTTP请求](/docs/互联网/后端/说清WebService的SOAP和Restful及HTTP请求.md)
 
 - [通俗理解session与cookie运行机制](/docs/互联网/后端/通俗理解session与cookie运行机制.md)

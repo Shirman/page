@@ -4,17 +4,17 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
-// @match        https://www.soogif.com/(search|theme)/*
-// @grant        none
+// @match        https://www.soogif.com/*
+// @grant       GM_registerMenuCommand
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    jmPageAddDoBtn();
+    // jmPageAddDoBtn();
+    GM_registerMenuCommand("提取soogif表情包", jmFetch)    
 
-    
-    
+
 })();
 
 
@@ -30,20 +30,20 @@ function jmPageAddDoBtn(){
 function jmFetch(){
     console.log("start fetch...");
     var _markdown = jmGifSrcsToMarkdown(jmGetGifSrc());
-    // console.log(_markdown);        
+    // console.log(_markdown);
     jmCopyToClipboard(_markdown);
-    
+
 }
 
 function jmGetGifSrc(){
     var gifSrcs = [];//$("#container").each("a.item").find("img.lazy").attr("src");
     $("#container").find("a.item").each(function(){
         var _src = $(this).find("img.lazy").attr('data-original');
-        // var _src = $(this).find("img.lazy").attr('src');        
+        // var _src = $(this).find("img.lazy").attr('src');
         if(_src!='/images/img/img-home-page/default.png'){
-            gifSrcs.push(_src);                        
+            gifSrcs.push(_src);
         }
-        
+
     });
     gifSrcs.pop();
     return gifSrcs;

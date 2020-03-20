@@ -9,6 +9,8 @@
 
 - [python图像处理库Pillow](/docs/互联网/python/python图像处理库Pillow.md)
 
+- [python库大全](/docs/互联网/python/python库大全.md)
+
 - [python教程](/docs/互联网/python/python教程.md)
 
 - [python最强大的网络库requests](/docs/互联网/python/python最强大的网络库requests.md)

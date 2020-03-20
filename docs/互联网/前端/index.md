@@ -5,6 +5,8 @@
 
 - [CSS简要快速上手](/docs/互联网/前端/CSS简要快速上手.md)
 
+- [ES6入门](/docs/互联网/前端/ES6入门.md)
+
 - [iView文档笔记](/docs/互联网/前端/iView文档笔记.md)
 
 - [javascript面试概要](/docs/互联网/前端/javascript面试概要.md)
@@ -15,9 +17,13 @@
 
 - [Promise全解析](/docs/互联网/前端/Promise全解析.md)
 
+- [Tampermonkey油猴API](/docs/互联网/前端/Tampermonkey油猴API.md)
+
 - [Vue基础笔记](/docs/互联网/前端/Vue基础笔记.md)
 
 - [Vue学习路线图](/docs/互联网/前端/Vue学习路线图.md)
+
+- [webpack4快速上手](/docs/互联网/前端/webpack4快速上手.md)
 
 - [webpack与bower的区别](/docs/互联网/前端/webpack与bower的区别.md)
 
@@ -34,6 +40,8 @@
 - [彻底理解CSS之浮动](/docs/互联网/前端/彻底理解CSS之浮动.md)
 
 - [彻底理解URL编码](/docs/互联网/前端/彻底理解URL编码.md)
+
+- [转-转-Promise和Async+Await用法整理](/docs/互联网/前端/转-转-Promise和Async+Await用法整理.md)
 
 
 <font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

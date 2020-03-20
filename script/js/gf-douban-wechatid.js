@@ -6,13 +6,17 @@
 // @author       tsingchan
 // @match        https://www.douban.com/group/topic/*
 // @grant       GM_setClipboard
+// @grant       GM_registerMenuCommand
 // ==/UserScript==
 
 (function() {
     'use strict';
 
+    // jmPageAddDoBtn();
 
-    jmPageAddDoBtn();
+    // jmPageRegisterNavBtn("提取微信号",jmFetch());
+
+    GM_registerMenuCommand("提取豆瓣微信号", jmFetch)    
 
 
 })();
@@ -83,3 +87,4 @@ function history(){
     window.localStorage.setItem(key,JSON.stringify(data));
     return false;
 }
+

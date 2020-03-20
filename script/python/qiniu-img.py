@@ -1,4 +1,4 @@
-# 读取文件，可通过参数传入
+# 读取markdown文件，可通过参数传入
 # 提取所有图片链接
 # 引入七牛从指定URL抓取资源
 # 遍历所有图片，得到新图片地址
@@ -55,7 +55,7 @@ def main():
 
 def getQiniuConfig(bucketName):
     configFile = "I:\\src\\config\\qiniu.json"
-    with open(configFile) as f:
+    with open(configFile,'r',encoding='utf-8') as f:
         config = json.load(f)
         if bucketName:
             return config[bucketName]

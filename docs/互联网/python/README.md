@@ -9,6 +9,8 @@
 
 - [python图像处理库Pillow](/互联网/python/python图像处理库Pillow)
 
+- [python库大全](/互联网/python/python库大全)
+
 - [python教程](/互联网/python/python教程)
 
 - [python最强大的网络库requests](/互联网/python/python最强大的网络库requests)

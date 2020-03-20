@@ -1,9 +1,10 @@
-a = 9
-b = 4
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a // b)
-print(a % b)
-print(a ** b)
+import math
+
+a = "apple"
+b = "banana"
+
+a,b = b,a
+
+print(a)
+print(b)
+

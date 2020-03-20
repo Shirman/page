@@ -27,8 +27,6 @@
 
 - [Linux明明白白你的系统日志](/docs/互联网/Linux/Linux明明白白你的系统日志.md)
 
-- [Linux正则表达式](/docs/互联网/Linux/Linux正则表达式.md)
-
 - [Linux硬链接与符号链接之link](/docs/互联网/Linux/Linux硬链接与符号链接之link.md)
 
 - [Mount基础简单明了](/docs/互联网/Linux/Mount基础简单明了.md)
@@ -44,6 +42,8 @@
 - [Vim进阶概览](/docs/互联网/Linux/Vim进阶概览.md)
 
 - [利用scp自动输入密码进行文件远程拷贝](/docs/互联网/Linux/利用scp自动输入密码进行文件远程拷贝.md)
+
+- [正则表达式](/docs/互联网/Linux/正则表达式.md)
 
 
 <font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
