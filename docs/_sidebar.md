@@ -199,7 +199,7 @@
 		- [彻底理解CSS之Position](/互联网/前端/彻底理解CSS之Position.md)
 		- [彻底理解CSS之浮动](/互联网/前端/彻底理解CSS之浮动.md)
 		- [彻底理解URL编码](/互联网/前端/彻底理解URL编码.md)
-		- [转-转-Promise和Async+Await用法整理](/互联网/前端/转-转-Promise和Async+Await用法整理.md)
+		- [转-Promise和Async+Await用法整理](/互联网/前端/转-Promise和Async+Await用法整理.md)
 	- **后端**
 		- [PHP练级攻略](/互联网/后端/PHP练级攻略.md)
 		- [全栈开发者应该学什么-2019篇](/互联网/后端/全栈开发者应该学什么-2019篇.md)

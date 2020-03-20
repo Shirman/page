@@ -1,9 +1,9 @@
 ### 最新
 > 时间为文章在本地最后更新时间，不是发布时间。
 ----
+- [前端/转-Promise和Async+Await用法整理](/互联网/前端/转-Promise和Async+Await用法整理.md)	<font color="grey" size=1> - 2020/03/20</font>
 - [Linux/正则表达式](/互联网/Linux/正则表达式.md)	<font color="grey" size=1> - 2020/03/20</font>
 - [前端/Tampermonkey油猴API](/互联网/前端/Tampermonkey油猴API.md)	<font color="grey" size=1> - 2020/03/19</font>
-- [前端/转-转-Promise和Async+Await用法整理](/互联网/前端/转-转-Promise和Async+Await用法整理.md)	<font color="grey" size=1> - 2020/03/18</font>
 - [python/python库大全](/互联网/python/python库大全.md)	<font color="grey" size=1> - 2020/03/17</font>
 - [后端/正则表达式](/互联网/后端/正则表达式.md)	<font color="grey" size=1> - 2020/03/15</font>
 - [前端/ES6入门](/互联网/前端/ES6入门.md)	<font color="grey" size=1> - 2020/03/15</font>
