@@ -312,9 +312,9 @@ if __name__ == '__main__':
 - stopwords.txt 敏感词过滤文件
 - 效果：
 
-![](/_media/images/景点位置词云.png)
+![](/_media/images/景点位置词云.jpg)
 
-![](/docs/_media/images/景点位置词云.png)
+![](/docs/_media/images/景点位置词云.jpg)
 
 [景区评分分布.html](/script/python/携程爬虫及分析/results/景区评分分布.html)
 
