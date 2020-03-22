@@ -9,5 +9,7 @@
 
 - [整理phper初学python想知道的知识点](/todo/整理phper初学python想知道的知识点.md)
 
+- [面试中人事方面的行为标准](/todo/面试中人事方面的行为标准.md)
+
 
 <font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

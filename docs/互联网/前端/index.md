@@ -41,7 +41,7 @@
 
 - [彻底理解URL编码](/docs/互联网/前端/彻底理解URL编码.md)
 
-- [转-转-Promise和Async+Await用法整理](/docs/互联网/前端/转-转-Promise和Async+Await用法整理.md)
+- [转-Promise和Async+Await用法整理](/docs/互联网/前端/转-Promise和Async+Await用法整理.md)
 
 
 <font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

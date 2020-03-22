@@ -5,6 +5,8 @@
 
 - [HDB爬虫数据分析](/docs/互联网/python/HDB爬虫数据分析.md)
 
+- [IP代理服务商汇总](/docs/互联网/python/IP代理服务商汇总.md)
+
 - [python中yield的简单清晰详解](/docs/互联网/python/python中yield的简单清晰详解.md)
 
 - [python图像处理库Pillow](/docs/互联网/python/python图像处理库Pillow.md)
@@ -16,6 +18,8 @@
 - [python最强大的网络库requests](/docs/互联网/python/python最强大的网络库requests.md)
 
 - [python爬虫分析示例汇总](/docs/互联网/python/python爬虫分析示例汇总.md)
+
+- [python简单分析厦门景点](/docs/互联网/python/python简单分析厦门景点.md)
 
 - [python简要教程](/docs/互联网/python/python简要教程.md)
 
