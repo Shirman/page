@@ -96,7 +96,8 @@ class MdImgFetch:
 
 
 if __name__ == '__main__':
-    theFile = r'I:\src\github-page\docs\鸡汤不毒\情绪不好养生徒劳.md'
+    theFile = input("输入文章绝对路径：")
+    # theFile = r'I:\docs\互联网\设计模式\全解析.md'
     mif = MdImgFetch(theFile)
     mif.fetch()
 

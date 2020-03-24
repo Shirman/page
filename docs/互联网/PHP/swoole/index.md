@@ -11,5 +11,7 @@
 
 - [教你Swoole入门](/docs/互联网/PHP/swoole/教你Swoole入门.md)
 
+- [闲谈Swoole相关框架](/docs/互联网/PHP/swoole/闲谈Swoole相关框架.md)
+
 
 <font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
