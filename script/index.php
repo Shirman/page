@@ -2,7 +2,7 @@
 //#更新github-page所有目录索引index.md
 $filters = [".","..",".git","_config.yml","index.md","image",'script','.vscode',"node_modules",
 ".nojekyll","_media","index.html","index.php","README.md","more.md","_navbar.md","_sidebar.md","_test.md","CNAME",
-"sw.js",'latest.md','archive.md','.gitignore',".qiniu_pythonsdk_hostscache.json","package-lock.json"];
+"sw.js",'latest.md','archive.md','.gitignore',".qiniu_pythonsdk_hostscache.json","package-lock.json","_404.md"];
 
 Index::setFilters($filters);
 

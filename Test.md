@@ -13,9 +13,10 @@
     - numpy
     - bs4
 - docisy
+- 正则表达式
+
 - ES6
 - webpack
-- 正则表达式
 - mysql
     - 索引
     - B+树
@@ -23,3 +24,7 @@
 - TP6
 - 微服务
 - 架构
+    - 架构
+    - 开发方法
+    - 敏捷开发等
+- fastadmin

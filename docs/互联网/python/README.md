@@ -43,6 +43,8 @@
 
 - [推荐11个实用Python库](/互联网/python/推荐11个实用Python库)
 
+- [整理phper初学python想知道的知识点](/互联网/python/整理phper初学python想知道的知识点)
+
 
 <font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
 

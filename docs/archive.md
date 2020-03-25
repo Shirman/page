@@ -2,9 +2,9 @@
 > 时间为文章在本地新建时间，不是发布时间。
 ----
 #### 202003
+- [测试/selenium自动化测试基础](/互联网/测试/selenium自动化测试基础.md)	<font color="grey" size=1> - 2020/03/23</font>
 - [编码规范/自动生成代码文档ApiGen](/互联网/编码规范/自动生成代码文档ApiGen.md)	<font color="grey" size=1> - 2020/03/23</font>
 - [测试/php单元测试](/互联网/测试/php单元测试.md)	<font color="grey" size=1> - 2020/03/23</font>
-- [\/_404](/_404.md)	<font color="grey" size=1> - 2020/03/23</font>
 - [swoole/闲谈Swoole相关框架](/互联网/PHP/swoole/闲谈Swoole相关框架.md)	<font color="grey" size=1> - 2020/03/23</font>
 - [python/IP代理服务商汇总](/互联网/python/IP代理服务商汇总.md)	<font color="grey" size=1> - 2020/03/22</font>
 - [python/python简单分析厦门景点](/互联网/python/python简单分析厦门景点.md)	<font color="grey" size=1> - 2020/03/22</font>
@@ -18,6 +18,7 @@
 - [前端/webpack4快速上手](/互联网/前端/webpack4快速上手.md)	<font color="grey" size=1> - 2020/03/15</font>
 - [/体育运动/麦迪全纪录](/体育运动/麦迪全纪录.md)	<font color="grey" size=1> - 2020/03/13</font>
 - [/重构自己/积极的财富观与正确的消费观](/重构自己/积极的财富观与正确的消费观.md)	<font color="grey" size=1> - 2020/03/13</font>
+- [python/整理phper初学python想知道的知识点](/互联网/python/整理phper初学python想知道的知识点.md)	<font color="grey" size=1> - 2020/03/13</font>
 - [python/一次性清楚__main__](/互联网/python/一次性清楚__main__.md)	<font color="grey" size=1> - 2020/03/13</font>
 - [解决方案/文档网站生成器docsify概述](/互联网/解决方案/文档网站生成器docsify概述.md)	<font color="grey" size=1> - 2020/03/12</font>
 - [前端/Vue基础笔记](/互联网/前端/Vue基础笔记.md)	<font color="grey" size=1> - 2020/03/11</font>

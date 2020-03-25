@@ -29,7 +29,5 @@
 
 **[鸡汤不毒](/docs/鸡汤不毒/index.md)**
 
-- [_404](/docs/_404.md)
-
 
 <font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>

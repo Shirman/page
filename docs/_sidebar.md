@@ -1,4 +1,3 @@
-- [_404](/_404.md)
 - **互联网**
 	- **Demo**
 		- [html转换成markdown](/互联网/Demo/html转换成markdown.md)
@@ -122,6 +121,7 @@
 		- [一次性清楚__main__](/互联网/python/一次性清楚__main__.md)
 		- [一次搞懂Python装饰器](/互联网/python/一次搞懂Python装饰器.md)
 		- [推荐11个实用Python库](/互联网/python/推荐11个实用Python库.md)
+		- [整理phper初学python想知道的知识点](/互联网/python/整理phper初学python想知道的知识点.md)
 	- **windows**
 		- [windows-dos命令大全](/互联网/windows/windows-dos命令大全.md)
 		- [修复Cortana搜索空白问题](/互联网/windows/修复Cortana搜索空白问题.md)
@@ -337,6 +337,7 @@
 		- [自颁发SSL证书及nginx_apache配置](/互联网/服务器运维/自颁发SSL证书及nginx_apache配置.md)
 	- **测试**
 		- [php单元测试](/互联网/测试/php单元测试.md)
+		- [selenium自动化测试基础](/互联网/测试/selenium自动化测试基础.md)
 	- **版本管理**
 		- [Git团队协作](/互联网/版本管理/Git团队协作.md)
 		- [Git常用命令-转载保存](/互联网/版本管理/Git常用命令-转载保存.md)
