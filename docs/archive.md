@@ -2,6 +2,7 @@
 > 时间为文章在本地新建时间，不是发布时间。
 ----
 #### 202003
+- [数据层/mysql优化全面梳理](/互联网/数据层/mysql优化全面梳理.md)	<font color="grey" size=1> - 2020/03/26</font>
 - [测试/selenium自动化测试基础](/互联网/测试/selenium自动化测试基础.md)	<font color="grey" size=1> - 2020/03/23</font>
 - [编码规范/自动生成代码文档ApiGen](/互联网/编码规范/自动生成代码文档ApiGen.md)	<font color="grey" size=1> - 2020/03/23</font>
 - [测试/php单元测试](/互联网/测试/php单元测试.md)	<font color="grey" size=1> - 2020/03/23</font>
@@ -134,7 +135,6 @@
 - [Java/ubuntu快速安装配置jdk](/互联网/Java/ubuntu快速安装配置jdk.md)	<font color="grey" size=1> - 2020/01/09</font>
 - [Docker/Docker安装jira与confluence](/互联网/服务器运维/Docker/Docker安装jira与confluence.md)	<font color="grey" size=1> - 2020/01/08</font>
 #### 201912
-- [/其他/装修风格](/其他/装修风格.md)	<font color="grey" size=1> - 2019/12/24</font>
 - [Docker/Docker推荐文章](/互联网/服务器运维/Docker/Docker推荐文章.md)	<font color="grey" size=1> - 2019/12/11</font>
 - [Docker/Docker常用命令](/互联网/服务器运维/Docker/Docker常用命令.md)	<font color="grey" size=1> - 2019/12/11</font>
 - [Docker/Docker安装nginx](/互联网/服务器运维/Docker/Docker安装nginx.md)	<font color="grey" size=1> - 2019/12/11</font>
@@ -421,7 +421,7 @@
 - [/产品设计/企业应用架构的演变史-杨堃](/产品设计/企业应用架构的演变史-杨堃.md)	<font color="grey" size=1> - 2019/04/07</font>
 - [数据层/mysql的索引是什么怎么优化](/互联网/数据层/mysql的索引是什么怎么优化.md)	<font color="grey" size=1> - 2019/04/07</font>
 - [服务器运维/shadowsock服务-v-p-n](/互联网/服务器运维/shadowsock服务-v-p-n.md)	<font color="grey" size=1> - 2019/04/07</font>
-- [数据层/mysql教科书般优化干货](/互联网/数据层/mysql教科书般优化干货.md)	<font color="grey" size=1> - 2019/04/07</font>
+- [数据层/mysql索引优化干货](/互联网/数据层/mysql索引优化干货.md)	<font color="grey" size=1> - 2019/04/07</font>
 - [团队/技术管理者无法绕过的那些坑](/职场团队/团队/技术管理者无法绕过的那些坑.md)	<font color="grey" size=1> - 2019/04/05</font>
 - [系统架构/创业公司技术负责人谈创业公司技术选型](/互联网/系统架构/创业公司技术负责人谈创业公司技术选型.md)	<font color="grey" size=1> - 2019/04/05</font>
 - [/鸡汤不毒/年轻的时候做什么才不浪费](/鸡汤不毒/年轻的时候做什么才不浪费.md)	<font color="grey" size=1> - 2019/04/05</font>
