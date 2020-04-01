@@ -5,6 +5,8 @@
 
 - [CPI和PPI是什么](/docs/概念普及/CPI和PPI是什么.md)
 
+- [CPU于GPU](/docs/概念普及/CPU于GPU.md)
+
 - [会计与财务](/docs/概念普及/会计与财务.md)
 
 - [双盲实验](/docs/概念普及/双盲实验.md)

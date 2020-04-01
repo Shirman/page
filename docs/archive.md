@@ -2,6 +2,7 @@
 > 时间为文章在本地新建时间，不是发布时间。
 ----
 #### 202003
+- [/概念普及/CPU于GPU](/概念普及/CPU于GPU.md)	<font color="grey" size=1> - 2020/03/31</font>
 - [数据层/mysql优化全面梳理](/互联网/数据层/mysql优化全面梳理.md)	<font color="grey" size=1> - 2020/03/26</font>
 - [测试/selenium自动化测试基础](/互联网/测试/selenium自动化测试基础.md)	<font color="grey" size=1> - 2020/03/23</font>
 - [编码规范/自动生成代码文档ApiGen](/互联网/编码规范/自动生成代码文档ApiGen.md)	<font color="grey" size=1> - 2020/03/23</font>
@@ -15,7 +16,7 @@
 - [前端/转-Promise和Async+Await用法整理](/互联网/前端/转-Promise和Async+Await用法整理.md)	<font color="grey" size=1> - 2020/03/18</font>
 - [python/python库大全](/互联网/python/python库大全.md)	<font color="grey" size=1> - 2020/03/17</font>
 - [后端/正则表达式](/互联网/后端/正则表达式.md)	<font color="grey" size=1> - 2020/03/15</font>
-- [前端/ES6入门](/互联网/前端/ES6入门.md)	<font color="grey" size=1> - 2020/03/15</font>
+- [前端/ES6快速入门](/互联网/前端/ES6快速入门.md)	<font color="grey" size=1> - 2020/03/15</font>
 - [前端/webpack4快速上手](/互联网/前端/webpack4快速上手.md)	<font color="grey" size=1> - 2020/03/15</font>
 - [/体育运动/麦迪全纪录](/体育运动/麦迪全纪录.md)	<font color="grey" size=1> - 2020/03/13</font>
 - [/重构自己/积极的财富观与正确的消费观](/重构自己/积极的财富观与正确的消费观.md)	<font color="grey" size=1> - 2020/03/13</font>

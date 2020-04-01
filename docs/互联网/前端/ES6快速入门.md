@@ -1,4 +1,4 @@
-ES6入门
+ES6快速入门
 ----
 <!-- TOC -->
 
@@ -29,8 +29,7 @@ ECMAScript 6（以下简称ES6）是JavaScript语言的下一代标准。因为�
 在我们正式讲解ES6语法之前，我们得先了解下Babel。  
 [Babel](https://babeljs.io/)
 
-Babel是一个广泛使用的ES6转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。大家可以选择自己习惯的工具来使用使用Babel，具体过程可直接在Babel官网查看：  
-![https://babeljs.io/docs/setup/](https://cdn.segmentfault.com/v-5e67172c/global/img/squares.svg)
+Babel是一个广泛使用的ES6转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。大家可以选择自己习惯的工具来使用使用Babel，具体过程可直接在Babel官网查看。
 
 ## 最常用的ES6特性
 

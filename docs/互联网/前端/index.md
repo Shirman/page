@@ -5,7 +5,7 @@
 
 - [CSS简要快速上手](/docs/互联网/前端/CSS简要快速上手.md)
 
-- [ES6入门](/docs/互联网/前端/ES6入门.md)
+- [ES6快速入门](/docs/互联网/前端/ES6快速入门.md)
 
 - [iView文档笔记](/docs/互联网/前端/iView文档笔记.md)
 

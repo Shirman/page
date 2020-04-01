@@ -99,14 +99,20 @@
 
 以下是svn cleanup所做的：它搜索你的工作副本并执行所有遗留的日志，在这过程中删除锁。如果Subversion曾告诉你你的工作副本的一部分被“锁定”了，那么你应该执行这个命令。另外， svn status会在锁定的项前显示L。 
 
-```$ svn status```
+```
+$ svn status
+```
 
     > L    somedir
     > M   somedir/foo.c 
 
-```$ svn cleanup```
+```
+$ svn cleanup
+```
 
-```$ svn status```
+```
+$ svn status
+```
 
     > M      somedir/foo.c
 

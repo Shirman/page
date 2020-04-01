@@ -33,7 +33,7 @@ git github gitlab
 
 工作区(working copy) <--> 存档库（stash）
 
-![Git基础操作](/image/2019/Git基础操作.png)
+![Git基础操作](https://upload-images.jianshu.io/upload_images/18643987-eb9c72f2761127ba.png?imageMogr2/auto-orient/strip|imageView2/2/w/506/format/webp)
 
 ### 5、分支管理
 http://www.ruanyifeng.com/blog/2012/07/git.html
@@ -46,4 +46,4 @@ http://www.ruanyifeng.com/blog/2015/12/git-workflow.html
 
 ### 7、其他：github的方式
 
-![git基础其他操作](/image/2019/git基础其他操作.png)
+![git基础其他操作](https://upload-images.jianshu.io/upload_images/18643987-ade94800bbee1a3d.png?imageMogr2/auto-orient/strip|imageView2/2/w/838/format/webp)

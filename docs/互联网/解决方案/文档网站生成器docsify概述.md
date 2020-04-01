@@ -1,4 +1,25 @@
+<!-- TOC -->
 
+- [参考文档](#参考文档)
+- [安装](#安装)
+- [初始化](#初始化)
+- [写文档](#写文档)
+- [本地预览](#本地预览)
+- [docsify-cli](#docsify-cli)
+- [配置](#配置)
+- [部署](#部署)
+    - [github page](#github-page)
+    - [gitlab](#gitlab)
+    - [VPS](#vps)
+    - [nginx配置](#nginx配置)
+    - [git推送更新](#git推送更新)
+- [插件](#插件)
+- [评论](#评论)
+- [PWA离线模式](#pwa离线模式)
+- [统计](#统计)
+- [其他问题](#其他问题)
+
+<!-- /TOC -->
 
 > docsify,A magical documentation site generator.
 >
@@ -145,6 +166,50 @@ https://github.com/anikethsaha/docsify-plugin/tree/master/packages/docsify-dark-
 
 https://docsify.js.org/#/zh-cn/language-highlight
 
+
+
+## 评论
+
+国内目前只有畅言云评论还存活的背靠大树的第三方评论平台
+
+
+官网：http://changyan.kuaizhan.com/
+
+由于畅言没有提供docsify的插件，直接复制自适应代码放到body里，会导致pc端的展示异常，所以需要通过plugins插件的方式主动将畅言评论div块放在文章块main底部。
+
+由于9ong也使用到footer的插件，暂时屏蔽，直接手动在插件hook.doneEach中硬编码，也就是说docsify中的footer配置无效，有个好处就是少加载一个js文件。
+
+docsify开发插件：
+https://docsify.js.org/#/zh-cn/write-a-plugin
+
+```js
+plugins: [
+  function(hook) {                  
+      //插件开发：https://docsify.js.org/#/zh-cn/write-a-plugin            
+
+      hook.doneEach(function () {
+        
+        //1、畅言div
+        let div = document.createElement("div");
+        div.id = "SOHUCS";                                 
+        var _main = document.getElementById("main");
+        _main.appendChild(div);
+        setTimeout(function(){
+          //畅言js 复制从畅言自适应安装代码
+          (function(){var appid="cyr2slRop";var conf="prod_691dcb1d65f31967a874d18383b9da75";var width=window.innerWidth||document.documentElement.clientWidth;if(width<960){var head=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var script=document.createElement("script");script.type="text/javascript";script.charset="utf-8";script.id="changyan_mobile_js";script.src="https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id="+appid+"&conf="+conf;head.appendChild(script)}else{var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})})}})();                
+        },1000); 
+        
+
+        //2、footer
+        let footer = document.createElement("footer");
+        footer.innerHTML = '<footer style="text-align: center;"><hr />© 2019  <a target="_blank" href="http://www.beian.miit.gov.cn/">xxxxx备案信息</a> | <a target="_blank" href="http://www.12377.cn/">网上有害信息举报区</a>. All Rights Reserved  - 如有侵权请联系ts@js.com</footer>';
+        _main.appendChild(footer);              
+
+      })
+    }
+  ]  
+```
+
 ## PWA离线模式
 
 https://docsify.js.org/#/zh-cn/pwa
@@ -152,7 +217,6 @@ https://docsify.js.org/#/zh-cn/pwa
 ## 统计
 
 除了官方指定ga外，还可以用百度统计
-
 
 ## 其他问题
 

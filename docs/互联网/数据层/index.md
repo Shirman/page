@@ -9,15 +9,17 @@
 
 - [mysql为什么使用B+树-能存储多少行](/docs/互联网/数据层/mysql为什么使用B+树-能存储多少行.md)
 
+- [mysql优化全面梳理](/docs/互联网/数据层/mysql优化全面梳理.md)
+
 - [mysql优化实例汇总](/docs/互联网/数据层/mysql优化实例汇总.md)
 
 - [mysql利用索引优化order-by](/docs/互联网/数据层/mysql利用索引优化order-by.md)
 
-- [mysql教科书般优化干货](/docs/互联网/数据层/mysql教科书般优化干货.md)
-
 - [mysql的join明明白白](/docs/互联网/数据层/mysql的join明明白白.md)
 
 - [mysql的索引是什么怎么优化](/docs/互联网/数据层/mysql的索引是什么怎么优化.md)
+
+- [mysql索引优化干货](/docs/互联网/数据层/mysql索引优化干货.md)
 
 - [什么是快照与备份](/docs/互联网/数据层/什么是快照与备份.md)
 
