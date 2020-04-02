@@ -5,10 +5,10 @@
 // @description  try to take over the world!
 // @author       You
 // @match        https://*.discuss.com.hk/post.php?action=newthread*
-// @grant        none
+// @grant       GM_xmlhttpRequest
 // ==/UserScript==
 
-
+var gApiHost = "http://localhost:8088/";
 var gHost = 'https://'+window.location.host+'/';
 if(window.location.host != 'www.discuss.com.hk'){
     window.location.href = window.location.href.replace(window.location.host,"www.discuss.com.hk");
@@ -68,13 +68,15 @@ var jmtool = {
         m = this.addZero(m);
         s = this.addZero(s);
 
-        _jqObj.val(`倒计时  ${d}天 ${h} 时 ${m} 分 ${s} 秒`);
+        _jqObj.text(`倒计时  ${d}天 ${h} 时 ${m} 分 ${s} 秒`);
         if (lefttime <= 0) {
-            _jqObj.val("已结束");
+            _jqObj.text("倒计时结束。");
             return true;
         }
 
-        setTimeout(countDown, 1000);
+        setTimeout(function(){
+            jmtool.countDown((lefttime-1),_jqObj);
+        }, 1000);
     },
   
 
@@ -105,55 +107,9 @@ var jmtool = {
         selection.addRange(range);
         document.execCommand('copy');
     },
-
-};
-
-var storage = {
-    //localstorage
-    formLocalStorageKey:"jm_hk_bbs_threads_form",
-
-    addToStorage:function(_subject,_data){
-        if(_subject && _data){        
-            
-            let _json = this.getAllFromStorage();                        
-
-            let _defaultData = {status:0,time:0,date:"-",url:"",timeout:60};
-            _json[_subject] = Object.assign(_defaultData,_data);             
-            
-            window.localStorage.setItem(this.formLocalStorageKey,JSON.stringify(_json));
-        }
-    },
-    getFromStorage:function(_subject){
-        if(_subject){
-            let _json = this.getAllFromStorage();
-            if(_json){
-                return _json[_subject] || null;
-            }
-        }
-        return null;
-    },
-    deleteFromStorage:function(_subject){
-        if(_subject){            
-            
-            let _json = this.getAllFromStorage();
-            if(_json){
-                delete _json[_subject];
-                window.localStorage.setItem(this.formLocalStorageKey,JSON.parse(_json));        
-            }            
-        }
-    },
-    deleteAllFromStorage:function(){
-        window.localStorage.setItem(this.formLocalStorageKey,null);
-    },
-    getAllFromStorage:function(){                
-        let _str = window.localStorage.getItem(this.formLocalStorageKey);
-        let _json = JSON.parse(_str) || [];
-        if((typeof _json !== "object") || !_json){
-            _json = {};
-        }            
-        return _json || null;
-        
-    }
+    tip:function(message){
+        $$("#tips_jm").text(message);
+    }    
 
 };
 
@@ -209,13 +165,17 @@ var storage = {
             } 
            });        
     }
+
+    function enableSubmit(_boolean){                
+        $$("#postsubmit-jm").prop("disabled",!_boolean);
+    }    
     function addBtnsTr(){
         let newBtnsTr = 
         '<tr class="btns">\
             <th>&nbsp;</th>\
             <td id="newBtnsTrTd">\
             </td>\
-        </tr>';
+        </tr><tr><th></th><td>结果：<span id="tips_jm"></span></td></tr>';
         let _lastTbody = $$("#newpost").children("tbody").last();
         _lastTbody.append(newBtnsTr);
         _lastTbody.children("tr").first().hide();
@@ -257,16 +217,19 @@ var storage = {
 
             //settimeout do submit
             setTimeout(() => {
-                console.log("run settimeout");
+                console.log("检查并发布...");
+                jmtool.tip("检查并发布...");
                 validate(theform,false);//validate again and submit    
                 //延迟10s检查标题    
                 setTimeout(() => {
+                    jmtool.tip("检查我的主题列表...");
                     getMyThreadsCheckSubject(_subject);
                 }, 10000);    
             }, _timeout*1000);     
             //倒计时
-            jmtool.countDown(_timeout,$$("#timeout_jm"));            
-            alert("已进入定时发布");   
+            jmtool.countDown(_timeout,$$("#tips_jm"));            
+            console.log("已进入定时发布队列，请保留页面");   
+            jmtool.tip("已进入定时发布队列，请保留页面");
         } else{
             return false;      
         } 
@@ -302,7 +265,8 @@ var storage = {
                 if(_latestSubject == _subject){                    
                     let _data = {subject:_subject,url:_url};
                     console.log(_data);  
-                    storage.addToStorage(_subject,_data);
+                    jmtool.tip("检查我的主题结束，成功匹配...");
+                    backupToServer(_subject,_url);
                 }
 
                 
@@ -312,7 +276,44 @@ var storage = {
     }
 
     
+    function backupToServer(_title,_url){                        
+        var _username = gUsername;                        
+        console.log(_title,_url,_username);
+        jmtool.tip("保存日志到本地...");
+        let _data = {
+            action:"new_thread",            
+            url:_threadUrl,        
+            title:_title,
+            username:_username,            
+        };
+    
+        let _dataString = '';
+        for(let _key in _data){
+            _dataString += _key+"=" + encodeURIComponent(_data[_key])+"&";
+        }
+        GM_xmlhttpRequest({
+            method: "POST",
+            url: gApiHost+"hkbbs.php",
+            headers:{'Content-type':'application/x-www-form-urlencoded'},
+            responseType:"json",
+            data:_dataString,
+            onload: function(response) {
+                console.log('request...');
+                console.log(response);                                
+                if(response.response.code == 1){
+                    jmtool.tip("保存日志到本地成功");                                        
+                }else{
+                    jmtool.tip("保存日志到本地失败，确认是否已经开启web服务："+gApiHost);                                        
+                }                
+            },
+            onerror:function(e){
+                jmtool.tip("保存日志到本地失败，确认是否已经开启web服务："+gApiHost);                                                                        
+                console.log("onerror...");
+                console.log(e);
+            }
+        });        
 
+    }
 
     
     /**     

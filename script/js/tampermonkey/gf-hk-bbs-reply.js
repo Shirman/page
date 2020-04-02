@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         hk論壇回帖
-// @namespace    tsingchan
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @name         discuss.com.hk快捷回复
+// @namespace    jm
+// @version      1.0
+// @description  延迟快捷回复
+// @author       tsingchan
 // @match        https://*.discuss.com.hk/viewthread.php?*
-// @grant        none
+// @grant       GM_xmlhttpRequest
 // ==/UserScript==
 
-
+var gApiHost = "http://localhost:8088/";
 var gHost = 'https://'+window.location.host+'/';
 if(window.location.host != 'www.discuss.com.hk'){
     window.location.href = window.location.href.replace(window.location.host,"www.discuss.com.hk");
@@ -81,6 +81,35 @@ var jmtool = {
         selection.addRange(range);
         document.execCommand('copy');
     },
+    addZero:function (i) {
+        return i < 10 ? "0" + i: i + "";
+    },    
+    countDown:function (lefttime,_jqObj) {
+        // var nowtime = new Date();
+        // var endtime = new Date("2019/03/16,17:57:00");
+        // var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
+        var d = parseInt(lefttime / (24*60*60))
+        var h = parseInt(lefttime / (60 * 60) % 24);
+        var m = parseInt(lefttime / 60 % 60);
+        var s = parseInt(lefttime % 60);
+        d = this.addZero(d)
+        h = this.addZero(h);
+        m = this.addZero(m);
+        s = this.addZero(s);
+
+        _jqObj.text(`倒计时  ${d}天 ${h} 时 ${m} 分 ${s} 秒`);
+        if (lefttime <= 0) {
+            _jqObj.text("倒计时结束，准备回复...");
+            return true;
+        }
+
+        setTimeout(function(){
+            jmtool.countDown((lefttime-1),_jqObj);
+        }, 1000);
+    },    
+    tip:function(message){
+        $$("#tips_jm").text(message);
+    }
 
 };
 
@@ -140,13 +169,13 @@ var jmtool = {
         <button type="button" name="replysubmit-jm" id="postsubmit-jm" value="replysubmit-jm" tabindex="3" >\
             延時回帖\
         </button>\
-        </p>';
+        </p><p>结果：<span id="tips_jm"></span></p>';
         let _postform = $$("div.postform");
         _postform.children("p.btns").hide();
         _postform.append(newBtnsTr);      
         
         $$("#postsubmit-jm").on("click",function(){
-            console.log("onclick");
+            console.log("点击延时回帖...");
             doSubmit();                        
         });         
 
@@ -156,12 +185,15 @@ var jmtool = {
 
     }
     
+    function enableSubmit(_boolean){                
+        $$("#postsubmit-jm").prop("disabled",!_boolean);
+    }
 
     function doSubmit(){        
         console.log("run doSubmit");                
-        
+        enableSubmit(false);
         let theform = $("postform");
-        console.log(theform);    
+        // console.log(theform);    
 
         //todo check message
         if(validateOnly(theform)){
@@ -181,12 +213,15 @@ var jmtool = {
             // reloadThreadsList();
             // return true;
             
+            console.log("已进入延时发布队列，请保留当前页面");   
+            jmtool.tip("已进入延时发布队列，请保留当前页面");   
+            //倒计时
+            jmtool.countDown(theFormData.timeout,$$("#tips_jm"));                    
             //settimeout do submit
             setTimeout(() => {
                 console.log("run settimeout");                
                 submitFormdata(theFormData);                
-            }, theFormData.timeout*1000);     
-            alert("已进入延时发布队列，请保留当前页面");   
+            }, theFormData.timeout*1000);  
             
         }
             
@@ -196,9 +231,11 @@ var jmtool = {
     function getFormData(theform){
         
         let _subject = theform.subject.value || "";
-        let _message = theform.message.value || "";        
+        // let _message = theform.message.value || "";        
+        let _message = $$.trim($$("#message + div.autosave").text());
         let _formhash = theform.formhash.value||"";//$$("#formhash").val() || "";
-        
+
+
         let formData = {            
             formhash:_formhash,            
             subject:_subject,             
@@ -219,6 +256,7 @@ var jmtool = {
         }           
         
         console.log(postFields,"postFields");
+        
         // return true;
 
         
@@ -236,20 +274,67 @@ var jmtool = {
                 // XHR.setRequestHeader("Host", _this.config._wwwDomain);
                 // XHR.setRequestHeader("X-Requested-With", "XMLHttpRequest");                
             },
-            success: function (res) {
-                console.log("延时回帖成功");                                
-                alert("延时回帖成功");
-                window.location.reload();
+            success: function (res) {                
+                backupToServer(theFormData.message);
+                console.log("延时回帖成功...");                                
+                jmtool.tip("延时回帖成功");
+                // window.location.reload();
             },        
             error:function(e){
+                enableSubmit(true);                
                 console.log(e);
                 if(e.status == 200 && e.statusText=='parsererror'){
-                    console.log("回帖成功，但解析返回数据失败");                                                                        
+                    console.log("回帖成功，但解析返回数据失败");  
+                    jmtool.tip("回帖成功，但解析返回数据失败");                                                                      
                 }else{
-                    console.log("回帖失败");                                
+                    console.log("回帖失败:"+e.statusText+"，可以再次点击回复按钮，尝试回复");                                
                 }
             }
         });        
+    }
+
+    function backupToServer(_message){        
+        var _title = $$.trim($$("div.thread-subject").text());
+        var _threadUrl = window.location.href;
+        var _username = gUsername;
+                
+        _message = _message || '';
+        console.log(_title,_threadUrl,_username,message);
+
+        let _data = {
+            action:"reply",
+            url:_threadUrl,        
+            title:_title,
+            username:_username,
+            message:_message
+        };
+    
+        let _dataString = '';
+        for(let _key in _data){
+            _dataString += _key+"=" + encodeURIComponent(_data[_key])+"&";
+        }
+        GM_xmlhttpRequest({
+            method: "POST",
+            url: gApiHost+"hkbbs.php",
+            headers:{'Content-type':'application/x-www-form-urlencoded'},
+            responseType:"json",
+            data:_dataString,
+            onload: function(response) {
+                console.log('backup...');
+                console.log(response);       
+                if(response.response.code == 1){
+                    jmtool.tip("保存日志到本地成功");                                        
+                }else{
+                    jmtool.tip("保存日志到本地失败，确认是否已经开启web服务："+gApiHost);                                        
+                }
+            },
+            onerror:function(e){
+                jmtool.tip("保存日志到本地失败，确认是否已经开启web服务："+gApiHost);                                                        
+                console.log("bakcup onerror...");
+                console.log(e);
+            }
+        });        
+
     }
     
     function validateOnly(theform) {
