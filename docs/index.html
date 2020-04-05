@@ -20,7 +20,12 @@
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
-    
+    <style>
+      <!--隐藏畅言广告-->
+      div#pop_ad {
+        opacity: 0;
+      }
+    </style>
 </head>
 <body>
   <div id="app">Loading...</div>
@@ -81,9 +86,6 @@
                 setTimeout(function(){
                   //畅言js 复制从畅言自适应安装代码
                   (function(){var appid="cyr2slRop";var conf="prod_691dcb1d65f31967a874d18383b9da75";var width=window.innerWidth||document.documentElement.clientWidth;if(width<960){var head=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var script=document.createElement("script");script.type="text/javascript";script.charset="utf-8";script.id="changyan_mobile_js";script.src="https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id="+appid+"&conf="+conf;head.appendChild(script)}else{var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})})}})();                
-                  setTimeout(function(){
-                    document.getElementById("pop_ad").style.display = "none";
-                  },2000);
                 },1000); 
               }
               
