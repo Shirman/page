@@ -10,6 +10,7 @@
   <!-- <meta name="referrer" content="no-referrer" />   -->
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css"/>
+
   <script>
     var _hmt = _hmt || [];
     (function() {
@@ -37,11 +38,6 @@
       homepage: 'README.md',
       auto2top: true,
       notFoundPage: true,//在找不到指定页面时加载_404.md  
-      darkMode: {
-        light: {
-          toggleBtnBg: '#42b983'
-        }
-      },
       formatUpdated: '{MM}/{DD} {HH}:{mm}',          
       search: {
         noData: {          
@@ -53,33 +49,49 @@
         },
         depth: 3
       },
-      // footer: {
-      //   copy: '&copy; 2019  <a target="_blank" href="http://www.beian.miit.gov.cn/">闽ICP备13006678号-1</a> | <a target="_blank" href="http://www.12377.cn/">网上有害信息举报区</a>. All Rights Reserved',
-      //   auth: ' - 如有侵权请联系jm-cqj#163.com(#换成@)',
-      //   pre: '<hr/>',
-      //   style: 'text-align: center;',
-      //   // class: 'className'
-      // },
+      // themeColor:"grey",      
+      darkMode: {
+        light: {
+          toggleBtnBg: '#42b983'
+          // toggleBtnBg: 'grey'          
+        }
+      },
+      changyan:false,
+      footer: {
+        copy: '&copy; 2019  <a target="_blank" href="http://www.beian.miit.gov.cn/">闽ICP备13006678号-1</a> | <a target="_blank" href="http://www.12377.cn/">网上有害信息举报区</a>. All Rights Reserved',
+        auth: ' - 如有侵权请联系jm-cqj#163.com(#换成@)',
+        pre: '<hr/>',
+        style: 'text-align: center;',
+        // class: 'className'
+      },      
       plugins: [
         function(hook) {                  
             //插件开发：https://docsify.js.org/#/zh-cn/write-a-plugin            
 
             hook.doneEach(function () {
+              // console.log(window.$docsify);
               
-              //1、畅言div
-              let div = document.createElement("div");
-              div.id = "SOHUCS";                                 
               var _main = document.getElementById("main");
-              _main.appendChild(div);
-              setTimeout(function(){
-                //畅言js 复制从畅言自适应安装代码
-                (function(){var appid="cyr2slRop";var conf="prod_691dcb1d65f31967a874d18383b9da75";var width=window.innerWidth||document.documentElement.clientWidth;if(width<960){var head=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var script=document.createElement("script");script.type="text/javascript";script.charset="utf-8";script.id="changyan_mobile_js";script.src="https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id="+appid+"&conf="+conf;head.appendChild(script)}else{var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})})}})();                
-              },1000); 
+
+              if(window.$docsify.changyan){
+                //1、畅言div
+                let div = document.createElement("div");
+                div.id = "SOHUCS";                                 
+                _main.appendChild(div);
+                setTimeout(function(){
+                  //畅言js 复制从畅言自适应安装代码
+                  (function(){var appid="cyr2slRop";var conf="prod_691dcb1d65f31967a874d18383b9da75";var width=window.innerWidth||document.documentElement.clientWidth;if(width<960){var head=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var script=document.createElement("script");script.type="text/javascript";script.charset="utf-8";script.id="changyan_mobile_js";script.src="https://cy-cdn.kuaizhan.com/upload/mobile/wap-js/changyan_mobile.js?client_id="+appid+"&conf="+conf;head.appendChild(script)}else{var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://cy-cdn.kuaizhan.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})})}})();                
+                  setTimeout(function(){
+                    document.getElementById("pop_ad").style.display = "none";
+                  },2000);
+                },1000); 
+              }
               
 
               //2、footer
               let footer = document.createElement("footer");
-              footer.innerHTML = '<footer style="text-align: center;"><hr />© 2019  <a target="_blank" href="http://www.beian.miit.gov.cn/">闽ICP备13006678号-1</a> | <a target="_blank" href="http://www.12377.cn/">网上有害信息举报区</a>. All Rights Reserved  - 如有侵权请联系jm-cqj#163.com(#换成@)</footer>';
+              // footer.innerHTML = '<footer style="text-align: center;"><hr />© 2019  <a target="_blank" href="http://www.beian.miit.gov.cn/">闽ICP备13006678号-1</a> | <a target="_blank" href="http://www.12377.cn/">网上有害信息举报区</a>. All Rights Reserved  - 如有侵权请联系jm-cqj#163.com(#换成@)</footer>';
+              footer.innerHTML = '<footer style="'+window.$docsify.footer.style+'">'+window.$docsify.footer.pre+window.$docsify.footer.copy+'  <br /> 如有侵权请联系'+window.$docsify.footer.auth+'</footer>';              
               _main.appendChild(footer);              
 
             })
@@ -96,7 +108,6 @@
   <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
   <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!-- <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>   -->
-  
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('sw.js')
