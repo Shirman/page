@@ -6,6 +6,7 @@
 // @author       You
 // @match        https://www.soogif.com/*
 // @grant       GM_registerMenuCommand
+// @grant       GM_setClipboard
 // ==/UserScript==
 
 (function() {
@@ -31,7 +32,8 @@ function jmFetch(){
     console.log("start fetch...");
     var _markdown = jmGifSrcsToMarkdown(jmGetGifSrc());
     // console.log(_markdown);
-    jmCopyToClipboard(_markdown);
+    GM_setClipboard(_markdown,{type: 'text', mimetype: 'text/plain'});    
+    alert("提取图片成功,直接复制粘贴");
 
 }
 
@@ -50,41 +52,21 @@ function jmGetGifSrc(){
 
 }
 
-function jmGifSrcsToMarkdown(gifSrcs){
-    var _markdown = '';
+function jmGifSrcsToMarkdown(gifSrcs){    
+
+    var _markdown = '\n*整理自网络，如若侵权联系删除*\n\n温馨提示：前方高流量预警。\n\n你的 点赞/在看 是我们最大的动力。\n\n';
+
     gifSrcs.forEach(element => {
         _markdown += "![]("+element+")\n\n";
     });
+
+    _markdown += '\n----\n'+
+    "## 不用点赞，点在看，为我们提供最大的动力\n"+
+    "\n"+
+    "![](https://pic1.zhimg.com/50/v2-2034338e9c7cff4f15dc7a8a60889f63_hd.jpg)\n"+
+    "\n"+
+    "----\n"+
+    '<font size=2 color="grey">本文收藏来自互联网，仅用于学习研究，著作权归原作者所有，如有侵权请联系删除</font>\n';    
+
     return _markdown
-}
-
-function jmCopyToClipboard (text) {
-    if(text.indexOf('-') !== -1) {
-        let arr = text.split('-');
-        text = arr[0] + arr[1];
-    }
-    var textArea = document.createElement("textarea");
-      textArea.style.position = 'fixed';
-      textArea.style.top = '0';
-      textArea.style.left = '0';
-      textArea.style.width = '2em';
-      textArea.style.height = '2em';
-      textArea.style.padding = '0';
-      textArea.style.border = 'none';
-      textArea.style.outline = 'none';
-      textArea.style.boxShadow = 'none';
-      textArea.style.background = 'transparent';
-      textArea.value = text;
-      document.body.appendChild(textArea);
-      textArea.select();
-
-      try {
-        var successful = document.execCommand('copy');
-        var msg = successful ? '成功复制到剪贴板' : '该浏览器不支持点击复制到剪贴板';
-       alert(msg);
-      } catch (err) {
-        alert('该浏览器不支持点击复制到剪贴板');
-      }
-
-      document.body.removeChild(textArea);
 }
