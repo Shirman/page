@@ -7,7 +7,11 @@
 
 - [IP代理服务商汇总](/互联网/python/IP代理服务商汇总)
 
+- [Jupyter的安装和使用](/互联网/python/Jupyter的安装和使用)
+
 - [python中yield的简单清晰详解](/互联网/python/python中yield的简单清晰详解)
+
+- [python之anaconda全家桶](/互联网/python/python之anaconda全家桶)
 
 - [python图像处理库Pillow](/互联网/python/python图像处理库Pillow)
 

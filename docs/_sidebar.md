@@ -104,7 +104,9 @@
 	- **python**
 		- [HDB爬虫数据分析](/互联网/python/HDB爬虫数据分析.md)
 		- [IP代理服务商汇总](/互联网/python/IP代理服务商汇总.md)
+		- [Jupyter的安装和使用](/互联网/python/Jupyter的安装和使用.md)
 		- [python中yield的简单清晰详解](/互联网/python/python中yield的简单清晰详解.md)
+		- [python之anaconda全家桶](/互联网/python/python之anaconda全家桶.md)
 		- [python图像处理库Pillow](/互联网/python/python图像处理库Pillow.md)
 		- [python库大全](/互联网/python/python库大全.md)
 		- [python教程](/互联网/python/python教程.md)
@@ -181,6 +183,10 @@
 		- [wp钩子源码解析](/互联网/wordpress/wp钩子源码解析.md)
 	- **人工智能**
 		- [AI未来书摘](/互联网/人工智能/AI未来书摘.md)
+		- [人工智能-机器学习-深度学习的关系](/互联网/人工智能/人工智能-机器学习-深度学习的关系.md)
+		- [机器学习数学基础概念](/互联网/人工智能/机器学习数学基础概念.md)
+		- [深度学习中的张量理解](/互联网/人工智能/深度学习中的张量理解.md)
+		- **百度AI**
 		- **知识图谱**
 			- [一份通俗易懂的知识图谱技术与应用指南](/互联网/人工智能/知识图谱/一份通俗易懂的知识图谱技术与应用指南.md)
 			- [个性化推荐系统实践应用](/互联网/人工智能/知识图谱/个性化推荐系统实践应用.md)
@@ -301,6 +307,7 @@
 		- **Apache**
 			- [Apache-httpd.conf配置说明](/互联网/服务器运维/Apache/Apache-httpd.conf配置说明.md)
 			- [Apache-proxy转发](/互联网/服务器运维/Apache/Apache-proxy转发.md)
+			- [Apache常用配置说明](/互联网/服务器运维/Apache/Apache常用配置说明.md)
 		- [CentOS下安装ImageMagick和PHP-Imagick扩展](/互联网/服务器运维/CentOS下安装ImageMagick和PHP-Imagick扩展.md)
 		- **CI-CD**
 			- [Docker之Jenkins自动化部署](/互联网/服务器运维/CI-CD/Docker之Jenkins自动化部署.md)
@@ -560,6 +567,7 @@
 	- [期货是什么](/概念普及/期货是什么.md)
 - **生活健康**
 	- **保险**
+		- [家庭应急储备](/生活健康/保险/家庭应急储备.md)
 	- **强身健体**
 		- [为什么及如何补充维生素D](/生活健康/强身健体/为什么及如何补充维生素D.md)
 		- [养肠胃](/生活健康/强身健体/养肠胃.md)

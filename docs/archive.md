@@ -1,8 +1,16 @@
 ### 归档列表
 > 时间为文章在本地新建时间，不是发布时间。
 ----
+#### 202004
+- [人工智能/深度学习中的张量理解](/互联网/人工智能/深度学习中的张量理解.md)	<font color="grey" size=1> - 2020/04/04</font>
+- [python/Jupyter的安装和使用](/互联网/python/Jupyter的安装和使用.md)	<font color="grey" size=1> - 2020/04/04</font>
+- [人工智能/机器学习数学基础概念](/互联网/人工智能/机器学习数学基础概念.md)	<font color="grey" size=1> - 2020/04/03</font>
+- [人工智能/人工智能-机器学习-深度学习的关系](/互联网/人工智能/人工智能-机器学习-深度学习的关系.md)	<font color="grey" size=1> - 2020/04/03</font>
+- [Apache/Apache常用配置说明](/互联网/服务器运维/Apache/Apache常用配置说明.md)	<font color="grey" size=1> - 2020/04/02</font>
 #### 202003
 - [/概念普及/CPU于GPU](/概念普及/CPU于GPU.md)	<font color="grey" size=1> - 2020/03/31</font>
+- [python/python之anaconda全家桶](/互联网/python/python之anaconda全家桶.md)	<font color="grey" size=1> - 2020/03/28</font>
+- [保险/家庭应急储备](/生活健康/保险/家庭应急储备.md)	<font color="grey" size=1> - 2020/03/27</font>
 - [数据层/mysql优化全面梳理](/互联网/数据层/mysql优化全面梳理.md)	<font color="grey" size=1> - 2020/03/26</font>
 - [测试/selenium自动化测试基础](/互联网/测试/selenium自动化测试基础.md)	<font color="grey" size=1> - 2020/03/23</font>
 - [编码规范/自动生成代码文档ApiGen](/互联网/编码规范/自动生成代码文档ApiGen.md)	<font color="grey" size=1> - 2020/03/23</font>
