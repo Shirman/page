@@ -55,7 +55,7 @@ function jmShareBlock(){
 
 function jmDisplayShareBlock(_shareBlockDivHtml){
     let div = document.createElement("div");
-    div.innerHTML = '<div id="jm_share_block_wrap" style="border:1px solid;background-color:beige;position:fixed;top:20%;right:40%;padding:10px;z-index:9999;">'+_shareBlockDivHtml+'<div><button style="margin:10px;" id="jm_close_div">关闭</button>[已经复制到剪贴板]</div></div>';
+    div.innerHTML = '<div id="jm_share_block_wrap" style="border:1px solid;background-color:#f5f5dc;position:fixed;top:20%;right:40%;padding:10px;z-index:9999;">'+_shareBlockDivHtml+'<div><button style="margin:10px;" id="jm_close_div">关闭</button>[已经复制到剪贴板]</div></div>';
     document.body.appendChild(div);
     div.outerHTML = div.innerHTML;    
     document.getElementById("jm_close_div").onclick = function(){
