@@ -1,5 +1,5 @@
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -17,7 +17,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -35,7 +35,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -55,7 +55,7 @@
 
 
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -78,7 +78,7 @@
 
 ----
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -96,7 +96,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -114,7 +114,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -132,7 +132,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -150,7 +150,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -168,7 +168,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -186,7 +186,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -204,7 +204,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -222,7 +222,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">
@@ -240,7 +240,7 @@
     </div>
 </div>
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;">
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;">
     <div>
         <p>
             <font size=3 style="color:black;">

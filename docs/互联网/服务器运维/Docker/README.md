@@ -21,8 +21,6 @@
 
 - [Docker常用命令](/互联网/服务器运维/Docker/Docker常用命令)
 
-- [Docker推荐文章](/互联网/服务器运维/Docker/Docker推荐文章)
-
 - [Docker文章分享](/互联网/服务器运维/Docker/Docker文章分享)
 
 - [Docker阿里云仓库](/互联网/服务器运维/Docker/Docker阿里云仓库)
