@@ -3,7 +3,9 @@
 
 **[上一级索引/互联网/服务器运维/](/互联网/服务器运维/)**
 
-- [Nginx-Location配置总结](/互联网/服务器运维/Nginx/Nginx-Location配置总结)
+- [Location配置总结](/互联网/服务器运维/Nginx/Location配置总结)
+
+- [Nginx基础概要全记录](/互联网/服务器运维/Nginx/Nginx基础概要全记录)
 
 - [Nginx常用配置范例](/互联网/服务器运维/Nginx/Nginx常用配置范例)
 

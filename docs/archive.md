@@ -2,6 +2,13 @@
 > 时间为文章在本地新建时间，不是发布时间。
 ----
 #### 202004
+- [PHP/PHP好文推荐](/互联网/PHP/PHP好文推荐.md)	<font color="grey" size=1> - 2020/04/28</font>
+- [强身健体/宅家年轻人常呼吸困难](/生活健康/强身健体/宅家年轻人常呼吸困难.md)	<font color="grey" size=1> - 2020/04/28</font>
+- [好文分享/202004分享](/记录/好文分享/202004分享.md)	<font color="grey" size=1> - 2020/04/27</font>
+- [Docker/Docker文章分享](/互联网/服务器运维/Docker/Docker文章分享.md)	<font color="grey" size=1> - 2020/04/26</font>
+- [Nginx/Nginx基础概要全记录](/互联网/服务器运维/Nginx/Nginx基础概要全记录.md)	<font color="grey" size=1> - 2020/04/26</font>
+- [/产品设计/2020前互联网产品分类及变现方式](/产品设计/2020前互联网产品分类及变现方式.md)	<font color="grey" size=1> - 2020/04/26</font>
+- [/其他/关于中国二胎](/其他/关于中国二胎.md)	<font color="grey" size=1> - 2020/04/23</font>
 - [人工智能/深度学习中的张量理解](/互联网/人工智能/深度学习中的张量理解.md)	<font color="grey" size=1> - 2020/04/04</font>
 - [python/Jupyter的安装和使用](/互联网/python/Jupyter的安装和使用.md)	<font color="grey" size=1> - 2020/04/04</font>
 - [人工智能/机器学习数学基础概念](/互联网/人工智能/机器学习数学基础概念.md)	<font color="grey" size=1> - 2020/04/03</font>
@@ -214,7 +221,7 @@
 - [/营销运营/室外广告投放注意事项](/营销运营/室外广告投放注意事项.md)	<font color="grey" size=1> - 2019/07/26</font>
 - [理财/一学就会的存钱方法](/生活健康/理财/一学就会的存钱方法.md)	<font color="grey" size=1> - 2019/07/26</font>
 - [强身健体/胆汁反流怎么治疗](/生活健康/强身健体/胆汁反流怎么治疗.md)	<font color="grey" size=1> - 2019/07/26</font>
-- [PHP指南/PHP指南](/互联网/PHP/PHP指南/PHP指南.md)	<font color="grey" size=1> - 2019/07/17</font>
+- [PHP/PHP指南](/互联网/PHP/PHP指南.md)	<font color="grey" size=1> - 2019/07/17</font>
 - [/鸡汤不毒/养成这些上网习惯避免泄露个人重要隐私](/鸡汤不毒/养成这些上网习惯避免泄露个人重要隐私.md)	<font color="grey" size=1> - 2019/07/09</font>
 - [前端/彻底理解URL编码](/互联网/前端/彻底理解URL编码.md)	<font color="grey" size=1> - 2019/07/06</font>
 - [后端/通俗理解session与cookie运行机制](/互联网/后端/通俗理解session与cookie运行机制.md)	<font color="grey" size=1> - 2019/07/06</font>
@@ -465,7 +472,7 @@
 #### 201903
 - [服务器运维/Linux同步服务rsync](/互联网/服务器运维/Linux同步服务rsync.md)	<font color="grey" size=1> - 2019/03/31</font>
 - [Nginx/Nginx常用配置范例](/互联网/服务器运维/Nginx/Nginx常用配置范例.md)	<font color="grey" size=1> - 2019/03/31</font>
-- [Nginx/Nginx-Location配置总结](/互联网/服务器运维/Nginx/Nginx-Location配置总结.md)	<font color="grey" size=1> - 2019/03/31</font>
+- [Nginx/Location配置总结](/互联网/服务器运维/Nginx/Location配置总结.md)	<font color="grey" size=1> - 2019/03/31</font>
 - [服务器运维/自颁发SSL证书及nginx_apache配置](/互联网/服务器运维/自颁发SSL证书及nginx_apache配置.md)	<font color="grey" size=1> - 2019/03/31</font>
 - [Nginx/Nginx日志文件切割](/互联网/服务器运维/Nginx/Nginx日志文件切割.md)	<font color="grey" size=1> - 2019/03/31</font>
 - [数据层/mysql利用索引优化order-by](/互联网/数据层/mysql利用索引优化order-by.md)	<font color="grey" size=1> - 2019/03/31</font>
@@ -561,7 +568,7 @@
 - [版本管理/SVN目录结构规划](/互联网/版本管理/SVN目录结构规划.md)	<font color="grey" size=1> - 2019/02/15</font>
 - [版本管理/SVN常用基本命令](/互联网/版本管理/SVN常用基本命令.md)	<font color="grey" size=1> - 2019/02/15</font>
 - [编码规范/PHP编码规范](/互联网/编码规范/PHP编码规范.md)	<font color="grey" size=1> - 2019/02/15</font>
-- [后端/PHP练级攻略](/互联网/后端/PHP练级攻略.md)	<font color="grey" size=1> - 2019/02/15</font>
+- [PHP/PHP练级攻略](/互联网/PHP/PHP练级攻略.md)	<font color="grey" size=1> - 2019/02/15</font>
 - [Linux/Linux常用命令](/互联网/Linux/Linux常用命令.md)	<font color="grey" size=1> - 2019/02/15</font>
 - [Linux/Vim进阶概览](/互联网/Linux/Vim进阶概览.md)	<font color="grey" size=1> - 2019/02/15</font>
 - [Linux/Vim基础概览](/互联网/Linux/Vim基础概览.md)	<font color="grey" size=1> - 2019/02/15</font>

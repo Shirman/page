@@ -1,6 +1,6 @@
-## 首页索引
+## 9ong
 
-> 微软收购github后，私有仓库免费，19年新注册github账号，转移旧账号项目，将部分有道云笔记、微信收藏、浏览器收藏放到github新账号测试。@2019
+> 分享是学习的一种方式，学习也为了再次分享。
 
 ### 推荐
 
@@ -45,6 +45,22 @@
 ### 最新
 > 时间为文章在本地最后更新时间，不是发布时间。
 ----
+- [强身健体/宅家年轻人常呼吸困难](/生活健康/强身健体/宅家年轻人常呼吸困难.md)	<font color="grey" size=1> - 2020/04/29</font>
+- [/其他/关于中国二胎](/其他/关于中国二胎.md)	<font color="grey" size=1> - 2020/04/29</font>
+- [PHP/PHP指南](/互联网/PHP/PHP指南.md)	<font color="grey" size=1> - 2020/04/29</font>
+- [PHP/PHP好文推荐](/互联网/PHP/PHP好文推荐.md)	<font color="grey" size=1> - 2020/04/28</font>
+- [PHP/如何挑选PHP框架](/互联网/PHP/如何挑选PHP框架.md)	<font color="grey" size=1> - 2020/04/28</font>
+- [PHP/PHP练级攻略](/互联网/PHP/PHP练级攻略.md)	<font color="grey" size=1> - 2020/04/28</font>
+- [好文分享/202004分享](/记录/好文分享/202004分享.md)	<font color="grey" size=1> - 2020/04/27</font>
+- [Nginx/Nginx日志文件切割](/互联网/服务器运维/Nginx/Nginx日志文件切割.md)	<font color="grey" size=1> - 2020/04/27</font>
+- [Nginx/Nginx配置http基本认证及资源文件下载目录别名配置](/互联网/服务器运维/Nginx/Nginx配置http基本认证及资源文件下载目录别名配置.md)	<font color="grey" size=1> - 2020/04/27</font>
+- [Nginx/Location配置总结](/互联网/服务器运维/Nginx/Location配置总结.md)	<font color="grey" size=1> - 2020/04/27</font>
+- [Nginx/Nginx基础概要全记录](/互联网/服务器运维/Nginx/Nginx基础概要全记录.md)	<font color="grey" size=1> - 2020/04/27</font>
+- [/重构自己/互联网上什么是能力](/重构自己/互联网上什么是能力.md)	<font color="grey" size=1> - 2020/04/26</font>
+- [/其他/科学的中医才是我们要的中医](/其他/科学的中医才是我们要的中医.md)	<font color="grey" size=1> - 2020/04/26</font>
+- [Docker/Docker文章分享](/互联网/服务器运维/Docker/Docker文章分享.md)	<font color="grey" size=1> - 2020/04/26</font>
+- [/其他/程序员如何优雅](/其他/程序员如何优雅.md)	<font color="grey" size=1> - 2020/04/26</font>
+- [/产品设计/2020前互联网产品分类及变现方式](/产品设计/2020前互联网产品分类及变现方式.md)	<font color="grey" size=1> - 2020/04/26</font>
 - [Docker/Docker常用命令](/互联网/服务器运维/Docker/Docker常用命令.md)	<font color="grey" size=1> - 2020/04/19</font>
 - [Docker/Docker推荐文章](/互联网/服务器运维/Docker/Docker推荐文章.md)	<font color="grey" size=1> - 2020/04/15</font>
 - [python/python之anaconda全家桶](/互联网/python/python之anaconda全家桶.md)	<font color="grey" size=1> - 2020/04/15</font>
@@ -63,17 +79,3 @@
 - [/概念普及/CPU于GPU](/概念普及/CPU于GPU.md)	<font color="grey" size=1> - 2020/03/31</font>
 - [Linux/正则表达式](/互联网/Linux/正则表达式.md)	<font color="grey" size=1> - 2020/03/30</font>
 - [后端/正则表达式](/互联网/后端/正则表达式.md)	<font color="grey" size=1> - 2020/03/30</font>
-- [/产品设计/产品设计文章分享](/产品设计/产品设计文章分享.md)	<font color="grey" size=1> - 2020/03/29</font>
-- [/鸡汤不毒/为什么心智越成熟的人，越少晒生活](/鸡汤不毒/为什么心智越成熟的人，越少晒生活.md)	<font color="grey" size=1> - 2020/03/28</font>
-- [数据层/mysql优化全面梳理](/互联网/数据层/mysql优化全面梳理.md)	<font color="grey" size=1> - 2020/03/28</font>
-- [数据层/mysql索引优化干货](/互联网/数据层/mysql索引优化干货.md)	<font color="grey" size=1> - 2020/03/28</font>
-- [数据层/高性能mysql笔记](/互联网/数据层/高性能mysql笔记.md)	<font color="grey" size=1> - 2020/03/28</font>
-- [数据层/mysql优化实例汇总](/互联网/数据层/mysql优化实例汇总.md)	<font color="grey" size=1> - 2020/03/26</font>
-- [数据层/什么是快照与备份](/互联网/数据层/什么是快照与备份.md)	<font color="grey" size=1> - 2020/03/25</font>
-- [python/整理phper初学python想知道的知识点](/互联网/python/整理phper初学python想知道的知识点.md)	<font color="grey" size=1> - 2020/03/25</font>
-- [测试/selenium自动化测试基础](/互联网/测试/selenium自动化测试基础.md)	<font color="grey" size=1> - 2020/03/25</font>
-- [设计模式/23种设计模式全解析](/互联网/设计模式/23种设计模式全解析.md)	<font color="grey" size=1> - 2020/03/24</font>
-- [设计模式/简述23种设计模式](/互联网/设计模式/简述23种设计模式.md)	<font color="grey" size=1> - 2020/03/24</font>
-- [编码规范/自动生成代码文档ApiGen](/互联网/编码规范/自动生成代码文档ApiGen.md)	<font color="grey" size=1> - 2020/03/23</font>
-- [测试/php单元测试](/互联网/测试/php单元测试.md)	<font color="grey" size=1> - 2020/03/23</font>
-- [swoole/闲谈Swoole相关框架](/互联网/PHP/swoole/闲谈Swoole相关框架.md)	<font color="grey" size=1> - 2020/03/23</font>

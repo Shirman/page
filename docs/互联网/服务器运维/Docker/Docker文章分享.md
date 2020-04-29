@@ -1,0 +1,3 @@
+
+<div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://zhuanlan.zhihu.com/p/53260098?utm_source=wechat_session&utm_medium=social&utm_oi=28889430622208" _target="blank" style="color:black;">10分钟看懂Docker和K8S - 知乎</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://zhuanlan.zhihu.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>2010年，几个搞IT的年轻人，在美国旧金山成立了一家名叫“dotCloud”的公司。 这家公司主要提供基于PaaS的云计算技术服务。具体来说，是和LXC有关的容器技术。 后来，dotClou...</font></div></div></div>
+
