@@ -24,7 +24,7 @@ function jmShareBlock(){
 
     var _title = $.trim($("title").text());
     var _desc = $.trim($("meta[name='description']").attr("content")) || _title || "";    
-    var _url = window.location.url;
+    var _url = window.location.href;
     var _favicon = window.location.origin+"/favicon.ico";
 
 
