@@ -58,7 +58,7 @@
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247486851&idx=1&sn=0ffc36b2b187e05e09e9fdaf674a9621&chksm=972191b2a05618a4a66f9c3c935abb533b3be8a935209695c728f77a88ab4f4b9973503c6f6e&scene=21#wechat_redirect" _target="blank" style="color:black;">Redis的各项功能解决了哪些问题？</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>作者：blackheartwww.cnblogs.com/linianhui先看一下Redis是一个什么东西</font></div></div></div>
 
-> 这篇文章朴实的文字介绍了redis缓存使用场景的发展，因为要求效率，增加客户端缓存，后来将缓存移到服务端采用redis内存缓存；由于担心redis服务器偶尔抽风缓存数据丢失，考虑redis持久化，保证重启后能恢复缓存数据；再发展到可能redis服务器一挂就是一天，这个时候主从机制（哨兵+复制）就派上用场了，主redis服务挂了，哨兵自动检测并切换到从redis服务；由于业务越来越大，用户量激增，单台redis服务内存不足以支撑用户量，考虑增加内存，但机器的内存也是有个上限的，再考虑横向扩展redis服务（如同数据库分表），这就是redis集群了，可以使用中间件codis进行集群管理，也可以用官方推荐的cluster集群。该文属于介绍方法论，不做具体教学实践，不错的缓存指南。[为什么要用redis？点这里](../数据层/redis/为什么要用redis.md)
+> 这篇文章朴实的文字介绍了redis缓存使用场景的发展，因为要求效率，增加客户端缓存，后来将缓存移到服务端采用redis内存缓存；由于担心redis服务器偶尔抽风缓存数据丢失，考虑redis持久化，保证重启后能恢复缓存数据；再发展到可能redis服务器一挂就是一天，这个时候主从机制（哨兵+复制）就派上用场了，主redis服务挂了，哨兵自动检测并切换到从redis服务；由于业务越来越大，用户量激增，单台redis服务内存不足以支撑用户量，考虑增加内存，但机器的内存也是有个上限的，再考虑横向扩展redis服务（如同数据库分表），这就是redis集群了，可以使用中间件codis进行集群管理，也可以用官方推荐的cluster集群。该文属于介绍方法论，不做具体教学实践，不错的缓存指南。[为什么要用redis？点这里](/互联网/数据层/redis/为什么要用redis.md)
 
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247488565&idx=2&sn=221cc76c8a3b876a103f0ec8eecbacc3&chksm=97218804a05601121667cc675aeb8e03fd8a4d4204cf707976cdf8f113b9465a19fd3f04d059&scene=21#wechat_redirect" _target="blank" style="color:black;">令牌桶限流思路分享（PHP+Redis实现机制）</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>服务接口的流量控制策略：分流、降级、限流等。</font></div></div></div>
@@ -83,7 +83,7 @@
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247489137&idx=1&sn=448f256a14dae01eaf9f4094d0636563&chksm=97218a40a056035668ef48484a4aabb3bd90926ae1bee29401d5088cdf79538b2ebe0d96a486&scene=21#wechat_redirect" _target="blank" style="color:black;">为什么我们做分布式使用Redis？</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>学习 Redis，这几方面尤其重要：Redis 客户端、Redis 高级功能、Redis 持久化和开发运维常用问题探讨、Redis 复制的原理和优化策略、Redis 分布式解决方案等。</font></div></div></div>
 
-> 该文是一篇基础普及redis使用的文章，可轻松阅读，干货知识甚多。主要介绍了redis的非阻塞IO多路复用是什么（利用送外卖的例子通俗讲解了，更多关于详见：[同步-异步-阻塞-非阻塞-IO模型](../知识点/同步-异步-阻塞-非阻塞-IO模型.md)）；介绍了redis各种数据类型的常用场景，比如string用于set/get缓存与计数，hash可实现session，list可实现分页，set可实现交集、差集、并集，sorted set可实现排行榜；还介绍了redis的过期策略：定期删除+惰性删除+LRU（最近最少使用淘汰）；也谈到了我们之前说到的穿透与雪崩问题/解决方案...
+> 该文是一篇基础普及redis使用的文章，可轻松阅读，干货知识甚多。主要介绍了redis的非阻塞IO多路复用是什么（利用送外卖的例子通俗讲解了，更多关于详见：[同步-异步-阻塞-非阻塞-IO模型](/互联网/知识点/同步-异步-阻塞-非阻塞-IO模型.md)）；介绍了redis各种数据类型的常用场景，比如string用于set/get缓存与计数，hash可实现session，list可实现分页，set可实现交集、差集、并集，sorted set可实现排行榜；还介绍了redis的过期策略：定期删除+惰性删除+LRU（最近最少使用淘汰）；也谈到了我们之前说到的穿透与雪崩问题/解决方案...
 
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247485989&idx=1&sn=51110a97717e5d7205c15484f62255cf&chksm=97219614a0561f02987e2c644914b9a77c65477b1d4945ad64609187850e30fd365f6fd21885&scene=21#wechat_redirect" _target="blank" style="color:black;">php与Redis实现分布式锁，你会了吗？</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>redis写入时不带锁定功能，为防止多个进程同时进行一个操作，出现意想不到的结果</font></div></div></div>
@@ -153,7 +153,7 @@
 
 > 由于php是动态解释型脚本，边执行边解释代码（opcode），导致重复的代码也会重新解释执行，显然这样的效率是不高的，开发都知道重复的代码可以封装，重复的数据可以缓存，所以opcode我们也可以通过缓存就能保证重复代码不需要二次解释成opcode，这就有了官方的opcache。
 >
-> php8最令人期待的应该就是JIT编译了，经过测试比对，php8在使用JIT编译情况下，比PHP7.4提升了45%左右的速度，很满意的。了解JIT编译详见：[理解JIT编译](../知识点/理解JIT编译.md)
+> php8最令人期待的应该就是JIT编译了，经过测试比对，php8在使用JIT编译情况下，比PHP7.4提升了45%左右的速度，很满意的。了解JIT编译详见：[理解JIT编译](/互联网/知识点/理解JIT编译.md)
 
 
 
@@ -172,12 +172,12 @@
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247487592&idx=1&sn=fa42a9b9eaa6a9c822525de4be0b8f64&chksm=97218c59a056054fb9d75fed206dc1e3cf16658461f179bee2be5c8f1b6568fbe2ad5d926e6c&scene=21#wechat_redirect" _target="blank" style="color:black;">面试官：数据量很大，分页查询很慢，怎么优化？</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>当需要从数据库查询的表有上万条记录的时候，一次性查询所有结果会变得很慢</font></div></div></div>
 
-> 《高性能MySql》中给出的最佳方案还是限定id查询方案，更多详见：[高性能mysql笔记](../数据层/高性能mysql笔记.md)
+> 《高性能MySql》中给出的最佳方案还是限定id查询方案，更多详见：[高性能mysql笔记](/互联网/数据层/高性能mysql笔记.md)
 
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247489477&idx=1&sn=57a3c3dc2ee822f25f4740f17d84394c&chksm=97218bf4a05602e20f75d6de9d11ba8d5ac564899b4859067ed5ad8730a840fe7e772b408910&scene=21#wechat_redirect" _target="blank" style="color:black;">【BAT面试题系列】面试官：你了解乐观锁和悲观锁吗？</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>前言乐观锁和悲观锁问题，是出现频率比较高的面试题。</font></div></div></div>
 
-> 你知道乐观锁和悲观锁吗，你知道他们用在哪里吗，怎么用？更多关于悲观锁：[悲观锁实践](../数据层/悲观锁实践.md)
+> 你知道乐观锁和悲观锁吗，你知道他们用在哪里吗，怎么用？更多关于悲观锁：[悲观锁实践](/互联网/数据层/悲观锁实践.md)
 
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247487710&idx=1&sn=b475e13b296703180488d5a714950fe8&chksm=97218cefa05605f90518b23ee1da4b071ef4eb41946a453f903e500c76e2ec12debce85b90ff&scene=21#wechat_redirect" _target="blank" style="color:black;">MySQL在并发场景下的问题及解决思路</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>MySQL在并发场景下的问题及解决思路</font></div></div></div>
@@ -221,7 +221,7 @@
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247486084&idx=2&sn=d1de5ce8a5d989cba5baae010f2263a6&chksm=972196b5a0561fa3ef93ff22aff1fd999d5bb838017b0abb52ee1f1433d499c72e8edc264587&scene=21#wechat_redirect" _target="blank" style="color:black;">一个在高并发下财务支付锁的问题分析</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>在工作项目中，会遇到一些php并发访问去修改一个数据问题，如果这个数据不加锁，就会造成数据的错误。</font></div></div></div>
 
-> 如果我们还不明白高并发下像抽奖、预约、支付等这些有库存场景为什么要加入锁的话，我们可以花10分钟看下这篇很简单的关于支付锁的问题分析。更多关于锁与ACID：[悲观锁实践](../数据层/悲观锁实践.md)、[明明白白事务ACID](../数据层/明明白白事务ACID.md)
+> 如果我们还不明白高并发下像抽奖、预约、支付等这些有库存场景为什么要加入锁的话，我们可以花10分钟看下这篇很简单的关于支付锁的问题分析。更多关于锁与ACID：[悲观锁实践](/互联网/数据层/悲观锁实践.md)、[明明白白事务ACID](/互联网/数据层/明明白白事务ACID.md)
 
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247488093&idx=1&sn=896d3c481362c282e9d99cbcbe348920&chksm=97218e6ca056077a2ea8a5879e2606a3f276066dc2ea361a0b9f99c9fe454b6ce570ff86ca04&scene=21#wechat_redirect" _target="blank" style="color:black;">在开发过程中，怎样的级别才算是高并发</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>在开发过程中，怎样的级别才算是高并发</font></div></div></div>
@@ -270,7 +270,7 @@
 
 ## 其他
 
-[PHP方案解读与补充](./PHP方案解读与补充.md)
+[PHP方案解读与补充](/互联网/PHP/PHP方案解读与补充.md)
 
 ----
 

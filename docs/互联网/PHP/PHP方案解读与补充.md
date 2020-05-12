@@ -195,7 +195,7 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247485329&idx=2&sn=f2b32215420ee5493bca52b2f0217346&chksm=97219ba0a05612b65f2927276e0f02fbf2eed3e530ba61220a52585c86edc78a30c1834db6b5&scene=21#wechat_redirect" _target="blank" style="color:black;">php实现的SSO单点登录系统接入功能示例分析</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>点击上面关注我关注我哟小编 隔天推送php教程，php技巧，php视频教程，MySQL，笔试题等诸多优质内容</font></div></div></div>
 
 
-> 这篇文章简单介绍了公司内部业务系统的SSO实现。关于SSO策略参考：[单点登录策略](../解决方案/单点登录策略.md)，有三种情况，1：同公司同域名下，一般采用cookie方式的JWT；2：同公司不同域名，CAS一般提供一个公共的用户体系，业务服务端向CAS服务器请求ticket，并通过业务客户端向CAS服务器验证ticket；3：不同公司不同域名，我们常见的有微信、QQ、微博等基于OAuth的授权方式。
+> 这篇文章简单介绍了公司内部业务系统的SSO实现。关于SSO策略参考：[单点登录策略](/互联网/解决方案/单点登录策略.md)，有三种情况，1：同公司同域名下，一般采用cookie方式的JWT；2：同公司不同域名，CAS一般提供一个公共的用户体系，业务服务端向CAS服务器请求ticket，并通过业务客户端向CAS服务器验证ticket；3：不同公司不同域名，我们常见的有微信、QQ、微博等基于OAuth的授权方式。
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247487273&idx=1&sn=5453caa7c8b5b2b487a8e113c62714f3&chksm=97219318a0561a0e42f5cd63fc2946a93b4d34960a5b44536dda8bfecd3161882f81273bff58&scene=21#wechat_redirect" _target="blank" style="color:black;">PHP实现SSO单点登录步骤</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>这个操作还可以</font></div></div></div>
 
@@ -262,7 +262,7 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 
 > 从数据库中按page读取数据，实时写入php的output输出流（php://output），再通过ob输出给web浏览器。解决了大数据表格输出占用大内存的问题。
 > 
-> 当然大数据下载，面临php的长时间连接带来的风险，建议：如果是外部用户下载，提供一个专门冷数据查询或下载的备库；建议严格限制用户访问频率及合法性；另外大数据，特别是日志类的数据表往往都很大，如果一直翻页查询，越往后速度越慢，文章作者最后提到了如何优化的问题，虽然是个细节，却是大部分开发者需要学习的地方，细节往往决定成败，作者利用B+树的原理，补充lastid进行查询，保证sql语句利用了主键索引树。参考：[高性能mysql笔记](../数据层/高性能mysql笔记.md)
+> 当然大数据下载，面临php的长时间连接带来的风险，建议：如果是外部用户下载，提供一个专门冷数据查询或下载的备库；建议严格限制用户访问频率及合法性；另外大数据，特别是日志类的数据表往往都很大，如果一直翻页查询，越往后速度越慢，文章作者最后提到了如何优化的问题，虽然是个细节，却是大部分开发者需要学习的地方，细节往往决定成败，作者利用B+树的原理，补充lastid进行查询，保证sql语句利用了主键索引树。参考：[高性能mysql笔记](/互联网/数据层/高性能mysql笔记.md)
 
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247485482&idx=1&sn=df750f169eb0495593d8a64d36ed6ae4&chksm=9721941ba0561d0df0cddb2bc6950acfd35265d6194b8fc25006a781e0ae5d9e1dc1c4314f39&scene=21#wechat_redirect" _target="blank" style="color:black;">PHP环境安全加固方案</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>1.启用 PHP 的安全模式PHP 环境提供的安全模式是一个非常重要的内嵌安全机制，PHP 安全模式能有效控</font></div></div></div>
@@ -306,7 +306,7 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 
 > 这个很考验经验，没有多年经验，想不出来，甚至看了也察觉不出大部分门道来；当然不同php版本也会有不同的潜在风险问题，这是一个发展性问题，其实IDE完全可以实现这方面的初步审核，不需要使用第三方安全审核工具才能及时纠正，当然现在很多IDE也能建议一些有效的方案了，但还是会有很多潜在风险是没有识别，至少可以全面检查项目代码后，给出潜在风险列表，由开发人员二次判断及纠正（毕竟php门槛低，部分开发者水平暂时还是很低的，性能和安全方面完全不考虑，需要一个有经验的一线实战技术管理人员进行代码审核）
 >
-> 我们以前都会养成一个习惯，每天早上都会把SVN或GIT的提交记录大致过一遍，一方面可以学习别人好的编码及思路，另一方面可以帮助发现模块代码存在风险问题。如果有时间的话，这是技术负责人解项目各个成员的编码情况是一个不错的直观方式，当然审核代码还是需要一些工具，才能提高效率。参考：[php代码审计](../测试/PHP代码审计.md) 及 [代码审查方式](../测试/代码审核.md)
+> 我们以前都会养成一个习惯，每天早上都会把SVN或GIT的提交记录大致过一遍，一方面可以学习别人好的编码及思路，另一方面可以帮助发现模块代码存在风险问题。如果有时间的话，这是技术负责人解项目各个成员的编码情况是一个不错的直观方式，当然审核代码还是需要一些工具，才能提高效率。参考：[php代码审计](/互联网/测试/PHP代码审计.md) 及 [代码审查方式](/互联网/测试/代码审核.md)
 
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247485602&idx=1&sn=09f0aa4589cd392cb1cdcf4220818e08&chksm=97219493a0561d85f9e34b104c71f7c8755c20b90c21d06dad0bcb3760e6a34b85a8e2415d13&scene=21#wechat_redirect" _target="blank" style="color:black;">PHP路由技术的原理与实践</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>用户通过指定的URL范式对后台进行访问，URL路由处理类进行处理后，转发到逻辑处理类，逻辑处理类将请求结果返</font></div></div></div>
@@ -338,9 +338,9 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247485145&idx=3&sn=e7526ff0b5b3aa09eadee7ea58d2a21a&chksm=97219ae8a05613fef7104721cb319ce7b3ca828f0fc4ac78871b9d33375e416b7aa29f3aef48&scene=21#wechat_redirect" _target="blank" style="color:black;">ⓟⓗⓟ使用文件锁解决高并发问题示例</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>涉及抢购、秒杀、抽奖、抢票等活动时，为了避免超卖，那么库存数量是有限的，但是如果同时下单人数超过了库存数量，</font></div></div></div>
 
-> 这篇文章从文件锁示例讲起，介绍了mysql的悲观锁、乐观锁，再通过两个锁，延伸到文件锁的阻塞与非阻塞模式，最后引出分布集群及redis实现锁机制。悲观锁实践参考：[悲观锁实践](../数据层/悲观锁实践.md)
+> 这篇文章从文件锁示例讲起，介绍了mysql的悲观锁、乐观锁，再通过两个锁，延伸到文件锁的阻塞与非阻塞模式，最后引出分布集群及redis实现锁机制。悲观锁实践参考：[悲观锁实践](/互联网/数据层/悲观锁实践.md)
 >
-> 属于示例、思路。更复杂精细的高并发设计参考：[设计一个秒杀系统](../解决方案/设计一个秒杀系统.md)
+> 属于示例、思路。更复杂精细的高并发设计参考：[设计一个秒杀系统](/互联网/解决方案/设计一个秒杀系统.md)
 
 
 
@@ -410,12 +410,12 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247486430&idx=1&sn=df4d8a6336a71f7c5053112d86dcee14&chksm=972197efa0561ef9af7df417d2da8acffb7246c4e01ce4d89ef9369c8bb29991b0bb623078dd&scene=21#wechat_redirect" _target="blank" style="color:black;">php实现事件监听与触发的方法</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>PHP如何实现事件监听，参考了jQuery的事件绑定思路，简单的实现了一下。</font></div></div></div>
 
-> 文章中事件的监听与触发编码很简洁也很好理解。这个看明白了，可以顺手掌握设计模式中的观察者模式详见：[23-观察者模式](../设计模式/PHP设计模式全解析/23-观察者模式.md)
+> 文章中事件的监听与触发编码很简洁也很好理解。这个看明白了，可以顺手掌握设计模式中的观察者模式详见：[23-观察者模式](/互联网/设计模式/PHP设计模式全解析/23-观察者模式.md)
 >
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247486589&idx=2&sn=e6db2d6beeaa7a9669a74743cdc024cf&chksm=9721904ca056195a7e335e130f517241a79ecbe873d78ed4e7c71273e4dd0fe1352a006f0fcc&scene=21#wechat_redirect" _target="blank" style="color:black;">记录用户登陆信息，你用PHP是如何来实现的</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>对于初入门的PHP新手来说，或许有一定的难度。建议大家先看看PHP中session的基础含义，需要的朋友可以</font></div></div></div>
 
-> 分享这篇新手关于用户登录的文章，主要不是为了让新手去实现，而是为了让新手明明白白的理解session和cookie，详见：[通俗理解session与cookie运行机制](../后端/通俗理解session与cookie运行机制.md)
+> 分享这篇新手关于用户登录的文章，主要不是为了让新手去实现，而是为了让新手明明白白的理解session和cookie，详见：[通俗理解session与cookie运行机制](/互联网/后端/通俗理解session与cookie运行机制.md)
 
 
 
@@ -461,7 +461,7 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247488150&idx=1&sn=5dfceb67c8cdfc95e2c17639e76b9cef&chksm=97218ea7a05607b159b8b80330a5a260211e46e72c27148775b61e265b28bf85842d1b442936&scene=21#wechat_redirect" _target="blank" style="color:black;">php实现JWT(json web token)鉴权实例详解</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>谢谢你的关注！</font></div></div></div>
 
-> session和cookie，详见：[通俗理解session与cookie运行机制](../后端/通俗理解session与cookie运行机制.md)，JWT的好处不少，但我们也要关注他的一些可能不足的地方：JWT是外放token，token里带有验签信息、过期信息等，服务器端难以主动冻结或提前结束某个有效的token（存在只要有令牌就可以调动军队的风险），也有项目是JWT+Redis类内存存储方式用于替代session的方案。
+> session和cookie，详见：[通俗理解session与cookie运行机制](/互联网/后端/通俗理解session与cookie运行机制.md)，JWT的好处不少，但我们也要关注他的一些可能不足的地方：JWT是外放token，token里带有验签信息、过期信息等，服务器端难以主动冻结或提前结束某个有效的token（存在只要有令牌就可以调动军队的风险），也有项目是JWT+Redis类内存存储方式用于替代session的方案。
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247488072&idx=2&sn=864d3d8ee62af219d871e5c790d39cab&chksm=97218e79a056076f1571e6f921ca106d732ee17d8496c2170ea55c0abdae3bee2f7cff0a3982&scene=21#wechat_redirect" _target="blank" style="color:black;">PHP基于openssl实现的非对称加密操作</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>PHP基于openssl实现的非对称加密操作</font></div></div></div>
 
@@ -527,7 +527,7 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247487341&idx=2&sn=ed4531c5e330628cdf85b58171c261ae&chksm=9721935ca0561a4a47fb4c366961defd8f390de9d866beeb190bbe9ce30b534cb224d40f09b9&scene=21#wechat_redirect" _target="blank" style="color:black;">提高工作效率的7个 Vim 使用技巧</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>vim 是个非常高效、非常好用的工具，很多人一旦开始使用 Vim 之后就再也无法自拔。然而， Vim 仍然有</font></div></div></div>
 
-> 如果你vim用的不多不熟，那就不用看了，但可以看我们从一本秘籍抽取除来的部分知识编写的系列文章：[Vim基础概览](../Linux/Vim基础概览.md)、[Vim基础配置说明](../Linux/Vim基础配置说明.md)、[Vim进阶概览](../Linux/Vim进阶概览.md)、[Vim文件编码步步分解](../Linux/Vim文件编码步步分解.md)
+> 如果你vim用的不多不熟，那就不用看了，但可以看我们从一本秘籍抽取除来的部分知识编写的系列文章：[Vim基础概览](/互联网/Linux/Vim基础概览.md)、[Vim基础配置说明](/互联网/Linux/Vim基础配置说明.md)、[Vim进阶概览](/互联网/Linux/Vim进阶概览.md)、[Vim文件编码步步分解](/互联网/Linux/Vim文件编码步步分解.md)
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247484190&idx=3&sn=b6b928e45c4ce29c42a34192ff5543ec&chksm=97219f2fa05616395682cb6701f5a9f832ac57d555daa77c9fce55923227efb45c65ca0c7bba&scene=21#wechat_redirect" _target="blank" style="color:black;">提升代码可读性的 10 个技巧</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>具有较强可读性的代码，能帮助你调试程序，不让自己活得太累。代码可读性是计算机编程领域中普遍存在的问题。这也是</font></div></div></div>
 
@@ -537,7 +537,7 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 > - 2、保持一致的缩进：IDE、协作者之间的配合沟通
 > - 3、不必要的注释：除非你心情好，写首诗、写个歌词
 > - 4、代码分组：前面提到了编码如同作文，一个文件有自己的主题意义，需要不同代码模块来配合，每个模块又有自己的目的和意义，每相邻的几句代码也都可能组成一定的含义，代码模块如同作文段落，代码分组如同段落中句号分组，让阅读的人可以快速理解
-> - 5\6\7\8\9、保持一致的命名规范：都是属于代码简洁之道的范畴，推荐：[代码整洁之道-php版](../编码规范/代码整洁之道-php版.md)、[前端编码规范](../编码规范/前端编码规范.md)
+> - 5\6\7\8\9、保持一致的命名规范：都是属于代码简洁之道的范畴，推荐：[代码整洁之道-php版](/互联网/编码规范/代码整洁之道-php版.md)、[前端编码规范](/互联网/编码规范/前端编码规范.md)
 
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247485578&idx=1&sn=d7b0e10bc4a26271f8bbe183f1b122b5&chksm=972194bba0561dad8e29eb07359ae81f0e2da3ffb353587a53e8959feaf498eaeec613fc25a3&scene=21#wechat_redirect" _target="blank" style="color:black;">9个小窍门帮你提高编码技能</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>你想成为一名程序员，并且正在为之奋斗，那么你努力的方式，比如做事方法、思维习惯都将会影响你会成为怎样的一名程</font></div></div></div>
@@ -577,7 +577,7 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247486360&idx=1&sn=00b31c996f9ff9f101068e6cf34c7a82&chksm=972197a9a0561ebfe7312b10beb44dad8332762be333a5685f837f5e88c6305fe3038cb267d2&scene=21#wechat_redirect" _target="blank" style="color:black;">最实用的PHP Composer教程</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>Composer是PHP用来管理依赖（dependency）关系的工具。Composer通常情况下通过com</font></div></div></div>
 
-> php20+年，php5之后的几年在生态上也在快速追赶java，并学习java、js生态，虽然PHP的PEAR也表现甚佳，但还不够。且现在流行的语言，java、python、go、js都有库管理工具，生态体系一下子舒服多了。composer必须会，如果你还写php的话。详见：[Composer常用命令与示例](../开发环境/Composer常用命令.md)
+> php20+年，php5之后的几年在生态上也在快速追赶java，并学习java、js生态，虽然PHP的PEAR也表现甚佳，但还不够。且现在流行的语言，java、python、go、js都有库管理工具，生态体系一下子舒服多了。composer必须会，如果你还写php的话。详见：[Composer常用命令与示例](/互联网/开发环境/Composer常用命令.md)
 
 
 <div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247485234&idx=3&sn=370f09ff0b51c89ce4112a04d5f774c2&chksm=97219b03a05612153a78e5a52111f15c8cf62b3b75b08447c04e05d30db88253dbe601a69867&scene=21#wechat_redirect" _target="blank" style="color:black;">PHP7之静态库的扩展封装</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>在本文，我们将建立一个简单的lib静态库，并在扩展中进行封装调用。代码基础代码这个扩展，我们将在say扩展上</font></div></div></div>
@@ -605,7 +605,7 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 > - 1、仪表风度：是人都喜欢干净整洁不邋遢的人，颜值和谐更佳，身体英朗精神抖索（毕竟要996的福利嘛）
 > - 2、专业知识：能解决面试官的问题（一般可能都是公司碰到过的问题），有一定深度，能反杀面试官的更佳
 > - 3、工作经验：大厂喜欢大厂出来的，小厂大部分更喜欢大厂出来的，但也有小厂喜欢全面的人才（高度不足广度来补，毕竟大厂的全面的人才哪会来小厂）
-> - 4、口表达能力：沟通是很重要的一方面，谈吐清楚、逻辑清晰、说话有分寸，更多详见：[职场团队/沟通](../../职场团队/沟通/README.md)
+> - 4、口表达能力：沟通是很重要的一方面，谈吐清楚、逻辑清晰、说话有分寸，更多详见：[职场团队/沟通](/职场团队/沟通/README.md)
 > - 5、综合分析能力：考虑周全、有细节、有态度、透过现象直击本质（推荐：[马哲通俗之美 | 5 辩证法之联系发展全面](https://zhuanlan.zhihu.com/p/78195313)）
 > - 6、反映与应变能力：抛出线上问题，让其提供处理方案
 > - 7、人际交往能力：开发一般都比较宅，但不乏有些交际能力强的人，喜欢参加社会活动，喜欢组织活动
