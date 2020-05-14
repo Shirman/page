@@ -590,7 +590,9 @@ App支付：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1
 > 
 > php的json函数，我们需要了解并知道的是json_encode\json_decode的后面几个参数都有什么用途，当我们有需求的时候，才知道内置的json函数就能够处理，不需要自己亲自动手处理。以及如何运用json_last_error判断识别json处理是否异常，异常后如何友好处理，这些更能体现我们的编码水平，能实现正向功能，只是其一，还得考虑到异常情况，接受异常并如何友好的处理异常。
 
+<div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247486878&idx=1&sn=188c63c8ccd9bce1a74de0c6f9f7d5de&chksm=972191afa05618b9e3f672d98645f2ce0ec0e46edc9b6277a42e02e30f4cf12fad61f4917158&scene=21#wechat_redirect" _target="blank" style="color:black;">PHP控制反转(IOC)和依赖注入(DI)</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="https://mp.weixin.qq.com/favicon.ico" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>IOC（inversion of control）控制反转模式；控制反转是将组件间的依赖关系从程序内部</font></div></div></div>
 
+> 现在的框架很喜欢说自己运用了控制反转/依赖注入，有时直接说IOC/DI，新手看了一脸懵逼。看了这篇文章，我们新手就可以知道这个到底是什么
 
 ## 面试相关
 

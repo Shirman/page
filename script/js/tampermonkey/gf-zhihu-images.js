@@ -42,8 +42,8 @@ function jmGetImagesMd(){
     
     // console.log(_imagesMd);
  
-    GM_setClipboard(_imagesMd,{type: 'text', mimetype: 'text/plain'});
-    alert("提取图片成功");
+    GM_setClipboard(_imagesMd,{type: 'text', mimetype: 'text/plain'},function(){alert("提取图片成功");});
+    
     console.log("End...");
     
 }

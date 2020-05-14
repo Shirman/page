@@ -32,8 +32,8 @@ function jmFetch(){
     console.log("start fetch...");
     var _markdown = jmGifSrcsToMarkdown(jmGetGifSrc());
     // console.log(_markdown);
-    GM_setClipboard(_markdown,{type: 'text', mimetype: 'text/plain'});    
-    alert("提取图片成功,直接复制粘贴");
+    GM_setClipboard(_markdown,{type: 'text', mimetype: 'text/plain'},function(){alert("提取图片成功,直接复制粘贴");});    
+    
 
 }
 

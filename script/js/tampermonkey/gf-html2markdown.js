@@ -109,8 +109,8 @@ function jmFetch(){
         onload: function(response) {
             console.log('xmlhttprequest onload....');
             // console.log(response.responseText);
-            GM_setClipboard(response.responseText,{type: 'text', mimetype: 'text/plain'});
-            alert("已经复制到剪贴板");            
+            GM_setClipboard(response.responseText,{type: 'text', mimetype: 'text/plain'},function(){alert("已经复制到剪贴板");});
+                        
         },
         onerror:function(e){
             console.log("xmlhttprequest onerror...");

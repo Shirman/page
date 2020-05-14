@@ -459,7 +459,7 @@ limit常见的问题是在偏移量非常大的时候，需要查询的记录数
 
 **范例**：(术语：**延迟关联**)
 
-    select * from film inner join(select id from film order by title limit 50,5) as film_id using(id)
+    select * from film inner join(select id from film order by title limit 500000,5) as film_id using(id)
 
 注：using 等价于 on
 

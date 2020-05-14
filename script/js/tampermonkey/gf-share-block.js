@@ -40,10 +40,11 @@ function jmShareBlock(){
                         '<font size=2 color=grey>'+_desc+'</font>'+
                     '</div>'+
                 '</div>'+
-            '</div>';
+            '</div>'+
+            "\n\n";
 
-    GM_setClipboard(_html,{type: 'text', mimetype: 'text/plain'});
-    jmDisplayShareBlock(_html);
+    GM_setClipboard(_html,{type: 'text', mimetype: 'text/plain'},function(){jmDisplayShareBlock(_html);});
+    
 
     // let _data = {
     //     url:window.location.href,        

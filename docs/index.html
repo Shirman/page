@@ -64,7 +64,7 @@
       changyan:false,
       footer: {
         copy: '&copy; 2019  <a target="_blank" href="http://www.beian.miit.gov.cn/">闽ICP备13006678号-1</a> | <a target="_blank" href="http://www.12377.cn/">网上有害信息举报区</a>. All Rights Reserved',
-        auth: ' - 如有侵权请联系jm-cqj#163.com(#换成@)',
+        auth: '如有侵权请联系删除，jm-cqj#163.com(# => @)',
         pre: '<hr/>',
         style: 'text-align: center;',
         // class: 'className'
@@ -92,8 +92,8 @@
 
               //2、footer
               let footer = document.createElement("footer");
-              // footer.innerHTML = '<footer style="text-align: center;"><hr />© 2019  <a target="_blank" href="http://www.beian.miit.gov.cn/">闽ICP备13006678号-1</a> | <a target="_blank" href="http://www.12377.cn/">网上有害信息举报区</a>. All Rights Reserved  - 如有侵权请联系jm-cqj#163.com(#换成@)</footer>';
-              footer.innerHTML = '<footer style="'+window.$docsify.footer.style+'">'+window.$docsify.footer.pre+window.$docsify.footer.copy+'  <br /> 如有侵权请联系'+window.$docsify.footer.auth+'</footer>';              
+              // footer.innerHTML = '<footer style="text-align: center;"><hr />© 2019  <a target="_blank" href="http://www.beian.miit.gov.cn/">闽ICP备13006678号-1</a> | <a target="_blank" href="http://www.12377.cn/">网上有害信息举报区</a>. All Rights Reserved  - 如有侵权请联系删除</footer>';
+              footer.innerHTML = '<footer style="'+window.$docsify.footer.style+'">'+window.$docsify.footer.pre+window.$docsify.footer.copy+'  <br /> '+window.$docsify.footer.auth+'</footer>';              
               _main.appendChild(footer);              
 
             })
