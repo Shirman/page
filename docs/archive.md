@@ -2,6 +2,15 @@
 > 时间为文章在本地新建时间，不是发布时间。
 ----
 #### 202005
+- [elasticsearch/php操作Elasticseach客户端](/互联网/数据层/elasticsearch/php操作Elasticseach客户端.md)	<font color="grey" size=1> - 2020/05/13</font>
+- [系统架构/分布式解决方案解读与补充](/互联网/系统架构/分布式解决方案解读与补充.md)	<font color="grey" size=1> - 2020/05/13</font>
+- [数据层/深入理解mysql事务ACID实现原理](/互联网/数据层/深入理解mysql事务ACID实现原理.md)	<font color="grey" size=1> - 2020/05/13</font>
+- [elasticsearch/Elasticsearch通俗易懂介绍](/互联网/数据层/elasticsearch/Elasticsearch通俗易懂介绍.md)	<font color="grey" size=1> - 2020/05/13</font>
+- [数据层/mysql文章方案解读与补充](/互联网/数据层/mysql文章方案解读与补充.md)	<font color="grey" size=1> - 2020/05/13</font>
+- [开源/2019国产优秀开源](/互联网/开源/2019国产优秀开源.md)	<font color="grey" size=1> - 2020/05/12</font>
+- [知识点/开源许可证](/互联网/知识点/开源许可证.md)	<font color="grey" size=1> - 2020/05/12</font>
+- [/教育培养/育儿文章分享](/教育培养/育儿文章分享.md)	<font color="grey" size=1> - 2020/05/11</font>
+- [/记录分享/@育儿文章分享](/记录分享/@育儿文章分享.md)	<font color="grey" size=1> - 2020/05/11</font>
 - [系统架构/互联网系统架构的演变史](/互联网/系统架构/互联网系统架构的演变史.md)	<font color="grey" size=1> - 2020/05/10</font>
 - [团队/产品驱动哈是技术驱动管理](/职场团队/团队/产品驱动哈是技术驱动管理.md)	<font color="grey" size=1> - 2020/05/10</font>
 - [知识点/负载均衡](/互联网/知识点/负载均衡.md)	<font color="grey" size=1> - 2020/05/08</font>
@@ -94,7 +103,6 @@
 - [PHP设计模式全解析/08-简单工厂模式](/互联网/设计模式/PHP设计模式全解析/08-简单工厂模式.md)	<font color="grey" size=1> - 2020/03/02</font>
 - [PHP设计模式全解析/07-合成复用原则](/互联网/设计模式/PHP设计模式全解析/07-合成复用原则.md)	<font color="grey" size=1> - 2020/03/02</font>
 - [PHP设计模式全解析/01-开闭原则](/互联网/设计模式/PHP设计模式全解析/01-开闭原则.md)	<font color="grey" size=1> - 2020/03/02</font>
-- [设计模式/todo数据对象映射模式](/互联网/设计模式/todo数据对象映射模式.md)	<font color="grey" size=1> - 2020/03/02</font>
 #### 202002
 - [微信平台运营/文章提纲](/营销运营/微信平台运营/文章提纲.md)	<font color="grey" size=1> - 2020/02/23</font>
 - [微信平台运营/公众号运营个人之见](/营销运营/微信平台运营/公众号运营个人之见.md)	<font color="grey" size=1> - 2020/02/23</font>
@@ -180,7 +188,7 @@
 - [架构师软考/系统架构师综合知识考点](/互联网/系统架构/架构师软考/系统架构师综合知识考点.md)	<font color="grey" size=1> - 2019/10/29</font>
 - [/其他/辩证看待学生向教育局反映发型管理问题](/其他/辩证看待学生向教育局反映发型管理问题.md)	<font color="grey" size=1> - 2019/10/25</font>
 - [架构师软考/文件系统-关系数据库-内存数据库比较](/互联网/系统架构/架构师软考/文件系统-关系数据库-内存数据库比较.md)	<font color="grey" size=1> - 2019/10/16</font>
-- [软件开发方法/敏捷方法入门](/互联网/软件开发方法/敏捷方法入门.md)	<font color="grey" size=1> - 2019/10/15</font>
+- [软件开发方法/敏捷方法入门](/互联网/软件工程/软件开发方法/敏捷方法入门.md)	<font color="grey" size=1> - 2019/10/15</font>
 - [设计模式/23种设计模式全解析](/互联网/设计模式/23种设计模式全解析.md)	<font color="grey" size=1> - 2019/10/15</font>
 - [GO/window10搭建hugo博客](/互联网/GO/window10搭建hugo博客.md)	<font color="grey" size=1> - 2019/10/13</font>
 - [GO/ubuntu搭建hugo博客](/互联网/GO/ubuntu搭建hugo博客.md)	<font color="grey" size=1> - 2019/10/13</font>
@@ -322,7 +330,7 @@
 - [强身健体/骨质增生保养](/生活健康/强身健体/骨质增生保养.md)	<font color="grey" size=1> - 2019/05/16</font>
 - [/营销运营/消费升级下的便宜货方法论](/营销运营/消费升级下的便宜货方法论.md)	<font color="grey" size=1> - 2019/05/13</font>
 - [前端/一文读懂JavaScript和ECMAScript的区别](/互联网/前端/一文读懂JavaScript和ECMAScript的区别.md)	<font color="grey" size=1> - 2019/05/10</font>
-- [小程序/小程序简化环节](/互联网/小程序/小程序简化环节.md)	<font color="grey" size=1> - 2019/05/08</font>
+- [前端/小程序简化环节](/互联网/前端/小程序简化环节.md)	<font color="grey" size=1> - 2019/05/08</font>
 - [辩证唯物/13-人民群众与价值观](/哲学三观/辩证唯物/13-人民群众与价值观.md)	<font color="grey" size=1> - 2019/05/06</font>
 - [辩证唯物/12-社会基本矛盾](/哲学三观/辩证唯物/12-社会基本矛盾.md)	<font color="grey" size=1> - 2019/05/06</font>
 - [辩证唯物/11-历史唯物主义](/哲学三观/辩证唯物/11-历史唯物主义.md)	<font color="grey" size=1> - 2019/05/06</font>
@@ -346,7 +354,6 @@
 - [/产品设计/别把产品做成了功能](/产品设计/别把产品做成了功能.md)	<font color="grey" size=1> - 2019/04/28</font>
 - [/产品设计/谈To-B业务的难点-曹政](/产品设计/谈To-B业务的难点-曹政.md)	<font color="grey" size=1> - 2019/04/28</font>
 - [/产品设计/一张图理清电商后台产品模块](/产品设计/一张图理清电商后台产品模块.md)	<font color="grey" size=1> - 2019/04/26</font>
-- [Demo/share-html-block](/互联网/Demo/share-html-block.md)	<font color="grey" size=1> - 2019/04/25</font>
 - [PHP/通俗易懂PHP迭代生成器](/互联网/PHP/通俗易懂PHP迭代生成器.md)	<font color="grey" size=1> - 2019/04/25</font>
 - [/体育运动/坚韧执着冷静的科比](/体育运动/坚韧执着冷静的科比.md)	<font color="grey" size=1> - 2019/04/25</font>
 - [/体育运动/勒布朗无与伦比的信念](/体育运动/勒布朗无与伦比的信念.md)	<font color="grey" size=1> - 2019/04/25</font>
@@ -553,7 +560,6 @@
 - [/重构自己/为什么要写周总结](/重构自己/为什么要写周总结.md)	<font color="grey" size=1> - 2019/03/28</font>
 - [/鸡汤不毒/为什么心智越成熟的人，越少晒生活](/鸡汤不毒/为什么心智越成熟的人，越少晒生活.md)	<font color="grey" size=1> - 2019/03/28</font>
 - [开发环境/如何优雅修改composer第三方类库](/互联网/开发环境/如何优雅修改composer第三方类库.md)	<font color="grey" size=1> - 2019/03/26</font>
-- [Demo/html转换成markdown](/互联网/Demo/html转换成markdown.md)	<font color="grey" size=1> - 2019/03/26</font>
 - [沟通/互联网团队7大沟通方式](/职场团队/沟通/互联网团队7大沟通方式.md)	<font color="grey" size=1> - 2019/03/23</font>
 - [数据层/高性能mysql笔记](/互联网/数据层/高性能mysql笔记.md)	<font color="grey" size=1> - 2019/03/23</font>
 - [数据结构与算法/数据结构笔记](/互联网/数据结构与算法/数据结构笔记.md)	<font color="grey" size=1> - 2019/03/23</font>
