@@ -12,5 +12,5 @@
 - [24技术债务：是继续修修补补凑合着用，还是推翻重来](/互联网/软件工程/04系统设计篇/24技术债务：是继续修修补补凑合着用，还是推翻重来)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

@@ -40,7 +40,7 @@
 **[鸡汤不毒](/鸡汤不毒/)**
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 
 ### 最新
 > 时间为文章在本地最后更新时间，不是发布时间。

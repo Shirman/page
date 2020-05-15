@@ -16,5 +16,5 @@
 - [30用好源代码管理工具，让你的协作更高效](/互联网/软件工程/05开发编码篇/30用好源代码管理工具，让你的协作更高效)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

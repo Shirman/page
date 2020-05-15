@@ -14,5 +14,5 @@
 - [成员离职的征兆与内心](/职场团队/成员离职的征兆与内心)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

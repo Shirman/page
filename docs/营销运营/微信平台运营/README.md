@@ -10,5 +10,5 @@
 - [文章提纲](/营销运营/微信平台运营/文章提纲)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

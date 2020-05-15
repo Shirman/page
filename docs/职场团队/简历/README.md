@@ -20,5 +20,5 @@
 - [架构师简历模板](/职场团队/简历/架构师简历模板)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

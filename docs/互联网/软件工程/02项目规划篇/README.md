@@ -20,5 +20,5 @@
 - [16怎样才能写好项目文档](/互联网/软件工程/02项目规划篇/16怎样才能写好项目文档)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

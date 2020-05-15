@@ -42,6 +42,6 @@ PHP5.3.3已经集成php-fpm了，不再是第三方的包了。PHP-FPM提供了�
 ----
 <font size=2 color='grey'>本文收藏来自互联网，仅用于学习研究，著作权归原作者所有，如有侵权请联系删除</font>
 
-markdown [@tsingchan](https://github.com/tsingchan) 
+markdown [@TsingChan](http://www.9ong.com/) 
 
 > 引用格式为收藏注解，比如本句就是注解，非作者原文。

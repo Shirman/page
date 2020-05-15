@@ -28,5 +28,5 @@
 - [谈To-B业务的难点-曹政](/产品设计/谈To-B业务的难点-曹政)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

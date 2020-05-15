@@ -8,4 +8,4 @@
 - [读懂RabbitMQ概念及原理](/docs/互联网/知识点/读懂RabbitMQ概念及原理.md)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

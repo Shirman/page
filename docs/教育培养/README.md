@@ -20,5 +20,5 @@
 - [让孩子背诵他们根本不懂的古诗词有什么意义](/教育培养/让孩子背诵他们根本不懂的古诗词有什么意义)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

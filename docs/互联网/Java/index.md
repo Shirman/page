@@ -6,4 +6,4 @@
 - [ubuntu快速安装配置jdk](/docs/互联网/Java/ubuntu快速安装配置jdk.md)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

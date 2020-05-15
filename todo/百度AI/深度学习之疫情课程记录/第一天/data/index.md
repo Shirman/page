@@ -10,4 +10,4 @@
 - [statistics_data.json.crdownloa](/todo/百度AI/第一天/data/statistics_data.json.crdownload)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

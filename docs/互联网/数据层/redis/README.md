@@ -10,5 +10,5 @@
 - [为什么要用redis](/互联网/数据层/redis/为什么要用redis)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

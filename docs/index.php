@@ -337,7 +337,7 @@ class Index{
 
             self::$_fileCount += count($fileArray);
             // $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>\n\n";
-            $mdString .= "\n\n<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>\n\n";            
+            $mdString .= "\n\n<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>\n\n";            
 
             //加载更多-头部
             $moreContent = '';

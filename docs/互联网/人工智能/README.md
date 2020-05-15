@@ -16,5 +16,5 @@
 - [深度学习中的张量理解](/互联网/人工智能/深度学习中的张量理解)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

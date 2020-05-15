@@ -26,5 +26,5 @@
 - [那些程序员的梗比如PHP是最好的语言](/其他/那些程序员的梗比如PHP是最好的语言)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

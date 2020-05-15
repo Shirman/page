@@ -12,4 +12,4 @@
 - [34账号密码泄漏成灾，应该怎样预防](/docs/互联网/软件工程/06软件测试篇/34账号密码泄漏成灾，应该怎样预防.md)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

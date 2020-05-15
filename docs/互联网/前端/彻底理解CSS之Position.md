@@ -72,4 +72,4 @@ relative属性相对比较简单，我们要搞清它是相对哪个对象来进
   
 position的默认值，一般不设置position属性时，**会按照正常的文档流进行排列**。    
 
-markdown [@tsingchan](https://github.com/tsingchan)
+markdown [@TsingChan](http://www.9ong.com/)

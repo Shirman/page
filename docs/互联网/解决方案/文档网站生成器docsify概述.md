@@ -239,5 +239,5 @@ https://docsify.js.org/#/zh-cn/pwa
 
 知乎没有公开，但少人用应该没有问题
 
-[@tsingchan](https://github.com/tsingchan)
+[@TsingChan](http://www.9ong.com/)
 

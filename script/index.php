@@ -86,7 +86,7 @@ class Index{
             }
 
             // $mdString .= "\n\n<font size=2 color='grey'> ".date("Y-m-d H:i",time())." </font>";
-            $mdString .= "\n\n<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>";
+            $mdString .= "\n\n<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>";
             
             $indexFile = $dirPath.DIRECTORY_SEPARATOR."index.md";
             if(self::compareFileContent($indexFile,$mdString)){

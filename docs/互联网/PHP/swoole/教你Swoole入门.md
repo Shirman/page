@@ -381,6 +381,6 @@ https://wiki.swoole.com/#/memory/table
 - Swoole文章：https://wiki.swoole.com/#/blog_list
 
 
-markdown [@tsingchan](https://github.com/tsingchan) 
+markdown [@TsingChan](http://www.9ong.com/) 
 
 > 引用格式为收藏注解，比如本句就是注解，非作者原文。

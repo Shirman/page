@@ -30,4 +30,4 @@
 **[鸡汤不毒](/docs/鸡汤不毒/index.md)**
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

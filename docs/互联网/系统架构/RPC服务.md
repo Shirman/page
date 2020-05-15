@@ -77,6 +77,6 @@ RPC调用过程> RPC最主要的作用就是用于服务调用
 
 ----
 
-markdown [@tsingchan](https://github.com/tsingchan) 
+markdown [@TsingChan](http://www.9ong.com/) 
 
 > 引用格式为收藏注解，比如本句就是注解，非作者原文。

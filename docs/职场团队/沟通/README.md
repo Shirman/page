@@ -16,5 +16,5 @@
 - [如何组织精准的表达](/职场团队/沟通/如何组织精准的表达)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

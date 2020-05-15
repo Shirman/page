@@ -16,4 +16,4 @@
 - [设计一个秒杀系统](/docs/互联网/解决方案/设计一个秒杀系统.md)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

@@ -22,4 +22,4 @@
 - [麦迪式的10000个小时](/docs/体育运动/麦迪式的10000个小时.md)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

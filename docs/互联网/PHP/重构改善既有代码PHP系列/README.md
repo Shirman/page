@@ -14,5 +14,5 @@
 - [重构改善5-简化函数调用](/互联网/PHP/重构改善既有代码PHP系列/重构改善5-简化函数调用)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

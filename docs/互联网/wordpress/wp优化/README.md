@@ -14,5 +14,5 @@
 - [5-wp安全](/互联网/wordpress/wp优化/5-wp安全)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

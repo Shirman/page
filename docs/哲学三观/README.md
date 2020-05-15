@@ -14,5 +14,5 @@
 - [辩证与历史唯物主义原理与方法论](/哲学三观/辩证与历史唯物主义原理与方法论)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

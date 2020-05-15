@@ -8,5 +8,5 @@
 - [selenium自动化测试基础](/互联网/测试/selenium自动化测试基础)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

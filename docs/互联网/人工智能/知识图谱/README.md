@@ -10,5 +10,5 @@
 - [推荐项目与文章](/互联网/人工智能/知识图谱/推荐项目与文章)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

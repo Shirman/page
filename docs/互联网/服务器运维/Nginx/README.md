@@ -14,5 +14,5 @@
 - [Nginx配置http基本认证及资源文件下载目录别名配置](/互联网/服务器运维/Nginx/Nginx配置http基本认证及资源文件下载目录别名配置)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

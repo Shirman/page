@@ -24,4 +24,4 @@
 - [随意写一些关于开发模式和原则注解](/docs/互联网/后端/随意写一些关于开发模式和原则注解.md)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

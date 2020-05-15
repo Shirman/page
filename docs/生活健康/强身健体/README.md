@@ -28,5 +28,5 @@
 - [骨质增生保养](/生活健康/强身健体/骨质增生保养)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

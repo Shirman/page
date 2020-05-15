@@ -30,5 +30,5 @@
 - [微信小程序本地真机调试](/互联网/开发环境/微信小程序本地真机调试)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

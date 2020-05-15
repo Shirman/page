@@ -10,5 +10,5 @@
 - [修改键盘映射方法](/互联网/windows/修改键盘映射方法)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

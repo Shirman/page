@@ -50,5 +50,5 @@
 - [整理phper初学python想知道的知识点](/互联网/python/整理phper初学python想知道的知识点)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

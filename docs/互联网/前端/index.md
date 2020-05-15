@@ -44,4 +44,4 @@
 - [转-Promise和Async+Await用法整理](/docs/互联网/前端/转-Promise和Async+Await用法整理.md)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

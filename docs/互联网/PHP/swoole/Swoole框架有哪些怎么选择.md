@@ -95,6 +95,6 @@ Swoole目前局限于 C 扩展与 composer 包的协程兼容性，当然如果�
 
 附上鸟哥的[【在PHP中使用协程实现多任务调度】](https://www.laruence.com/2015/05/28/3038.html)
 
-markdown [@tsingchan](https://github.com/tsingchan) 
+markdown [@TsingChan](http://www.9ong.com/) 
 
 > 引用格式为收藏注解，比如本句就是注解，非作者原文。

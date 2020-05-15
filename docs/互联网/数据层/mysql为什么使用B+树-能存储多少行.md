@@ -123,6 +123,6 @@ InnoDB的所有数据文件（后缀为ibd的文件），大小始终都是16384
 ----
 <font size=2 color='grey'>本文收藏来自互联网，仅用于学习研究，著作权归原作者所有，如有侵权请联系删除</font>
 
-markdown [@tsingchan](https://github.com/tsingchan) 
+markdown [@TsingChan](http://www.9ong.com/) 
 
 > 引用格式为收藏注解，比如本句就是注解，非作者原文。

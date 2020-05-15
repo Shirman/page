@@ -16,5 +16,5 @@
 - [45从软件工程的角度看微服务、云计算、人工智能这些新技术](/互联网/软件工程/08经典案例解析/45从软件工程的角度看微服务、云计算、人工智能这些新技术)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

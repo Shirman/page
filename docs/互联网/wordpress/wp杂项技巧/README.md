@@ -10,5 +10,5 @@
 - [wp查看当前页面执行的所有sql](/互联网/wordpress/wp杂项技巧/wp查看当前页面执行的所有sql)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
 

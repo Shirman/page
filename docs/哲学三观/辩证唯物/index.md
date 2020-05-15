@@ -36,4 +36,4 @@
 - [9-辩证法之否定](/docs/哲学三观/辩证唯物/9-辩证法之否定.md)
 
 
-<font size=2 color='grey'> [@TsingChan](https://github.com/tsingchan) </font>
+<font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>
