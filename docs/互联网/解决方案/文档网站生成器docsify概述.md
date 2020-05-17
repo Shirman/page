@@ -24,6 +24,10 @@
 > docsify,A magical documentation site generator.
 >
 > docsify，一个神奇的文档网站生成器。
+>
+> 优点不少，不足的地方就是docsify不适合于博客等一些需要seo的站点，适合临时小站、开发文档等
+>
+> 比如本站[9ong](www.9ong.com)，百度基本不会收录，docsify不是在部署前编译成html文件，而是在访问时将md解释成html
 
 ## 参考文档
 

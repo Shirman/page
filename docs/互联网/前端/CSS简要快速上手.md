@@ -1030,7 +1030,7 @@ css代码：
 
 新手推荐通俗易懂：[学习CSS布局](http://zh.learnlayout.com/toc.html)
 
-<div name="section_div" style="background-color:white;padding:1px 10px;width:480px;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://zh.learnlayout.com" _target="blank" style="color:black;">学习CSS布局</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="http://zh.learnlayout.com/images/logo.png" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>我们假设你已经掌握了CSS的选择器、属性和值。并且你可能已经对布局有一定了解，即使亲自去写的话还是会很苦恼。如果你想要从头开始学习HTML和CSS，那么你可以看下这篇教程。不然的话，让我们看看我们是否可以让你在下一个项目少一些烦恼。</font></div></div></div>
+<div name="section_div" style="background-color:white;padding:1px 10px;width:100%;border-radius:5px;margin-top:15px;"><div><p><font size=3 style="color:black;"><a href="http://zh.learnlayout.com" _target="blank" style="color:black;">学习CSS布局</a></font></p></div><div style="display:flex;display:-webkit-flex;"><div style="width:50px;"><img style="width:50px;" src="http://zh.learnlayout.com/images/logo.png" /></div><div style="flex:1;-webkit-flex:1;padding-left:10px;overflow:hidden;"><font size=2 color=grey>我们假设你已经掌握了CSS的选择器、属性和值。并且你可能已经对布局有一定了解，即使亲自去写的话还是会很苦恼。如果你想要从头开始学习HTML和CSS，那么你可以看下这篇教程。不然的话，让我们看看我们是否可以让你在下一个项目少一些烦恼。</font></div></div></div>
 
 -----
 

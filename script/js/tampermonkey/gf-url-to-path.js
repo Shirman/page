@@ -10,7 +10,7 @@
 // @grant       GM_registerMenuCommand
 // ==/UserScript==
 
-var gUrl = window.location.href;
+var gUrl = top.window.location.href;
 
 (function() {
     'use strict';
@@ -45,7 +45,7 @@ function jmMiniPath(){
     GM_setClipboard(_miniPath,{type: 'text', mimetype: 'text/plain'},function(){
             // alert(_miniPath)
             let = _appName = eval(_host+".name");
-            alert("小程序路径已复制成功！\n操作帮助：\n1、微信公众号后台插入小程序\n2、搜索小程序：\""+_appName+"\"\n3、插入小程序路径："+_miniPath);
+            alert("小程序路径已复制成功！\n操作帮助：\n1、微信公众号后台插入小程序\n2、搜索小程序：\""+_appName+"\"\n3、插入小程序路径："+_miniPath+"(已复制到剪贴板)");
         }
     );                    
     
@@ -143,7 +143,7 @@ var music_163_com = {
 
         let ss = gUrl.split("?");
         let idStr = ss[1];
-        var id = idStr.substr(3);
+        let id = idStr.substr(3);
         
         if(gUrl.indexOf("song") !== -1){
             return "pages/song/song?src=jm&id="+id;
@@ -164,7 +164,14 @@ var www_lizhi_fm={
     name:"荔枝App",
     appid:"",
     cu:function(){
-        return ""
+        let ss = gUrl.split("/");
+        let id = ss[ss.length-1];        
+        
+        if(gUrl.indexOf("user") !== -1){
+            return "pages/user/index?src=jm&id="+id;        
+        }else{
+            return "";
+        }
     }
 }
 
@@ -178,7 +185,16 @@ var movie_douban_com={
     name:"豆瓣评分",
     appid:"",
     cu:function(){
-        return ""
+        let ss = gUrl.split("?");
+        let prepath = ss[0];
+        ss = prepath.split("/");
+        let id = ss[ss.length-2];
+        
+        if(gUrl.indexOf("subject") !== -1){
+            return "pages/subject/subject?src=jm&type=movie&id="+id;        
+        }else{
+            return "";
+        }
     }    
 
 }
@@ -192,7 +208,16 @@ var book_douban_com={
     name:"豆瓣评分",
     appid:"",
     cu:function(){
-        return ""
+        let ss = gUrl.split("?");
+        let prepath = ss[0];
+        ss = prepath.split("/");
+        let id = ss[ss.length-2];
+        
+        if(gUrl.indexOf("subject") !== -1){
+            return "pages/subject/subject?src=jm&type=book&id="+id;        
+        }else{
+            return "";
+        }
     }
 }
 
@@ -204,7 +229,14 @@ var www_smzdm_com={
     name:"什么值得买",
     appid:"",
     cu:function(){
-        return ""
+        let ss = gUrl.split("/");
+        let id = ss[ss.length-2];        
+        
+        if(gUrl.indexOf("p/") !== -1){
+            return "pages/haojia_details/haojia_details?src=jm&id="+id;        
+        }else{
+            return "";
+        }
     }
 }
 
@@ -217,7 +249,14 @@ var pan_baidu_com={
     name:"百度网盘",
     appid:"",
     cu:function(){
-        return ""
+        let ss = gUrl.split("/");
+        let id = ss[ss.length-1];        
+        
+        if(gUrl.indexOf("s/") !== -1){
+            return "pages/netdisk_share/share?src=jm&surl="+id;        
+        }else{
+            return "";
+        }
     }    
 
 }
@@ -230,7 +269,11 @@ var wj_qq_com={
     name:"腾讯问卷",
     appid:"",
     cu:function(){
-        return ""
+        let ss = gUrl.split("/");
+        let hash = ss[ss.length-2];        
+        let sid = ss[ss.length-3];                
+                
+        return "pages/survey/index?src=jm&sid="+sid+"&hash="+hash;                
     }
 
 
@@ -238,27 +281,46 @@ var wj_qq_com={
 
 /**
  * 腾讯视频
- * https://v.qq.com/x/cover/bzfkv5se8qaqel2.html  to pages/play/index?vid=bzfkv5se8qaqel2
+ * https://v.qq.com/x/cover/9ryv0hiwni3r1ck.html?ptag=jimu.210588.zt  to pages/play/index?vid=9ryv0hiwni3r1ck
+ * https://v.qq.com/x/page/j0965r5feys.html to pages/play/index?vid=j0965r5feys
  */
 var v_qq_com={
     name:"腾讯视频",
     appid:"",
     cu:function(){
-        return ""
+
+        let ss = gUrl.split("?");
+        let prepath = ss[0];
+        prepath = prepath.replace(".html","");
+        ss = prepath.split("/");
+        let id = ss[ss.length-1];
+                
+        return "pages/play/index?src=jm&vid="+id;
     }
 
 }
+
 
 /**
  * QQ音乐
  * 列表：https://y.qq.com/n/yqq/playlist/7060350091.html#stat=y_new.index.playlist.name to pages/playlist/playlist?id=7060350091
  * 单曲：https://y.qq.com/n/yqq/song/003PsVQm1fwoKc.html to pages/index/index?songmid=003PsVQm1fwoKc
  */
-var music_qq_com={
+var y_qq_com={
     name:"QQ音乐",
     appid:"",
     cu:function(){
-        return ""
+        let ss = gUrl.split(".html");        
+        let sss = ss[0].split("/");        
+        let id = sss[sss.length-1];
+        
+        if(gUrl.indexOf("song") !== -1){
+            return "pages/index/index?src=jm&songmid="+id;
+        }else if(gUrl.indexOf("playlist") !== -1){
+            return "pages/playlist/playlist?src=jm&id="+id;
+        }else{
+            return "";
+        }
     }
 
 }

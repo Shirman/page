@@ -28,7 +28,7 @@ function jmShareBlock(){
     var _favicon = window.location.origin+"/favicon.ico";
 
 
-    var _html = '<div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:480px;border-radius:5px;margin-top:15px;">'+
+    var _html = '<div name="section_div" style="background-color:#f5f5dc;padding:5px 10px;width:100%;border-radius:5px;margin-top:15px;">'+
                 '<div>'+
                     '<p><font size=3 style="color:black;"><a href="'+_url+'" _target="blank" style="color:black;">'+_title+'</a></font></p>'+
                 '</div>'+
