@@ -1,24 +1,19 @@
-## Linux明明白白你的系统日志
+<!-- TOC -->
 
-### 目录
+- [/var/log/boot.log系统开机日志](#varlogbootlog系统开机日志)
+- [/var/log/cron 定时任务日志](#varlogcron-定时任务日志)
+- [/var/log/maillog 系统邮件日志](#varlogmaillog-系统邮件日志)
+- [/var/log/syslog 系统主要操作日志](#varlogsyslog-系统主要操作日志)
+- [/var/log/wtmp 用户连接信息日志-永久日志](#varlogwtmp-用户连接信息日志-永久日志)
+- [/var/run/utmp 用户链接信息日志-当前日志](#varrunutmp-用户链接信息日志-当前日志)
+- [/var/log/xferlog FTP操作日志](#varlogxferlog-ftp操作日志)
+- [/var/log/dmesg 开机启动信息](#varlogdmesg-开机启动信息)
+- [/var/log/messages 系统杂货铺日志](#varlogmessages-系统杂货铺日志)
+- [/var/log/lastlog 最近登录系统日志](#varloglastlog-最近登录系统日志)
+- [/var/log/spooler](#varlogspooler)
+- [/var/log/yum.log](#varlogyumlog)
 
-
-
-- [Linux明明白白你的系统日志](#linux明明白白你的系统日志)
-    - [/var/log/boot.log系统开机日志](#varlogbootlog系统开机日志)
-    - [/var/log/cron 定时任务日志](#varlogcron-定时任务日志)
-    - [/var/log/maillog 系统邮件日志](#varlogmaillog-系统邮件日志)
-    - [/var/log/syslog 系统主要操作日志](#varlogsyslog-系统主要操作日志)
-    - [/var/log/wtmp 用户连接信息日志-永久日志](#varlogwtmp-用户连接信息日志-永久日志)
-    - [/var/run/utmp 用户链接信息日志-当前日志](#varrunutmp-用户链接信息日志-当前日志)
-    - [/var/log/xferlog FTP操作日志](#varlogxferlog-ftp操作日志)
-    - [/var/log/dmesg 开机启动信息](#varlogdmesg-开机启动信息)
-    - [/var/log/messages 系统杂货铺日志](#varlogmessages-系统杂货铺日志)
-    - [/var/log/lastlog 最近登录系统日志](#varloglastlog-最近登录系统日志)
-    - [/var/log/spooler](#varlogspooler)
-    - [/var/log/yum.log](#varlogyumlog)
-
-
+<!-- /TOC -->
 
 ### /var/log/boot.log系统开机日志
 

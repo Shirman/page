@@ -1,15 +1,12 @@
-## Ubuntu服务器搭建vpn服务 - IPSec与L2TP
+<!-- TOC -->
 
+- [Update](#update)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Manage Accounts:](#manage-accounts)
+- [How to use on client:](#how-to-use-on-client)
 
-
-- [Ubuntu服务器搭建vpn服务 - IPSec与L2TP](#ubuntu服务器搭建vpn服务---ipsec与l2tp)
-    - [Update](#update)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Manage Accounts:](#manage-accounts)
-    - [How to use on client:](#how-to-use-on-client)
-
-
+<!-- /TOC -->
 
 *Setup a Strongswan IPSec (& L2TP) Server*
 

@@ -1,11 +1,11 @@
-### 理解PHP中的Streams
+<!-- TOC -->
 
+- [Stream 基础知识](#stream-基础知识)
+- [php:// 包装类](#php-包装类)
+- [Stream上下文](#stream上下文)
+- [总结](#总结)
 
-- [理解PHP中的Streams](#理解php中的streams)
-    - [Stream 基础知识](#stream-基础知识)
-    - [php:// 包装类](#php-包装类)
-    - [Stream上下文](#stream上下文)
-    - [总结](#总结)
+<!-- /TOC -->
 
 
 > Streams 是PHP提供的一个强有力的工具，我们常常在不经意会使用到它，如果善加利用将大大提高PHP的生产力。 驾驭Streams的强大力量后，应用程序将提升到一个新的高度。

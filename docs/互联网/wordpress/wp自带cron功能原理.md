@@ -1,6 +1,4 @@
-WordPress Cron 定时任务详解
-================================
-
+<!-- TOC -->
 
 - [wp\_get\_schedule](#wp\_get\_schedule)
 - [wp\_get\_schedules](#wp\_get\_schedules)
@@ -12,6 +10,7 @@ WordPress Cron 定时任务详解
 - [wp\_schedule\_single\_event](#wp\_schedule\_single\_event)
 - [查看 WordPress 定时任务列表](#查看-wordpress-定时任务列表)
 
+<!-- /TOC -->
 
 WP Cron 是什么? 是 WordPress 一套定时触发机制, 可以循环安排任务执行. 如: 定时发布新文章, 定期检测版本等功能都是通过这个来实现的.
 

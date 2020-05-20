@@ -1,5 +1,15 @@
 
+<!-- TOC -->
 
+- [install](#install)
+- [new site](#new-site)
+- [安装主题皮肤](#安装主题皮肤)
+- [新增page](#新增page)
+- [本地预览](#本地预览)
+- [生成静态页面](#生成静态页面)
+- [配置](#配置)
+
+<!-- /TOC -->
 ### install
 
 各个平台安装详见：https://gohugo.io/getting-started/installing/

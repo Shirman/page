@@ -1,5 +1,10 @@
 
+<!-- TOC -->
 
+- [进入powershell](#进入powershell)
+- [复制粘贴执行以下命令：](#复制粘贴执行以下命令)
+
+<!-- /TOC -->
 ### 进入powershell
 
 不同的win10系统，家庭版和专业版powershell进入方式不一样。

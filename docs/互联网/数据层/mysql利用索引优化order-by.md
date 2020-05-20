@@ -1,9 +1,11 @@
 
+<!-- TOC -->
 
 - [通过索引优化来实现MySQL的ORDER BY语句优化](#通过索引优化来实现mysql的order-by语句优化)
 - [MySQL Order By不能使用索引来优化排序的情况](#mysql-order-by不能使用索引来优化排序的情况)
 - [特别提示](#特别提示)
 
+<!-- /TOC -->
 
 
 ### 通过索引优化来实现MySQL的ORDER BY语句优化

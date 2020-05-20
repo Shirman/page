@@ -1,13 +1,10 @@
-## PHP多种序列化与反序列化的方法
+<!-- TOC -->
 
-### 目录
+- [1. serialize和unserialize函数](#1-serialize和unserialize函数)
+- [2. json_encode 和 json_decode](#2-json_encode-和-json_decode)
+- [小结](#小结)
 
-- [PHP多种序列化与反序列化的方法](#php多种序列化与反序列化的方法)
-    - [目录](#目录)
-        - [1. serialize和unserialize函数](#1-serialize和unserialize函数)
-        - [2. json_encode 和 json_decode](#2-json_encode-和-json_decode)
-        - [小结](#小结)
-
+<!-- /TOC -->
 
 > 序列化是将变量转换为可保存或传输的字符串的过程;反序列化就是在适当的时候把这个字符串再转化成原来的变量使用。这两个过程结合起来，可以轻松地存储和传输数据，使程序更具维护性。
 

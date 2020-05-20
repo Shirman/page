@@ -1,21 +1,18 @@
-## Mount基础简单明了
-### 目录
+<!-- TOC -->
 
-- [Mount基础简单明了](#mount基础简单明了)
-    
-    - [使用须知：](#使用须知)
-    - [Mount命令使用：](#mount命令使用)
-    - [编码问题](#编码问题)
-    - [显示挂载的文件系统](#显示挂载的文件系统)
-    - [/etc/fstab了解](#etcfstab了解)
-        - [/dev/device](#devdevice)
-        - [mountpoint](#mountpoint)
-        - [type](#type)
-        - [rules](#rules)
-        - [dump](#dump)
-        - [fsck_order](#fsck_order)
+- [使用须知：](#使用须知)
+- [Mount命令使用：](#mount命令使用)
+- [编码问题](#编码问题)
+- [显示挂载的文件系统](#显示挂载的文件系统)
+- [/etc/fstab了解](#etcfstab了解)
+    - [/dev/device](#devdevice)
+    - [mountpoint](#mountpoint)
+    - [type](#type)
+    - [rules](#rules)
+    - [dump](#dump)
+    - [fsck_order](#fsck_order)
 
-
+<!-- /TOC -->
 ### 使用须知： ###
 > 1、挂载点必须是一个目录。
 >  

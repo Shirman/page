@@ -1,8 +1,5 @@
 
 
-Docker-compose 安装
-----
-
 - 概念
 
 docker-compose是用来管理docker多个容器服务的

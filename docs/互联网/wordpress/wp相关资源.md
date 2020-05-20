@@ -1,6 +1,4 @@
-WP相关资源站点
-===================================
-
+<!-- TOC -->
 
 - [WordPress 相关资源分享](#wordpress-相关资源分享)
     - [WordPress 官方站点](#wordpress-官方站点)
@@ -35,7 +33,7 @@ WP相关资源站点
         - [PixelSQUID](#pixelsquid)
         - [Sozai](#sozai)
 
-
+<!-- /TOC -->
 ### WordPress 相关资源分享
 
 课程实践目标：了解一些 WordPress 的资源

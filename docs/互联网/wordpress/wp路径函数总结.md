@@ -1,18 +1,11 @@
-WordPress路径相关函数总结
-==============================
+<!-- TOC -->
 
-
-- [站点路径相关函数](#站点路径相关函数)   
-- [主题路径相关函数](#主题路径相关函数)   
+- [站点路径相关函数](#站点路径相关函数)
+- [主题路径相关函数](#主题路径相关函数)
 - [路径相关常量](#路径相关常量)
-    - [WP\_CONTENT\_DIR](#wp\_content\_dir)
-    - [WP\_CONTENT\_URL](#wp\_content\_url)
-    - [WP\_PLUGIN\_DIR](#wp\_plugin\_dir)
-    - [WP\_PLUGIN\_URL](#wp\_plugin\_url)
-    - [TEMPLATEPATH](#templatepath)
-    - [STYLESHEETPATH](#stylesheetpath)
 
-  
+
+<!-- /TOC -->
 与WordPress打交道，经常遇到的一个问题就是获取路径，包括URL路径和服务器路径，在主题或插件中引用js或css文件需要URL地址，而include一些文件时则需要服务器路径。在WordPress中，不能认定wp-content目录一定位于/wp-content下，也不能认为admin的地址一定是/wp-admin，为了避免错误，了解WordPress中与获取路径相关的函数很重要。
 
 

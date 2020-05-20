@@ -1,34 +1,30 @@
+<!-- TOC -->
 
-## PHP文件或目录的读写及操作
-### 目录
+- [文件：](#文件)
+    - [1、File_exists(string name)](#1file_existsstring-name)
+    - [2、Fopen（string filename，string mode）](#2fopenstring-filenamestring-mode)
+- [读取文件的方式：](#读取文件的方式)
+    - [3、Fgetc（source handle）](#3fgetcsource-handle)
+    - [4、Fgets（source handle）](#4fgetssource-handle)
+    - [5、Fread（resource handle，int length）](#5freadresource-handleint-length)
+    - [6、File（string filename）](#6filestring-filename)
+    - [7、Readfile(string filename)](#7readfilestring-filename)
+- [写入文件：](#写入文件)
+    - [8、Is_writeable（string filename）](#8is_writeablestring-filename)
+    - [9、Fwrite(resource handle,string content[,int length])](#9fwriteresource-handlestring-contentint-length)
+    - [10、Fputs（resource handle，string content）](#10fputsresource-handlestring-content)
+- [关闭文件：](#关闭文件)
+    - [11、Fclose（resource handle）](#11fcloseresource-handle)
+    - [12、文件操作](#12文件操作)
+- [目录读取及操作：](#目录读取及操作)
+    - [1、Is_dir（string filename）](#1is_dirstring-filename)
+    - [2、Opendir（string path）](#2opendirstring-path)
+    - [3、Readdir(resource dirhandle)](#3readdirresource-dirhandle)
+    - [4、Mkdir（string path，int mode）](#4mkdirstring-pathint-mode)
+    - [5、Rmdir(string dirname)](#5rmdirstring-dirname)
+    - [6、Closedir（resource handle）](#6closedirresource-handle)
 
-
-- [PHP文件或目录的读写及操作](#php文件或目录的读写及操作)
-    - [目录](#目录)
-    - [文件：](#文件)
-        - [1、File_exists(string name)](#1file_existsstring-name)
-        - [2、Fopen（string filename，string mode）](#2fopenstring-filenamestring-mode)
-    - [读取文件的方式：](#读取文件的方式)
-        - [3、Fgetc（source handle）](#3fgetcsource-handle)
-        - [4、Fgets（source handle）](#4fgetssource-handle)
-        - [5、Fread（resource handle，int length）](#5freadresource-handleint-length)
-        - [6、File（string filename）](#6filestring-filename)
-        - [7、Readfile(string filename)](#7readfilestring-filename)
-    - [写入文件：](#写入文件)
-        - [8、Is_writeable（string filename）](#8is_writeablestring-filename)
-        - [9、Fwrite(resource handle,string content[,int length])](#9fwriteresource-handlestring-contentint-length)
-        - [10、Fputs（resource handle，string content）](#10fputsresource-handlestring-content)
-    - [关闭文件：](#关闭文件)
-        - [11、Fclose（resource handle）](#11fcloseresource-handle)
-        - [12、文件操作](#12文件操作)
-    - [目录读取及操作：](#目录读取及操作)
-        - [1、Is_dir（string filename）](#1is_dirstring-filename)
-        - [2、Opendir（string path）](#2opendirstring-path)
-        - [3、Readdir(resource dirhandle)](#3readdirresource-dirhandle)
-        - [4、Mkdir（string path，int mode）](#4mkdirstring-pathint-mode)
-        - [5、Rmdir(string dirname)](#5rmdirstring-dirname)
-        - [6、Closedir（resource handle）](#6closedirresource-handle)
-
+<!-- /TOC -->
 
 ### 文件： ###
 

@@ -1,5 +1,4 @@
-一文读懂 JavaScript 和 ECMAScript 的区别
-====
+<!-- TOC -->
 
 - [**JavaScript/ECMAScript 词汇表**](#javascriptecmascript-词汇表)
 - [**Ecma International**](#ecma-international)
@@ -12,6 +11,7 @@
     - [**ECMAScript 6**](#ecmascript-6)
 - [**一段趣闻**](#一段趣闻)
 
+<!-- /TOC -->
 
 
 我们曾试着在谷歌上检索 “ JavaScript 和 ECMAScript 之间的区别。”

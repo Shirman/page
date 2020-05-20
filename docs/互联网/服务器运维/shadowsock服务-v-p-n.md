@@ -1,8 +1,4 @@
-
-
-> 关键词 shadowsock,ssserver,vpn
-
-
+<!-- TOC -->
 
 - [一、sssever搭建](#一sssever搭建)
 - [二、客户端socks连接](#二客户端socks连接)
@@ -11,6 +7,9 @@
     - [3、iOS](#3ios)
     - [4、Android](#4android)
 
+<!-- /TOC -->
+
+> 关键词 shadowsock,ssserver,vpn
 
 
 ## 一、sssever搭建

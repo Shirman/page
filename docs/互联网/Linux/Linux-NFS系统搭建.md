@@ -1,4 +1,16 @@
+<!-- TOC -->
 
+- [一、server(233文件服务器)](#一server233文件服务器)
+        - [1、检查/etc/init.d 下是否有portmap或rpcbind服务](#1检查etcinitd-下是否有portmap或rpcbind服务)
+    - [2、编辑/etc/exports](#2编辑etcexports)
+    - [3、一般centos都自带nfs服务](#3一般centos都自带nfs服务)
+    - [exportfs命令](#exportfs命令)
+- [二、client（238-web服务器）](#二client238-web服务器)
+    - [1、检查/etc/init.d 下是否有rpcbind服务](#1检查etcinitd-下是否有rpcbind服务)
+    - [2、建立个目录，用于挂载远程共享目录](#2建立个目录用于挂载远程共享目录)
+- [问题](#问题)
+
+<!-- /TOC -->
 > server和client，环境centos
 
 ## 一、server(233文件服务器)

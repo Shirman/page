@@ -1,9 +1,5 @@
 
-作者： 阮一峰
-
-日期： 2015年12月 9日
-http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
-
+<!-- TOC -->
 
 - [一、新建代码库](#一新建代码库)
 - [二、配置](#二配置)
@@ -16,7 +12,11 @@ http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 - [九、撤销](#九撤销)
 - [十、其他](#十其他)
 
+<!-- /TOC -->
 
+作者： 阮一峰
+
+http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
 
 
 几个专用名词的译名如下。

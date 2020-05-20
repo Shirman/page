@@ -3,8 +3,6 @@
 
 **[上一级索引/互联网/](/互联网/)**
 
-- [HDB爬虫数据分析](/互联网/python/HDB爬虫数据分析)
-
 - [IP代理服务商汇总](/互联网/python/IP代理服务商汇总)
 
 - [Jupyter的安装和使用](/互联网/python/Jupyter的安装和使用)
@@ -26,8 +24,6 @@
 - [python简单分析厦门景点](/互联网/python/python简单分析厦门景点)
 
 - [python简要教程](/互联网/python/python简要教程)
-
-- [python编码风格指南](/互联网/python/python编码风格指南)
 
 - [Python资源大全版](/互联网/python/Python资源大全版)
 

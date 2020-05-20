@@ -1,5 +1,4 @@
-Tampermonkey • Documentation
-============================
+
 <!-- TOC -->
 
 - [Userscript Header](#userscript-header)

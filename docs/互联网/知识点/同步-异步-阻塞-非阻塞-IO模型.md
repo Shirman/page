@@ -1,7 +1,26 @@
-异步，同步，阻塞，非阻塞，5种IO模型
-==========
 
-  
+
+<!-- TOC -->
+
+- [概念](#概念)
+    - [用户空间与内核空间](#用户空间与内核空间)
+    - [进程切换](#进程切换)
+    - [进程的阻塞](#进程的阻塞)
+    - [文件描述符fd](#文件描述符fd)
+    - [缓存I/O](#缓存io)
+- [五种IO模型](#五种io模型)
+    - [阻塞 I/O（blocking IO）](#阻塞-ioblocking-io)
+    - [非阻塞 I/O（nonblocking IO）](#非阻塞-iononblocking-io)
+    - [I/O 多路复用（ IO multiplexing）](#io-多路复用-io-multiplexing)
+    - [信号驱动式 I/O（SIG IO）](#信号驱动式-iosig-io)
+    - [异步 I/O（asynchronous IO）](#异步-ioasynchronous-io)
+    - [I/O 多路复用之select、poll、epoll](#io-多路复用之selectpollepoll)
+    - [select](#select)
+    - [poll](#poll)
+    - [epoll](#epoll)
+- [在“功能”领域的异步与阻塞](#在功能领域的异步与阻塞)
+
+<!-- /TOC -->
 
 本文讨论的背景是Linux环境下的network IO，同步IO和异步IO，阻塞IO和非阻塞IO分别是什么
 

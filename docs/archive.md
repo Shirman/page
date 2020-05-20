@@ -55,7 +55,7 @@
 - [面试/建立统一的面试标准](/职场团队/面试/建立统一的面试标准.md)	<font color="grey" size=1> - 2020/03/21</font>
 - [人工智能/AI未来书摘](/互联网/人工智能/AI未来书摘.md)	<font color="grey" size=1> - 2020/03/20</font>
 - [前端/Tampermonkey油猴API](/互联网/前端/Tampermonkey油猴API.md)	<font color="grey" size=1> - 2020/03/19</font>
-- [前端/转-Promise和Async+Await用法整理](/互联网/前端/转-Promise和Async+Await用法整理.md)	<font color="grey" size=1> - 2020/03/18</font>
+- [前端/Promise和Async+Await用法整理](/互联网/前端/Promise和Async+Await用法整理.md)	<font color="grey" size=1> - 2020/03/18</font>
 - [python/python库大全](/互联网/python/python库大全.md)	<font color="grey" size=1> - 2020/03/17</font>
 - [后端/正则表达式](/互联网/后端/正则表达式.md)	<font color="grey" size=1> - 2020/03/15</font>
 - [前端/ES6快速入门](/互联网/前端/ES6快速入门.md)	<font color="grey" size=1> - 2020/03/15</font>
@@ -348,7 +348,6 @@
 - [/产品设计/产品设计文章分享](/产品设计/产品设计文章分享.md)	<font color="grey" size=1> - 2019/05/02</font>
 #### 201904
 - [/重构自己/如何在工作中做好技术积累](/重构自己/如何在工作中做好技术积累.md)	<font color="grey" size=1> - 2019/04/30</font>
-- [python/HDB爬虫数据分析](/互联网/python/HDB爬虫数据分析.md)	<font color="grey" size=1> - 2019/04/29</font>
 - [知识图谱/个性化推荐系统实践应用](/互联网/人工智能/知识图谱/个性化推荐系统实践应用.md)	<font color="grey" size=1> - 2019/04/29</font>
 - [知识图谱/一份通俗易懂的知识图谱技术与应用指南](/互联网/人工智能/知识图谱/一份通俗易懂的知识图谱技术与应用指南.md)	<font color="grey" size=1> - 2019/04/29</font>
 - [/产品设计/别把产品做成了功能](/产品设计/别把产品做成了功能.md)	<font color="grey" size=1> - 2019/04/28</font>
@@ -372,7 +371,6 @@
 - [重构改善既有代码PHP系列/重构改善3-重新组织数据](/互联网/PHP/重构改善既有代码PHP系列/重构改善3-重新组织数据.md)	<font color="grey" size=1> - 2019/04/20</font>
 - [重构改善既有代码PHP系列/重构改善2-对象之间搬移特性](/互联网/PHP/重构改善既有代码PHP系列/重构改善2-对象之间搬移特性.md)	<font color="grey" size=1> - 2019/04/20</font>
 - [重构改善既有代码PHP系列/重构改善1-重新组织你的函数](/互联网/PHP/重构改善既有代码PHP系列/重构改善1-重新组织你的函数.md)	<font color="grey" size=1> - 2019/04/20</font>
-- [python/python编码风格指南](/互联网/python/python编码风格指南.md)	<font color="grey" size=1> - 2019/04/20</font>
 - [/产品设计/B端产品设计](/产品设计/B端产品设计.md)	<font color="grey" size=1> - 2019/04/19</font>
 - [解决方案/web人机验证的探索与实践](/互联网/解决方案/web人机验证的探索与实践.md)	<font color="grey" size=1> - 2019/04/16</font>
 - [/记录分享/201511记](/记录分享/201511记.md)	<font color="grey" size=1> - 2019/04/14</font>
@@ -466,7 +464,7 @@
 - [团队/技术管理者无法绕过的那些坑](/职场团队/团队/技术管理者无法绕过的那些坑.md)	<font color="grey" size=1> - 2019/04/05</font>
 - [系统架构/创业公司技术负责人谈创业公司技术选型](/互联网/系统架构/创业公司技术负责人谈创业公司技术选型.md)	<font color="grey" size=1> - 2019/04/05</font>
 - [/鸡汤不毒/年轻的时候做什么才不浪费](/鸡汤不毒/年轻的时候做什么才不浪费.md)	<font color="grey" size=1> - 2019/04/05</font>
-- [/重构自己/自由职业的100个机会-2019](/重构自己/自由职业的100个机会-2019.md)	<font color="grey" size=1> - 2019/04/05</font>
+- [/重构自己/自由职业的100个机会](/重构自己/自由职业的100个机会.md)	<font color="grey" size=1> - 2019/04/05</font>
 - [团队/团队尽量远离这些负能量](/职场团队/团队/团队尽量远离这些负能量.md)	<font color="grey" size=1> - 2019/04/05</font>
 - [团队/为什么国内开发加班这么多](/职场团队/团队/为什么国内开发加班这么多.md)	<font color="grey" size=1> - 2019/04/05</font>
 - [/鸡汤不毒/比贫穷更可怕的是缺乏见识](/鸡汤不毒/比贫穷更可怕的是缺乏见识.md)	<font color="grey" size=1> - 2019/04/05</font>

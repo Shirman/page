@@ -1,5 +1,4 @@
-什么是promise，怎么用promise
-==========================
+<!-- TOC -->
 
 - [**特点：**](#特点)
 - [**缺点：**](#缺点)
@@ -9,6 +8,8 @@
 - [**3. Promise.prototype.finally()**](#3-promiseprototypefinally)
 - [**4.Promise.all的使用**](#4promiseall的使用)
 - [**5、Promise.race的使用**](#5promiserace的使用)
+
+<!-- /TOC -->
 
 
 

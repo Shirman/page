@@ -1,16 +1,13 @@
-### ​PHP执行linux命令的6个函数
+<!-- TOC -->
 
-#### 目录
+- [1、exec函数](#1exec函数)
+- [2、system函数](#2system函数)
+- [3、passthru函数](#3passthru函数)
+- [4、popen函数](#4popen函数)
+- [5、proc_open函数](#5proc_open函数)
+- [6、shell_exec函数](#6shell_exec函数)
 
-- [​PHP执行linux命令的6个函数](#​php执行linux命令的6个函数)
-    - [目录](#目录)
-    - [1、exec函数](#1exec函数)
-    - [2、system函数](#2system函数)
-    - [3、passthru函数](#3passthru函数)
-    - [4、popen函数](#4popen函数)
-    - [5、proc_open函数](#5proc_open函数)
-    - [6、shell_exec函数](#6shell_exec函数)
-
+<!-- /TOC -->
 
 > 一般情况下，很少会用php去执行linux命令，不过特殊情况下，你也许会用到这些函数。以前我知道有二个函数可以执行linux命令，一个是exec,一个是shell_exec。其实有很多的，结合手册内容，介绍以下6个函数。
 

@@ -1,14 +1,14 @@
-### Session与Cookie 的运行机制
+<!-- TOC -->
 
+- [一、HTTP协议与状态保持](#一http协议与状态保持)
+- [二、理解cookie机制](#二理解cookie机制)
+- [三、理解session机制](#三理解session机制)
+- [四、session过期时间](#四session过期时间)
+- [五、Session常见问题](#五session常见问题)
+- [六、跨应用程序的session共享](#六跨应用程序的session共享)
+- [七、总结](#七总结)
 
-- [Session与Cookie 的运行机制](#session与cookie-的运行机制)
-    - [一、HTTP协议与状态保持](#一http协议与状态保持)
-    - [二、理解cookie机制](#二理解cookie机制)
-    - [三、理解session机制](#三理解session机制)
-    - [四、session过期时间](#四session过期时间)
-    - [五、Session常见问题](#五session常见问题)
-    - [六、跨应用程序的session共享](#六跨应用程序的session共享)
-    - [七、总结](#七总结)
+<!-- /TOC -->
 
 >因为曾经年轻不懂事，被面试问起session和cookie的深度问题，所以决定整理一波。
 

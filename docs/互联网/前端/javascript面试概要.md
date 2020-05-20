@@ -1,6 +1,4 @@
-JavaScript面试概要
-====================
-
+<!-- TOC -->
 
 - [闭包](#闭包)
 - [作用域，作用域链](#作用域作用域链)
@@ -33,7 +31,7 @@ JavaScript面试概要
 - [减少 Webpack 打包时间](#减少-webpack-打包时间)
 - [减少 Webpack 打包后的文件体积](#减少-webpack-打包后的文件体积)
 
-
+<!-- /TOC -->
 ### 闭包
 
 当function里嵌套function时，内部的function可以访问外部function里的变量

@@ -1,5 +1,3 @@
-## PHP的压缩函数实现：gzencode、gzdeflate和gzcompress
-
 
 - gzencode 默认使用ZLIB_ENCODING_GZIP编码，使用gzip压缩格式，实际上是使用defalte 算法压缩数据，然后加上文件头和adler32校验
 

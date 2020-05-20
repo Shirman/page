@@ -1,41 +1,12 @@
 
+<!-- TOC -->
 
+- [插件](#插件)
+- [优化](#优化)
+- [主题开发](#主题开发)
+- [api](#api)
 
-- [wordpress前台模板的常用函数集合 | 前端开拓者](http://www.frontopen.com/1104.html)
-
-- [wordpress单页面仿制全过程_百度经验](http://jingyan.baidu.com/article/0a52e3f439bf6dbf62ed72d9.html?allowHTTP=1)
-
-- [站长福利：WP百科网WordPress快速仿站教程分享 - WP酷](https://www.mywpku.com/wpbaike-shipin-fangzhan.html)
-
-- [wordpress仿站实战教程 - CSDN博客](https://blog.csdn.net/juezhanangle/article/details/76985202)
-
-- [WordPress工作原理之程序文件执行顺序（传说中的架构源码分析）_李晓杰的博客](http://www.ecdoer.com/post/wordpress-source-analysis.html)
-
-- [wordpress目录文件结构说明 - 方小川 - 博客园](https://www.cnblogs.com/wxcbg/p/6005208.html)
-
-- [wordpress源码解析-目录结构-文件调用关系（1） - CSDN博客](https://blog.csdn.net/liujiyong7/article/details/8037843)
-
-- [仿站小工具3.0 趴网站源码|无作为](https://www.wuzuowei.net/6842.html)
-
-- [wordpress源码解析-目录结构-文件调用关系（1） - liujiyong7的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/liujiyong7/article/details/8037843)
-
-- [wordpress - 开发相关原理 - jm推荐](http://www.cnblogs.com/vicenteforever/category/224217.html)
-
-- [图解WordPress模板架构 - jm推荐](http://www.im286.com/thread-6909312-1-1.html)
-
-- [zh-cn:WordPress 官方中文文档 « WordPress Codex](http://codex.wordpress.org/zh-cn:Main_Page)
-
-- [WordPress开发 | WordPress大学](http://www.wpdaxue.com/develop)
-
-- [如何把自己单独做的HTML页面放到基于 WordPress 的网站上？ - 知乎](https://www.zhihu.com/question/20129430)
-
-- [mo和po文件相互转化 - 滄海微木 - CSDN博客](http://blog.csdn.net/liu_yanzhao/article/details/62045260)
-
-- [WordPress数据库及各表结构 - CSDN博客](https://blog.csdn.net/ppiao1970hank/article/details/6301812)
-
-- [wordpress数据库结构及表说明 - Alex_ShineSky - 博客园](https://www.cnblogs.com/942267027wzmblog/p/6281834.html)
-
-
+<!-- /TOC -->
 ### 插件
 
 

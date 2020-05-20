@@ -1,23 +1,19 @@
-4 WP 常用插件使用说明（二）
-========================================
+<!-- TOC -->
 
-- [WordPress 常用插件使用说明（二）](#wordpress-常用插件使用说明二)
-    - [Crayon Syntax Highlighter](#crayon-syntax-highlighter)
-        - [设置插件](#设置插件)
-        - [在文章中添加代码](#在文章中添加代码)
-    - [XML Sitemap & Google News feeds](#xml-sitemap--google-news-feeds)
-        - [插件设置](#插件设置)
-    - [WP-Optimize](#wp-optimize)
-    - [MailGun](#mailgun)
-    - [插件设置](#插件设置-1)
-    - [使用 Mailing List](#使用-mailing-list)
-    - [TablePress](#tablepress)
-        - [创建新表格](#创建新表格)
-        - [导入表格](#导入表格)
+- [Crayon Syntax Highlighter](#crayon-syntax-highlighter)
+    - [设置插件](#设置插件)
+    - [在文章中添加代码](#在文章中添加代码)
+- [XML Sitemap & Google News feeds](#xml-sitemap--google-news-feeds)
+    - [插件设置](#插件设置)
+- [WP-Optimize](#wp-optimize)
+- [MailGun](#mailgun)
+- [插件设置](#插件设置-1)
+- [使用 Mailing List](#使用-mailing-list)
+- [TablePress](#tablepress)
+    - [创建新表格](#创建新表格)
+    - [导入表格](#导入表格)
 
-
-  
-### WordPress 常用插件使用说明（二）
+<!-- /TOC -->
 
 #### Crayon Syntax Highlighter
 

@@ -1,14 +1,11 @@
 
-
-Windows 安装方式
-======
-
+<!-- TOC -->
 
 - [升级 pip 版本：](#升级-pip-版本)
 - [通过 pip 安装 Scrapy 框架:](#通过-pip-安装-scrapy-框架)
 - [编译安装twisted](#编译安装twisted)
 
-
+<!-- /TOC -->
 
 
 ## 升级 pip 版本：

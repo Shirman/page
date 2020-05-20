@@ -1,10 +1,9 @@
-### 如何严格设置php中session过期时间
+<!-- TOC -->
 
+- [首先来了解下php中session的基本原理](#首先来了解下php中session的基本原理)
+- [再看session垃圾回收器回收机制](#再看session垃圾回收器回收机制)
 
-- [如何严格设置php中session过期时间](#如何严格设置php中session过期时间)
-    - [首先来了解下php中session的基本原理](#首先来了解下php中session的基本原理)
-    - [再看session垃圾回收器回收机制](#再看session垃圾回收器回收机制)
-
+<!-- /TOC -->
 
 
 > 你有没有尝试过设置一个严格的特定时间内过期的session？如果有，说明你已经有一定的了解，可以再加深下对session相关机制的了解及解决方案；如果还么有，巧了，看完这篇胜读好多session的文章。

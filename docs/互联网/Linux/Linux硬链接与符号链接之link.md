@@ -1,20 +1,17 @@
-## Linux"硬"链接与"符号"链接 - link
-### 目录
+<!-- TOC -->
 
+- [ln命令](#ln命令)
+- [Inode说起](#inode说起)
+- [Hard Link：](#hard-link)
+    - [范例：](#范例)
+    - [原理：](#原理)
+- [Symbolic Link：](#symbolic-link)
+    - [范例：](#范例-1)
+    - [原理：](#原理-1)
+- [关于删除](#关于删除)
+- [用途](#用途)
 
-- [Linux"硬"链接与"符号"链接 - link](#linux硬链接与符号链接---link)
-    
-    - [ln命令](#ln命令)
-    - [Inode说起](#inode说起)
-    - [Hard Link：](#hard-link)
-        - [范例：](#范例)
-        - [原理：](#原理)
-    - [Symbolic Link：](#symbolic-link)
-        - [范例：](#范例-1)
-        - [原理：](#原理-1)
-    - [关于删除](#关于删除)
-    - [用途](#用途)
-
+<!-- /TOC -->
 
 ### ln命令 ###
 	ln - make links between files

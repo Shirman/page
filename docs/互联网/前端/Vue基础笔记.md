@@ -1,4 +1,5 @@
 
+<!-- TOC -->
 
 - [Vue实例](#vue实例)
 - [生命周期](#生命周期)
@@ -61,6 +62,7 @@
 - [Vue 与 React、Angular](#vue-与-reactangular)
 - [疑问](#疑问)
 
+<!-- /TOC -->
 
 
 ### Vue实例

@@ -17,6 +17,8 @@
 
 - [Promise全解析](/互联网/前端/Promise全解析)
 
+- [Promise和Async+Await用法整理](/互联网/前端/Promise和Async+Await用法整理)
+
 - [Tampermonkey油猴API](/互联网/前端/Tampermonkey油猴API)
 
 - [Vue基础笔记](/互联网/前端/Vue基础笔记)
@@ -42,8 +44,6 @@
 - [彻底理解CSS之浮动](/互联网/前端/彻底理解CSS之浮动)
 
 - [彻底理解URL编码](/互联网/前端/彻底理解URL编码)
-
-- [转-Promise和Async+Await用法整理](/互联网/前端/转-Promise和Async+Await用法整理)
 
 
 <font size=2 color='grey'> [@TsingChan](http://www.9ong.com/) </font>

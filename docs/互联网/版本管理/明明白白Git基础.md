@@ -1,5 +1,4 @@
-
-
+<!-- TOC -->
 
 - [1、概念](#1概念)
 - [2、仓库（repository）](#2仓库repository)
@@ -9,7 +8,7 @@
 - [6、协作流程](#6协作流程)
 - [7、其他：github的方式](#7其他github的方式)
 
-
+<!-- /TOC -->
 ### 1、概念
 git github gitlab
 集中式

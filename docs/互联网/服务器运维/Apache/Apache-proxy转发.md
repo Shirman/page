@@ -2,6 +2,7 @@
 
 > 将请求转发给其他域名处理
 
+```
 <VirtualHost *:80>
 ServerName 123.com
 ServerAlias *.123.com
@@ -20,8 +21,12 @@ Allow from all
 ProxyPass /cms http://cms.456.com/
 ProxyPassReverse /cms http://cms.456.com/
 </VirtualHost>
+```
 
 说明：
+
 http://www.123.com/cms/Test/test
+
 服务器将会把请求转发给
+
 http://cms.456.com/Test/test

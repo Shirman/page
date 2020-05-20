@@ -1,4 +1,10 @@
 
+<!-- TOC -->
+
+- [php也只是工具](#php也只是工具)
+
+<!-- /TOC -->
+
 ## php也只是工具
 
 我在大学时代学的java，第一份工作java转的 php 开发，用过 php-fpm 也用过 swoole。

@@ -1,4 +1,11 @@
+<!-- TOC -->
 
+- [spl_autoload_register](#spl_autoload_register)
+- [composer autoload自动加载器原理](#composer-autoload自动加载器原理)
+- [覆盖composer第三方类库](#覆盖composer第三方类库)
+- [范例](#范例)
+
+<!-- /TOC -->
 
 > 有些时候在某一个项目中, 使用了一个第三方包, 但是会发现某一些地方不符合项目需求. 或者需要在包代码里注入一段自己的逻辑. 我们可以选择自己维护一个分支, 或者干脆改vendor文件夹, 并它他加入代码管理. 但对于要修改少量代码时, 这样做貌似不太'优雅'
 

@@ -1,3 +1,5 @@
+
+
 <!-- TOC -->
 
 - [下载](#下载)
@@ -7,13 +9,17 @@
 - [测试](#测试)
 - [new site](#new-site)
 - [主题](#主题)
+- [电子书类主题](#电子书类主题)
 - [new page](#new-page)
+- [server](#server)
 
 <!-- /TOC -->
 
 ### 下载
 
 https://github.com/gohugoio/hugo/releases
+
+
 
 ### 创建目录
 
@@ -59,6 +65,14 @@ https://github.com/gohugoio/hugo/releases
 
     I:\src\hugo-blog\blog\themes\hugo-book
 
+### 电子书类主题
+
+https://github.com/matcornic/hugo-theme-learn.git
+
+https://github.com/zzossig/hugo-theme-zdoc.git
+
+https://github.com/alex-shpak/hugo-book.git
+
 ### new page
 
 ```
@@ -74,6 +88,10 @@ title = "first"
 +++
 post first page content
 ```
+
+### server
+
+https://www.gohugo.org/doc/commands/hugo_server/
 
 
 

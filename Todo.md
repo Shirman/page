@@ -40,6 +40,15 @@
     - easyswoole
     - swoft
     - hyperf
+        
+        https://hyperf.wiki/#/zh-cn/json-rpc
+
+        https://www.cnblogs.com/yulibostu/articles/12111196.html
+
+        https://segmentfault.com/a/1190000022273733/
+
+
+    
 - 软件工程（软件工程之美）
 - 团队管理
     - 流程（产品研发测试运维）
@@ -72,8 +81,9 @@
         - 延时队列-redis（解决消息延时通知与失败再通知、失败终销毁）
         - 异步队列-具备原子性（解决抢购秒杀场景）
         - 悲观锁+事务（解决库存幂等行问题）
+        - 队列服务组件 https://mp.weixin.qq.com/s?__biz=MzIwNjQ5MDk3NA==&mid=2247486121&idx=1&sn=db8136a36601dd0540d6db6e6d2b32b8&chksm=97219698a0561f8ea7817fa8442869ce32587f454091feae619aac17b9d71328c8b629835614&scene=21#wechat_redirect
         
-
+        - 应用配置管理 阿里云acm 协程Apollo
 
 ### 具体
 - docisy
@@ -82,40 +92,12 @@
 ### 其他
 
 - 家具分类查找定价
+- 淘券直达 更改 及考虑运营模式（报复性省钱与存钱）
+- 韩天峰博客 http://rango.swoole.com
 
 
 ## 今天
 
 - 项目管理（欧姆社）
-
-- php解决方案合集
-    - http://dwz.date/auEt
-    - PHP方案解读与补充（一个链接一次解读）
-    - 框架解读
-    - 数据库解读
-        - 设计
-        - 优化
-        - 解决方案
-    - 性能优化
-        - nginx
-        - redis
-        - php优化方案
-    - 团队协作
-        - composer
-        - git
-    - 微服务
-        - docker（应该放在团队协作上）
-        - RPC
-        - 线程、协程、并行、阻塞
-        - trait
-        - restful
-    - 分布式架构
-        - session
-        - memcache
-        - 负载均衡
-        - 队列
-        - 集群
-    - 高并发场景
-
 
 

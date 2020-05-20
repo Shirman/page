@@ -1,4 +1,14 @@
+<!-- TOC -->
 
+- [笔记](#笔记)
+- [原文](#原文)
+    - [Index Nested-Loop Join](#index-nested-loop-join)
+    - [Simple Nested-Loop Join](#simple-nested-loop-join)
+    - [Block Nested-Loop Join](#block-nested-loop-join)
+    - [小结](#小结)
+    - [上期问题时间](#上期问题时间)
+
+<!-- /TOC -->
 ## 笔记
 
 - join可以用，但要考虑语句的扫描行数，决定执行效率

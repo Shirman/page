@@ -1,4 +1,5 @@
 
+<!-- TOC -->
 
 - [WordPress模板基本文件](#wordpress模板基本文件)
 - [WordPress Header头部 PHP代码](#wordpress-header头部-php代码)
@@ -15,7 +16,7 @@
 - [wordpress判断语句](#wordpress判断语句)
 - [10.wordpress 非插件调用评论表情](#10wordpress-非插件调用评论表情)
 
-
+<!-- /TOC -->
 
 ## WordPress模板基本文件
 

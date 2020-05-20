@@ -1,11 +1,14 @@
-URL编码与解码
-===================================
 
+
+
+<!-- TOC -->
 
 - [哪些字符需要编码](#哪些字符需要编码)
 - [如何对Url中的非法字符进行编码](#如何对url中的非法字符进行编码)
 - [Javascript中的escape, encodeURI和encodeURIComponent的区别](#javascript中的escape-encodeuri和encodeuricomponent的区别)
 - [表单提交](#表单提交)
+
+<!-- /TOC -->
 
 
 通常如果一样东西需要编码，说明这样东西并不适合传输。原因多种多样，如Size过大，包含隐私数据，对于Url来说，之所以要进行编码，是因为Url中有些字符会引起歧义。

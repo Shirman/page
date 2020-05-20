@@ -1,11 +1,13 @@
-彻底理解CSS之Position
-=============================
 
+
+<!-- TOC -->
 
 - [relative](#relative)
 - [absolute](#absolute)
 - [fixed](#fixed)
 - [static](#static)
+
+<!-- /TOC -->
 
   
 主要讲述关于position的理解。  

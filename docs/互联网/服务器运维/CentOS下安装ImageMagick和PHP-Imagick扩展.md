@@ -1,15 +1,11 @@
-## CentOS下安装ImageMagick和PHP Imagick扩展
+<!-- TOC -->
 
-### 目录
+- [1. 下载安装ImageMagick](#1-下载安装imagemagick)
+- [2. 下载安装Imagick](#2-下载安装imagick)
+    - [2.1放置imagick.so文件](#21放置imagickso文件)
+    - [2.2配置php.ini](#22配置phpini)
 
-- [CentOS下安装ImageMagick和PHP Imagick扩展](#centos下安装imagemagick和php-imagick扩展)
-
-    - [1. 下载安装ImageMagick](#1-下载安装imagemagick)
-    - [2. 下载安装Imagick](#2-下载安装imagick)
-        - [2.1放置imagick.so文件](#21放置imagickso文件)
-        - [2.2配置php.ini](#22配置phpini)
-
- 
+<!-- /TOC -->
 > imagick是一个PHP的扩展，用ImageMagick提供的API来进行图片的创建与修改，不过这些操作已经包装到扩展imagick中去了，最终调用的是ImageMagick提供的API. 
 
 

@@ -1,7 +1,5 @@
 
-
-说清WebService的SOAP和Restful及HTTP请求
-===============================================
+<!-- TOC -->
 
 - [HTTP-GET 和 HTTP-POST](#http-get-和-http-post)
 - [Web Service（SOAP）](#web-servicesoap)
@@ -9,6 +7,7 @@
 - [SOAP与HTTP的区别](#soap与http的区别)
 - [Restful与SOAP的区别](#restful与soap的区别)
 
+<!-- /TOC -->
   
 > Webservice 两种实现方式跟HTTP（post/get） 直接请求各个优缺点，以及如何判断选择使用哪一种。
 

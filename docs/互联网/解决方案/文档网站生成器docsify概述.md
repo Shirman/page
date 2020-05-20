@@ -17,6 +17,8 @@
 - [评论](#评论)
 - [PWA离线模式](#pwa离线模式)
 - [统计](#统计)
+- [SSR](#ssr)
+- [5.0版本](#50版本)
 - [其他问题](#其他问题)
 
 <!-- /TOC -->
@@ -221,6 +223,27 @@ https://docsify.js.org/#/zh-cn/pwa
 ## 统计
 
 除了官方指定ga外，还可以用百度统计
+
+
+## SSR
+
+之前有个SSR的项目，https://github.com/docsifyjs/docsify-ssr-demo，但这个项目目前好像与最新的docsify不兼容，出现一些异常，并没有再维护。
+
+当然为了SEO、博客及更友好的静态页面，作者在2020年3月已经开始计划5.0版本
+
+
+## 5.0版本
+
+5.0计划：https://github.com/docsifyjs/docsify/projects/2
+
+主要有：
+
+- 静态HTML生成器
+- 扩展新的markdown帮助：https://github.com/docsifyjs/docsify/issues/413
+- 优化markdown语法生成器：https://github.com/docsifyjs/docsify/issues/1166
+- docsify主题化：https://jhildenbiddle.github.io/docsify-themeable/#/introduction
+
+
 
 ## 其他问题
 

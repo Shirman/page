@@ -1,19 +1,15 @@
-## windows10安装bower
+<!-- TOC -->
 
+- [前提](#前提)
+- [安装bower](#安装bower)
+- [检查](#检查)
+- [使用](#使用)
+    - [安装](#安装)
+    - [更新](#更新)
+    - [卸载](#卸载)
+- [与webpack/gulp的关系](#与webpackgulp的关系)
 
-
-- [windows10安装bower](#windows10安装bower)
-    - [前提](#前提)
-    - [安装bower](#安装bower)
-    - [检查](#检查)
-    - [使用](#使用)
-        - [安装](#安装)
-        - [更新](#更新)
-        - [卸载](#卸载)
-    - [与webpack/gulp的关系](#与webpackgulp的关系)
-
-
-
+<!-- /TOC -->
 ### 前提
 
 安装好npm

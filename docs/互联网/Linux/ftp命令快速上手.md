@@ -1,14 +1,25 @@
-##Linux FTP命令快速上手
 
 
+<!-- TOC -->
 
-### FTP连接
+- [FTP连接](#ftp连接)
+- [基本命令](#基本命令)
+- [续传命令](#续传命令)
+- [其他更多命令](#其他更多命令)
+
+<!-- /TOC -->
+
+## FTP连接
 
 使用之前，先是连接上ftp：
 
-```> ftp user:pwd@ip:port```
+```
+> ftp user:pwd@ip:port
+```
 
-### 基本命令
+
+## 基本命令
+
 ftp [-p] [host|IP] [port]
 -p 		启动被动模式(passive, PASV)；
 
@@ -24,7 +35,7 @@ ftp [-p] [host|IP] [port]
     ftp> passive      	启动或关闭passive模式
     ftp> binary       	文件传输模式设定为binary
 
-### 续传命令
+## 续传命令
 
 **上传续传步骤：**
 
@@ -44,7 +55,7 @@ ftp [-p] [host|IP] [port]
 　　如果local-file存在,则从上次传输中断处续传
 
 
-### 其他更多命令
+## 其他更多命令
 
     FTP>! 		
         从 ftp 子系统退出到外壳。
@@ -231,3 +242,4 @@ ftp [-p] [host|IP] [port]
     
     FTP >verbose 
         切换 verbose 模式。如果打开，将显示所有 ftp 响应。在文件传送完成后，将同时显示与传送效率有关的统
+

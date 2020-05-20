@@ -101,7 +101,6 @@
 			- [重构改善4-简化条件表达式](/互联网/PHP/重构改善既有代码PHP系列/重构改善4-简化条件表达式.md)
 			- [重构改善5-简化函数调用](/互联网/PHP/重构改善既有代码PHP系列/重构改善5-简化函数调用.md)
 	- **python**
-		- [HDB爬虫数据分析](/互联网/python/HDB爬虫数据分析.md)
 		- [IP代理服务商汇总](/互联网/python/IP代理服务商汇总.md)
 		- [Jupyter的安装和使用](/互联网/python/Jupyter的安装和使用.md)
 		- [python中yield的简单清晰详解](/互联网/python/python中yield的简单清晰详解.md)
@@ -113,7 +112,6 @@
 		- [python爬虫分析示例汇总](/互联网/python/python爬虫分析示例汇总.md)
 		- [python简单分析厦门景点](/互联网/python/python简单分析厦门景点.md)
 		- [python简要教程](/互联网/python/python简要教程.md)
-		- [python编码风格指南](/互联网/python/python编码风格指南.md)
 		- [Python资源大全版](/互联网/python/Python资源大全版.md)
 		- [python转换html为markdown](/互联网/python/python转换html为markdown.md)
 		- [python转换html为pdf](/互联网/python/python转换html为pdf.md)
@@ -198,6 +196,7 @@
 		- [jqGrid前端列表组件使用说明](/互联网/前端/jqGrid前端列表组件使用说明.md)
 		- [NPM与Bower包管理的区别](/互联网/前端/NPM与Bower包管理的区别.md)
 		- [Promise全解析](/互联网/前端/Promise全解析.md)
+		- [Promise和Async+Await用法整理](/互联网/前端/Promise和Async+Await用法整理.md)
 		- [Tampermonkey油猴API](/互联网/前端/Tampermonkey油猴API.md)
 		- [Vue基础笔记](/互联网/前端/Vue基础笔记.md)
 		- [Vue学习路线图](/互联网/前端/Vue学习路线图.md)
@@ -211,7 +210,6 @@
 		- [彻底理解CSS之Position](/互联网/前端/彻底理解CSS之Position.md)
 		- [彻底理解CSS之浮动](/互联网/前端/彻底理解CSS之浮动.md)
 		- [彻底理解URL编码](/互联网/前端/彻底理解URL编码.md)
-		- [转-Promise和Async+Await用法整理](/互联网/前端/转-Promise和Async+Await用法整理.md)
 	- **后端**
 		- [全栈开发者应该学什么-2019篇](/互联网/后端/全栈开发者应该学什么-2019篇.md)
 		- [加入service层的MVC架构](/互联网/后端/加入service层的MVC架构.md)
@@ -708,7 +706,7 @@
 	- [睡眠十律-BBC](/重构自己/睡眠十律-BBC.md)
 	- [积极的财富观与正确的消费观](/重构自己/积极的财富观与正确的消费观.md)
 	- [简单有效的交际方法](/重构自己/简单有效的交际方法.md)
-	- [自由职业的100个机会-2019](/重构自己/自由职业的100个机会-2019.md)
+	- [自由职业的100个机会](/重构自己/自由职业的100个机会.md)
 	- [让你的世界变得简单轻松-01](/重构自己/让你的世界变得简单轻松-01.md)
 - **鸡汤不毒**
 	- [一只母鸡通俗讲股市](/鸡汤不毒/一只母鸡通俗讲股市.md)

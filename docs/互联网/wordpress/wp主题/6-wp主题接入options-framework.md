@@ -1,5 +1,4 @@
-6 WP 主题开发：接入 Options Framework
-======================================================
+<!-- TOC -->
 
 - [接入 Options Framework 的优势](#接入-options-framework-的优势)
 - [在 GitChat 主题中接入 Options Framework](#在-gitchat-主题中接入-options-framework)
@@ -14,9 +13,7 @@
     - [Titan Framework](#titan-framework)
 - [总结](#总结)
 
-  
-接入 Options Framework
---------------------
+<!-- /TOC -->
 
 终于在这节课要开始为主题制作一个管理后台了。
 

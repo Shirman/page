@@ -1,16 +1,13 @@
-## PHP底层的运行机制与原理
+<!-- TOC -->
 
-### 目录
+- [1. PHP的设计理念及特点](#1-php的设计理念及特点)
+- [2. PHP的四层体系](#2-php的四层体系)
+- [3. Sapi](#3-sapi)
+- [4. PHP的执行流程&opcode](#4-php的执行流程opcode)
+- [5. HashTable — 核心数据结构](#5-hashtable--核心数据结构)
+- [6. PHP变量](#6-php变量)
 
-
-- [PHP底层的运行机制与原理](#php底层的运行机制与原理)
-    
-    - [1. PHP的设计理念及特点](#1-php的设计理念及特点)
-    - [2. PHP的四层体系](#2-php的四层体系)
-    - [3. Sapi](#3-sapi)
-    - [4. PHP的执行流程&opcode](#4-php的执行流程opcode)
-    - [5. HashTable — 核心数据结构](#5-hashtable--核心数据结构)
-    - [6. PHP变量](#6-php变量)
+<!-- /TOC -->
 
 
 

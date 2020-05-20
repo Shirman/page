@@ -1,13 +1,14 @@
-## 浅析用PHP实现MVC
 
-- [浅析用PHP实现MVC](#浅析用php实现mvc)
-    - [什么是MVC?](#什么是mvc)
-    - [视图(The View)](#视图the-view)
-    - [模块(The Model)](#模块the-model)
-    - [控制器(The Controller)](#控制器the-controller)
-    - [为什么用MVC?](#为什么用mvc)
-    - [如何实现MVC?](#如何实现mvc)
+<!-- TOC -->
 
+- [什么是MVC?](#什么是mvc)
+- [视图(The View)](#视图the-view)
+- [模块(The Model)](#模块the-model)
+- [控制器(The Controller)](#控制器the-controller)
+- [为什么用MVC?](#为什么用mvc)
+- [如何实现MVC?](#如何实现mvc)
+
+<!-- /TOC -->
 
 > 传统的面相过程式的开发方式在处理中型以上的应用时，就开始显得力不从心。即便我们能够快速的完成需求，但是在需求发生变更后或者进行后期维护的时候，我们会深深地陷入我们早期搭建的陷阱中。所以，使用面向对象的方式来实现MVC模式，将为我们梳理程序的架构提供一个清晰的思路。
 

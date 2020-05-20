@@ -1,15 +1,10 @@
-### PHP超级全局变量$GLOBALS与$_SERVER
+<!-- TOC -->
 
-#### 目录
+- [PHP 超级全局变量](#php-超级全局变量)
+- [PHP $GLOBALS](#php-globals)
+- [PHP $_SERVER](#php-_server)
 
-
-
-- [PHP超级全局变量$GLOBALS与$_SERVER](#php超级全局变量globals与_server)
-    
-    - [PHP 超级全局变量](#php-超级全局变量)
-    - [PHP $GLOBALS](#php-globals)
-    - [PHP $_SERVER](#php-_server)
-
+<!-- /TOC -->
 
 
 > 

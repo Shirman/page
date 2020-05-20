@@ -1,21 +1,18 @@
-## Chkconfig一次就牢记于心
+<!-- TOC -->
 
-### 目录
+- [什么是chkconfig](#什么是chkconfig)
+    - [用途范例：](#用途范例)
+- [Linux系统运行级别概念](#linux系统运行级别概念)
+- [Chkconfig语法](#chkconfig语法)
+    - [chkconfig](#chkconfig)
+    - [--level](#--level)
+    - [chkconfig --list](#chkconfig---list)
+    - [chkconfig --add name](#chkconfig---add-name)
+    - [chkconfig --del name](#chkconfig---del-name)
+    - [chkconfig [--level levels] name <on|off|reset>](#chkconfig---level-levels-name-onoffreset)
+- [范例](#范例)
 
-- [Chkconfig一次就牢记于心](#chkconfig一次就牢记于心)
-
-    - [什么是chkconfig](#什么是chkconfig)
-        - [用途范例：](#用途范例)
-    - [Linux系统运行级别概念](#linux系统运行级别概念)
-    - [Chkconfig语法](#chkconfig语法)
-        - [chkconfig](#chkconfig)
-        - [--level](#--level)
-        - [chkconfig --list](#chkconfig---list)
-        - [chkconfig --add name](#chkconfig---add-name)
-        - [chkconfig --del name](#chkconfig---del-name)
-        - [chkconfig [--level levels] name <on|off|reset>](#chkconfig---level-levels-name-onoffreset)
-    - [范例](#范例)
-
+<!-- /TOC -->
 
 ### 什么是chkconfig ###
 > Linux chkconfig命令主要用来更新（启动或停止）和查询系统服务的运行级信息。记住chkconfig不是立即自动禁止或激活一个服务，它只是简单的改变了符号连接。本质上就是将/etc/rc.d/init.d/里面的脚本连接到/etc/rc.d/rc[0-6].d/的目录中去，并且加上一个权值，号码大者先运行。

@@ -1,10 +1,6 @@
-## 8个与安全相关的PHP函数
-
-### 目录
-
+<!-- TOC -->
 
 - [8个与安全相关的PHP函数](#8个与安全相关的php函数)
-    
     - [1. mysql\_real\_escape_string()](#1-mysql\_real\_escape_string)
     - [2. addslashes()](#2-addslashes)
     - [3. htmlentities()](#3-htmlentities)
@@ -13,6 +9,11 @@
     - [6. md5()](#6-md5)
     - [7. sha1()](#7-sha1)
     - [8. intval()](#8-intval)
+
+<!-- /TOC -->
+
+
+## 8个与安全相关的PHP函数
 
 
 

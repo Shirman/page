@@ -1,23 +1,18 @@
-3 WP 常用插件使用说明（一）
-========================================
+<!-- TOC -->
 
-- [WordPress 常用插件使用说明（一）](#wordpress-常用插件使用说明一)
-    - [Akismet](#akismet)
-        - [创建 API Key](#创建-api-key)
-        - [设置 Akismet](#设置-akismet)
-    - [WP-Postviews](#wp-postviews)
-        - [插件设置](#插件设置)
-    - [BackWPup](#backwpup)
-        - [创建备份任务](#创建备份任务)
-        - [设置自动备份](#设置自动备份)
-    - [Google Authenticator](#google-authenticator)
-        - [设置](#设置)
-        - [测试登录](#测试登录)
+- [Akismet](#akismet)
+    - [创建 API Key](#创建-api-key)
+    - [设置 Akismet](#设置-akismet)
+- [WP-Postviews](#wp-postviews)
+    - [插件设置](#插件设置)
+- [BackWPup](#backwpup)
+    - [创建备份任务](#创建备份任务)
+    - [设置自动备份](#设置自动备份)
+- [Google Authenticator](#google-authenticator)
+    - [设置](#设置)
+    - [测试登录](#测试登录)
 
-  
-### WordPress 常用插件使用说明（一）
-
-本节课和下节课我们介绍一些常用的插件的使用，具体包括如下插件：Akismet、WP-Postviews、BackWPup、Google Authenticator、Crayon Syntax Highlighter、XML Sitemap & Google News feeds、WP-Optimize、mailgun、TablePress。
+<!-- /TOC -->
 
 #### Akismet
 

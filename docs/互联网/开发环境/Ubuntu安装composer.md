@@ -1,3 +1,12 @@
+<!-- TOC -->
+
+- [Command-line installation](#command-line-installation)
+- [Installer Options](#installer-options)
+    - [--install-dir](#--install-dir)
+    - [--filename](#--filename)
+    - [--version](#--version)
+
+<!-- /TOC -->
 
 from https://getcomposer.org/download/
 

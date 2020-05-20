@@ -1,18 +1,18 @@
-### Ubuntu 下安装使用 Ruby On Rails
+<!-- TOC -->
+
+- [1、命令行下升级一下源，执行：](#1命令行下升级一下源执行)
+- [2、安装Git (git版本管理)和curl， RVM的安装和使用需要使用到它们，还有build-essential用来编译 Ruby。为了安装这三个包，我们执行：](#2安装git-git版本管理和curl-rvm的安装和使用需要使用到它们还有build-essential用来编译-ruby为了安装这三个包我们执行)
+- [3、安装ruby管理工具RVM执行命令：](#3安装ruby管理工具rvm执行命令)
+- [4、如果步骤3需要依赖包，且依赖包安装成功后再重新安装RVM：](#4如果步骤3需要依赖包且依赖包安装成功后再重新安装rvm)
+- [5、加载RVM：](#5加载rvm)
+- [6、测试RVM：](#6测试rvm)
+- [7、安装ruby执行：](#7安装ruby执行)
+- [8、安装框架rails （在安装rvm时已经安装了gem）](#8安装框架rails-在安装rvm时已经安装了gem)
+- [9、gem主要是用来安装rails及rails的插件，插件比如说mysql等组件](#9gem主要是用来安装rails及rails的插件插件比如说mysql等组件)
+
+<!-- /TOC -->
 
 > 由于最近需要，自学ror，对于我这个ror新手来说，安装rails有时确实是一件痛苦的事。这不懂，那不理解的，尽管网上博客什么的介绍ubuntu下安装ror环境的文章一大把，但简单又容易理解不多。
-
-
-- [Ubuntu 下安装使用 Ruby On Rails](#ubuntu-下安装使用-ruby-on-rails)
-    - [1、命令行下升级一下源，执行：](#1命令行下升级一下源执行)
-    - [2、安装Git (git版本管理)和curl， RVM的安装和使用需要使用到它们，还有build-essential用来编译 Ruby。为了安装这三个包，我们执行：](#2安装git-git版本管理和curl-rvm的安装和使用需要使用到它们还有build-essential用来编译-ruby为了安装这三个包我们执行)
-    - [3、安装ruby管理工具RVM执行命令：](#3安装ruby管理工具rvm执行命令)
-    - [4、如果步骤3需要依赖包，且依赖包安装成功后再重新安装RVM：](#4如果步骤3需要依赖包且依赖包安装成功后再重新安装rvm)
-    - [5、加载RVM：](#5加载rvm)
-    - [6、测试RVM：](#6测试rvm)
-    - [7、安装ruby执行：](#7安装ruby执行)
-    - [8、安装框架rails （在安装rvm时已经安装了gem）](#8安装框架rails-在安装rvm时已经安装了gem)
-    - [9、gem主要是用来安装rails及rails的插件，插件比如说mysql等组件](#9gem主要是用来安装rails及rails的插件插件比如说mysql等组件)
 
 
 

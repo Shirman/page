@@ -1,5 +1,4 @@
-docker安装nginx
-----
+
 <!-- TOC -->
 
 - [查看docker hub上有哪些nginx镜像](#查看docker-hub上有哪些nginx镜像)

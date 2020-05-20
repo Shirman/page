@@ -1,6 +1,4 @@
-推荐11个实用Python库
-=======================================
-
+<!-- TOC -->
 
 - [1.delorean](#1delorean)
 - [2.prettytable](#2prettytable)
@@ -13,6 +11,8 @@
 - [9.colorama](#9colorama)
 - [10.uuid](#10uuid)
 - [11.bashplotlib](#11bashplotlib)
+
+<!-- /TOC -->
 
 
 ## 1.delorean

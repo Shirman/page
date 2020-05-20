@@ -1,4 +1,11 @@
-FastCgi 与 PHP-FPM 之间的区别
+
+<!-- TOC -->
+
+- [CGI 的作用](#cgi-的作用)
+- [fastCgi 是什么](#fastcgi-是什么)
+- [PHP-FPM 是什么](#php-fpm-是什么)
+
+<!-- /TOC -->
 
 
   

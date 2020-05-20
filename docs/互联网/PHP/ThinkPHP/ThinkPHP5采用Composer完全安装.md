@@ -1,5 +1,8 @@
 
 
+
+<!-- TOC -->
+
 - [composer安装](#composer安装)
 - [ThinkPHP5 composer安装](#thinkphp5-composer安装)
 - [安装其他扩展](#安装其他扩展)
@@ -9,8 +12,7 @@
     - [安装七牛SDK](#安装七牛sdk)
     - [安装querylist](#安装querylist)
 
-
-
+<!-- /TOC -->
 ### composer安装
 
 windows详见：

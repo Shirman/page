@@ -1,5 +1,4 @@
-Docker安装jira与confluence
-----
+
 <!-- TOC -->
 
 - [准备](#准备)

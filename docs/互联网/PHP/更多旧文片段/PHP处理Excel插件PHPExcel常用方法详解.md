@@ -1,20 +1,14 @@
+<!-- TOC -->
 
-## PHP处理Excel插件PHPExcel常用方法详解
+- [1.header](#1header)
+- [2.PHPExcel](#2phpexcel)
+    - [写excel](#写excel)
+    - [读Excel](#读excel)
+    - [读写csv](#读写csv)
+    - [写HTML](#写html)
+    - [写PDF](#写pdf)
 
-### 目录
-
-
-
-- [PHP处理Excel插件PHPExcel常用方法详解](#php处理excel插件phpexcel常用方法详解)
-    
-    - [1.header](#1header)
-    - [2.PHPExcel](#2phpexcel)
-        - [写excel](#写excel)
-        - [读Excel](#读excel)
-        - [读写csv](#读写csv)
-        - [写HTML](#写html)
-        - [写PDF](#写pdf)
-
+<!-- /TOC -->
 
 
 

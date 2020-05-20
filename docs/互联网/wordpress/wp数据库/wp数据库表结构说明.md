@@ -1,6 +1,4 @@
-wordpress数据库结构及表说明
-=========================================
-
+<!-- TOC -->
 
 - [数据表结构](#数据表结构)
 - [按照功能大致分为五类](#按照功能大致分为五类)
@@ -17,7 +15,7 @@ wordpress数据库结构及表说明
     - [wp\_term\_taxonomy](#wp\_term\_taxonomy)
     - [wp\_term\_relationships](#wp\_term\_relationships)
 
-
+<!-- /TOC -->
   
 ## 数据表结构
   

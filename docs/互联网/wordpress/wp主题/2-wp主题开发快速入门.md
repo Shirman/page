@@ -1,38 +1,20 @@
-2 WP 主题开发：快速入门
-======================================
+<!-- TOC -->
 
+- [创建一个主题](#创建一个主题)
+- [完善顶部内容](#完善顶部内容)
+- [拆分出 header.php、footer.php、Sidebar.php](#拆分出-headerphpfooterphpsidebarphp)
+    - [header.php](#headerphp)
+    - [footer.php](#footerphp)
+    - [sidebar.php](#sidebarphp)
+- [WordPress 主循环](#wordpress-主循环)
+- [处理文章页和单页](#处理文章页和单页)
+- [完善页头和菜单](#完善页头和菜单)
+- [完善侧边栏](#完善侧边栏)
+- [评论系统的实现](#评论系统的实现)
+- [主题功能强化](#主题功能强化)
 
-- [课程目标](#课程目标)
-- [课程内容](#课程内容)
-    - [创建一个主题](#创建一个主题)
-    - [完善顶部内容](#完善顶部内容)
-    - [拆分出 header.php、footer.php、Sidebar.php](#拆分出-headerphpfooterphpsidebarphp)
-        - [header.php](#headerphp)
-        - [footer.php](#footerphp)
-        - [sidebar.php](#sidebarphp)
-    - [WordPress 主循环](#wordpress-主循环)
-    - [处理文章页和单页](#处理文章页和单页)
-    - [完善页头和菜单](#完善页头和菜单)
-    - [完善侧边栏](#完善侧边栏)
-    - [评论系统的实现](#评论系统的实现)
-    - [主题功能强化](#主题功能强化)
+<!-- /TOC -->
 
-
-  
-WordPress 主题开发快速入门
-------------------
-
-### 课程目标
-
-经过本次课程可以学会制作一个简单的 WordPress 主题。
-
-主题效果图：
-
-![](https://ws4.sinaimg.cn/large/006tNc79gy1fmx099v495j31kw0wj77j.jpg)
-
-### 课程内容
-
-课程资源请[单击这里](http://www.easywpbook.com/course-resources/blog-template.zip)。
 
 #### 创建一个主题
 

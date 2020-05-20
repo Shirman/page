@@ -1,5 +1,4 @@
-Jupyter的安装和使用
-----
+
 <!-- TOC -->
 
 - [1、Jupyter Notebooks 简介](#1jupyter-notebooks-简介)

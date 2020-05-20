@@ -1,4 +1,4 @@
-你好，我是宝玉。这些年，有关DevOps的概念很火，大家都在讨论DevOps，有人说DevOps就是自动化运维，有人说DevOps是流程和管理，还有人说DevOps是一种文化。以前的运维工程师也纷纷变成了DevOps工程师。
+这些年，有关DevOps的概念很火，大家都在讨论DevOps，有人说DevOps就是自动化运维，有人说DevOps是流程和管理，还有人说DevOps是一种文化。以前的运维工程师也纷纷变成了DevOps工程师。
 
 今天，我将带你一起了解一下，究竟什么是DevOps？DevOps到底要做什么事情？
 

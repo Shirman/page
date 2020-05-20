@@ -1,25 +1,19 @@
-2 WP 性能优化：服务器优化
-=============================================
+<!-- TOC -->
 
-- [加速：服务器优化](#加速服务器优化)
-    - [使用 Nginx 替代 Apache](#使用-nginx-替代-apache)
-        - [为 PHP 开启 OPCache](#为-php-开启-opcache)
-        - [什么是 OPCache](#什么是-opcache)
-        - [启用 OPCache](#启用-opcache)
-        - [为 MySQL 开启 Query Cache](#为-mysql-开启-query-cache)
-        - [为服务器开启 Gzip 压缩](#为服务器开启-gzip-压缩)
-    - [在 WordPress 中开启 Gzip](#在-wordpress-中开启-gzip)
-    - [通过 Apache 的 .htaccess 文件开启](#通过-apache-的-htaccess-文件开启)
-    - [通过 Nginx 的 Conf 文件开启](#通过-nginx-的-conf-文件开启)
-    - [通过 php.ini 开启](#通过-phpini-开启)
-    - [通过 WP Super Cache 开启](#通过-wp-super-cache-开启)
-    - [为文件加入 expires 头信息](#为文件加入-expires-头信息)
+- [使用 Nginx 替代 Apache](#使用-nginx-替代-apache)
+    - [为 PHP 开启 OPCache](#为-php-开启-opcache)
+    - [什么是 OPCache](#什么是-opcache)
+    - [启用 OPCache](#启用-opcache)
+    - [为 MySQL 开启 Query Cache](#为-mysql-开启-query-cache)
+    - [为服务器开启 Gzip 压缩](#为服务器开启-gzip-压缩)
+- [在 WordPress 中开启 Gzip](#在-wordpress-中开启-gzip)
+- [通过 Apache 的 .htaccess 文件开启](#通过-apache-的-htaccess-文件开启)
+- [通过 Nginx 的 Conf 文件开启](#通过-nginx-的-conf-文件开启)
+- [通过 php.ini 开启](#通过-phpini-开启)
+- [通过 WP Super Cache 开启](#通过-wp-super-cache-开启)
+- [为文件加入 expires 头信息](#为文件加入-expires-头信息)
 
-
-  
-
-
-### 加速：服务器优化
+<!-- /TOC -->
 
 #### 使用 Nginx 替代 Apache
 

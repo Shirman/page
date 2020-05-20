@@ -1,9 +1,9 @@
-使用python将html转为pdf
-==================================
-
+<!-- TOC -->
 
 - [安装准备](#安装准备)
 - [使用](#使用)
+
+<!-- /TOC -->
 
 
 使用python将html转为pdf，需要使用到两个库 pdfkit和wkhtmltopdf，其中wkhtmltopdf不是python库，需要单独安装。

@@ -1,19 +1,16 @@
-3 WP 性能优化：缓存
-====================================================
+<!-- TOC -->
 
-- [WordPress 性能优化：缓存](#wordpress-性能优化缓存)
-    - [加速：加入缓存机制](#加速加入缓存机制)
-    - [WordPress 的三种缓存机制](#wordpress-的三种缓存机制)
-        - [内存缓存：使用 Memcached 和 Batcache 进行缓存](#内存缓存使用-memcached-和-batcache-进行缓存)
-        - [安装 Memcached 和 Batcache](#安装-memcached-和-batcache)
-        - [HTML 静态缓存：使用 WP Super Cache 进行缓存](#html-静态缓存使用-wp-super-cache-进行缓存)
-        - [安装 WP Super Cache](#安装-wp-super-cache)
-        - [清除缓存](#清除缓存)
-    - [静态化：Super Static Cache 插件](#静态化super-static-cache-插件)
-        - [使用 Super Static Cache 进行缓存](#使用-super-static-cache-进行缓存)
+- [加速：加入缓存机制](#加速加入缓存机制)
+- [WordPress 的三种缓存机制](#wordpress-的三种缓存机制)
+    - [内存缓存：使用 Memcached 和 Batcache 进行缓存](#内存缓存使用-memcached-和-batcache-进行缓存)
+    - [安装 Memcached 和 Batcache](#安装-memcached-和-batcache)
+    - [HTML 静态缓存：使用 WP Super Cache 进行缓存](#html-静态缓存使用-wp-super-cache-进行缓存)
+    - [安装 WP Super Cache](#安装-wp-super-cache)
+    - [清除缓存](#清除缓存)
+- [静态化：Super Static Cache 插件](#静态化super-static-cache-插件)
+    - [使用 Super Static Cache 进行缓存](#使用-super-static-cache-进行缓存)
 
-  
-### WordPress 性能优化：缓存
+<!-- /TOC -->
 
 #### 加速：加入缓存机制
 
