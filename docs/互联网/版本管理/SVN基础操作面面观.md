@@ -434,7 +434,7 @@ branchs目录用于存放每一次版本release后做bug修复分支版本（fro
 
 ![更多功能](/image/svn/svn-branch-dir-use.png)
 
-详见(SVN目录结构规划)[/版本管理/SVN目录结构规划.md]
+详见[SVN目录结构规划](/版本管理/SVN目录结构规划.md)
 
 ### 十、Linux环境下svn安装与使用
 
@@ -450,7 +450,7 @@ branchs目录用于存放每一次版本release后做bug修复分支版本（fro
 
 svn常用命令：
 
-详见(SVN常用基本命令)[/版本管理/SVN常用基本命令.md]
+详见[SVN常用基本命令](/版本管理/SVN常用基本命令.md)
 
 
 -----
