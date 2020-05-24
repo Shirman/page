@@ -8,7 +8,10 @@ import jieba
 
 class HugoMarkdown:
 
-    __srcDir = 'I:\src\hugo\doc' #源文章目录
+    # __srcDir = 'I:\src\hugo\doc' #源文章目录
+    # __desDir = 'I:\src\hugo\9ong\content\post' #目的文件目录
+
+    __srcDir = 'I:\src\github-page\docs' #源文章目录
     __desDir = 'I:\src\hugo\9ong\content\post' #目的文件目录
 
 
@@ -22,25 +25,28 @@ class HugoMarkdown:
         for root,dirs,files in os.walk(self.__srcDir):
             for file in files:   
                 
+                print("\n-----开始处理文章：",os.path.join(root,file),"-----\n")
                 if file=='index.md' or file == 'README.md':
+                    print("忽略",file,"\n")
                     continue
 
-                print("处理文章：",os.path.join(root,file),"\n")
 
                 fileInfoDict = self.__getFileInfo(root,file)
 
-                self.__adjustFIleContent(fileInfoDict)
-
+                if (fileInfoDict['fileExt'] != ".md") or (fileInfoDict['parentDir']==''):
+                    print("忽略",file,"\n")
+                    continue                
 
                 #测试输出    
-                print("\n--测试输出--\n")
-                print(fileInfoDict) 
+                print(fileInfoDict,"\n")                
 
-                #只循环一次           
+                self.__adjustFIleContent(fileInfoDict)
+
+                #只循环一次，跳出所有循环
                 # return 
 
     def __getFileInfo(self,root,file):
-        print("获取文章信息...\n")
+        print("获取文章信息：\n")
         #文件全路径                
         filePath = os.path.join(root,file)
         #文件名、扩展名
@@ -49,7 +55,7 @@ class HugoMarkdown:
         parentDir = os.path.basename(root)
         grandpaDir = os.path.basename(os.path.dirname(root))
         if parentDir == "doc":
-            parentDir = "其他"
+            parentDir = ""
 
         if grandpaDir == "doc" or grandpaDir == "互联网":
             grandpaDir = ""
@@ -84,7 +90,7 @@ class HugoMarkdown:
 
     #获取meta
     def __getMmeta(self,fileInfoDict):
-        print("准备文章meta信息...","\n")        
+        print("准备文章meta信息：","\n")        
         meta = ""
         metaTitle = "title: \""+fileInfoDict['fileName']+"\"\n"
         metaCJK = "isCJKLanguage: true\n"
@@ -106,6 +112,7 @@ class HugoMarkdown:
                 metaKeywords += "- "+word+"\n"
 
         meta = "---\n"+metaTitle+metaCJK+metaDate+metaCategories+metaGrandpaCategory+metaParentCategory+metaTags+metaKeywords+"---\n\n\n"
+        print(meta,"\n")
         return meta
 
     #插入<!--more-->到文章
@@ -117,8 +124,11 @@ class HugoMarkdown:
         else:
             print("没有发现",tocFlag,"\n")
             contents = content.splitlines()
-            contents[4] = contents[4]+"\n"+'<!--more-->'+"\n"
-            content = "\n".join(contents)
+            contentsLen = len(contents)
+            if contentsLen>4:
+                contents[4] = contents[4]+"\n"+'<!--more-->'+"\n"
+                content = "\n".join(contents)
+                
         print("插入<!--more-->...","\n")
         return content
 
@@ -126,7 +136,7 @@ class HugoMarkdown:
         relativeFilePath = fileInfoDict['filePath'].replace(self.__srcDir,"")
 
         desFilePath = self.__desDir+relativeFilePath
-        print("写入新文件...",desFilePath,"\n")
+        print("写入新文件：",desFilePath,"\n")
         desDirPath = os.path.dirname(desFilePath)
         # print("##Final Path："+desFilePath)
         # return 
@@ -134,7 +144,7 @@ class HugoMarkdown:
             os.makedirs(desDirPath)
         with open(desFilePath,"w",encoding="utf-8") as nf:
             nf.write(content)
-            print("完成：",desFilePath,"\n")
+            print("----- 完成文章处理：",desFilePath," -----\n")
 
 
     #时间戳转换成日期
@@ -148,7 +158,8 @@ class HugoMarkdown:
         keywords = self.__wordStatistics(content)
         keywordsList = sorted(keywords.items(), key=lambda item:item[1], reverse=True)            
         keywordsList = keywordsList[0:50]   
-        keywordsList = self.__filterKeywords(keywordsList,filename)      
+        keywordsList = self.__filterKeywords(keywordsList,filename)   
+        print("保留关键词：",keywordsList,"\n")           
         return keywordsList
 
     #词频统计
@@ -174,7 +185,7 @@ class HugoMarkdown:
         # enD = enchant.Dict("en_US")
         for word,count in keywordsList:            
 
-            print(word,"\t",count)            
+            # print(word,"\t",count)            
             if filename.find(word)!=-1:
                 wordLen = len(word)
                 if self.__isChinese(word) and wordLen<2:

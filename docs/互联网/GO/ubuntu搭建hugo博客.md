@@ -93,7 +93,7 @@ Press Ctrl+C to stop
 
 ### 生成静态页面
 
-在生成之前先确定你想将此网站发布在哪儿，在 config.toml 里面配置 baseURL 为访问此网站的基本URL路径：
+在生成之前先确定你想将此网站发布在哪儿，在 config.toml 里面配置 baseURL 为访问此网站的基本URL路径：
 
     baseURL = "https://9ong.com/"
 
@@ -101,7 +101,7 @@ Press Ctrl+C to stop
 
     hugo -t future
 
-对，你没看错，直接执行 hugo 就可以了，它编译并生成网站所需的静态页面和文件，输出到当前目录的 public 目录下，当然你也可以改变输出目的地，如：
+对，你没看错，直接执行 hugo 就可以了，它编译并生成网站所需的静态页面和文件，输出到当前目录的 public 目录下，当然你也可以改变输出目的地，如：
 
     hugo -d docs
 
