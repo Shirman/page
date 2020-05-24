@@ -17,4 +17,10 @@
     - 遍历所有文件
     - 检查".md)"，手动更换吧
 
-- 
+- todo
+    - md文件include md文件，支持自动转换链接
+    - 内联本地md文件，支持转换成html链接
+    - sitemap
+    - favicon与cover.jpg上传云
+    - 百度统计
+    - 

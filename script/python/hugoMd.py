@@ -6,9 +6,10 @@ import datetime
 import jieba
 
 
+
 class HugoMarkdown:
 
-    # __srcDir = 'I:\src\hugo\doc' #源文章目录
+    # __srcDir = 'I:\src\hugo\docs' #源文章目录
     # __desDir = 'I:\src\hugo\9ong\content\post' #目的文件目录
 
     __srcDir = 'I:\src\github-page\docs' #源文章目录
@@ -26,7 +27,7 @@ class HugoMarkdown:
             for file in files:   
                 
                 print("\n-----开始处理文章：",os.path.join(root,file),"-----\n")
-                if file=='index.md' or file == 'README.md':
+                if file=='index.md' or file == 'README.md' or file=='more.md':
                     print("忽略",file,"\n")
                     continue
 
@@ -54,10 +55,10 @@ class HugoMarkdown:
         #所在目录及上级目录
         parentDir = os.path.basename(root)
         grandpaDir = os.path.basename(os.path.dirname(root))
-        if parentDir == "doc":
+        if parentDir == "docs":
             parentDir = ""
 
-        if grandpaDir == "doc" or grandpaDir == "互联网":
+        if grandpaDir == "docs" or grandpaDir == "互联网":
             grandpaDir = ""
 
         #文件相关时间
@@ -99,7 +100,10 @@ class HugoMarkdown:
         metaParentCategory = ""
         metaGrandpaCategory = ""
         metaTags = "tags: \n"
-        metaKeywords = ""
+        metaTagsList = ""
+        metaKeywords = "keywords: \n"
+        metaKeywordsList = ""
+
 
         if fileInfoDict['grandpaDir']!='':
             metaGrandpaCategory = "- "+fileInfoDict['grandpaDir']+"\n"
@@ -109,9 +113,10 @@ class HugoMarkdown:
         
         if fileInfoDict['keywords']:
             for word in fileInfoDict['keywords']:
-                metaKeywords += "- "+word+"\n"
+                metaTagsList += "- "+word+"\n"
+                metaKeywordsList += "- "+word+"\n"
 
-        meta = "---\n"+metaTitle+metaCJK+metaDate+metaCategories+metaGrandpaCategory+metaParentCategory+metaTags+metaKeywords+"---\n\n\n"
+        meta = "---\n"+metaTitle+metaCJK+metaDate+metaCategories+metaGrandpaCategory+metaParentCategory+metaTags+metaTagsList+metaKeywords+metaKeywordsList+"---\n\n"
         print(meta,"\n")
         return meta
 
@@ -128,7 +133,7 @@ class HugoMarkdown:
             if contentsLen>4:
                 contents[4] = contents[4]+"\n"+'<!--more-->'+"\n"
                 content = "\n".join(contents)
-                
+
         print("插入<!--more-->...","\n")
         return content
 
@@ -144,7 +149,11 @@ class HugoMarkdown:
             os.makedirs(desDirPath)
         with open(desFilePath,"w",encoding="utf-8") as nf:
             nf.write(content)
+
+        if os.path.exists(desFilePath):
             print("----- 完成文章处理：",desFilePath," -----\n")
+        else:
+            print("---- 写入新文件失败! -----\n")
 
 
     #时间戳转换成日期
@@ -155,7 +164,7 @@ class HugoMarkdown:
 
     #获取文章关键词
     def __getKeywords(self,content,filename):
-        keywords = self.__wordStatistics(content)
+        keywords = self.__wordStatistics(content,filename)
         keywordsList = sorted(keywords.items(), key=lambda item:item[1], reverse=True)            
         keywordsList = keywordsList[0:50]   
         keywordsList = self.__filterKeywords(keywordsList,filename)   
@@ -163,7 +172,7 @@ class HugoMarkdown:
         return keywordsList
 
     #词频统计
-    def __wordStatistics(self,content):        
+    def __wordStatistics(self,content,filename):        
         stopwords = open('I:\src\github-page\script\python\stopwords.txt', 'r', encoding='utf-8').read().split('\n')[:-1]        
         words_dict = {}
     
@@ -175,6 +184,15 @@ class HugoMarkdown:
                 words_dict[t] += 1
             else:
                 words_dict[t] = 1
+
+        # filenameCuts = jieba.cut(filename)                
+        # for fc in filenameCuts:
+        #     if fc in stopwords or fc == 'unknow' or fc.strip() == "":
+        #         continue
+        #     if fc in words_dict.keys():
+        #         words_dict[fc] += 100
+        #     else:
+        #         words_dict[fc] = 100
         return words_dict
 
     #再次过滤关键词：在文件名也就是标题中，且汉字不少于2个，字符串不少于3个，不是纯数字
@@ -186,8 +204,8 @@ class HugoMarkdown:
         for word,count in keywordsList:            
 
             # print(word,"\t",count)            
+            wordLen = len(word)
             if filename.find(word)!=-1:
-                wordLen = len(word)
                 if self.__isChinese(word) and wordLen<2:
                     continue
                 elif wordLen<3:
@@ -196,16 +214,14 @@ class HugoMarkdown:
                     continue
                 else:
                     newKeywordsList.append(word)
-            
-            # if self.__isChinese(word):                
-            #     # newKeywordsList.append(word)
-            #     newKeywordsList.insert(0,word)
-            # # elif enD.check(word) and (filename.find(word)!=-1):
-            # elif enD.check(word):
-            #     # newKeywordsList.insert(0,word)
-            #     newKeywordsList.append(word)
-            # elif (filename.find(word)!=-1):
-            #     newKeywordsList.insert(0,word)
+            # else:
+            #     if wordLen>1 and self.__isChinese(word) and count>5:
+            #         newKeywordsList.append(word)                
+            #     elif wordLen>2 and enD.check(word) and count>5:
+            #         newKeywordsList.append(word)   
+            #     else:
+            #         continue
+
         return newKeywordsList
 
     def __isChinese(self,word):
